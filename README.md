@@ -1,7 +1,7 @@
 # Simple-Dish-Controller
-Simple controller with toggle switches to move the dish motors
+Simple controller with toggle switches to move the motors of a satellite dish.
 
-The project is to create a PCB that will control 2 motors tht will be used as the azimuth and elevation motors of a satellite dish. The cirction will allow controlling simple movement for each motor, forward, reverse, still, all at one set speed.
+The project is to create a PCB that will control 2 motors tht will be used as the azimuth and elevation motors of a satellite dish. The direction will allow controlling simple movement for each motor, forward, reverse, still, all at one set speed.
 
 The project usises Kicad to create the schematic, PCB and BOM.
 
@@ -14,4 +14,4 @@ This project fulfills 2 initiatives:
 
 This diagram simple shows the function of the project:
 
-![Alt text](images/simple-dish-controller-overview.png)
+<img src="images/simple-dish-controller-overview.png" width="800" />
