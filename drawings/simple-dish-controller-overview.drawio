@@ -1,0 +1,86 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0" version="26.0.11">
+  <diagram name="Page-1" id="xSy9GGFrzt3tJFvpQz6L">
+    <mxGraphModel dx="594" dy="427" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-36" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="50" width="140" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-1" value="ISV57T Motor&lt;div&gt;from omc-stepperonline.com&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="85" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-2" value="Elevation Toggle Switch&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;on1 - pwm on, dir CW&lt;/li&gt;&lt;li&gt;off - pwm off&lt;/li&gt;&lt;li&gt;on2 - pwm on- dir CCW&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="30" y="60" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-3" value="PCB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="60" width="120" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-10" value="ISV57T Motor&lt;div&gt;from omc-stepperonline.com&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="225" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-12" value="Azimuth Toggle Switch&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;on1 - pwm on, dir CW&lt;/li&gt;&lt;li&gt;off - pwm off&lt;/li&gt;&lt;li&gt;on2 - pwm on- dir CCW&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="30" y="200" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="Sc6fs6_u-YPlv2HhheFT-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="240" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" target="Sc6fs6_u-YPlv2HhheFT-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="270" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.111;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Sc6fs6_u-YPlv2HhheFT-2" target="Sc6fs6_u-YPlv2HhheFT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.33;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Sc6fs6_u-YPlv2HhheFT-2" target="Sc6fs6_u-YPlv2HhheFT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.67;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Sc6fs6_u-YPlv2HhheFT-12" target="Sc6fs6_u-YPlv2HhheFT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.003;entryY=0.887;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Sc6fs6_u-YPlv2HhheFT-12" target="Sc6fs6_u-YPlv2HhheFT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="100" as="sourcePoint" />
+            <mxPoint x="380" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="130" as="sourcePoint" />
+            <mxPoint x="380" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.22;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Sc6fs6_u-YPlv2HhheFT-2" target="Sc6fs6_u-YPlv2HhheFT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.78;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Sc6fs6_u-YPlv2HhheFT-12" target="Sc6fs6_u-YPlv2HhheFT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-29" value="Dir" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="118" width="30" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-31" value="PWM" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="335" y="84" width="35" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-32" value="Dir" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="260" width="30" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-33" value="PWM" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="335" y="225" width="35" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-34" value="PWM is produced from a 555 chip, 600Hz&lt;div&gt;Direction (DIR) is 5V for CW, Gnd for CCW&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="330" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Sc6fs6_u-YPlv2HhheFT-35" value="- These motors are controlled by a&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;pulse signal, set by software to x&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;number of pulses = one revolution.&lt;div&gt;-&amp;nbsp; Direction is +5V CW, 0V CCW&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="155" width="200" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
