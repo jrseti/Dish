@@ -618,6 +618,14 @@
     [
       "8648ccd3-30ce-4b98-baff-aeab56a7c9f5",
       "Root"
+    ],
+    [
+      "a4809f50-064d-4cb7-b1f7-56bf09fb0ea4",
+      "Elevation"
+    ],
+    [
+      "809ce83c-7739-411d-92b7-06d9bcd34d12",
+      "Azimuth"
     ]
   ],
   "text_variables": {}
