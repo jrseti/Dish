@@ -3494,7 +3494,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 157.1752 106.68 0)
 			(effects
 				(font
@@ -3539,9 +3539,9 @@
 	(sheet
 		(at 204.47 130.81)
 		(size 34.29 31.75)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
