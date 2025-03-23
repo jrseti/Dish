@@ -12,6 +12,6 @@ This project fulfills 2 initiatives:
 
 ## Project Overview
 
-This diagram simple shows the function of the project:
+This diagram simply shows the function of the project:
 
 <img src="images/simple-dish-controller-overview.png" width="800" />
