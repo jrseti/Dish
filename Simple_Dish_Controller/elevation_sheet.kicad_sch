@@ -4981,7 +4981,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RHDR1W160P0X826_1X1_1020X1270X1270P"
+		(property "Footprint" "2-port JR45:CUI_CRJ022-G-TH"
 			(at 137.49 151.13 0)
 			(effects
 				(font
@@ -5168,7 +5168,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CRJ022-G-TH:CUI_CRJ022-G-TH"
+		(property "Footprint" "2-port JR45:CUI_CRJ022-G-TH"
 			(at 255.27 97.79 0)
 			(effects
 				(font
@@ -5485,7 +5485,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CRJ022-G-TH:CUI_CRJ022-G-TH"
+		(property "Footprint" "2-port JR45:CUI_CRJ022-G-TH"
 			(at 255.27 59.69 0)
 			(effects
 				(font
@@ -5563,10 +5563,10 @@
 			(uuid "d7314d9d-6019-4c41-bfe4-54fa2b7373e9")
 		)
 		(pin "7L"
-			(uuid "e075f667-fa24-42e5-b954-9e84ee6b625f")
+			(uuid "e075f667-fa24-42e5-b954-9e84ee6b6260")
 		)
 		(pin "3L"
-			(uuid "61557843-f75d-4c6b-92d0-da0ae7a80af0")
+			(uuid "61557843-f75d-4c6b-92d0-da0ae7a80af1")
 		)
 		(pin "1R"
 			(uuid "9e513cd4-cd5d-4282-a1fc-5a85fc80b544")
@@ -5575,13 +5575,13 @@
 			(uuid "d9e14df4-d0ed-4c6c-bbdb-56d27b9e6f45")
 		)
 		(pin "1L"
-			(uuid "d45e3cd8-d07d-4a42-a791-a52340501e34")
+			(uuid "d45e3cd8-d07d-4a42-a791-a52340501e35")
 		)
 		(pin "5L"
-			(uuid "61aae27e-9800-4115-86f6-6149b714894f")
+			(uuid "61aae27e-9800-4115-86f6-6149b7148950")
 		)
 		(pin "6L"
-			(uuid "33950c2b-f071-41f2-8cbc-3f7777a4b8b1")
+			(uuid "33950c2b-f071-41f2-8cbc-3f7777a4b8b2")
 		)
 		(pin "2R"
 			(uuid "26182ca4-8ec6-489b-a417-e137d514a996")
@@ -5590,25 +5590,25 @@
 			(uuid "f8525424-2888-4ccf-9b37-f492d3d4843b")
 		)
 		(pin "2L"
-			(uuid "9674f523-bd7c-49df-94d3-aed2c1439ddc")
+			(uuid "9674f523-bd7c-49df-94d3-aed2c1439ddd")
 		)
 		(pin "S1"
-			(uuid "95fe02a9-4668-4e59-a099-4a692d24475c")
+			(uuid "95fe02a9-4668-4e59-a099-4a692d24475d")
 		)
 		(pin "4L"
-			(uuid "76c7858c-72d7-4350-8753-438b7c6d55bb")
+			(uuid "76c7858c-72d7-4350-8753-438b7c6d55bc")
 		)
 		(pin "S2"
-			(uuid "93ee0499-6688-47a2-b64d-bd9218f1dfc0")
+			(uuid "93ee0499-6688-47a2-b64d-bd9218f1dfc1")
 		)
 		(pin "S3"
-			(uuid "4a46962b-793f-4cdc-bc5a-79db85346e0e")
+			(uuid "4a46962b-793f-4cdc-bc5a-79db85346e0f")
 		)
 		(pin "3R"
 			(uuid "438706db-1565-46f9-a208-a4762e64cbba")
 		)
 		(pin "8L"
-			(uuid "a28f25f3-8d49-4878-bbd9-7f279389fd91")
+			(uuid "a28f25f3-8d49-4878-bbd9-7f279389fd92")
 		)
 		(instances
 			(project ""

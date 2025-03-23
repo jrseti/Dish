@@ -3765,7 +3765,7 @@
 		)
 		(uuid "39b7f083-bcb5-4c32-bdc1-0b03f564bed1")
 	)
-	(text "Azimuth Moror Control"
+	(text "Azimuth Motor Control"
 		(exclude_from_sim no)
 		(at 201.93 171.45 0)
 		(effects
@@ -6039,7 +6039,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CRJ022-G-TH:CUI_CRJ022-G-TH"
+		(property "Footprint" "2-port JR45:CUI_CRJ022-G-TH"
 			(at 254 99.06 0)
 			(effects
 				(font
@@ -6058,7 +6058,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2-port JR45"
 			(at 254 99.06 0)
 			(effects
 				(font
@@ -6750,7 +6750,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CRJ022-G-TH:CUI_CRJ022-G-TH"
+		(property "Footprint" "2-port JR45:CUI_CRJ022-G-TH"
 			(at 254 60.96 0)
 			(effects
 				(font
@@ -6769,7 +6769,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2-port JR45"
 			(at 254 60.96 0)
 			(effects
 				(font
@@ -7153,7 +7153,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RHDR1W160P0X826_1X1_1020X1270X1270P"
+		(property "Footprint" "2-port JR45:CUI_CRJ022-G-TH"
 			(at 86.69 148.59 0)
 			(effects
 				(font
