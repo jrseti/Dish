@@ -29,3 +29,6 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+parts/supplier_parts/*
+!parts/supplier_parts/.gitkeep
