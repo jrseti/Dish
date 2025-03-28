@@ -1,3 +1,11 @@
+# Parts Library for the Dish Project
+
+Open source - free to use symbol, footprint and 3D files for the project:
+ - ./symbols/Dish.lib - Symbols to use in the project
+ - ./footprints/Dish.lib - 
+
+
+
 # 📦 Rebuilding Restricted Parts for Dish Project
 
 Some components used in this project use models or libraries with redistribution restrictions. This guide explains how to recreate them legally.

@@ -30,5 +30,6 @@ fp-info-cache
 *.xml
 *.csv
 
-parts/supplier_parts/*
+#parts/supplier_parts/*
 !parts/supplier_parts/.gitkeep
+!parts/supplier_parts/DishFootprintsSupplier.pretty/.gitkeep
