@@ -2082,145 +2082,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2713,9 +2574,433 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "DishSymbols:CAP 100nF 0805"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100nF"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "DishFootprints:C_0805"
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR60G107ME11-01A.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "0.1 µF ±5% 10V Ceramic Capacitor U2J 0805 (2012 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Murata"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "805-2 Murata"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "GRM21B7U1A104JA01L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DIS" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "490-11592-1-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM21B7U1A104JA01L/2546740?s=N4IgjCBcpgLFoDGUBmBDANgZwKYBoQB7KAbRAHZYBWMKkAXQIAcAXKEAZRYCcBLAOwDmIAL4EwANgQhkkdNnxFSIAMwBOFQCY1DZm0iceA4WPBqAHDugzUmXAWKQyABganNz2FdCt2AVX5eFgB5FABZHDQsAFduHBACaPZ%2BADEEkABbAXYwZ1cCDLQADxy80QIAWghrWXl7JScQL1d6ETagA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.19"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Note" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CAP 100nF 0805_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CAP 100nF 0805_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DishSymbols:CAP 10nF 0805"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "10uF"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "DishFootprints:C_0805"
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "10000 pF ±10% 10V Ceramic Capacitor X7R 0805 (2012 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "KYOCERA AVX"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "805"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "KGM21NR71A103KT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DIS" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "478-KGM21NR71A103KTCT-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR60G107ME11K/10701411"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.12"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Note" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CAP 10nF 0805_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CAP 10nF 0805_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "DishSymbols:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2980,49 +3265,47 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "NE555P Osc Chip SMD:NE555PS"
+		(symbol "DishSymbols:NE555D"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "IC"
-				(at 26.67 7.62 0)
+			(property "Reference" "U"
+				(at -10.16 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 				)
 			)
-			(property "Value" "NE555PS"
-				(at 26.67 5.08 0)
+			(property "Value" "NE555D"
+				(at 2.54 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 				)
 			)
-			(property "Footprint" "SOIC127P780X200-8N"
-				(at 26.67 -94.92 0)
+			(property "Footprint" "DishFootprints:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 21.59 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.arrow.com/en/products/ne555ps/texas-instruments"
-				(at 26.67 -194.92 0)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ne555.pdf"
+				(at 21.59 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Description" "Timers & Support Products Single Precision Timer 8-SO"
+			(property "Description" "Precision Timers, 555 compatible, SOIC-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3031,143 +3314,100 @@
 					(hide yes)
 				)
 			)
-			(property "Height" "2"
-				(at 26.67 -394.92 0)
+			(property "Package" "SOIC-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "TI"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "NE555D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DIS" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "296-16792-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/texas-instruments/NE555D/280641"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.64"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Note" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "single timer 555"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "595-NE555PS"
-				(at 26.67 -494.92 0)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/NE555PS?qs=byeeYqUIh0M96aNh58eaoA%3D%3D"
-				(at 26.67 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Texas Instruments"
-				(at 26.67 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "NE555PS"
-				(at 26.67 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "NE555PS_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 25.4 -10.16)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "TRIG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "RESET"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 0 180)
-					(length 5.08)
+			(symbol "NE555D_0_0"
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
 					(name "VCC"
 						(effects
 							(font
@@ -3183,10 +3423,126 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 30.48 -2.54 180)
-					(length 5.08)
-					(name "DISCH"
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "NE555D_0_1"
+				(rectangle
+					(start -8.89 -7.62)
+					(end 8.89 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.89 -7.62)
+					(end 8.89 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "NE555D_1_1"
+				(pin input line
+					(at -12.7 5.08 0)
+					(length 3.81)
+					(name "TR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 0 0)
+					(length 3.81)
+					(name "CV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input inverted
+					(at -12.7 -5.08 0)
+					(length 3.81)
+					(name "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 5.08 180)
+					(length 3.81)
+					(name "Q"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 0 180)
+					(length 3.81)
+					(name "DIS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3201,10 +3557,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 30.48 -5.08 180)
-					(length 5.08)
-					(name "THRES"
+				(pin input line
+					(at 12.7 -5.08 180)
+					(length 3.81)
+					(name "THR"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3219,17 +3575,393 @@
 						)
 					)
 				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DishSymbols:RES 6.8k 0805"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "6.8k"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "DishFootprints:R_0805"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "0802"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Susumu"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "RG2012P-682-B-T5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DIS" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "RG20P6.8KBCT-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/susumu/RG2012P-682-B-T5/1240804"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.09"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Note" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RES 6.8k 0805_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RES 6.8k 0805_1_1"
 				(pin passive line
-					(at 30.48 -7.62 180)
-					(length 5.08)
-					(name "CONT"
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DishSymbols:RES 820 0805"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "820"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "DishFootprints:R_0805"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "820 Ohms ±0.1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thin Film"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "0805"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Susumu"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "RG2012P-821-B-T5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DIS" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "RG20P820BCT-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/susumu/RG2012P-821-B-T5/1240815"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.11"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Note" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RES 820 0805_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RES 820 0805_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3939,10 +4671,10 @@
 		(uuid "0695f52c-aeab-4504-ad3a-a026c5092940")
 	)
 	(junction
-		(at 185.42 78.74)
+		(at 161.29 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "250764b7-5623-40ce-9b26-a5f3b0d10830")
+		(uuid "2819babe-3c6d-4d89-aee8-f956ed76b4d1")
 	)
 	(junction
 		(at 63.5 58.42)
@@ -3951,10 +4683,10 @@
 		(uuid "3032e385-1da0-46de-905f-97a33e9048f2")
 	)
 	(junction
-		(at 195.58 52.07)
+		(at 176.53 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4e45b47a-9590-4642-9448-7af5f66e6135")
+		(uuid "3f6e8c01-e980-4679-aad2-0ec430706a6f")
 	)
 	(junction
 		(at 74.93 53.34)
@@ -3969,16 +4701,16 @@
 		(uuid "7f939afb-5a29-478b-aac5-518e74574da1")
 	)
 	(junction
-		(at 195.58 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "846f15d0-9b32-411e-b3ca-d05cba181db6")
-	)
-	(junction
 		(at 267.97 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "977758ab-fcca-461f-831e-bee60a11305a")
+	)
+	(junction
+		(at 176.53 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97a93ab9-2b05-40a0-8808-ed9a058f921c")
 	)
 	(junction
 		(at 101.6 71.12)
@@ -3999,10 +4731,10 @@
 		(uuid "a7791041-8623-4fad-9ee6-5ea14d48efb9")
 	)
 	(junction
-		(at 191.77 72.39)
+		(at 189.23 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b1fe29b0-2be9-4fe8-b0e1-061e649cde2a")
+		(uuid "b25c9165-86e8-49dc-bf11-a39bd712f842")
 	)
 	(junction
 		(at 234.95 85.09)
@@ -4023,16 +4755,22 @@
 		(uuid "ce721dcc-f29e-4b07-a220-4cfb7e663d40")
 	)
 	(junction
+		(at 193.04 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df8e8e42-484e-4e5c-80bf-abc19b9c4537")
+	)
+	(junction
 		(at 267.97 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e55a05fd-b5d8-47b1-90b7-955741bfbcf4")
 	)
 	(junction
-		(at 153.67 72.39)
+		(at 152.4 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ea7ccb88-cdfc-4ac6-9771-5c7cf21b8067")
+		(uuid "fa3029ab-a555-4f42-a76e-9972c9e6479c")
 	)
 	(no_connect
 		(at 238.76 95.25)
@@ -4134,16 +4872,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 60.96) (xy 195.58 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "032cadb1-d716-4e55-b0db-b749a6165fb1")
-	)
-	(wire
-		(pts
 			(xy 236.22 48.26) (xy 232.41 48.26)
 		)
 		(stroke
@@ -4154,13 +4882,23 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 63.5) (xy 186.69 63.5)
+			(xy 176.53 88.9) (xy 176.53 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "11723bb3-cc3f-422e-910c-84b454492860")
+		(uuid "08129fd0-81f5-4c82-a968-38cc8f5f3c09")
+	)
+	(wire
+		(pts
+			(xy 152.4 88.9) (xy 161.29 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "095f4cb4-6b5d-4385-b4df-7f01afc26a0b")
 	)
 	(wire
 		(pts
@@ -4214,16 +4952,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 78.74) (xy 185.42 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19c1c991-b831-4107-a31a-010b63c6a655")
-	)
-	(wire
-		(pts
 			(xy 58.42 55.88) (xy 58.42 58.42)
 		)
 		(stroke
@@ -4244,33 +4972,23 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 63.5) (xy 195.58 69.85)
+			(xy 152.4 86.36) (xy 152.4 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "23b51778-7198-4116-befd-303ce0babd7a")
+		(uuid "22151d0a-ee79-4365-b047-11f4bd4ca5df")
 	)
 	(wire
 		(pts
-			(xy 186.69 68.58) (xy 199.39 68.58)
+			(xy 152.4 59.69) (xy 163.83 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "23d1d171-c6dc-4804-8ffb-19593934a217")
-	)
-	(wire
-		(pts
-			(xy 195.58 52.07) (xy 195.58 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "240db7ad-2a89-432a-8b8c-53fd0c6bbc0c")
+		(uuid "23dffc17-1439-433b-9c56-ec8115644572")
 	)
 	(wire
 		(pts
@@ -4281,6 +4999,26 @@
 			(type default)
 		)
 		(uuid "2871c82a-e26f-435e-9978-ff4a6a31f747")
+	)
+	(wire
+		(pts
+			(xy 152.4 59.69) (xy 152.4 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "295db874-119b-45c8-84d3-91e036a033c3")
+	)
+	(wire
+		(pts
+			(xy 189.23 69.85) (xy 189.23 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2af1939f-c314-4d6c-a577-68b714717568")
 	)
 	(wire
 		(pts
@@ -4304,33 +5042,23 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 72.39) (xy 153.67 78.74)
+			(xy 176.53 44.45) (xy 176.53 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3928b093-f0b9-4195-a6ad-882a55404cc7")
+		(uuid "3484f194-c7e0-4985-ab7d-5888037c7068")
 	)
 	(wire
 		(pts
-			(xy 207.01 68.58) (xy 207.01 78.74)
+			(xy 193.04 74.93) (xy 193.04 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3a8282cc-2520-4496-9b9f-afa70cab336c")
-	)
-	(wire
-		(pts
-			(xy 156.21 60.96) (xy 149.86 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c5aaf98-3fbf-4274-b0bf-2f10ecf84bc7")
+		(uuid "366af66b-7c76-449a-b040-4a20b9b02dff")
 	)
 	(wire
 		(pts
@@ -4354,6 +5082,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 46.99) (xy 176.53 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50e26acc-be18-4562-be9b-8441e92ef53b")
+	)
+	(wire
+		(pts
 			(xy 101.6 71.12) (xy 101.6 72.39)
 		)
 		(stroke
@@ -4364,26 +5102,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 60.96) (xy 149.86 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53fe2136-c625-4f21-9eef-02882214ff0b")
-	)
-	(wire
-		(pts
-			(xy 176.53 78.74) (xy 185.42 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "541c36ef-e0bf-46f8-963e-4ee24d9dcb57")
-	)
-	(wire
-		(pts
 			(xy 72.39 53.34) (xy 74.93 53.34)
 		)
 		(stroke
@@ -4391,6 +5109,16 @@
 			(type default)
 		)
 		(uuid "560aa15e-35e1-413f-a4ce-1a010d166e98")
+	)
+	(wire
+		(pts
+			(xy 193.04 64.77) (xy 193.04 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ab2d8be-cc6f-4723-9dd1-353691c5a057")
 	)
 	(wire
 		(pts
@@ -4414,33 +5142,13 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 77.47) (xy 191.77 72.39)
+			(xy 161.29 88.9) (xy 176.53 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "637feacc-14b5-409d-b143-77cc6a39ec0c")
-	)
-	(wire
-		(pts
-			(xy 186.69 52.07) (xy 195.58 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "687b7ec1-1ea0-4a6d-8114-d5cc26be3260")
-	)
-	(wire
-		(pts
-			(xy 185.42 78.74) (xy 207.01 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "693a202e-00b1-4720-ab95-80762ac48ebe")
+		(uuid "6a6c5592-e03a-4a7d-ad4a-8ee41d5aaf21")
 	)
 	(wire
 		(pts
@@ -4484,36 +5192,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 77.47) (xy 191.77 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fc42fb0-f4ea-48e5-8c43-d2824c68c5df")
-	)
-	(wire
-		(pts
-			(xy 153.67 72.39) (xy 191.77 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7075711c-6265-4091-b833-928f0a5d074e")
-	)
-	(wire
-		(pts
-			(xy 146.05 68.58) (xy 156.21 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70dfe6af-a507-454b-830f-20af429e33ab")
-	)
-	(wire
-		(pts
 			(xy 63.5 58.42) (xy 76.2 58.42)
 		)
 		(stroke
@@ -4521,6 +5199,16 @@
 			(type default)
 		)
 		(uuid "74b23e75-69c3-4a59-833c-54fbe603b665")
+	)
+	(wire
+		(pts
+			(xy 161.29 64.77) (xy 161.29 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75ae5762-be06-4821-823b-75291a833e73")
 	)
 	(wire
 		(pts
@@ -4544,16 +5232,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 50.8) (xy 195.58 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e1a522e-2566-4cef-a804-81f732d68212")
-	)
-	(wire
-		(pts
 			(xy 167.64 149.86) (xy 167.64 152.4)
 		)
 		(stroke
@@ -4561,16 +5239,6 @@
 			(type default)
 		)
 		(uuid "7f7abd34-b348-47af-942b-2f38bfd7fcf8")
-	)
-	(wire
-		(pts
-			(xy 191.77 66.04) (xy 191.77 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8095441f-44bc-47e4-8968-1fec669ad807")
 	)
 	(wire
 		(pts
@@ -4594,16 +5262,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 52.07) (xy 186.69 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "869eb35a-2bd7-467e-9f06-7cc8d1c79e07")
-	)
-	(wire
-		(pts
 			(xy 96.52 66.04) (xy 96.52 72.39)
 		)
 		(stroke
@@ -4624,6 +5282,26 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 74.93) (xy 176.53 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "881596f9-e88f-4bc1-9f85-23a2e1bb46ed")
+	)
+	(wire
+		(pts
+			(xy 152.4 76.2) (xy 152.4 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89105d8b-786c-4d35-a902-376ecfdbd4c6")
+	)
+	(wire
+		(pts
 			(xy 267.97 63.5) (xy 267.97 71.12)
 		)
 		(stroke
@@ -4631,16 +5309,6 @@
 			(type default)
 		)
 		(uuid "89348390-fa2d-4036-8955-736698e23e01")
-	)
-	(wire
-		(pts
-			(xy 191.77 66.04) (xy 186.69 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89f306d3-bb63-417e-bd9d-ac93df1c6db3")
 	)
 	(wire
 		(pts
@@ -4661,16 +5329,6 @@
 			(type default)
 		)
 		(uuid "93aef43d-beb1-4472-9159-fb699577425b")
-	)
-	(wire
-		(pts
-			(xy 146.05 66.04) (xy 156.21 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b82b65d-81a3-4601-89ed-3304efe6c1ad")
 	)
 	(wire
 		(pts
@@ -4704,6 +5362,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 57.15) (xy 193.04 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a320e824-339b-4ed5-98ee-831a0e824e59")
+	)
+	(wire
+		(pts
 			(xy 74.93 77.47) (xy 74.93 83.82)
 		)
 		(stroke
@@ -4711,6 +5379,16 @@
 			(type default)
 		)
 		(uuid "a4afb4ed-4de4-4a1a-941d-f642f59329d4")
+	)
+	(wire
+		(pts
+			(xy 189.23 59.69) (xy 198.12 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6c46c41-96f0-4d47-9308-823b011c56c3")
 	)
 	(wire
 		(pts
@@ -4724,16 +5402,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 78.74) (xy 168.91 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae236653-5d76-4912-9061-8f2e8ddc6ae0")
-	)
-	(wire
-		(pts
 			(xy 63.5 82.55) (xy 76.2 82.55)
 		)
 		(stroke
@@ -4744,13 +5412,33 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 63.5) (xy 153.67 63.5)
+			(xy 163.83 64.77) (xy 161.29 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b5f53449-0938-455a-a429-d42169cacd03")
+		(uuid "b39bc2b2-29ea-462d-88b0-e79926f52e2c")
+	)
+	(wire
+		(pts
+			(xy 148.59 69.85) (xy 163.83 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4846034-ec74-41eb-a0b2-4d995d0e01a3")
+	)
+	(wire
+		(pts
+			(xy 189.23 76.2) (xy 193.04 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba902c66-cf77-4a67-bab6-fa996c647579")
 	)
 	(wire
 		(pts
@@ -4771,16 +5459,6 @@
 			(type default)
 		)
 		(uuid "c3e64c81-81e9-4b17-ae0c-d0a1cf96b5cd")
-	)
-	(wire
-		(pts
-			(xy 153.67 63.5) (xy 153.67 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c63e785a-11e8-4d51-a3fb-064994752478")
 	)
 	(wire
 		(pts
@@ -4824,6 +5502,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 86.36) (xy 161.29 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2b88a73-351b-40ae-b3b9-5247ffd3be6c")
+	)
+	(wire
+		(pts
 			(xy 167.64 137.16) (xy 167.64 139.7)
 		)
 		(stroke
@@ -4831,6 +5519,16 @@
 			(type default)
 		)
 		(uuid "daf9014f-869b-450f-9bdd-6f1892c3b987")
+	)
+	(wire
+		(pts
+			(xy 193.04 64.77) (xy 189.23 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0858157-52d5-4588-885d-18b970c56f4b")
 	)
 	(wire
 		(pts
@@ -4871,6 +5569,36 @@
 			(type default)
 		)
 		(uuid "ebcd2734-ba28-49f9-9d9a-240b33ffbb52")
+	)
+	(wire
+		(pts
+			(xy 176.53 46.99) (xy 176.53 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed2d6ec0-bc9b-43af-a268-2559fd8a514e")
+	)
+	(wire
+		(pts
+			(xy 152.4 76.2) (xy 189.23 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4afe64c-dd90-432d-ac82-66d6201fdaaf")
+	)
+	(wire
+		(pts
+			(xy 193.04 49.53) (xy 193.04 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6de73cf-e026-4d2a-ae5e-5dd175e6c07d")
 	)
 	(wire
 		(pts
@@ -4922,16 +5650,6 @@
 		)
 		(uuid "07433fe2-95af-4d41-8d11-a1fb7895d2d3")
 	)
-	(label "Pulse Enable"
-		(at 146.05 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0b33221b-1abf-4d73-8287-0a93936067fd")
-	)
 	(label "Limit Sw1"
 		(at 72.39 53.34 180)
 		(effects
@@ -4941,6 +5659,16 @@
 			(justify right bottom)
 		)
 		(uuid "417f332d-84f7-49ea-adc4-00d8d43acd92")
+	)
+	(label "Pul sig"
+		(at 198.12 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "42c25487-1d69-40f2-8a34-295848259e5e")
 	)
 	(label "Dir"
 		(at 227.33 90.17 180)
@@ -4952,6 +5680,16 @@
 		)
 		(uuid "4a829d0a-b4eb-4e8c-8513-4664b1105a46")
 	)
+	(label "Pulse Enable"
+		(at 148.59 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "694bd38d-2090-42b7-a29c-16c6742b03c1")
+	)
 	(label "Pul sig"
 		(at 207.01 144.78 180)
 		(effects
@@ -4961,16 +5699,6 @@
 			(justify right bottom)
 		)
 		(uuid "711d1ee7-390e-42d4-a40c-98e0625305c7")
-	)
-	(label "Pul sig"
-		(at 146.05 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9c01471f-3059-44fe-ade4-abd956527a10")
 	)
 	(label "Dir Sig"
 		(at 58.42 55.88 0)
@@ -5259,16 +5987,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 203.2 68.58 90)
+		(lib_id "DishSymbols:RES 6.8k 0805")
+		(at 193.04 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "059f2351-9a41-462d-855d-fdcdf204e1dc")
-		(property "Reference" "C4"
-			(at 204.47 62.23 90)
+		(fields_autoplaced yes)
+		(uuid "0975653b-aa40-4aa5-8938-a0d0836461a1")
+		(property "Reference" "R21"
+			(at 195.58 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5276,8 +6005,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10nF"
-			(at 205.74 64.77 90)
+		(property "Value" "6.8k"
+			(at 195.58 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5285,8 +6014,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 207.01 67.6148 0)
+		(property "Footprint" "DishFootprints:R_0805"
+			(at 191.262 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5294,8 +6023,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 203.2 68.58 0)
+		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf"
+			(at 193.04 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5303,8 +6032,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 203.2 68.58 0)
+		(property "Description" "Resistor"
+			(at 193.04 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5312,24 +6041,88 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
-			(at 203.2 68.58 0)
+		(property "Package" "0802"
+			(at 193.04 71.12 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Susumu"
+			(at 193.04 71.12 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG2012P-682-B-T5"
+			(at 193.04 71.12 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 193.04 71.12 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RG20P6.8KBCT-ND"
+			(at 193.04 71.12 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/susumu/RG2012P-682-B-T5/1240804"
+			(at 193.04 71.12 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.09"
+			(at 193.04 71.12 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 193.04 71.12 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "c006ca41-d1b6-4eb1-a5e6-6f637d612f08")
+			(uuid "6009e57e-8f24-456e-bc1f-7f4670b7eab6")
 		)
 		(pin "1"
-			(uuid "f33343e9-0b41-46bc-9ce6-87c487493c43")
+			(uuid "06b160de-2dfe-4044-9f65-c4ca63f8d411")
 		)
 		(instances
 			(project "simple_dish_manual_controller"
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
-					(reference "C4")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -5695,6 +6488,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 176.53 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "274912ca-2be9-459a-aaa5-0557e2f7e386")
+		(property "Reference" "#PWR033"
+			(at 176.53 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 176.53 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 176.53 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "304362e5-b7bd-4e68-8aa0-ddfbf3e8082d")
+		)
+		(instances
+			(project "simple_dish_manual_controller"
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:PZT2222A")
 		(at 212.09 144.78 0)
 		(unit 1)
@@ -5839,72 +6698,6 @@
 			(project "simple_dish_manual_controller"
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 195.58 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "339d3903-ab03-4581-b37a-dd74a8b35a34")
-		(property "Reference" "#PWR043"
-			(at 195.58 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 195.58 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 195.58 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 195.58 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b4ca7f38-5982-4a0d-b650-32a37a3649a3")
-		)
-		(instances
-			(project "simple_dish_manual_controller"
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
-					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -6056,6 +6849,166 @@
 		)
 	)
 	(symbol
+		(lib_id "DishSymbols:NE555D")
+		(at 176.53 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45bb958f-1e47-4f97-aca2-b4947d3c1630")
+		(property "Reference" "U4"
+			(at 178.6733 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NE555D"
+			(at 178.6733 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DishFootprints:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 198.12 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ne555.pdf"
+			(at 198.12 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Precision Timers, 555 compatible, SOIC-8"
+			(at 176.53 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "SOIC-8"
+			(at 176.53 64.77 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "TI"
+			(at 176.53 64.77 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NE555D"
+			(at 176.53 64.77 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 176.53 64.77 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "296-16792-ND"
+			(at 176.53 64.77 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/texas-instruments/NE555D/280641"
+			(at 176.53 64.77 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.64"
+			(at 176.53 64.77 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 176.53 64.77 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "0afcd121-3c7d-4a79-846e-da635f038bd3")
+		)
+		(pin "5"
+			(uuid "9591cc62-6380-4002-bdda-af047e91b9e8")
+		)
+		(pin "7"
+			(uuid "6c896c5a-f49f-495e-90b7-c3622a6faf19")
+		)
+		(pin "2"
+			(uuid "b44740dd-3b17-4e5e-ac5a-749bcbf9f029")
+		)
+		(pin "4"
+			(uuid "117c25dc-0e8e-4767-ace7-8b24277f94bf")
+		)
+		(pin "3"
+			(uuid "21dd0e3f-1fae-42d0-8325-4ad9b2e8cdd6")
+		)
+		(pin "8"
+			(uuid "2249e870-68b7-4db6-a1ca-e76654fa1534")
+		)
+		(pin "1"
+			(uuid "fd61bcda-94d4-4940-ac47-7ef1f0227f13")
+		)
+		(instances
+			(project "simple_dish_manual_controller"
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 74.93 67.31 0)
 		(unit 1)
@@ -6123,81 +7076,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 149.86 62.23 0)
+		(lib_id "DishSymbols:CAP 10nF 0805")
+		(at 161.29 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "513cc5e1-038e-4341-bfd3-2b5bc955655b")
-		(property "Reference" "#PWR030"
-			(at 149.86 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 147.32 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 149.86 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 149.86 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "153cb66a-01ea-45f1-9a3a-f1aaee3425eb")
-		)
-		(instances
-			(project "simple_dish_manual_controller"
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
-					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 172.72 78.74 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "53e98492-f1c3-4237-91b7-0c122b749820")
-		(property "Reference" "C5"
-			(at 173.99 82.55 90)
+		(fields_autoplaced yes)
+		(uuid "63bdab04-827d-4926-9146-4474a5a2d561")
+		(property "Reference" "C7"
+			(at 165.1 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6205,8 +7094,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 175.26 85.09 90)
+		(property "Value" "10uF"
+			(at 165.1 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6214,8 +7103,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 176.53 77.7748 0)
+		(property "Footprint" "DishFootprints:C_0805"
+			(at 162.2552 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6223,8 +7112,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 172.72 78.74 0)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
+			(at 161.29 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6232,8 +7121,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 172.72 78.74 0)
+		(property "Description" "10000 pF ±10% 10V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 161.29 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6241,169 +7130,88 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
-			(at 172.72 78.74 0)
+		(property "MF" "KYOCERA AVX"
+			(at 161.29 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "dd3259ab-68cd-4541-97ad-56e057574ce9")
+		(property "Package" "805"
+			(at 161.29 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KGM21NR71A103KT"
+			(at 161.29 82.55 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 161.29 82.55 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "478-KGM21NR71A103KTCT-ND"
+			(at 161.29 82.55 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR60G107ME11K/10701411"
+			(at 161.29 82.55 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.12"
+			(at 161.29 82.55 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 161.29 82.55 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "80687fa7-bb74-443f-923c-5ec572eb267e")
+			(uuid "67470f65-ec46-4a3a-9567-9606f0bd1722")
+		)
+		(pin "2"
+			(uuid "2c2ab747-98c9-4f54-add7-2bbe47fd9555")
 		)
 		(instances
 			(project "simple_dish_manual_controller"
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "NE555P Osc Chip SMD:NE555PS")
-		(at 156.21 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "54cbe33b-52d9-4247-8126-8af8a0a56c9e")
-		(property "Reference" "U4"
-			(at 171.45 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NE555PS"
-			(at 171.45 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "NE555P Osc Chip SMD:SOIC127P780X200-8N"
-			(at 182.88 155.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.arrow.com/en/products/ne555ps/texas-instruments"
-			(at 182.88 255.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Timers & Support Products Single Precision Timer 8-SO"
-			(at 156.21 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "2"
-			(at 182.88 455.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "595-NE555PS"
-			(at 182.88 555.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/NE555PS?qs=byeeYqUIh0M96aNh58eaoA%3D%3D"
-			(at 182.88 655.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Texas Instruments"
-			(at 182.88 755.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "NE555PS"
-			(at 182.88 855.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 156.21 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "986c1b6f-c5b3-4a0d-a64f-866b60f62e05")
-		)
-		(pin "8"
-			(uuid "4cfd59a5-9ef6-4f33-9fab-4f6fbbf7eeae")
-		)
-		(pin "7"
-			(uuid "421ff941-aeb5-4f22-a828-d9c42565015a")
-		)
-		(pin "1"
-			(uuid "933980f5-596d-45c8-8c97-83934bc2e294")
-		)
-		(pin "2"
-			(uuid "aa603da5-d6b8-463f-8410-8157487eef30")
-		)
-		(pin "4"
-			(uuid "62503d19-f56a-4119-bee5-03eb19963ea1")
-		)
-		(pin "5"
-			(uuid "db68a933-7544-4f28-9c97-47837d0c97ce")
-		)
-		(pin "6"
-			(uuid "3766fe71-0d55-4985-ba81-e52843b95302")
-		)
-		(instances
-			(project "simple_dish_manual_controller"
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
-					(reference "U4")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -6799,6 +7607,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 176.53 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74993450-43a7-4833-9079-04b4c4cd880d")
+		(property "Reference" "#PWR030"
+			(at 176.53 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.53 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54c45350-1786-4ceb-86b7-dc69d7154a0d")
+		)
+		(instances
+			(project "simple_dish_manual_controller"
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS32")
 		(at 110.49 158.75 0)
 		(unit 4)
@@ -6906,81 +7780,6 @@
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
 					(reference "U3")
 					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 195.58 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7d5afa80-6cb7-4209-a4ba-563383af31ce")
-		(property "Reference" "R2"
-			(at 199.39 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "820"
-			(at 199.39 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 193.802 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 195.58 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 195.58 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 195.58 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9877ed7d-c242-4a93-8fc1-34d728a85431")
-		)
-		(pin "2"
-			(uuid "eff96314-f3e1-4e55-896f-13a7a575e2d9")
-		)
-		(instances
-			(project "simple_dish_manual_controller"
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
-					(reference "R2")
-					(unit 1)
 				)
 			)
 		)
@@ -7716,6 +8515,148 @@
 		)
 	)
 	(symbol
+		(lib_id "DishSymbols:RES 820 0805")
+		(at 193.04 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0ad64d0-2cc5-4455-a036-74ddfa0e267e")
+		(property "Reference" "R20"
+			(at 195.58 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "820"
+			(at 195.58 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DishFootprints:R_0805"
+			(at 191.262 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "820 Ohms ±0.1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thin Film"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0805"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Susumu"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG2012P-821-B-T5"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RG20P820BCT-ND"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/susumu/RG2012P-821-B-T5/1240815"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.11"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "29478568-201b-4b55-9f7e-d8297d7d2031")
+		)
+		(pin "2"
+			(uuid "66077927-8c6d-4842-b873-645b3e861006")
+		)
+		(instances
+			(project "simple_dish_manual_controller"
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 214.63 149.86 0)
 		(unit 1)
@@ -8191,6 +9132,147 @@
 		)
 	)
 	(symbol
+		(lib_id "DishSymbols:CAP 100nF 0805")
+		(at 152.4 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "adfc562a-ef6c-4976-aa33-4a3cdd68d516")
+		(property "Reference" "C4"
+			(at 147.32 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 143.51 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DishFootprints:C_0805"
+			(at 153.3652 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR60G107ME11-01A.pdf"
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1 µF ±5% 10V Ceramic Capacitor U2J 0805 (2012 Metric)"
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Murata"
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "805-2 Murata"
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM21B7U1A104JA01L"
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "490-11592-1-ND"
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM21B7U1A104JA01L/2546740?s=N4IgjCBcpgLFoDGUBmBDANgZwKYBoQB7KAbRAHZYBWMKkAXQIAcAXKEAZRYCcBLAOwDmIAL4EwANgQhkkdNnxFSIAMwBOFQCY1DZm0iceA4WPBqAHDugzUmXAWKQyABganNz2FdCt2AVX5eFgB5FABZHDQsAFduHBACaPZ%2BADEEkABbAXYwZ1cCDLQADxy80QIAWghrWXl7JScQL1d6ETagA"
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.19"
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c0db77f3-9efe-4c92-93cb-de14f4810dc7")
+		)
+		(pin "1"
+			(uuid "704edd9e-af4f-48a5-9324-9387cc0fb983")
+		)
+		(instances
+			(project "simple_dish_manual_controller"
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS32")
 		(at 110.49 144.78 0)
 		(unit 3)
@@ -8492,148 +9574,6 @@
 			(project ""
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
 					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 185.42 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e0b93cdb-0b5a-4136-8845-8822aad8387f")
-		(property "Reference" "#PWR042"
-			(at 185.42 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 185.42 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 185.42 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 185.42 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 185.42 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e1565ea1-624e-4b1d-90bb-5b24116bbf4e")
-		)
-		(instances
-			(project "simple_dish_manual_controller"
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
-					(reference "#PWR042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 195.58 73.66 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e779e527-d629-4148-be89-7a14aa8cdb7e")
-		(property "Reference" "R4"
-			(at 196.596 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "6.8k"
-			(at 196.85 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 197.358 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 195.58 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 195.58 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 195.58 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "595e772d-9ea4-4278-b929-193273f4cc70")
-		)
-		(pin "1"
-			(uuid "332ebf7e-7725-49c0-96b4-6e2453fe4ea8")
-		)
-		(instances
-			(project "simple_dish_manual_controller"
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
-					(reference "R4")
 					(unit 1)
 				)
 			)
