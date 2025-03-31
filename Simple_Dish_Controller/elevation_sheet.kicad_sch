@@ -2713,6 +2713,273 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "DishSymbols:Conn_01x03_Pin"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "DishFootprints:PinHeader_1x03_P2.54mm_Vertical"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~https://app.adam-tech.com/products/download/data_sheet/201605/ph1-xx-ua-data-sheet.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Connector Header Through Hole 3 position 0.100\" (2.54mm)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "-"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Adam Tech"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "PH1-03-UA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DIS" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "2057-PH1-03-UA-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/adam-tech/PH1-03-UA/9830289"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.04"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Note" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "NE555P Osc Chip SMD:NE555PS"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2963,182 +3230,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_SPDT_312"
-			(pin_names
-				(offset 1)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SPDT_312"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Switch, single pole double throw"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "changeover single-pole double-throw spdt ON-ON"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_SPDT_312_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPDT_312_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4083,6 +4174,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 58.42) (xy 54.61 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "161b2151-e94c-4b79-a407-242f221dce2c")
+	)
+	(wire
+		(pts
 			(xy 143.51 144.78) (xy 147.32 144.78)
 		)
 		(stroke
@@ -4173,6 +4274,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 67.31) (xy 54.61 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2871c82a-e26f-435e-9978-ff4a6a31f747")
+	)
+	(wire
+		(pts
 			(xy 228.6 53.34) (xy 236.22 53.34)
 		)
 		(stroke
@@ -4220,16 +4331,6 @@
 			(type default)
 		)
 		(uuid "3c5aaf98-3fbf-4274-b0bf-2f10ecf84bc7")
-	)
-	(wire
-		(pts
-			(xy 48.26 67.31) (xy 43.18 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4059c9bd-776e-4cf7-a02a-2772086ce9c9")
 	)
 	(wire
 		(pts
@@ -4430,6 +4531,16 @@
 			(type default)
 		)
 		(uuid "7bcfe7e2-2ae8-420a-95ed-bed741e0125d")
+	)
+	(wire
+		(pts
+			(xy 52.07 69.85) (xy 58.42 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bf1cf61-2d8f-417d-b283-01b9e52128ba")
 	)
 	(wire
 		(pts
@@ -4693,6 +4804,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 64.77) (xy 58.42 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0234ba9-48b7-4652-bb43-ab5f89dd04a1")
+	)
+	(wire
+		(pts
 			(xy 232.41 82.55) (xy 238.76 82.55)
 		)
 		(stroke
@@ -4760,16 +4881,6 @@
 			(type default)
 		)
 		(uuid "f8fe94dc-7333-46b6-8f16-554d09a3c489")
-	)
-	(wire
-		(pts
-			(xy 43.18 67.31) (xy 43.18 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f92281f7-09b2-4a64-8c00-49bde36a31f9")
 	)
 	(wire
 		(pts
@@ -6547,7 +6658,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 43.18 62.23 0)
+		(at 54.61 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6555,7 +6666,7 @@
 		(dnp no)
 		(uuid "6e465abc-84a1-42b6-acaf-a4b3471bb298")
 		(property "Reference" "#PWR09"
-			(at 43.18 66.04 0)
+			(at 54.61 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6564,7 +6675,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 43.18 58.42 0)
+			(at 54.61 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6572,7 +6683,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 62.23 0)
+			(at 54.61 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6581,7 +6692,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 62.23 0)
+			(at 54.61 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6590,7 +6701,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 43.18 62.23 0)
+			(at 54.61 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6875,6 +6986,148 @@
 		)
 	)
 	(symbol
+		(lib_id "DishSymbols:Conn_01x03_Pin")
+		(at 46.99 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7eab88b7-05c6-467c-8dd1-bb8157ee7eec")
+		(property "Reference" "J6"
+			(at 46.99 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 46.99 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "DishFootprints:PinHeader_1x03_P2.54mm_Vertical"
+			(at 46.99 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~https://app.adam-tech.com/products/download/data_sheet/201605/ph1-xx-ua-data-sheet.pdf"
+			(at 46.99 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector Header Through Hole 3 position 0.100\" (2.54mm)"
+			(at 46.99 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "-"
+			(at 46.99 67.31 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Adam Tech"
+			(at 46.99 67.31 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PH1-03-UA"
+			(at 46.99 67.31 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 46.99 67.31 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "2057-PH1-03-UA-ND"
+			(at 46.99 67.31 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/adam-tech/PH1-03-UA/9830289"
+			(at 46.99 67.31 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.04"
+			(at 46.99 67.31 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 46.99 67.31 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "56c005b4-47af-4fc6-8290-df05657c2e87")
+		)
+		(pin "1"
+			(uuid "3bff1124-5bfd-47af-9ce3-e406f1aef309")
+		)
+		(pin "2"
+			(uuid "1910faf5-0cf0-4e78-8c0a-acaf97c35bca")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 69.85 172.72 0)
 		(unit 1)
@@ -7002,85 +7255,6 @@
 			(project "simple_dish_manual_controller"
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
 					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPDT_312")
-		(at 53.34 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "86e80fff-aa4a-4d88-8736-bd33c706daa5")
-		(property "Reference" "SW2"
-			(at 53.34 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPDT_312"
-			(at 53.34 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "SPDT-90-Deg-On-Off-On:B18JH"
-			(at 53.34 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 53.34 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 53.34 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "7e96f264-c2d3-4a78-853a-61ff7051322d")
-		)
-		(pin "1"
-			(uuid "f6f0a9d8-8372-4fe7-8920-9e00047f23fe")
-		)
-		(pin "3"
-			(uuid "339ace4e-81f3-4834-8367-6bf8fe634de1")
-		)
-		(instances
-			(project "simple_dish_manual_controller"
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/a4809f50-064d-4cb7-b1f7-56bf09fb0ea4"
-					(reference "SW2")
 					(unit 1)
 				)
 			)

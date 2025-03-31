@@ -2082,210 +2082,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x03_Pin"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x03_Pin"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x03, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x03_Pin_1_1"
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2907,6 +2703,273 @@
 						)
 					)
 					(number "MH2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DishSymbols:Conn_01x03_Pin"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "DishFootprints:PinHeader_1x03_P2.54mm_Vertical"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~https://app.adam-tech.com/products/download/data_sheet/201605/ph1-xx-ua-data-sheet.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Connector Header Through Hole 3 position 0.100\" (2.54mm)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "-"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Adam Tech"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "PH1-03-UA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DIS" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "2057-PH1-03-UA-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/adam-tech/PH1-03-UA/9830289"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.04"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Note" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5072,6 +5135,148 @@
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/809ce83c-7739-411d-92b7-06d9bcd34d12"
 					(reference "U3")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DishSymbols:Conn_01x03_Pin")
+		(at 49.53 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ad41b00-96fb-415c-8a9c-af98bb053ba6")
+		(property "Reference" "J4"
+			(at 50.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 50.8 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "DishFootprints:PinHeader_1x03_P2.54mm_Vertical"
+			(at 49.53 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~https://app.adam-tech.com/products/download/data_sheet/201605/ph1-xx-ua-data-sheet.pdf"
+			(at 49.53 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector Header Through Hole 3 position 0.100\" (2.54mm)"
+			(at 49.53 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "-"
+			(at 49.53 68.58 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Adam Tech"
+			(at 49.53 68.58 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PH1-03-UA"
+			(at 49.53 68.58 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 49.53 68.58 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "2057-PH1-03-UA-ND"
+			(at 49.53 68.58 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/adam-tech/PH1-03-UA/9830289"
+			(at 49.53 68.58 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.04"
+			(at 49.53 68.58 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 49.53 68.58 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2883e9c4-929e-4cc4-b20d-c0c1d67b6ff6")
+		)
+		(pin "3"
+			(uuid "ee7513f4-89cc-4676-999c-fe8a30fb7a77")
+		)
+		(pin "1"
+			(uuid "3f12d44a-e62c-4d77-8549-25c3b4c75eac")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/809ce83c-7739-411d-92b7-06d9bcd34d12"
+					(reference "J4")
+					(unit 1)
 				)
 			)
 		)
@@ -7577,7 +7782,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eecb637c-e233-4c5b-8353-4577709d1f2d")
-		(property "Reference" "U2"
+		(property "Reference" "a"
 			(at 85.0817 48.26 0)
 			(effects
 				(font
@@ -7673,7 +7878,7 @@
 		(instances
 			(project "simple_dish_manual_controller"
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/809ce83c-7739-411d-92b7-06d9bcd34d12"
-					(reference "U2")
+					(reference "a")
 					(unit 3)
 				)
 			)
@@ -7882,76 +8087,6 @@
 			(project "simple_dish_manual_controller"
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/809ce83c-7739-411d-92b7-06d9bcd34d12"
 					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 49.53 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fd03e467-e4f3-4c09-90f8-8d726160a4bd")
-		(property "Reference" "J4"
-			(at 50.8 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x03_Pin"
-			(at 50.8 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 49.53 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 49.53 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 49.53 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "0342f73f-8aff-41e9-948a-f2277c09e380")
-		)
-		(pin "1"
-			(uuid "fb829c83-719a-4f37-8b6d-08865a12b106")
-		)
-		(pin "2"
-			(uuid "26d5c652-50d9-4e47-9f4c-b3304c57a863")
-		)
-		(instances
-			(project ""
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5/809ce83c-7739-411d-92b7-06d9bcd34d12"
-					(reference "J4")
 					(unit 1)
 				)
 			)

@@ -1,8 +1,14 @@
-# Parts Library for the Dish Project
+# Symbol/Footprint/3D Libraries for the Dish Project
 
-Open source - free to use symbol, footprint and 3D files for the project:
- - ./symbols/Dish.lib - Symbols to use in the project
- - ./footprints/Dish.lib - 
+There are 2 categories of libraries 
+1. Parts with open source or non-license restricted symbol/footprint files
+2. Parts that are license restricted. These files are provided by the supplier and stipulate license restrictions. So you have to go get these yourself and add them to the library. Instructions below.
+
+# 📦 Free - Open Source - No License Restrictions
+
+The parts for this project are in the following library files:
+ - ./symbols/DishSymbols.kicad_sym - Symbols to use in the project
+ - ./footprints/DishFootprints.pretty - Footprints go in this directory
 
 
 

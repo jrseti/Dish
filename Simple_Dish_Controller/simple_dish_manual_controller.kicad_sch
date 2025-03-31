@@ -12,7 +12,216 @@
 		(comment 1 "Provides pulses to the ISV57T motors")
 	)
 	(lib_symbols
-		(symbol "Cap_SMD_22uF_0805:GRM219R61C226ME15K"
+		(symbol "DishSymbols:AMS1117-5.0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AMS1117-5.0"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "DishFootprints:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Linear Voltage Regulator IC Positive Fixed 1 Output 1A SOT-223-3L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "SOT-223-3L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "EVVO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "AMS1117-5.0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DIS" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "5272-AMS1117-5.0CT-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/evvo/AMS1117-5-0/24370130"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.21"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Note" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AMS1117-5.0_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AMS1117-5.0_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DishSymbols:CAP 22uF 0805"
 			(pin_names
 				(offset 1.016)
 			)
@@ -28,7 +237,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "GRM219R61C226ME15K"
+			(property "Value" "22uF"
 				(at 0 -5.0885 0)
 				(effects
 					(font
@@ -37,7 +246,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "GRM219R61C226ME15K:CAPC2012X100N"
+			(property "Footprint" "DishFootprints:CAP 22uF 0805"
 				(at 0 0 0)
 				(effects
 					(font
@@ -47,7 +256,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM219R61C226ME15-01.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -56,7 +265,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "22 µF ±20% 16V Ceramic Capacitor X5R 0805 (2012 Metric)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -66,16 +275,6 @@
 				)
 			)
 			(property "MF" "Murata"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "SMD Capacitor X5R(EIA) with Capacitance: 22uF Tol. 20%. Rated Voltage: 16Vdc"
 				(at 0 0 0)
 				(effects
 					(font
@@ -95,7 +294,7 @@
 					(hide yes)
 				)
 			)
-			(property "Price" "None"
+			(property "Price" "0.23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -105,50 +304,55 @@
 					(hide yes)
 				)
 			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/GRM219R61C226ME15K/Murata/view-part/?ref=snap"
+			(property "MPN" "GRM219R61C226ME15K"
 				(at 0 0 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "MP" "GRM219R61C226ME15K"
+			(property "DIS" "Digikey"
 				(at 0 0 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Availability" "In Stock"
+			(property "DPN" "490-GRM219R61C226ME15KCT-ND"
 				(at 0 0 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Check_prices" "https://www.snapeda.com/parts/GRM219R61C226ME15K/Murata/view-part/?ref=eda"
+			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15K/11618740?s=N4IgTCBcDaIOICUCyYCMBOBA2VBhMYWSAoqgKwDSIAugL5A"
 				(at 0 0 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(symbol "GRM219R61C226ME15K_0_0"
+			(property "Note" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CAP 22uF 0805_0_0"
 				(rectangle
-					(start 0 -1.9069)
-					(end 0.635 1.905)
+					(start 0 1.905)
+					(end 0.635 -1.9069)
 					(stroke
 						(width 0.1)
 						(type default)
@@ -207,7 +411,427 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Screw_Terminal_01x02"
+		(symbol "DishSymbols:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "DishFootprints:PinHeader_1x02_P2.54mm_Vertical"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/201605/ph1-xx-ua-data-sheet.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Connector Header Through Hole 2 position 0.100\" (2.54mm)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "-"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Adam Tech"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "PH1-02-UA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DIS" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "2057-PH1-02-UA-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/adam-tech/PH1-02-UA/9830266"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.03"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Note" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DishSymbols:RES 1.5k 0805"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1k5"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "DishFootprints:R_0805"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1.5 kOhms ±0.1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thin Film"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "0805"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Susumu"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "RG2012P-152-B-T5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DIS" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "RG20P1.5KBCT-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/susumu/RG2012P-152-B-T5/1240682"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.9"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Note" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RES 1.5k 0805_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RES 1.5k 0805_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DishSymbols:Screw_Terminal_01x02"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -231,7 +855,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "DishFootprints:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 				(at 0 0 0)
 				(effects
 					(font
@@ -240,7 +864,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://www.phoenixcontact.com/product/pdf/api/v1/MTcyOTEyOA?_realm=us&_locale=en-US&blocks=commercial-data%2Ctechnical-data%2Cdrawings%2Capprovals%2Cclassifications%2Cenvironmental-compliance-data%2Call-accessories"
 				(at 0 0 0)
 				(effects
 					(font
@@ -254,6 +878,78 @@
 				(effects
 					(font
 						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "-"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Phoenix Contact"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "1729128"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DIS" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "277-1247-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/phoenix-contact/1729128/260615"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.80"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Note" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -380,130 +1076,6 @@
 					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -687,279 +1259,6 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Regulator_Linear:AMS1117-5.0"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AMS1117-5.0"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-				(at 2.54 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AMS1117-5.0_0_1"
-				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AMS1117-5.0_1_1"
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "VO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_SPST"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SPST"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single Pole Single Throw (SPST) switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch lever"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_SPST_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.254) (xy 1.524 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPST_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1329,6 +1628,16 @@
 		)
 		(uuid "0ee3bdd8-922c-4626-a141-efcbbec3f913")
 	)
+	(text "SPST"
+		(exclude_from_sim no)
+		(at 114.3 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "14fd7cc5-9570-4ec9-ba2c-0030585e20ef")
+	)
 	(text "Notes:\n  This circuit separately drives 2 ISV57T-180 motors available thru omc-stepperonline.com. There is a full manual avalable for download.\n  This motor is driven by a 720Hz pulse produced by the 555 chip.\n  The switch is an on-off-on SPST switch. The center position is off.\n\nFor each motor:\n  - A 555 chip delivers a 720Hz pulse to the Pul+ pin on J1 or J2 if \"Pulse Enable\" is 5V.\n  - If the switch is in the \"up\" position, Pulse Enable is 5V and the 720Hz pulse is delivered to the Pul+ pin. Also, the Dir+ pin will be \"low\".\n  - If the switch is in the Off position, Pulse Enable and Direction is grounded.\n  - If the switch is in the \"down\" position, Pulse Enable is 5V and the 720Hz pulse is delivered to the Pul+ pin. Also, the Dir+ is set to 5V.\n\nParts:\n  The PCB will be SMD. Parts should be surface mount. Except where not applicable.\n  Board uses RJ45 (through hole) to connect to external devices."
 		(exclude_from_sim no)
 		(at 159.258 19.05 0)
@@ -1376,6 +1685,16 @@
 			(justify left)
 		)
 		(uuid "a1d1d4cb-61a8-43bc-a2c4-769b377f38b1")
+	)
+	(text "Power Switch"
+		(exclude_from_sim no)
+		(at 114.3 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b3a41c8e-1182-493f-b6b8-a8eb43191264")
 	)
 	(junction
 		(at 187.96 81.28)
@@ -1442,16 +1761,6 @@
 			(type default)
 		)
 		(uuid "1e1d2976-d874-430e-b9c5-9c22e294b13a")
-	)
-	(wire
-		(pts
-			(xy 119.38 86.36) (xy 123.19 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fb4ed47-663a-4ee9-8177-14496911d8c8")
 	)
 	(polyline
 		(pts
@@ -1545,6 +1854,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 86.36) (xy 123.19 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61d43eda-6303-4735-9378-147bc7d0303f")
+	)
+	(wire
+		(pts
 			(xy 203.2 81.28) (xy 203.2 83.82)
 		)
 		(stroke
@@ -1565,7 +1884,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 86.36) (xy 109.22 86.36)
+			(xy 106.68 86.36) (xy 113.03 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2684,6 +3003,60 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
 		)
 	)
@@ -2756,6 +3129,147 @@
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DishSymbols:Conn_01x02_Pin")
+		(at 115.57 81.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "055f2157-2947-432e-8074-7fc214a2dfc8")
+		(property "Reference" "J2"
+			(at 113.03 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 106.68 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DishFootprints:PinHeader_1x02_P2.54mm_Vertical"
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/201605/ph1-xx-ua-data-sheet.pdf"
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector Header Through Hole 2 position 0.100\" (2.54mm)"
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "-"
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Adam Tech"
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PH1-02-UA"
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "2057-PH1-02-UA-ND"
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/adam-tech/PH1-02-UA/9830266"
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.03"
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "81a9ab59-f36f-4639-a129-08f978ec3d91")
+		)
+		(pin "1"
+			(uuid "56eed69a-d4aa-462c-9083-1f59fea66328")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "J2")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -2890,6 +3404,291 @@
 		)
 	)
 	(symbol
+		(lib_id "DishSymbols:AMS1117-5.0")
+		(at 175.26 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "440d0da2-9017-49ec-9a83-a1e63f9dac10")
+		(property "Reference" "U1"
+			(at 175.26 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117-5.0"
+			(at 175.26 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "DishFootprints:SOT-223-3_TabPin2"
+			(at 175.26 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 177.8 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Linear Voltage Regulator IC Positive Fixed 1 Output 1A SOT-223-3L"
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "SOT-223-3L"
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "EVVO"
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AMS1117-5.0"
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "5272-AMS1117-5.0CT-ND"
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/evvo/AMS1117-5-0/24370130"
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.21"
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "170746f6-5b0c-4f51-8352-5d2df500b877")
+		)
+		(pin "3"
+			(uuid "44ea2f6c-d060-482a-9697-4700dfee33c7")
+		)
+		(pin "2"
+			(uuid "8edfa70f-6cc0-481b-87e8-6bc827712672")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DishSymbols:RES 1.5k 0805")
+		(at 203.2 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d999d08-5a71-4b84-bc1f-2d7d5555e1d6")
+		(property "Reference" "R1"
+			(at 205.74 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k5"
+			(at 205.74 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DishFootprints:R_0805"
+			(at 201.422 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf"
+			(at 203.2 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1.5 kOhms ±0.1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thin Film"
+			(at 203.2 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0805"
+			(at 203.2 87.63 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Susumu"
+			(at 203.2 87.63 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG2012P-152-B-T5"
+			(at 203.2 87.63 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 203.2 87.63 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RG20P1.5KBCT-ND"
+			(at 203.2 87.63 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/susumu/RG2012P-152-B-T5/1240682"
+			(at 203.2 87.63 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.09"
+			(at 203.2 87.63 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 203.2 87.63 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2f8236b0-8ed9-408d-ade0-7b0ca553ee64")
+		)
+		(pin "1"
+			(uuid "1745fcbf-14a0-4685-a8ca-bd4bf432879a")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 187.96 68.58 0)
 		(unit 1)
@@ -2955,113 +3754,45 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 74.93 78.74 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6e57de0e-9df3-42fb-98a8-f25ee87fd4e9")
-		(property "Reference" "J1"
-			(at 76.2 76.454 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 70.866 91.186 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal"
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "17a2c923-5bde-4bda-941a-50cb26469537")
-		)
-		(pin "2"
-			(uuid "b1e3bacf-b0bc-4da5-911b-40a90328cfbd")
-		)
-		(instances
-			(project ""
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 203.2 87.63 0)
+		(lib_id "DishSymbols:CAP 22uF 0805")
+		(at 162.56 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "74d3b14c-8ae6-4c83-aacb-a27044f86e88")
-		(property "Reference" "R1"
-			(at 205.74 86.3599 0)
+		(uuid "6b167063-b82d-4b4c-bb2d-0e9d3dfc4bbb")
+		(property "Reference" "C1"
+			(at 166.37 86.3599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "1k5"
-			(at 205.74 88.8999 0)
+		(property "Value" "22uF"
+			(at 166.37 88.8999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 201.422 87.63 90)
+		(property "Footprint" "DishFootprints:CAP 22uF 0805"
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM219R61C226ME15-01.pdf"
+			(at 162.56 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3069,8 +3800,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 203.2 87.63 0)
+		(property "Description" "22 µF ±20% 16V Ceramic Capacitor X5R 0805 (2012 Metric)"
+			(at 162.56 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3078,33 +3809,91 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 203.2 87.63 0)
+		(property "MF" "Murata"
+			(at 162.56 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "805-2 Murata"
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.23"
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM219R61C226ME15K"
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1 1)
 				)
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
-			(at 203.2 87.63 0)
+		(property "DIS" "Digikey"
+			(at 162.56 88.9 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "490-GRM219R61C226ME15KCT-ND"
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15K/11618740?s=N4IgTCBcDaIOICUCyYCMBOBA2VBhMYWSAoqgKwDSIAugL5A"
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "51e308cd-2bfa-41e1-bbc9-63c25474d4cb")
+			(uuid "b6db9444-27fa-40bc-9602-1f709f25b89c")
 		)
 		(pin "1"
-			(uuid "4d1c073b-d21e-4ed6-8c19-031525fdf331")
+			(uuid "12556557-9501-4e54-9e93-8d2a98fc0193")
 		)
 		(instances
 			(project ""
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "R1")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -3458,16 +4247,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Cap_SMD_22uF_0805:GRM219R61C226ME15K")
+		(lib_id "DishSymbols:CAP 22uF 0805")
 		(at 187.96 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "af27fcca-82eb-45cf-b951-5cd10ba0e1e8")
+		(fields_autoplaced yes)
+		(uuid "c0bb1324-76ec-446f-90f9-0139e40ec937")
 		(property "Reference" "C2"
-			(at 190.5 86.36 90)
+			(at 191.77 86.3599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3476,7 +4266,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 190.5 88.9 90)
+			(at 191.77 88.8999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3484,7 +4274,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Cap_SMD_22uF_0805:CAPC2012X100N"
+		(property "Footprint" "DishFootprints:CAP 22uF 0805"
 			(at 187.96 88.9 0)
 			(effects
 				(font
@@ -3494,7 +4284,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM219R61C226ME15-01.pdf"
 			(at 187.96 88.9 0)
 			(effects
 				(font
@@ -3503,7 +4293,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "22 µF ±20% 16V Ceramic Capacitor X5R 0805 (2012 Metric)"
 			(at 187.96 88.9 0)
 			(effects
 				(font
@@ -3513,16 +4303,6 @@
 			)
 		)
 		(property "MF" "Murata"
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "SMD Capacitor X5R(EIA) with Capacitance: 22uF Tol. 20%. Rated Voltage: 16Vdc"
 			(at 187.96 88.9 0)
 			(effects
 				(font
@@ -3542,7 +4322,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "None"
+		(property "Price" "0.23"
 			(at 187.96 88.9 0)
 			(effects
 				(font
@@ -3552,59 +4332,56 @@
 				(hide yes)
 			)
 		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/GRM219R61C226ME15K/Murata/view-part/?ref=snap"
+		(property "MPN" "GRM219R61C226ME15K"
 			(at 187.96 88.9 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "MP" "GRM219R61C226ME15K"
+		(property "DIS" "Digikey"
 			(at 187.96 88.9 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Availability" "In Stock"
+		(property "DPN" "490-GRM219R61C226ME15KCT-ND"
 			(at 187.96 88.9 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Check_prices" "https://www.snapeda.com/parts/GRM219R61C226ME15K/Murata/view-part/?ref=eda"
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15K/11618740?s=N4IgTCBcDaIOICUCyYCMBOBA2VBhMYWSAoqgKwDSIAugL5A"
 			(at 187.96 88.9 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "Note" ""
 			(at 187.96 88.9 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "0d7b5309-8ce1-4759-a374-d04587b4ddb3")
+			(uuid "81415541-2723-4c7d-b5c7-f71c77ea6204")
 		)
 		(pin "1"
-			(uuid "f0862dce-cf97-4c4a-85f8-3ebf83e8322a")
+			(uuid "9950fe92-14fe-4038-91be-d5d38c163f0f")
 		)
 		(instances
 			(project "simple_dish_manual_controller"
@@ -3616,253 +4393,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:AMS1117-5.0")
-		(at 175.26 81.28 0)
+		(lib_id "DishSymbols:Screw_Terminal_01x02")
+		(at 74.93 78.74 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c4f60e50-a722-4a51-aa21-cd2d61969763")
-		(property "Reference" "U1"
-			(at 175.26 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AMS1117-5.0"
-			(at 175.26 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 175.26 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-			(at 177.8 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223"
-			(at 175.26 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 175.26 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "07a37f9a-20eb-4500-b146-35a1272adb73")
-		)
-		(pin "3"
-			(uuid "d63b5ac9-4c54-4e02-a86a-43120eb05204")
-		)
-		(pin "2"
-			(uuid "0d06bcff-161d-4d58-a147-6ac13c6e77ef")
-		)
-		(instances
-			(project ""
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Cap_SMD_22uF_0805:GRM219R61C226ME15K")
-		(at 162.56 88.9 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d0c30599-9279-408c-ad7c-0369518ccec5")
-		(property "Reference" "C1"
-			(at 165.1 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "22uF"
-			(at 165.1 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Cap_SMD_22uF_0805:CAPC2012X100N"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Murata"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "SMD Capacitor X5R(EIA) with Capacitance: 22uF Tol. 20%. Rated Voltage: 16Vdc"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "805-2 Murata"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/GRM219R61C226ME15K/Murata/view-part/?ref=snap"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "GRM219R61C226ME15K"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/GRM219R61C226ME15K/Murata/view-part/?ref=eda"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "782fc02c-7936-4717-8ae9-31edf479ebd3")
-		)
-		(pin "1"
-			(uuid "a305bc4d-6bde-4507-92b0-e6d6179ffbed")
-		)
-		(instances
-			(project ""
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 114.3 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "df0dc37f-2fd9-4289-a612-93908a5a729c")
-		(property "Reference" "SW1"
-			(at 114.3 82.55 0)
+		(uuid "ce1b4de8-afa0-4f24-9c06-bc49d9c8346c")
+		(property "Reference" "J1"
+			(at 76.2 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3870,17 +4411,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SW_SPST"
-			(at 114.3 88.646 0)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 72.39 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 114.3 86.36 0)
+		(property "Footprint" "DishFootprints:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 74.93 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3888,8 +4430,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 114.3 86.36 0)
+		(property "Datasheet" "https://www.phoenixcontact.com/product/pdf/api/v1/MTcyOTEyOA?_realm=us&_locale=en-US&blocks=commercial-data%2Ctechnical-data%2Cdrawings%2Capprovals%2Cclassifications%2Cenvironmental-compliance-data%2Call-accessories"
+			(at 74.93 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3897,8 +4439,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 114.3 86.36 0)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 74.93 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3906,24 +4448,88 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
-			(at 114.3 86.36 0)
+		(property "Package" "-"
+			(at 74.93 78.74 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Phoenix Contact"
+			(at 74.93 78.74 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1729128"
+			(at 74.93 78.74 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 74.93 78.74 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "277-1247-ND"
+			(at 74.93 78.74 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/phoenix-contact/1729128/260615"
+			(at 74.93 78.74 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.80"
+			(at 74.93 78.74 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 74.93 78.74 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "f6a6dbb9-b359-40ad-a4c5-bd852a278999")
+			(uuid "c311ee21-d4c1-48e0-8911-73bebd4a2f5b")
 		)
 		(pin "1"
-			(uuid "8ea55dbb-7b2d-4c44-9768-6e89de51a0e6")
+			(uuid "85d525fb-63de-449f-888d-1daecee7de04")
 		)
 		(instances
 			(project ""
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "SW1")
+					(reference "J1")
 					(unit 1)
 				)
 			)
