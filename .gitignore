@@ -33,3 +33,5 @@ fp-info-cache
 #parts/supplier_parts/*
 !parts/supplier_parts/.gitkeep
 !parts/supplier_parts/DishFootprintsSupplier.pretty/.gitkeep
+
+utils/venv/** 
