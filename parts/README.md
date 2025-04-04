@@ -39,5 +39,12 @@ For each part below:
 
 1. Visit the manufacturer’s part page
 2. Download the symbol and footprint (usually `.bxl` or `.zip`)
-3. Use UltraLibrarian or KiCad’s tools to convert/import
+3. If files are not Kicad format use UltraLibrarian or KiCad’s tools to convert/import
 4. Match the footprint name shown below to maintain compatibility
+
+### Term Screw
+
+<img src="./images/screw_term_1x4pins_keystone_7767.jpg" width="64">
+
+This is a 
+
