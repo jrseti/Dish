@@ -1,0 +1,3 @@
+[submodule "third_party_symbols_and_footprints"]
+	path = third_party_symbols_and_footprints
+	url = git@github.com:jrseti/DishSymbolsAndFootprints.git

@@ -1,2396 +1,2804 @@
-(kicad_symbol_lib (version 20241209) (generator kicad_symbol_editor)
-  (symbol "4P2C" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-    (property "Reference" "J" (at -5.08 8.89 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "4P2C" (at 2.54 8.89 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 0 1.27 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 0 1.27 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "RJ connector, 4P2C (4 positions 2 connected)" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.00" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "4P2C RJ socket connector" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "4P2C*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "4P2C_0_1"
-      (polyline
-        (pts
-          (xy -6.35 3.175)
-          (xy -5.08 3.175)
-          (xy -5.08 3.175)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -6.35 1.905)
-          (xy -5.08 1.905)
-          (xy -5.08 1.905)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -6.35 0.635)
-          (xy -5.08 0.635)
-          (xy -5.08 0.635)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -6.35 -0.635)
-          (xy -5.08 -0.635)
-          (xy -5.08 -0.635)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -6.35 -3.175)
-          (xy -6.35 5.715)
-          (xy -1.27 5.715)
-          (xy 3.81 5.715)
-          (xy 3.81 4.445)
-          (xy 5.08 4.445)
-          (xy 5.08 3.175)
-          (xy 6.35 3.175)
-          (xy 6.35 -0.635)
-          (xy 5.08 -0.635)
-          (xy 5.08 -1.905)
-          (xy 3.81 -1.905)
-          (xy 3.81 -3.175)
-          (xy -6.35 -3.175)
-          (xy -6.35 -3.175)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 7.62 7.62) (end -7.62 -5.08)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-    (symbol "4P2C_1_1"
-      (pin passive line (at 10.16 2.54 180) (length 2.54)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 10.16 0 180) (length 2.54)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "7400" (in_bom yes) (on_board yes)
-    (property "Reference" "U" (at 0 1.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "7400" (at 0 -1.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.ti.com/lit/gpn/sn7400" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "quad 2-input NAND gate" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.00" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "TTL nand 2-input" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "DIP*W7.62mm* SO14*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-  )
-  (symbol "74LS08" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-    (property "Reference" "U" (at 0 1.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "74LS08" (at 0 -1.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "DishFootprints:SOIC-14_3.9x8.7mm_P1.27mm" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Quad And2" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "SOIC-14" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "TI" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "SN74LS08D" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "296-1632-5-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS08D/277278" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.82" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_locked" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_keywords" "TTL and2" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "DIP*W7.62mm*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "74LS08_1_1"
-      (arc (start 0 3.81) (mid 3.7934 0) (end 0 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy 0 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 -3.81)
-          (xy 0 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (pin input line (at -7.62 2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin input line (at -7.62 -2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin output line (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS08_1_2"
-      (arc (start -3.81 3.81) (mid -2.589 0) (end -3.81 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -3.81 3.81)
-          (xy -0.635 3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start 3.81 0) (mid 2.1855 -2.584) (end -0.6096 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start -0.6096 3.81) (mid 2.1928 2.5924) (end 3.81 0)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -0.635 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 3.81)
-          (xy -3.556 3.4036)
-          (xy -3.0226 2.2606)
-          (xy -2.6924 1.0414)
-          (xy -2.6162 -0.254)
-          (xy -2.7686 -1.4986)
-          (xy -3.175 -2.7178)
-          (xy -3.81 -3.81)
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width -25.4) (type default))
-        (fill (type background))
-      )
-      (pin input inverted (at -7.62 2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin input inverted (at -7.62 -2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin output inverted (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS08_2_1"
-      (arc (start 0 3.81) (mid 3.7934 0) (end 0 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy 0 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 -3.81)
-          (xy 0 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (pin input line (at -7.62 2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin input line (at -7.62 -2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin output line (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS08_2_2"
-      (arc (start -3.81 3.81) (mid -2.589 0) (end -3.81 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -3.81 3.81)
-          (xy -0.635 3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start 3.81 0) (mid 2.1855 -2.584) (end -0.6096 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start -0.6096 3.81) (mid 2.1928 2.5924) (end 3.81 0)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -0.635 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 3.81)
-          (xy -3.556 3.4036)
-          (xy -3.0226 2.2606)
-          (xy -2.6924 1.0414)
-          (xy -2.6162 -0.254)
-          (xy -2.7686 -1.4986)
-          (xy -3.175 -2.7178)
-          (xy -3.81 -3.81)
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width -25.4) (type default))
-        (fill (type background))
-      )
-      (pin input inverted (at -7.62 2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin input inverted (at -7.62 -2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin output inverted (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS08_3_1"
-      (arc (start 0 3.81) (mid 3.7934 0) (end 0 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy 0 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 -3.81)
-          (xy 0 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (pin input line (at -7.62 2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "9" (effects (font (size 1.27 1.27))))
-      )
-      (pin input line (at -7.62 -2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "10" (effects (font (size 1.27 1.27))))
-      )
-      (pin output line (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "8" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS08_3_2"
-      (arc (start -3.81 3.81) (mid -2.589 0) (end -3.81 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -3.81 3.81)
-          (xy -0.635 3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start 3.81 0) (mid 2.1855 -2.584) (end -0.6096 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start -0.6096 3.81) (mid 2.1928 2.5924) (end 3.81 0)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -0.635 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 3.81)
-          (xy -3.556 3.4036)
-          (xy -3.0226 2.2606)
-          (xy -2.6924 1.0414)
-          (xy -2.6162 -0.254)
-          (xy -2.7686 -1.4986)
-          (xy -3.175 -2.7178)
-          (xy -3.81 -3.81)
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width -25.4) (type default))
-        (fill (type background))
-      )
-      (pin input inverted (at -7.62 2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "9" (effects (font (size 1.27 1.27))))
-      )
-      (pin input inverted (at -7.62 -2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "10" (effects (font (size 1.27 1.27))))
-      )
-      (pin output inverted (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "8" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS08_4_1"
-      (arc (start 0 3.81) (mid 3.7934 0) (end 0 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy 0 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 -3.81)
-          (xy 0 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (pin input line (at -7.62 2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "12" (effects (font (size 1.27 1.27))))
-      )
-      (pin input line (at -7.62 -2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "13" (effects (font (size 1.27 1.27))))
-      )
-      (pin output line (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "11" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS08_4_2"
-      (arc (start -3.81 3.81) (mid -2.589 0) (end -3.81 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -3.81 3.81)
-          (xy -0.635 3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start 3.81 0) (mid 2.1855 -2.584) (end -0.6096 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start -0.6096 3.81) (mid 2.1928 2.5924) (end 3.81 0)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -0.635 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 3.81)
-          (xy -3.556 3.4036)
-          (xy -3.0226 2.2606)
-          (xy -2.6924 1.0414)
-          (xy -2.6162 -0.254)
-          (xy -2.7686 -1.4986)
-          (xy -3.175 -2.7178)
-          (xy -3.81 -3.81)
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width -25.4) (type default))
-        (fill (type background))
-      )
-      (pin input inverted (at -7.62 2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "12" (effects (font (size 1.27 1.27))))
-      )
-      (pin input inverted (at -7.62 -2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "13" (effects (font (size 1.27 1.27))))
-      )
-      (pin output inverted (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "11" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS08_5_0"
-      (pin power_in line (at 0 12.7 270) (length 5.08)
-        (name "VCC" (effects (font (size 1.27 1.27))))
-        (number "14" (effects (font (size 1.27 1.27))))
-      )
-      (pin power_in line (at 0 -12.7 90) (length 5.08)
-        (name "GND" (effects (font (size 1.27 1.27))))
-        (number "7" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS08_5_1"
-      (rectangle (start -5.08 7.62) (end 5.08 -7.62)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-  )
-  (symbol "74LS32" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-    (property "Reference" "U" (at 0 1.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "74LS32" (at 0 -1.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "DishFootprints:SOIC-14_3.9x8.7mm_P1.27mm" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Quad 2-input OR" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "SOIC-14" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "TI" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "SN74LS32DR" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "296-3696-5-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS32DR/562581" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.4" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "Digikey says SN74LS32D is obsolete, so get DR" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_locked" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_keywords" "TTL Or2" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "DIP?14*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "74LS32_1_1"
-      (arc (start -3.81 3.81) (mid -2.589 0) (end -3.81 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -3.81 3.81)
-          (xy -0.635 3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start 3.81 0) (mid 2.1855 -2.584) (end -0.6096 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start -0.6096 3.81) (mid 2.1928 2.5924) (end 3.81 0)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -0.635 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 3.81)
-          (xy -3.556 3.4036)
-          (xy -3.0226 2.2606)
-          (xy -2.6924 1.0414)
-          (xy -2.6162 -0.254)
-          (xy -2.7686 -1.4986)
-          (xy -3.175 -2.7178)
-          (xy -3.81 -3.81)
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width -25.4) (type default))
-        (fill (type background))
-      )
-      (pin input line (at -7.62 2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin input line (at -7.62 -2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin output line (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS32_1_2"
-      (arc (start 0 3.81) (mid 3.7934 0) (end 0 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy 0 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 -3.81)
-          (xy 0 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (pin input inverted (at -7.62 2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin input inverted (at -7.62 -2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin output inverted (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS32_2_1"
-      (arc (start -3.81 3.81) (mid -2.589 0) (end -3.81 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -3.81 3.81)
-          (xy -0.635 3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start 3.81 0) (mid 2.1855 -2.584) (end -0.6096 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start -0.6096 3.81) (mid 2.1928 2.5924) (end 3.81 0)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -0.635 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 3.81)
-          (xy -3.556 3.4036)
-          (xy -3.0226 2.2606)
-          (xy -2.6924 1.0414)
-          (xy -2.6162 -0.254)
-          (xy -2.7686 -1.4986)
-          (xy -3.175 -2.7178)
-          (xy -3.81 -3.81)
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width -25.4) (type default))
-        (fill (type background))
-      )
-      (pin input line (at -7.62 2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin input line (at -7.62 -2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin output line (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS32_2_2"
-      (arc (start 0 3.81) (mid 3.7934 0) (end 0 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy 0 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 -3.81)
-          (xy 0 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (pin input inverted (at -7.62 2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin input inverted (at -7.62 -2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin output inverted (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS32_3_1"
-      (arc (start -3.81 3.81) (mid -2.589 0) (end -3.81 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -3.81 3.81)
-          (xy -0.635 3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start 3.81 0) (mid 2.1855 -2.584) (end -0.6096 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start -0.6096 3.81) (mid 2.1928 2.5924) (end 3.81 0)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -0.635 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 3.81)
-          (xy -3.556 3.4036)
-          (xy -3.0226 2.2606)
-          (xy -2.6924 1.0414)
-          (xy -2.6162 -0.254)
-          (xy -2.7686 -1.4986)
-          (xy -3.175 -2.7178)
-          (xy -3.81 -3.81)
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width -25.4) (type default))
-        (fill (type background))
-      )
-      (pin input line (at -7.62 2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "9" (effects (font (size 1.27 1.27))))
-      )
-      (pin input line (at -7.62 -2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "10" (effects (font (size 1.27 1.27))))
-      )
-      (pin output line (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "8" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS32_3_2"
-      (arc (start 0 3.81) (mid 3.7934 0) (end 0 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy 0 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 -3.81)
-          (xy 0 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (pin input inverted (at -7.62 2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "9" (effects (font (size 1.27 1.27))))
-      )
-      (pin input inverted (at -7.62 -2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "10" (effects (font (size 1.27 1.27))))
-      )
-      (pin output inverted (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "8" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS32_4_1"
-      (arc (start -3.81 3.81) (mid -2.589 0) (end -3.81 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -3.81 3.81)
-          (xy -0.635 3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start 3.81 0) (mid 2.1855 -2.584) (end -0.6096 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (arc (start -0.6096 3.81) (mid 2.1928 2.5924) (end 3.81 0)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -0.635 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 3.81)
-          (xy -3.556 3.4036)
-          (xy -3.0226 2.2606)
-          (xy -2.6924 1.0414)
-          (xy -2.6162 -0.254)
-          (xy -2.7686 -1.4986)
-          (xy -3.175 -2.7178)
-          (xy -3.81 -3.81)
-          (xy -3.81 -3.81)
-          (xy -0.635 -3.81)
-        )
-        (stroke (width -25.4) (type default))
-        (fill (type background))
-      )
-      (pin input line (at -7.62 2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "12" (effects (font (size 1.27 1.27))))
-      )
-      (pin input line (at -7.62 -2.54 0) (length 4.318)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "13" (effects (font (size 1.27 1.27))))
-      )
-      (pin output line (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "11" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS32_4_2"
-      (arc (start 0 3.81) (mid 3.7934 0) (end 0 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy 0 3.81)
-          (xy -3.81 3.81)
-          (xy -3.81 -3.81)
-          (xy 0 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (pin input inverted (at -7.62 2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "12" (effects (font (size 1.27 1.27))))
-      )
-      (pin input inverted (at -7.62 -2.54 0) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "13" (effects (font (size 1.27 1.27))))
-      )
-      (pin output inverted (at 7.62 0 180) (length 3.81)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "11" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS32_5_0"
-      (pin power_in line (at 0 12.7 270) (length 5.08)
-        (name "VCC" (effects (font (size 1.27 1.27))))
-        (number "14" (effects (font (size 1.27 1.27))))
-      )
-      (pin power_in line (at 0 -12.7 90) (length 5.08)
-        (name "GND" (effects (font (size 1.27 1.27))))
-        (number "7" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "74LS32_5_1"
-      (rectangle (start -5.08 7.62) (end 5.08 -7.62)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-  )
-  (symbol "AMS1117-5.0" (in_bom yes) (on_board yes)
-    (property "Reference" "U" (at -3.81 3.175 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "AMS1117-5.0" (at 0 3.175 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "DishFootprints:SOT-223-3_TabPin2" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 2.54 -6.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Linear Voltage Regulator IC Positive Fixed 1 Output 1A SOT-223-3L" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "SOT-223-3L" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "EVVO" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "AMS1117-5.0" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "5272-AMS1117-5.0CT-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/evvo/AMS1117-5-0/24370130" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.21" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "linear regulator ldo fixed positive" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "SOT?223*TabPin2*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "AMS1117-5.0_0_1"
-      (rectangle (start -5.08 -5.08) (end 5.08 1.905)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-    (symbol "AMS1117-5.0_1_1"
-      (pin power_in line (at -7.62 0 0) (length 2.54)
-        (name "VI" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin power_in line (at 0 -7.62 90) (length 2.54)
-        (name "GND" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin power_out line (at 7.62 0 180) (length 2.54)
-        (name "VO" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "CAP 100nF 0805" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-    (property "Reference" "C" (at 0.635 2.54 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 0.635 -2.54 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "DishFootprints:C_0805" (at 0.9652 -3.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR60G107ME11-01A.pdf" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "0.1 µF ±5% 10V Ceramic Capacitor U2J 0805 (2012 Metric)" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MF" "Murata" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "805-2 Murata" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MPN" "GRM21B7U1A104JA01L" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "490-11592-1-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM21B7U1A104JA01L/2546740?s=N4IgjCBcpgLFoDGUBmBDANgZwKYBoQB7KAbRAHZYBWMKkAXQIAcAXKEAZRYCcBLAOwDmIAL4EwANgQhkkdNnxFSIAMwBOFQCY1DZm0iceA4WPBqAHDugzUmXAWKQyABganNz2FdCt2AVX5eFgB5FABZHDQsAFduHBACaPZ%2BADEEkABbAXYwZ1cCDLQADxy80QIAWghrWXl7JScQL1d6ETagA" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.19" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "cap capacitor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "C_*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "CAP 100nF 0805_0_1"
-      (polyline
-        (pts
-          (xy -2.032 0.762)
-          (xy 2.032 0.762)
-        )
-        (stroke (width 0.508) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -2.032 -0.762)
-          (xy 2.032 -0.762)
-        )
-        (stroke (width 0.508) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "CAP 100nF 0805_1_1"
-      (pin passive line (at 0 3.81 270) (length 2.794)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 0 -3.81 90) (length 2.794)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "CAP 100uF 0805" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-    (property "Reference" "C" (at 0.635 2.54 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100uF" (at 0.635 -2.54 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "DishFootprints:C_0805" (at 0.9652 -3.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR60G107ME11-01A.pdf" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "100 µF ±20% 4V Ceramic Capacitor X5R 0805 (2012 Metric)" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MF" "Murata" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "805-2 Murata" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MPN" "GRM21BR60G107ME11K" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "490-GRM21BR60G107ME11KCT-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR60G107ME11K/10701411" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.36" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "cap capacitor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "C_*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "CAP 100uF 0805_0_1"
-      (polyline
-        (pts
-          (xy -2.032 0.762)
-          (xy 2.032 0.762)
-        )
-        (stroke (width 0.508) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -2.032 -0.762)
-          (xy 2.032 -0.762)
-        )
-        (stroke (width 0.508) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "CAP 100uF 0805_1_1"
-      (pin passive line (at 0 3.81 270) (length 2.794)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 0 -3.81 90) (length 2.794)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "CAP 10nF 0805" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-    (property "Reference" "C" (at 0.635 2.54 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10uF" (at 0.635 -2.54 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "DishFootprints:C_0805" (at 0.9652 -3.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "10000 pF ±10% 10V Ceramic Capacitor X7R 0805 (2012 Metric)" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MF" "KYOCERA AVX" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "805" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MPN" "KGM21NR71A103KT" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "478-KGM21NR71A103KTCT-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR60G107ME11K/10701411" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.12" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "cap capacitor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "C_*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "CAP 10nF 0805_0_1"
-      (polyline
-        (pts
-          (xy -2.032 0.762)
-          (xy 2.032 0.762)
-        )
-        (stroke (width 0.508) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -2.032 -0.762)
-          (xy 2.032 -0.762)
-        )
-        (stroke (width 0.508) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "CAP 10nF 0805_1_1"
-      (pin passive line (at 0 3.81 270) (length 2.794)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 0 -3.81 90) (length 2.794)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "CAP 22uF 0805" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-    (property "Reference" "C" (at 0 3.8109 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Value" "22uF" (at 0 -5.0885 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Footprint" "DishFootprints:CAP 22uF 0805" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM219R61C226ME15-01.pdf" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "22 µF ±20% 16V Ceramic Capacitor X5R 0805 (2012 Metric)" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MF" "Murata" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "Package" "805-2 Murata" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "Price" "0.23" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "MPN" "GRM219R61C226ME15K" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "490-GRM219R61C226ME15KCT-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15K/11618740?s=N4IgTCBcDaIOICUCyYCMBOBA2VBhMYWSAoqgKwDSIAugL5A" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (symbol "CAP 22uF 0805_0_0"
-      (rectangle (start 0 1.905) (end 0.635 -1.9069)
-        (stroke (width 0.1) (type default))
-        (fill (type outline))
-      )
-      (rectangle (start 1.9069 -1.9069) (end 2.54 1.905)
-        (stroke (width 0.1) (type default))
-        (fill (type outline))
-      )
-      (pin passive line (at -2.54 0 0) (length 2.54)
-        (name "~" (effects (font (size 1.016 1.016))))
-        (number "1" (effects (font (size 1.016 1.016))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "~" (effects (font (size 1.016 1.016))))
-        (number "2" (effects (font (size 1.016 1.016))))
-      )
-    )
-  )
-  (symbol "Conn_01x02_Pin" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-    (property "Reference" "J" (at 0 2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x02_Pin" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "DishFootprints:PinHeader_1x02_P2.54mm_Vertical" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/201605/ph1-xx-ua-data-sheet.pdf" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Connector Header Through Hole 2 position 0.100\" (2.54mm)" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "-" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "Adam Tech" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "PH1-02-UA" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "2057-PH1-02-UA-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/adam-tech/PH1-02-UA/9830266" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.03" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "connector" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "Conn_01x02_Pin_1_1"
-      (rectangle (start 0.8636 0.127) (end 0 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type outline))
-      )
-      (rectangle (start 0.8636 -2.413) (end 0 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type outline))
-      )
-      (polyline
-        (pts
-          (xy 1.27 0)
-          (xy 0.8636 0)
-        )
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 1.27 -2.54)
-          (xy 0.8636 -2.54)
-        )
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (pin passive line (at 5.08 0 180) (length 3.81)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -2.54 180) (length 3.81)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "Conn_01x03_Pin" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-    (property "Reference" "J" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x03_Pin" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "DishFootprints:PinHeader_1x03_P2.54mm_Vertical" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~https://app.adam-tech.com/products/download/data_sheet/201605/ph1-xx-ua-data-sheet.pdf" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Connector Header Through Hole 3 position 0.100\" (2.54mm)" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "-" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "Adam Tech" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "PH1-03-UA" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "2057-PH1-03-UA-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/adam-tech/PH1-03-UA/9830289" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.04" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "connector" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "Conn_01x03_Pin_1_1"
-      (rectangle (start 0.8636 2.667) (end 0 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type outline))
-      )
-      (rectangle (start 0.8636 0.127) (end 0 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type outline))
-      )
-      (rectangle (start 0.8636 -2.413) (end 0 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type outline))
-      )
-      (polyline
-        (pts
-          (xy 1.27 2.54)
-          (xy 0.8636 2.54)
-        )
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 1.27 0)
-          (xy 0.8636 0)
-        )
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 1.27 -2.54)
-          (xy 0.8636 -2.54)
-        )
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (pin passive line (at 5.08 2.54 180) (length 3.81)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 3.81)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -2.54 180) (length 3.81)
-        (name "3" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "NE555D" (in_bom yes) (on_board yes)
-    (property "Reference" "U" (at -10.16 8.89 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "NE555D" (at 2.54 8.89 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "DishFootprints:SOIC-8_3.9x4.9mm_P1.27mm" (at 21.59 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/ne555.pdf" (at 21.59 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Precision Timers, 555 compatible, SOIC-8" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "SOIC-8" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "TI" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "NE555D" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "296-16792-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/texas-instruments/NE555D/280641" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.64" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "single timer 555" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "NE555D_0_0"
-      (pin power_in line (at 0 10.16 270) (length 2.54)
-        (name "VCC" (effects (font (size 1.27 1.27))))
-        (number "8" (effects (font (size 1.27 1.27))))
-      )
-      (pin power_in line (at 0 -10.16 90) (length 2.54)
-        (name "GND" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "NE555D_0_1"
-      (rectangle (start -8.89 -7.62) (end 8.89 7.62)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -8.89 -7.62) (end 8.89 7.62)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-    (symbol "NE555D_1_1"
-      (pin input line (at -12.7 5.08 0) (length 3.81)
-        (name "TR" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin input line (at -12.7 0 0) (length 3.81)
-        (name "CV" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin input inverted (at -12.7 -5.08 0) (length 3.81)
-        (name "R" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin output line (at 12.7 5.08 180) (length 3.81)
-        (name "Q" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin input line (at 12.7 0 180) (length 3.81)
-        (name "DIS" (effects (font (size 1.27 1.27))))
-        (number "7" (effects (font (size 1.27 1.27))))
-      )
-      (pin input line (at 12.7 -5.08 180) (length 3.81)
-        (name "THR" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "PZT2222A" (pin_names (offset 0)) (in_bom yes) (on_board yes)
-    (property "Reference" "Q" (at 5.08 1.905 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "PZT2222A" (at 5.08 0 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "DishFootprints:SOT-223" (at 5.08 -1.905 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://goodarksemi.com/docs/datasheets/transistors/PZT2222A.pdf" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Description" "Bipolar (BJT) Transistor NPN 40 V 600 mA 300MHz 1 W Surface Mount SOT-223" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "SOT-223" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "Good-Ark Semiconductor" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "PZT2222A" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "4786-PZT2222ACT-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/good-ark-semiconductor/PZT2222A/18649029" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.19" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "NPN General Puprose Transistor SMD" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "SOT?223*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "PZT2222A_0_1"
-      (polyline
-        (pts
-          (xy -2.54 0)
-          (xy 0.635 0)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0.635 1.905)
-          (xy 0.635 -1.905)
-        )
-        (stroke (width 0.508) (type default))
-        (fill (type none))
-      )
-      (circle (center 1.27 0) (radius 2.8194)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "PZT2222A_1_1"
-      (polyline
-        (pts
-          (xy 0.635 0.635)
-          (xy 2.54 2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0.635 -0.635)
-          (xy 2.54 -2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 1.27 -1.778)
-          (xy 1.778 -1.27)
-          (xy 2.286 -2.286)
-          (xy 1.27 -1.778)
-        )
-        (stroke (width 0) (type default))
-        (fill (type outline))
-      )
-      (pin input line (at -5.08 0 0) (length 2.54)
-        (name "B" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 2.54 5.08 270) (length 2.54)
-        (name "C" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 2.54 -5.08 90) (length 2.54)
-        (name "E" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "R" (pin_names (offset 0)) (in_bom yes) (on_board yes)
-    (property "Reference" "R" (at 2.032 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "R" (at 0 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at -1.778 0 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Resistor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.00" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "R res resistor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "R_*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "R_0_1"
-      (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "R_1_1"
-      (pin passive line (at 0 3.81 270) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 0 -3.81 90) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "RES 1.5k 0805" (pin_names (offset 0)) (in_bom yes) (on_board yes)
-    (property "Reference" "R" (at 2.032 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1k5" (at 0 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "DishFootprints:R_0805" (at -1.778 0 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "1.5 kOhms ±0.1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thin Film" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "0805" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "Susumu" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "RG2012P-152-B-T5" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "RG20P1.5KBCT-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/susumu/RG2012P-152-B-T5/1240682" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.09" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "R res resistor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "R_*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "RES 1.5k 0805_0_1"
-      (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "RES 1.5k 0805_1_1"
-      (pin passive line (at 0 3.81 270) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 0 -3.81 90) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "RES 10k 0805" (pin_names (offset 0)) (in_bom yes) (on_board yes)
-    (property "Reference" "R" (at 2.032 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "10k" (at 0 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "DishFootprints:R_0805" (at -1.778 0 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "10 kOhms ±0.1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thin Film" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "0805" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "Susumu" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "RG2012P-103-B-T5" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "RG20P10.0KBCT-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/susumu/RG2012P-103-B-T5/1212668" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.09" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "R res resistor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "R_*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "RES 10k 0805_0_1"
-      (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "RES 10k 0805_1_1"
-      (pin passive line (at 0 3.81 270) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 0 -3.81 90) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "RES 6.8k 0805" (pin_names (offset 0)) (in_bom yes) (on_board yes)
-    (property "Reference" "R" (at 2.032 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "6.8k" (at 0 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "DishFootprints:R_0805" (at -1.778 0 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Resistor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "0802" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "Susumu" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "RG2012P-682-B-T5" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "RG20P6.8KBCT-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/susumu/RG2012P-682-B-T5/1240804" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.09" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "R res resistor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "R_*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "RES 6.8k 0805_0_1"
-      (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "RES 6.8k 0805_1_1"
-      (pin passive line (at 0 3.81 270) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 0 -3.81 90) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "RES 820 0805" (pin_names (offset 0)) (in_bom yes) (on_board yes)
-    (property "Reference" "R" (at 2.032 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "820" (at 0 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "DishFootprints:R_0805" (at -1.778 0 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "820 Ohms ±0.1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thin Film" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "0805" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "Susumu" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "RG2012P-821-B-T5" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "RG20P820BCT-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/susumu/RG2012P-821-B-T5/1240815" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.11" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "R res resistor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "R_*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "RES 820 0805_0_1"
-      (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "RES 820 0805_1_1"
-      (pin passive line (at 0 3.81 270) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 0 -3.81 90) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "R_1" (pin_names (offset 0)) (in_bom yes) (on_board yes)
-    (property "Reference" "R" (at 2.032 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "R" (at 0 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at -1.778 0 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Resistor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.00" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "R res resistor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "R_*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "R_1_0_1"
-      (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "R_1_1_1"
-      (pin passive line (at 0 3.81 270) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 0 -3.81 90) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "R_2" (pin_names (offset 0)) (in_bom yes) (on_board yes)
-    (property "Reference" "R" (at 2.032 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "R" (at 0 0 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at -1.778 0 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Resistor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.00" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "R res resistor" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "R_*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "R_2_0_1"
-      (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "R_2_1_1"
-      (pin passive line (at 0 3.81 270) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 0 -3.81 90) (length 1.27)
-        (name "~" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "Screw_Terminal_01x01" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-    (property "Reference" "J" (at 0 2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Screw_Terminal_01x01" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "screw terminal" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "TerminalBlock*:*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Package" "" (at 0.0 0.0 0)
-      (effects (font (size 1.0 1.0)) hide)
-    )
-    (property "MF" "" (at 0.0 0.0 0)
-      (effects (font (size 1.0 1.0)) hide)
-    )
-    (property "MPN" "" (at 0.0 0.0 0)
-      (effects (font (size 1.0 1.0)) hide)
-    )
-    (property "DIS" "" (at 0.0 0.0 0)
-      (effects (font (size 1.0 1.0)) hide)
-    )
-    (property "DPN" "" (at 0.0 0.0 0)
-      (effects (font (size 1.0 1.0)) hide)
-    )
-    (property "Purchase_URL" "" (at 0.0 0.0 0)
-      (effects (font (size 1.0 1.0)) hide)
-    )
-    (property "Price" "0.00" (at 0.0 0.0 0)
-      (effects (font (size 1.0 1.0)) hide)
-    )
-    (property "Note" "" (at 0.0 0.0 0)
-      (effects (font (size 1.0 1.0)) hide)
-    )
-    (symbol "Screw_Terminal_01x01_1_1"
-      (rectangle (start -1.27 1.27) (end 1.27 -1.27)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -0.5334 0.3302)
-          (xy 0.3302 -0.508)
-        )
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -0.3556 0.508)
-          (xy 0.508 -0.3302)
-        )
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (circle (center 0 0) (radius 0.635)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (pin passive line (at -5.08 0 0) (length 3.81)
-        (name "Pin_1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "Screw_Terminal_01x02" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-    (property "Reference" "J" (at 0 2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Screw_Terminal_01x02" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "DishFootprints:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.phoenixcontact.com/product/pdf/api/v1/MTcyOTEyOA?_realm=us&_locale=en-US&blocks=commercial-data%2Ctechnical-data%2Cdrawings%2Capprovals%2Cclassifications%2Cenvironmental-compliance-data%2Call-accessories" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "-" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "Phoenix Contact" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "1729128" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "Digikey" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "277-1247-ND" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "https://www.digikey.com/en/products/detail/phoenix-contact/1729128/260615" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.80" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "ki_keywords" "screw terminal" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "ki_fp_filters" "TerminalBlock*:*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (symbol "Screw_Terminal_01x02_1_1"
-      (rectangle (start -1.27 1.27) (end 1.27 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy -0.5334 0.3302)
-          (xy 0.3302 -0.508)
-        )
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -0.5334 -2.2098)
-          (xy 0.3302 -3.048)
-        )
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -0.3556 0.508)
-          (xy 0.508 -0.3302)
-        )
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -0.3556 -2.032)
-          (xy 0.508 -2.8702)
-        )
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (circle (center 0 0) (radius 0.635)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (circle (center 0 -2.54) (radius 0.635)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (pin passive line (at -5.08 0 0) (length 3.81)
-        (name "Pin_1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 -2.54 0) (length 3.81)
-        (name "Pin_2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "_1" (in_bom yes) (on_board yes)
-    (property "Reference" "C" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MF" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "MPN" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DIS" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "DPN" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Purchase_URL" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Price" "0.00" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Note" "" (at 0 0 0)
-      (effects (font (size 1 1)) hide)
-    )
-  )
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "kicad_symbol_editor")
+	(generator_version "9.0")
+	(symbol "4P2C"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at -5.08 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4P2C"
+			(at 2.54 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 1.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 1.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 4P2C (4 positions 2 connected)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.00"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "4P2C RJ socket connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "4P2C*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "4P2C_0_1"
+			(polyline
+				(pts
+					(xy -6.35 3.175) (xy -5.08 3.175) (xy -5.08 3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -6.35 1.905) (xy -5.08 1.905) (xy -5.08 1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -6.35 0.635) (xy -5.08 0.635) (xy -5.08 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -6.35 -0.635) (xy -5.08 -0.635) (xy -5.08 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -6.35 -3.175) (xy -6.35 5.715) (xy -1.27 5.715) (xy 3.81 5.715) (xy 3.81 4.445) (xy 5.08 4.445)
+					(xy 5.08 3.175) (xy 6.35 3.175) (xy 6.35 -0.635) (xy 5.08 -0.635) (xy 5.08 -1.905) (xy 3.81 -1.905)
+					(xy 3.81 -3.175) (xy -6.35 -3.175) (xy -6.35 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 7.62 7.62)
+				(end -7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "4P2C_1_1"
+			(pin passive line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "7400"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "7400"
+			(at 0 -1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn7400"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "quad 2-input NAND gate"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.00"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "TTL nand 2-input"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "DIP*W7.62mm* SO14*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "DE-15_VGA_FEMALE_CONN"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at -7.62 18.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "DE-15_VGA_FEMALE_CONN"
+			(at -7.62 -20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "DishFootprints:DE15_VGA_FEMALE_CONN"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/l77hde15sd1ch4fvga.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "15 Position D-Sub, High Density Receptacle, Female Sockets Connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "L77HDE15SD1CH4FVGA-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/L77HDE15SD1CH4FVGA/Amphenol/view-part/?ref=snap"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "12.55mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/L77HDE15SD1CH4FVGA/Amphenol/view-part/?ref=eda"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MF" "Amphenol Commercial"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "L77HDE15SD1CH4FVGA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Dsub, Stamped Signal 3A, High Density, Right Angle PCB Thru Hole, FP=8.89mm (0.35μin), 15 Socket, Bright Tin Shell, Flash Gold, 4-40 Removable Front Screwlock, Ground Tab with Boardlock, VGA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Amphenol"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "L77HDE15SD1CH4FVGA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "L77HDE15SD1CH4FVGA-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/amphenol-icc-commercial-products/L77HDE15SD1CH4FVGA/4888525"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "1.38"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "Use the SnapMagic symbol"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "FILES" "https://www.digikey.com/en/models/4888525 "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "DE-15 VGA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DE-15_VGA_FEMALE_CONN_0_0"
+			(rectangle
+				(start -8.89 -17.78)
+				(end 8.636 17.78)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(arc
+				(start -6.985 14.605)
+				(mid -7.6172 15.24)
+				(end -6.985 15.875)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -6.985 12.065)
+				(mid -7.6172 12.7)
+				(end -6.985 13.335)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -6.985 9.525)
+				(mid -7.6172 10.16)
+				(end -6.985 10.795)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -6.985 6.985)
+				(mid -7.6172 7.62)
+				(end -6.985 8.255)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -6.985 4.445)
+				(mid -7.6172 5.08)
+				(end -6.985 5.715)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -6.985 -0.635)
+				(mid -7.6172 0)
+				(end -6.985 0.635)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -6.985 -3.175)
+				(mid -7.6172 -2.54)
+				(end -6.985 -1.905)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -6.985 -5.715)
+				(mid -7.6172 -5.08)
+				(end -6.985 -4.445)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -6.985 -8.255)
+				(mid -7.6172 -7.62)
+				(end -6.985 -6.985)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -6.985 -10.795)
+				(mid -7.6172 -10.16)
+				(end -6.985 -9.525)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.985 15.875)
+				(mid 7.6172 15.24)
+				(end 6.985 14.605)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.985 13.335)
+				(mid 7.6172 12.7)
+				(end 6.985 12.065)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.985 10.795)
+				(mid 7.6172 10.16)
+				(end 6.985 9.525)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.985 8.255)
+				(mid 7.6172 7.62)
+				(end 6.985 6.985)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.985 5.715)
+				(mid 7.6172 5.08)
+				(end 6.985 4.445)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -12.7 15.24 0)
+				(length 5.08)
+				(name "1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 12.7 0)
+				(length 5.08)
+				(name "2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 10.16 0)
+				(length 5.08)
+				(name "3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 7.62 0)
+				(length 5.08)
+				(name "4"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 5.08 0)
+				(length 5.08)
+				(name "5"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 0 0)
+				(length 5.08)
+				(name "11"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -2.54 0)
+				(length 5.08)
+				(name "12"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -5.08 0)
+				(length 5.08)
+				(name "13"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -7.62 0)
+				(length 5.08)
+				(name "14"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -10.16 0)
+				(length 5.08)
+				(name "15"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -15.24 0)
+				(length 5.08)
+				(name "SHIELD"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "SH1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -15.24 0)
+				(length 5.08)
+				(name "SHIELD"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "SH2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 15.24 180)
+				(length 5.08)
+				(name "6"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 12.7 180)
+				(length 5.08)
+				(name "7"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 10.16 180)
+				(length 5.08)
+				(name "8"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 5.08)
+				(name "9"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 5.08 180)
+				(length 5.08)
+				(name "10"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "LED"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.00"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "LED diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "LED_0_1"
+			(polyline
+				(pts
+					(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 0) (xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "LED_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "LED_GREEN"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2000-223/LTST-C191KRKT.PDF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Lite-On Inc."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LTST-C191KRKT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "160-1447-1-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/liteon/LTST-C191KRKT/386837?s=N4IgTCBcDaIIwDYAMBaOAWdB2NKByAIiALoC%2BQA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.10"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "LED diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "LED_GREEN_0_1"
+			(polyline
+				(pts
+					(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 0) (xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "LED_GREEN_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "R"
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.00"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "R_1"
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.00"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_1_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "R_2"
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.00"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_2_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_2_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Screw Terminal Ground Chassis Vertical"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at -5.08 3.302 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "Screw Terminal Ground Chassis Vertical"
+			(at -5.08 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "DishFootprints:TERM_SCREW_01x04_VERTICAL_KEYSTONE_7690"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p66.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 Pin Screw Terminal, Power Tap 6-32 Through Hole, Right Angle"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "F"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Keystone Electronics"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "7.92 mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Keystone Electronics"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "7690"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "36-7690-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/keystone-electronics/7690/151547"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.53"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "For grounding to Chassis"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "FILES" "https://www.digikey.com/en/models/151547"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Screw Terminal Ground Chassis Vertical_0_0"
+			(rectangle
+				(start -5.08 -10.16)
+				(end 5.08 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin passive line
+				(at -10.16 0 0)
+				(length 5.08)
+				(name "1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1_1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 -2.54 0)
+				(length 5.08)
+				(name "1__1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1_2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 -5.08 0)
+				(length 5.08)
+				(name "1__2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1_3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 -7.62 0)
+				(length 5.08)
+				(name "1__3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1_4"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Screw_Terminal_01x01"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x01"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.00"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "screw terminal"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TerminalBlock*:*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Screw_Terminal_01x01_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -1.27)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+				)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.3556 0.508) (xy 0.508 -0.3302)
+				)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 0)
+				(radius 0.635)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "_1"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.00"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(embedded_fonts no)
+	)
 )

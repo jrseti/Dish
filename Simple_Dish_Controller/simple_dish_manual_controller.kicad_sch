@@ -6,13 +6,13 @@
 	(paper "A4")
 	(title_block
 		(title "Simple Dish Manual Controller")
-		(date "2025-03-23")
+		(date "2025-04-14")
 		(rev "1.1")
 		(company "jrseti")
 		(comment 1 "Provides pulses to the ISV57T motors")
 	)
 	(lib_symbols
-		(symbol "DishSymbols:74LS08"
+		(symbol "74xx:74LS08"
 			(pin_names
 				(offset 1.016)
 			)
@@ -35,7 +35,7 @@
 					)
 				)
 			)
-			(property "Footprint" "DishFootprints:SOIC-14_3.9x8.7mm_P1.27mm"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -58,78 +58,6 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Package" "SOIC-14"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "TI"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "SN74LS08D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DIS" "Digikey"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DPN" "296-1632-5-ND"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS08D/277278"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Price" "0.82"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Note" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -1053,7 +981,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "DishSymbols:74LS32"
+		(symbol "74xx:74LS32"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1076,7 +1004,7 @@
 					)
 				)
 			)
-			(property "Footprint" "DishFootprints:SOIC-14_3.9x8.7mm_P1.27mm"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1099,78 +1027,6 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Package" "SOIC-14"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "TI"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "SN74LS32DR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DIS" "296-3696-5-ND"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DPN" "Digikey"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS32DR/562581"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Price" "0.4"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Note" "Digikey says SN74LS32D is obsolete, so get DR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -2094,406 +1950,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "DishSymbols:AMS1117-5.0"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AMS1117-5.0"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "DishFootprints:SOT-223-3_TabPin2"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-				(at 2.54 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Linear Voltage Regulator IC Positive Fixed 1 Output 1A SOT-223-3L"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Package" "SOT-223-3L"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "EVVO"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "AMS1117-5.0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DIS" "Digikey"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DPN" "5272-AMS1117-5.0CT-ND"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/evvo/AMS1117-5-0/24370130"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Price" "0.21"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Note" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AMS1117-5.0_0_1"
-				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AMS1117-5.0_1_1"
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "VO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "DishSymbols:CAP 22uF 0805"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0 3.8109 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "22uF"
-				(at 0 -5.0885 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "DishFootprints:CAP 22uF 0805"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM219R61C226ME15-01.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "22 µF ±20% 16V Ceramic Capacitor X5R 0805 (2012 Metric)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Murata"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "805-2 Murata"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "0.23"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MPN" "GRM219R61C226ME15K"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DIS" "Digikey"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DPN" "490-GRM219R61C226ME15KCT-ND"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15K/11618740?s=N4IgTCBcDaIOICUCyYCMBOBA2VBhMYWSAoqgKwDSIAugL5A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Note" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CAP 22uF 0805_0_0"
-				(rectangle
-					(start 0 1.905)
-					(end 0.635 -1.9069)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 1.9069 -1.9069)
-					(end 2.54 1.905)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin passive line
-					(at -2.54 0 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "DishSymbols:Conn_01x02_Pin"
+		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2517,7 +1974,7 @@
 					)
 				)
 			)
-			(property "Footprint" "DishFootprints:PinHeader_1x02_P2.54mm_Vertical"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2526,7 +1983,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/201605/ph1-xx-ua-data-sheet.pdf"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2535,7 +1992,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Connector Header Through Hole 2 position 0.100\" (2.54mm)"
+			(property "Description" "Generic connector, single row, 01x02, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2544,76 +2001,12 @@
 					(hide yes)
 				)
 			)
-			(property "Package" "-"
+			(property "ki_locked" ""
 				(at 0 0 0)
 				(effects
 					(font
-						(size 1 1)
+						(size 1.27 1.27)
 					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Adam Tech"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "PH1-02-UA"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DIS" "Digikey"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DPN" "2057-PH1-02-UA-ND"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/adam-tech/PH1-02-UA/9830266"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Price" "0.03"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Note" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "connector"
@@ -2684,7 +2077,7 @@
 				(pin passive line
 					(at 5.08 0 180)
 					(length 3.81)
-					(name "1"
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2702,7 +2095,7 @@
 				(pin passive line
 					(at 5.08 -2.54 180)
 					(length 3.81)
-					(name "2"
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2720,200 +2113,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "DishSymbols:RES 1.5k 0805"
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1k5"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "DishFootprints:R_0805"
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1.5 kOhms ±0.1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thin Film"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Package" "0805"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Susumu"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "RG2012P-152-B-T5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DIS" "Digikey"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DPN" "RG20P1.5KBCT-ND"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/susumu/RG2012P-152-B-T5/1240682"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Price" "0.9"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Note" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "RES 1.5k 0805_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "RES 1.5k 0805_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "DishSymbols:Screw_Terminal_01x02"
+		(symbol "Connector:Screw_Terminal_01x02"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2937,7 +2137,7 @@
 					)
 				)
 			)
-			(property "Footprint" "DishFootprints:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2946,7 +2146,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.phoenixcontact.com/product/pdf/api/v1/MTcyOTEyOA?_realm=us&_locale=en-US&blocks=commercial-data%2Ctechnical-data%2Cdrawings%2Capprovals%2Cclassifications%2Cenvironmental-compliance-data%2Call-accessories"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2960,78 +2160,6 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Package" "-"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Phoenix Contact"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "1729128"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DIS" "Digikey"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "DPN" "277-1247-ND"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Purchase_URL" "https://www.digikey.com/en/products/detail/phoenix-contact/1729128/260615"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Price" "0.80"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Note" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -3175,7 +2303,456 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "DishSymbolsSupplier:Screw Terminal Ground Chassis Vertical"
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DishSymbols:Screw Terminal Ground Chassis Vertical"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
 			)
@@ -3200,7 +2777,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "DishFootprintsSupplier:TERM_SCREW_01x04_VERTICAL_KEYSTONE_7690"
+			(property "Footprint" "DishFootprints:TERM_SCREW_01x04_VERTICAL_KEYSTONE_7690"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3235,7 +2812,6 @@
 						(size 1.27 1.27)
 					)
 					(justify bottom)
-					(hide yes)
 				)
 			)
 			(property "MANUFACTURER" "Keystone Electronics"
@@ -3245,7 +2821,6 @@
 						(size 1.27 1.27)
 					)
 					(justify bottom)
-					(hide yes)
 				)
 			)
 			(property "MAXIMUM_PACKAGE_HEIGHT" "7.92 mm"
@@ -3255,7 +2830,6 @@
 						(size 1.27 1.27)
 					)
 					(justify bottom)
-					(hide yes)
 				)
 			)
 			(property "STANDARD" "Manufacturer Recommendations"
@@ -3265,7 +2839,6 @@
 						(size 1.27 1.27)
 					)
 					(justify bottom)
-					(hide yes)
 				)
 			)
 			(property "Package" ""
@@ -3338,6 +2911,14 @@
 						(size 1 1)
 					)
 					(hide yes)
+				)
+			)
+			(property "FILES" "https://www.digikey.com/en/models/151547"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 			(symbol "Screw Terminal Ground Chassis Vertical_0_0"
@@ -3427,34 +3008,46 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LED_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
+		(symbol "Regulator_Linear:AMS1117-5.0"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "LED"
-				(at 0 -2.54 0)
+			(property "Value" "AMS1117-5.0"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3463,7 +3056,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "ki_keywords" "linear regulator ldo fixed positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3472,7 +3065,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Light emitting diode"
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3481,100 +3074,42 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "LED diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LED_1_0_1"
-				(polyline
-					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
+			(symbol "AMS1117-5.0_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
+						(type background)
 					)
 				)
 			)
-			(symbol "LED_1_1_1"
-				(pin passive line
-					(at -3.81 0 0)
+			(symbol "AMS1117-5.0_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "K"
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3589,10 +3124,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 3.81 0 180)
+				(pin power_out line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "A"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3939,7 +3474,7 @@
 		)
 	)
 	(rectangle
-		(start 53.34 116.84)
+		(start 49.53 116.84)
 		(end 102.87 171.45)
 		(stroke
 			(width 0)
@@ -3998,7 +3533,7 @@
 	)
 	(text "5V DC Input"
 		(exclude_from_sim no)
-		(at 78.994 66.04 0)
+		(at 80.01 66.04 0)
 		(effects
 			(font
 				(size 2 2)
@@ -4028,7 +3563,7 @@
 		)
 		(uuid "1626c936-6e50-48f7-80f9-da955dcd0153")
 	)
-	(text "Notes:\n  This circuit separately drives 2 ISV57T-180 motors available thru omc-stepperonline.com. There is a full manual avalable for download.\n  This motor is driven by a 720Hz pulse produced by the 555 chip.\n  The switch is an on-off-on SPST switch. The center position is off.\n\nFor each motor:\n  - A 555 chip delivers a 720Hz pulse to the Pul+ pin on J1 or J2 if \"Pulse Enable\" is 5V.\n  - If the switch is in the \"up\" position, Pulse Enable is 5V and the 720Hz pulse is delivered to the Pul+ pin. Also, the Dir+ pin will be \"low\".\n  - If the switch is in the Off position, Pulse Enable and Direction is grounded.\n  - If the switch is in the \"down\" position, Pulse Enable is 5V and the 720Hz pulse is delivered to the Pul+ pin. Also, the Dir+ is set to 5V.\n\nParts:\n  The PCB will be SMD. Parts should be surface mount. Except where not applicable.\n  Board uses RJ45 (through hole) to connect to external devices."
+	(text "Notes:\n  This circuit separately drives 2 ISV57T-180 motors available thru omc-stepperonline.com. There is a full manual avalable for download.\n  This motor is driven by a 720Hz pulse produced by the 555 chip.\n  The switch is an on-off-on SPST switch. The center position is off.\n\nFor each motor:\n  - A 555 chip delivers a 720Hz pulse to the Pul+ pin on J1 or J2 if \"Pulse Enable\" is 5V.\n  - If the switch is in the \"up\" position, Pulse Enable is 5V and the 720Hz pulse is delivered to the Pul+ pin. Also, the Dir+ pin will be \"low\".\n  - If the switch is in the Off position, Pulse Enable and Direction is grounded.\n  - If the switch is in the \"down\" position, Pulse Enable is 5V and the 720Hz pulse is delivered to the Pul+ pin. Also, the Dir+ is set to 5V.\n\nParts:\n  The PCB will be SMD. Parts should be surface mount. Except where not applicable.\n  Board uses DE15 (through hole) to connect to external devices."
 		(exclude_from_sim no)
 		(at 159.258 19.05 0)
 		(effects
@@ -4136,16 +3671,16 @@
 		(uuid "165bed19-ff6d-4455-a2b8-64141e42c2e2")
 	)
 	(junction
+		(at 64.77 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b915caa-30f9-48cb-b6f3-9d3e47b7c964")
+	)
+	(junction
 		(at 187.96 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "547ef90b-6292-4214-b61f-e233d061cb7f")
-	)
-	(junction
-		(at 118.11 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "551f6476-0484-4431-891d-6d3e50f05d74")
 	)
 	(junction
 		(at 175.26 93.98)
@@ -4160,10 +3695,10 @@
 		(uuid "7a1fe2ed-431e-4aa4-b3b0-0fcb8090bad4")
 	)
 	(junction
-		(at 118.11 139.7)
+		(at 118.11 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a5419d5d-c219-4ccd-bd34-81926287abb8")
+		(uuid "9eb19391-3dae-4a18-be59-77338cb1a305")
 	)
 	(junction
 		(at 162.56 93.98)
@@ -4172,10 +3707,22 @@
 		(uuid "bf6637b0-148e-4cae-bf8e-1f583f994a10")
 	)
 	(junction
+		(at 118.11 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d39561af-cc99-44f8-b31e-ea1eaa311eb6")
+	)
+	(junction
+		(at 86.36 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d41215fd-a20e-422c-8954-eb94e557169e")
+	)
+	(junction
 		(at 118.11 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fbb222f4-6c36-45b6-99ac-89a480bb9b60")
+		(uuid "d9d6ab3b-b6b7-4f82-b793-90abdbbe82e0")
 	)
 	(no_connect
 		(at 182.88 149.86)
@@ -4223,6 +3770,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 132.08) (xy 86.36 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18759259-049f-4f68-9d66-e937e5ed2e6b")
+	)
+	(wire
+		(pts
 			(xy 187.96 68.58) (xy 187.96 69.85)
 		)
 		(stroke
@@ -4263,6 +3820,36 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 139.7) (xy 118.11 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ff9bbfe-ae3d-440c-bab9-cd0287056b2d")
+	)
+	(wire
+		(pts
+			(xy 64.77 132.08) (xy 64.77 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "334ce221-5963-4857-abfe-085616d7c98e")
+	)
+	(wire
+		(pts
+			(xy 86.36 130.81) (xy 86.36 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35b2a79f-967d-48bf-8c16-2918dfe65d8e")
+	)
+	(wire
+		(pts
 			(xy 80.01 78.74) (xy 83.82 78.74)
 		)
 		(stroke
@@ -4280,6 +3867,16 @@
 			(type default)
 		)
 		(uuid "3b408675-a874-4d4a-a111-e7760bd39627")
+	)
+	(wire
+		(pts
+			(xy 118.11 142.24) (xy 118.11 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d3b6eee-0993-4be1-8d23-97f23728c21c")
 	)
 	(wire
 		(pts
@@ -4330,6 +3927,16 @@
 			(type default)
 		)
 		(uuid "5c59a299-d13c-419d-ac22-194fd8f5681a")
+	)
+	(wire
+		(pts
+			(xy 76.2 132.08) (xy 86.36 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c86a5d2-ef21-4398-9940-518bfe4276a9")
 	)
 	(wire
 		(pts
@@ -4411,16 +4018,6 @@
 		)
 		(uuid "8051deac-fff4-4c1c-a492-a58dac0d70af")
 	)
-	(wire
-		(pts
-			(xy 118.11 144.78) (xy 118.11 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81d135e1-e3e9-4972-b56d-59cf8b42d1a5")
-	)
 	(polyline
 		(pts
 			(xy 69.85 107.95) (xy 69.85 62.23)
@@ -4471,6 +4068,16 @@
 		)
 		(uuid "a979df87-ade6-4223-9981-3aaadf207e1e")
 	)
+	(wire
+		(pts
+			(xy 54.61 132.08) (xy 64.77 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8e185b3-b0c1-451b-ab0f-34859c21a127")
+	)
 	(polyline
 		(pts
 			(xy 96.52 63.5) (xy 96.52 107.95)
@@ -4493,16 +4100,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 142.24) (xy 118.11 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1526862-a01b-4e21-b143-ec4282f77702")
-	)
-	(wire
-		(pts
 			(xy 182.88 81.28) (xy 187.96 81.28)
 		)
 		(stroke
@@ -4520,6 +4117,26 @@
 			(type dash)
 		)
 		(uuid "c2d1723a-30b6-429c-b809-1bd43d1e6768")
+	)
+	(wire
+		(pts
+			(xy 64.77 130.81) (xy 64.77 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cab7ef0a-8438-4a98-8130-2d1dedb6e89b")
+	)
+	(wire
+		(pts
+			(xy 118.11 137.16) (xy 118.11 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc79c662-ba8d-45dd-a4ed-84eac93c5da4")
 	)
 	(wire
 		(pts
@@ -4553,17 +4170,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 139.7) (xy 118.11 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1aa0f18-d8aa-4f90-a062-afff521d1858")
-	)
-	(wire
-		(pts
-			(xy 118.11 137.16) (xy 118.11 129.54)
+			(xy 118.11 129.54) (xy 118.11 137.16)
 		)
 		(stroke
 			(width 0)
@@ -5630,6 +5237,114 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAQIDAAAAAAAAABAmAgAAMEv6ECYCAAAAAAAAAAAAAKkcEUpyaweA"
+			"kEv6ECYCAABwTPoQJgIAAAAAAAAAAAAApxwXSjhsB4BQSvoQJgIAAHBL+hAmAgAAAAAAAAAAAACl"
+			"HBVKMG0HgLBM+hAmAgAAkEz6ECYCAAAAAAAAAAAAAKMcC0ombgeAEEz6ECYCAACQSvoQJgIAAAAA"
+			"AAAAAAAAoRwJSnRvB4CwR/oQJgIAAFBN+hAmAgAAAAAAAAAAAADfHA9KYXAHgBBJ+hAmAgAA0Ev6"
+			"ECYCAAAAAAAAAAAAAN0cDUogcQeAsEb6ECYCAABQSvoQJgIAAAAAAAAAAAAA2xwDSndyB4CwSPoQ"
+			"JgIAABBJ+hAmAgAAAAAAAAAAAADZHAFKT3MHgHBL+hAmAgAAsEj6ECYCAAAAAAAAAAAAANccB0pl"
+			"dAeAsEv6ECYCAAAQRvoQJgIAAAAAAAAAAAAA1RwFSnN1B4AwRvoQJgIAALBL+hAmAgAAAAAAAAAA"
+			"AADTHPtLLnYHgPBM+hAmAgAAsEr6ECYCAAAAAAAAAAAAANEc+UtmdweAUEf6ECYCAADQTPoQJgIA"
+			"AAAAAAAAAAAAzxz/S3V4B4BQTfoQJgIAAHBG+hAmAgAAAAAAAAAAAADNHP1La3kHgLBN+hAmAgAA"
+			"0Eb6ECYCAAAAAAAAAAAAAMsc80tvegeA8Ev6ECYCAAAQTfoQJgIAAAAAAAAAAAAAyRzxS2l7B4CQ"
+			"TfoQJgIAABBI+hAmAgAAAAAAAAAAAADHHPdLcnwHgPBK+hAmAgAAcE36ECYCAAAAAAAAAAAAAMUc"
+			"9UttfQeAkEb6ECYCAAAwTfoQJgIAAAAAAAAAAAAAwxzrSy9+B4BwSvoQJgIAAJBI+hAmAgAAAAAA"
+			"AAAAAADBHOlLN38HgFBG+hAmAgAA0Ef6ECYCAAAAAAAAAAAAAP8c70thgAeAsE76ECYCAABQU/oQ"
+			"JgIAAAAAAAAAAAAA/RztS26BB4CQU/oQJgIAADBV+hAmAgAAAAAAAAAAAAD7HONLYYIHgHBO+hAm"
+			"AgAAUE/6ECYCAAAAAAAAAAAAAPkc4UsugweAcFT6ECYCAABQTvoQJgIAAAAAAAAAAAAA9xznSzaE"
+			"B4BwT/oQJgIAANBS+hAmAgAAAAAAAAAAAAD1HOVLOoUHgNBT+hAmAgAAEE76ECYCAAAAAAAAAAAA"
+			"APMc20tthgeAcFD6ECYCAAAwT/oQJgIAAAAAAAAAAAAA8RzZS2+HB4BwU/oQJgIAANBP+hAmAgAA"
+			"AAAAAAAAAADvHN9LbYgHgJBP+hAmAgAAEFT6ECYCAAAAAAAAAAAAAO0c3UtXiQeA0E76ECYCAAAQ"
+			"U/oQJgIAAAAAAAAAAAAA6xzTS2aKB4BQTvoQJgAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAP//"
+			"////////AAAAAAAAAAAAAAAAAAAAAJCk11n6fwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAD//////////wAAAAAAAAAAAAAAAAAAAACQpNdZ"
+			"+n8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8A"
+			"AAAA//////////8AAAAAAAAAAAAAAAAAAAAAkKTXWfp/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAP//////////AAAAAAAAAAAAAAAAAAAA"
+			"AJCk11n6fwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"/////wAAAAD//////////wAAAAAAAAAAAAAAAAAAAACQpNdZ+n8AAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAA//////////8AAAAAAAAAAAAA"
+			"AAAAAAAAkKTXWfp/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAD/////AAAAAP//////////AAAAAAAAAAAAAAAAAAAAAJCk11n6fwAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAD//////////wAAAAAA"
+			"AAAAAAAAAAAAAACQpNdZ+n8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAP////8AAAAA//////////8AAAAAAAAAAAAAAAAAAAAAkKTXWfp/AAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAP//////////"
+			"AAAAAAAAAAAAAAAAAAAAAJCk11n6fwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAA/////wAAAAD//////////wAAAAAAAAAAAAAAAAAAAACQpNdZ+n8AAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAA////"
+			"//////8AAAAAAAAAAAAAAAAAAAAAkKTXWfp/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
 		)
 	)
@@ -5730,158 +5445,16 @@
 		)
 	)
 	(symbol
-		(lib_id "DishSymbols:Conn_01x02_Pin")
-		(at 115.57 81.28 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "055f2157-2947-432e-8074-7fc214a2dfc8")
-		(property "Reference" "J2"
-			(at 113.03 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 106.68 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "DishFootprints:PinHeader_1x02_P2.54mm_Vertical"
-			(at 115.57 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/201605/ph1-xx-ua-data-sheet.pdf"
-			(at 115.57 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Connector Header Through Hole 2 position 0.100\" (2.54mm)"
-			(at 115.57 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "-"
-			(at 115.57 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Adam Tech"
-			(at 115.57 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "PH1-02-UA"
-			(at 115.57 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "Digikey"
-			(at 115.57 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "2057-PH1-02-UA-ND"
-			(at 115.57 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/adam-tech/PH1-02-UA/9830266"
-			(at 115.57 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.03"
-			(at 115.57 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
-			(at 115.57 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "81a9ab59-f36f-4639-a129-08f978ec3d91")
-		)
-		(pin "1"
-			(uuid "56eed69a-d4aa-462c-9083-1f59fea66328")
-		)
-		(instances
-			(project ""
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "DishSymbols:74LS32")
+		(lib_id "74xx:74LS32")
 		(at 175.26 135.89 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "15562307-43d7-4b1b-b083-de886661fcf9")
-		(property "Reference" "U3"
-			(at 175.26 127 0)
+		(uuid "104ce849-60e6-455a-84ed-886ed606d81c")
+		(property "Reference" "U2"
+			(at 175.26 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5894,9 +5467,10 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "DishFootprints:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 175.26 135.89 0)
 			(effects
 				(font
@@ -5923,125 +5497,123 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "SOIC-14"
-			(at 175.26 135.89 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "TI"
-			(at 175.26 135.89 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LS32DR"
-			(at 175.26 135.89 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "296-3696-5-ND"
-			(at 175.26 135.89 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "Digikey"
-			(at 175.26 135.89 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS32DR/562581"
-			(at 175.26 135.89 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.4"
-			(at 175.26 135.89 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "Digikey says SN74LS32D is obsolete, so get DR"
-			(at 175.26 135.89 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "10"
-			(uuid "50e8a9a6-cb9b-45dc-ba95-2c825c83ea39")
-		)
-		(pin "12"
-			(uuid "b32b2da4-d278-4c6b-96e7-37a79270e28b")
-		)
-		(pin "11"
-			(uuid "4beb219c-24ae-46d6-9761-b7a2ad8648c9")
-		)
-		(pin "9"
-			(uuid "1baacf9b-8dff-4523-92dd-2581d096e46e")
-		)
-		(pin "14"
-			(uuid "e9ee8609-ffbf-449a-abd3-85043bd327f2")
-		)
-		(pin "5"
-			(uuid "5387df81-3361-4912-917b-eb87d743ea8a")
-		)
 		(pin "4"
-			(uuid "10a2a96c-bbfb-4659-8d42-093522e10451")
-		)
-		(pin "2"
-			(uuid "0a9ba10f-6cdd-4dd0-ac54-37de81b2a958")
-		)
-		(pin "13"
-			(uuid "7b5c0866-0d31-410d-b318-3d2e05de5017")
-		)
-		(pin "3"
-			(uuid "11463939-9fb6-4a66-b53e-51e04589beb6")
-		)
-		(pin "8"
-			(uuid "0451c611-2683-4b43-bc30-49937768c99c")
-		)
-		(pin "7"
-			(uuid "1bff04a0-574a-4241-bd3e-e01812d43427")
-		)
-		(pin "1"
-			(uuid "0172f122-607f-4fa2-b7f5-3f281c2aa9f3")
+			(uuid "81c8f516-6563-461f-87ea-cdd9d8a77f53")
 		)
 		(pin "6"
-			(uuid "2c4b74ad-4feb-441b-b6b5-6f02ca88dd0b")
+			(uuid "b90da177-510e-4a3b-8f92-491c8e2ee3d9")
+		)
+		(pin "5"
+			(uuid "4fa23e40-9993-4072-85d6-9d7f7c11638d")
+		)
+		(pin "14"
+			(uuid "c737c555-f8d8-482c-90ee-1ead71296d10")
+		)
+		(pin "2"
+			(uuid "dc60f44d-3627-4911-95b0-6f7b611e503c")
+		)
+		(pin "10"
+			(uuid "a5683b8e-1ece-4534-a78f-6e5f2a365517")
+		)
+		(pin "11"
+			(uuid "c256e2f9-02e4-481f-9a67-81abaddcc4c9")
+		)
+		(pin "8"
+			(uuid "d39d6cf6-a613-4cd6-a7ee-1658c9d8cc73")
+		)
+		(pin "1"
+			(uuid "75ec6b1e-6a00-41a3-8ede-e3cc4a26c82c")
+		)
+		(pin "13"
+			(uuid "3529d540-dbdf-4929-b153-4b1d1ad419cc")
+		)
+		(pin "9"
+			(uuid "cb760e15-9642-4830-863f-05181501d849")
+		)
+		(pin "3"
+			(uuid "14d9f946-faf7-4f35-a78c-dae042508b96")
+		)
+		(pin "12"
+			(uuid "0dcffdec-7f6e-420f-b099-7e3e5f812f11")
+		)
+		(pin "7"
+			(uuid "c3e26289-ffff-445f-83e6-82a26ec6cb6b")
 		)
 		(instances
-			(project "simple_dish_manual_controller"
+			(project ""
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "U3")
+					(reference "U2")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 162.56 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1826bb05-a896-415d-af17-cc30877884f3")
+		(property "Reference" "C1"
+			(at 166.37 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 166.37 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 163.5252 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 162.56 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "826816e0-4f5f-4cfd-ab00-b98cc3cfef96")
+		)
+		(pin "2"
+			(uuid "59a62483-5823-4416-9d68-c32aec0564cb")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "C1")
+					(unit 1)
 				)
 			)
 		)
@@ -6177,399 +5749,17 @@
 		)
 	)
 	(symbol
-		(lib_id "DishSymbolsSupplier:Screw Terminal Ground Chassis Vertical")
-		(at 128.27 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2789accd-20b3-4c56-8bff-d4bd4330e027")
-		(property "Reference" "J10"
-			(at 134.62 139.6999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw Terminal 4 pins to board"
-			(at 110.49 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "DishFootprintsSupplier:TERM_SCREW_01x04_VERTICAL_KEYSTONE_7690"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p66.pdf"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "4 Pin Screw Terminal, Power Tap 6-32 Through Hole, Right Angle"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "F"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Keystone Electronics"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "7.92 mm"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" ""
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Keystone Electronics"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "7690"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "Digikey"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "36-7690-ND"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/keystone-electronics/7690/151547"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.53"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "For grounding to Chassis"
-			(at 128.27 137.16 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1_4"
-			(uuid "eb34374f-5846-4db1-bdea-b2800a2bd2a3")
-		)
-		(pin "1_3"
-			(uuid "ad779ea7-d784-423b-9485-5203cd3e789f")
-		)
-		(pin "1_2"
-			(uuid "01c9fd63-e39a-4c9f-8224-715bb09a7b67")
-		)
-		(pin "1_1"
-			(uuid "4ee8b143-5c9a-475d-934e-ea22fdafa1a1")
-		)
-		(instances
-			(project ""
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "J10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "DishSymbols:74LS08")
-		(at 64.77 149.86 0)
-		(unit 5)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "31c896bc-924d-4987-b7e9-99ef3bfacfad")
-		(property "Reference" "U2"
-			(at 71.12 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74LS08"
-			(at 71.12 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "DishFootprints:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 64.77 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 64.77 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad And2"
-			(at 64.77 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "SOIC-14"
-			(at 64.77 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "TI"
-			(at 64.77 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LS08D"
-			(at 64.77 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "Digikey"
-			(at 64.77 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "296-1632-5-ND"
-			(at 64.77 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS08D/277278"
-			(at 64.77 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.82"
-			(at 64.77 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
-			(at 64.77 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "9"
-			(uuid "5ca84fa6-a06a-4780-80e8-baf27b104756")
-		)
-		(pin "2"
-			(uuid "b7852eb7-9ed7-4811-b10c-3b9cc163a0be")
-		)
-		(pin "3"
-			(uuid "7bd1dd7c-38c3-4a1a-9dda-38f5342e5189")
-		)
-		(pin "6"
-			(uuid "b07e6cf9-5c3b-4486-b054-8714538a9ef1")
-		)
-		(pin "10"
-			(uuid "0fb0c588-7019-43f9-9e6b-76ff7b976851")
-		)
-		(pin "13"
-			(uuid "529ebc19-c9c8-42f2-a7e3-d7c2b4a215d8")
-		)
-		(pin "11"
-			(uuid "92bd4117-2e4c-469c-b5b3-1bfc35960146")
-		)
-		(pin "8"
-			(uuid "64eaea31-0246-4dd6-b512-be9e4ad9fd00")
-		)
-		(pin "4"
-			(uuid "ce7c99b5-deb4-4ec5-8c29-a7a031d7bb42")
-		)
-		(pin "5"
-			(uuid "ff74aea5-549a-42f0-ae3d-04a4b1a96060")
-		)
-		(pin "12"
-			(uuid "02891507-551f-4d88-a8e9-f8a2d92aa388")
-		)
-		(pin "1"
-			(uuid "974be34f-c14e-49c5-a281-a6975dd0f375")
-		)
-		(pin "7"
-			(uuid "7f3a2c9f-b671-43a7-8f95-75111f6002b9")
-		)
-		(pin "14"
-			(uuid "3164cc28-ae05-4d1b-adf1-6715e17ebf39")
-		)
-		(instances
-			(project "simple_dish_manual_controller"
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "U2")
-					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "DishSymbols:AMS1117-5.0")
-		(at 175.26 81.28 0)
+		(lib_id "power:GND")
+		(at 54.61 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "440d0da2-9017-49ec-9a83-a1e63f9dac10")
-		(property "Reference" "U1"
-			(at 175.26 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AMS1117-5.0"
-			(at 175.26 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "DishFootprints:SOT-223-3_TabPin2"
-			(at 175.26 76.2 0)
+		(uuid "32057ff1-a7cd-4fa2-af12-ffdc6450c275")
+		(property "Reference" "#PWR07"
+			(at 54.61 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6577,8 +5767,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-			(at 177.8 87.63 0)
+		(property "Value" "GND"
+			(at 54.61 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6586,8 +5784,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Linear Voltage Regulator IC Positive Fixed 1 Output 1A SOT-223-3L"
-			(at 175.26 81.28 0)
+		(property "Datasheet" ""
+			(at 54.61 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6595,108 +5793,108 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "SOT-223-3L"
-			(at 175.26 81.28 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.61 139.7 0)
 			(effects
 				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "EVVO"
-			(at 175.26 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AMS1117-5.0"
-			(at 175.26 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "Digikey"
-			(at 175.26 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "5272-AMS1117-5.0CT-ND"
-			(at 175.26 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/evvo/AMS1117-5-0/24370130"
-			(at 175.26 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.21"
-			(at 175.26 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
-			(at 175.26 81.28 0)
-			(effects
-				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "170746f6-5b0c-4f51-8352-5d2df500b877")
-		)
-		(pin "3"
-			(uuid "44ea2f6c-d060-482a-9697-4700dfee33c7")
-		)
-		(pin "2"
-			(uuid "8edfa70f-6cc0-481b-87e8-6bc827712672")
+			(uuid "af59346b-9e31-4ce0-9dd6-f5bed9f23659")
 		)
 		(instances
 			(project ""
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "U1")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "DishSymbols:74LS32")
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 74.93 78.74 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a63aeb3-547b-4f1d-a972-33daf4fef31e")
+		(property "Reference" "J1"
+			(at 76.2 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 72.39 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 74.93 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 74.93 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0f2e3844-9214-408a-906f-afcee999a6fa")
+		)
+		(pin "1"
+			(uuid "fd496dd0-a673-40f5-ab19-92bbb3d83766")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS32")
 		(at 86.36 149.86 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "44b73721-7989-4886-9c4c-98745958bba5")
-		(property "Reference" "U3"
-			(at 92.71 148.5899 0)
+		(uuid "60e804b6-6ba3-4af2-9f63-518c866c4a69")
+		(property "Reference" "U2"
+			(at 83.82 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6711,9 +5909,10 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "DishFootprints:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 86.36 149.86 0)
 			(effects
 				(font
@@ -6740,267 +5939,53 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "SOIC-14"
-			(at 86.36 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "TI"
-			(at 86.36 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LS32DR"
-			(at 86.36 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "296-3696-5-ND"
-			(at 86.36 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "Digikey"
-			(at 86.36 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS32DR/562581"
-			(at 86.36 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.4"
-			(at 86.36 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "Digikey says SN74LS32D is obsolete, so get DR"
-			(at 86.36 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "10"
-			(uuid "bfb5259b-6271-4cae-b71b-bf158cfc4e39")
-		)
-		(pin "12"
-			(uuid "b32b2da4-d278-4c6b-96e7-37a79270e28a")
-		)
-		(pin "11"
-			(uuid "4beb219c-24ae-46d6-9761-b7a2ad8648c8")
-		)
-		(pin "9"
-			(uuid "36b626a5-b027-4cd4-ad66-14f69c07c0d9")
-		)
-		(pin "14"
-			(uuid "04eafff3-fd3a-4936-8e8b-c80fd5ea623a")
-		)
-		(pin "5"
-			(uuid "5387df81-3361-4912-917b-eb87d743ea89")
+		(pin "2"
+			(uuid "5835fcfa-1dbd-4e44-a2b1-440af23cd132")
 		)
 		(pin "4"
-			(uuid "10a2a96c-bbfb-4659-8d42-093522e10450")
-		)
-		(pin "2"
-			(uuid "0a9ba10f-6cdd-4dd0-ac54-37de81b2a957")
-		)
-		(pin "13"
-			(uuid "7b5c0866-0d31-410d-b318-3d2e05de5016")
-		)
-		(pin "3"
-			(uuid "11463939-9fb6-4a66-b53e-51e04589beb5")
-		)
-		(pin "8"
-			(uuid "caba092a-5b6a-4c14-a92f-c90dc3d59b83")
-		)
-		(pin "7"
-			(uuid "63191767-7109-4522-87ff-a91f5aa71bc5")
-		)
-		(pin "1"
-			(uuid "0172f122-607f-4fa2-b7f5-3f281c2aa9f2")
+			(uuid "2b054736-8e78-48dd-af78-ab1e712d4895")
 		)
 		(pin "6"
-			(uuid "2c4b74ad-4feb-441b-b6b5-6f02ca88dd0a")
+			(uuid "3376afd1-e517-4e86-aa04-4ca32e3e6e6a")
 		)
-		(instances
-			(project "simple_dish_manual_controller"
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "U3")
-					(unit 5)
-				)
-			)
+		(pin "5"
+			(uuid "52b99e37-61a8-473d-acc1-950d72ff8ae4")
 		)
-	)
-	(symbol
-		(lib_id "DishSymbols:RES 1.5k 0805")
-		(at 203.2 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4d999d08-5a71-4b84-bc1f-2d7d5555e1d6")
-		(property "Reference" "R1"
-			(at 205.74 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
+		(pin "13"
+			(uuid "7d7dcacd-ba88-423c-b411-9e457f8d3c46")
 		)
-		(property "Value" "1k5"
-			(at 205.74 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
+		(pin "9"
+			(uuid "54add572-e04d-4f4e-83a2-13d0d32b08ed")
 		)
-		(property "Footprint" "DishFootprints:R_0805"
-			(at 201.422 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "dbaeff14-87cb-4c68-ba77-3bee1149d001")
 		)
-		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf"
-			(at 203.2 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "10"
+			(uuid "2bee22e7-a017-4fb3-8440-e828d42327b8")
 		)
-		(property "Description" "1.5 kOhms ±0.1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thin Film"
-			(at 203.2 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "8"
+			(uuid "54d04c80-7f61-411e-96c0-fc2956a4ab67")
 		)
-		(property "Package" "0805"
-			(at 203.2 87.63 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
+		(pin "14"
+			(uuid "58d0649f-e24f-42b3-8b2d-c6f2e22a006d")
 		)
-		(property "MF" "Susumu"
-			(at 203.2 87.63 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RG2012P-152-B-T5"
-			(at 203.2 87.63 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "Digikey"
-			(at 203.2 87.63 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "RG20P1.5KBCT-ND"
-			(at 203.2 87.63 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/susumu/RG2012P-152-B-T5/1240682"
-			(at 203.2 87.63 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.09"
-			(at 203.2 87.63 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
-			(at 203.2 87.63 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2f8236b0-8ed9-408d-ade0-7b0ca553ee64")
+		(pin "7"
+			(uuid "64d14127-a9ee-4a17-b942-2f5f052659cf")
 		)
 		(pin "1"
-			(uuid "1745fcbf-14a0-4685-a8ca-bd4bf432879a")
+			(uuid "9cf11aa8-0d10-4fed-b73b-c9e11b2435ce")
+		)
+		(pin "12"
+			(uuid "1cfc4580-7eaf-448f-b969-350222f5cf15")
+		)
+		(pin "11"
+			(uuid "d95e6791-0e31-451d-98f8-1d608f20d753")
 		)
 		(instances
 			(project ""
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "R1")
-					(unit 1)
+					(reference "U2")
+					(unit 5)
 				)
 			)
 		)
@@ -7071,45 +6056,35 @@
 		)
 	)
 	(symbol
-		(lib_id "DishSymbols:CAP 22uF 0805")
-		(at 162.56 88.9 90)
+		(lib_id "Device:C")
+		(at 187.96 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6b167063-b82d-4b4c-bb2d-0e9d3dfc4bbb")
-		(property "Reference" "C1"
-			(at 166.37 86.3599 90)
+		(uuid "71e1d81f-61ab-4444-8bf9-ea0f15d64f51")
+		(property "Reference" "C2"
+			(at 191.77 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "22uF"
-			(at 166.37 88.8999 90)
+			(at 191.77 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "DishFootprints:CAP 22uF 0805"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM219R61C226ME15-01.pdf"
-			(at 162.56 88.9 0)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 188.9252 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7117,8 +6092,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22 µF ±20% 16V Ceramic Capacitor X5R 0805 (2012 Metric)"
-			(at 162.56 88.9 0)
+		(property "Datasheet" "~"
+			(at 187.96 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7126,91 +6101,91 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Murata"
-			(at 162.56 88.9 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 187.96 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
-		)
-		(property "Package" "805-2 Murata"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.23"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MPN" "GRM219R61C226ME15K"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "Digikey"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "490-GRM219R61C226ME15KCT-ND"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15K/11618740?s=N4IgTCBcDaIOICUCyYCMBOBA2VBhMYWSAoqgKwDSIAugL5A"
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
-			(at 162.56 88.9 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b6db9444-27fa-40bc-9602-1f709f25b89c")
 		)
 		(pin "1"
-			(uuid "12556557-9501-4e54-9e93-8d2a98fc0193")
+			(uuid "9437ddf3-2bfc-4c0a-85d2-e577407aaf10")
+		)
+		(pin "2"
+			(uuid "64e75ded-50eb-487b-8ec3-e4034145ffe5")
+		)
+		(instances
+			(project "simple_dish_manual_controller"
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "741e3016-1b34-48d2-b2b0-aff1970a189c")
+		(property "Reference" "#PWR08"
+			(at 76.2 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0cb2b354-35c4-4098-acfd-608b1c008c29")
 		)
 		(instances
 			(project ""
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "C1")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -7356,7 +6331,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84ef38be-ace7-4725-969a-f91251232bbc")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR010"
 			(at 86.36 168.91 0)
 			(effects
 				(font
@@ -7406,41 +6381,42 @@
 		(instances
 			(project "simple_dish_manual_controller"
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "#PWR019")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "LED_1")
-		(lib_id "Device:LED")
-		(at 196.85 81.28 180)
+		(lib_id "Device:C")
+		(at 76.2 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "95371998-84f7-4110-bf7b-b6a365c74461")
-		(property "Reference" "D1"
-			(at 198.4375 73.66 0)
+		(uuid "880967a3-8fbb-4250-8571-b2bc85888683")
+		(property "Reference" "C4"
+			(at 80.01 134.6199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "LED"
-			(at 198.4375 76.2 0)
+		(property "Value" "0.1uF"
+			(at 80.01 137.1599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 196.85 81.28 0)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 77.1652 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7449,7 +6425,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 196.85 81.28 0)
+			(at 76.2 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7457,42 +6433,198 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
-			(at 196.85 81.28 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 76.2 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 196.85 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 196.85 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
-			(uuid "7968252c-4eb3-41e7-bb83-7d1c8bb251b4")
+			(uuid "9e7126e7-3d46-446f-9c8a-98d11d252855")
 		)
 		(pin "2"
-			(uuid "49372ff5-43e2-4d5b-98b5-9e8009ee5bd3")
+			(uuid "ecf4bfbb-feb8-492d-ab1b-8e0f0426a52d")
+		)
+		(instances
+			(project "simple_dish_manual_controller"
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS32")
+		(at 175.26 149.86 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f766aa1-01dd-45ca-848b-1e383443000a")
+		(property "Reference" "U2"
+			(at 175.26 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LS32"
+			(at 175.26 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 175.26 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+			(at 175.26 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad 2-input OR"
+			(at 175.26 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5835fcfa-1dbd-4e44-a2b1-440af23cd133")
+		)
+		(pin "4"
+			(uuid "2b054736-8e78-48dd-af78-ab1e712d4896")
+		)
+		(pin "6"
+			(uuid "3376afd1-e517-4e86-aa04-4ca32e3e6e6b")
+		)
+		(pin "5"
+			(uuid "52b99e37-61a8-473d-acc1-950d72ff8ae5")
+		)
+		(pin "13"
+			(uuid "7d7dcacd-ba88-423c-b411-9e457f8d3c47")
+		)
+		(pin "9"
+			(uuid "54add572-e04d-4f4e-83a2-13d0d32b08ee")
+		)
+		(pin "3"
+			(uuid "dbaeff14-87cb-4c68-ba77-3bee1149d002")
+		)
+		(pin "10"
+			(uuid "2bee22e7-a017-4fb3-8440-e828d42327b9")
+		)
+		(pin "8"
+			(uuid "54d04c80-7f61-411e-96c0-fc2956a4ab68")
+		)
+		(pin "14"
+			(uuid "58d0649f-e24f-42b3-8b2d-c6f2e22a006e")
+		)
+		(pin "7"
+			(uuid "64d14127-a9ee-4a17-b942-2f5f052659d0")
+		)
+		(pin "1"
+			(uuid "9cf11aa8-0d10-4fed-b73b-c9e11b2435cf")
+		)
+		(pin "12"
+			(uuid "1cfc4580-7eaf-448f-b969-350222f5cf16")
+		)
+		(pin "11"
+			(uuid "d95e6791-0e31-451d-98f8-1d608f20d754")
 		)
 		(instances
 			(project ""
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "D1")
+					(reference "U2")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 203.2 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9108cc44-cf11-4d4c-81f3-276eb6685e0c")
+		(property "Reference" "R1"
+			(at 205.74 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 205.74 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 201.422 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 203.2 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfcea3ba-22bd-42c3-84f5-6db0466ba152")
+		)
+		(pin "2"
+			(uuid "10dab120-0e76-4420-9542-e33e0bc6e320")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -7500,7 +6632,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 86.36 137.16 0)
+		(at 86.36 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7508,8 +6640,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97f2c475-396f-434f-a604-a28c1b7d42df")
-		(property "Reference" "#PWR021"
-			(at 86.36 140.97 0)
+		(property "Reference" "#PWR06"
+			(at 86.36 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7518,7 +6650,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 86.36 132.08 0)
+			(at 86.36 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7526,7 +6658,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 137.16 0)
+			(at 86.36 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7535,7 +6667,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 137.16 0)
+			(at 86.36 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7544,7 +6676,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 86.36 137.16 0)
+			(at 86.36 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7558,7 +6690,7 @@
 		(instances
 			(project "simple_dish_manual_controller"
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "#PWR021")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -7697,7 +6829,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 64.77 137.16 0)
+		(at 64.77 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7705,8 +6837,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aafd4eba-29da-4c69-b803-a39cb38cc5b8")
-		(property "Reference" "#PWR014"
-			(at 64.77 140.97 0)
+		(property "Reference" "#PWR05"
+			(at 64.77 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7715,7 +6847,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 64.77 132.08 0)
+			(at 64.77 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7723,7 +6855,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 137.16 0)
+			(at 64.77 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7732,7 +6864,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 137.16 0)
+			(at 64.77 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7741,7 +6873,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 64.77 137.16 0)
+			(at 64.77 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7755,346 +6887,23 @@
 		(instances
 			(project "simple_dish_manual_controller"
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "#PWR014")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "DishSymbols:74LS32")
-		(at 175.26 149.86 0)
-		(unit 4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ae0f24b4-5b6a-43f6-b191-b6cb3a1a5b29")
-		(property "Reference" "U3"
-			(at 175.26 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LS32"
-			(at 175.26 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "DishFootprints:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 175.26 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 175.26 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad 2-input OR"
-			(at 175.26 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "SOIC-14"
-			(at 175.26 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "TI"
-			(at 175.26 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LS32DR"
-			(at 175.26 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "296-3696-5-ND"
-			(at 175.26 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "Digikey"
-			(at 175.26 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS32DR/562581"
-			(at 175.26 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.4"
-			(at 175.26 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "Digikey says SN74LS32D is obsolete, so get DR"
-			(at 175.26 149.86 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "10"
-			(uuid "bfb5259b-6271-4cae-b71b-bf158cfc4e3a")
-		)
-		(pin "12"
-			(uuid "27c83d21-4c3e-4928-851e-54cd4b2835ad")
-		)
-		(pin "11"
-			(uuid "f796bd3e-9cfa-403c-b9a6-ea1737566520")
-		)
-		(pin "9"
-			(uuid "36b626a5-b027-4cd4-ad66-14f69c07c0da")
-		)
-		(pin "14"
-			(uuid "e9ee8609-ffbf-449a-abd3-85043bd327f1")
-		)
-		(pin "5"
-			(uuid "5387df81-3361-4912-917b-eb87d743ea8b")
-		)
-		(pin "4"
-			(uuid "10a2a96c-bbfb-4659-8d42-093522e10452")
-		)
-		(pin "2"
-			(uuid "0a9ba10f-6cdd-4dd0-ac54-37de81b2a959")
-		)
-		(pin "13"
-			(uuid "a4efe665-6bb8-4f50-8a2b-270374817f9d")
-		)
-		(pin "3"
-			(uuid "11463939-9fb6-4a66-b53e-51e04589beb7")
-		)
-		(pin "8"
-			(uuid "caba092a-5b6a-4c14-a92f-c90dc3d59b84")
-		)
-		(pin "7"
-			(uuid "1bff04a0-574a-4241-bd3e-e01812d43426")
-		)
-		(pin "1"
-			(uuid "0172f122-607f-4fa2-b7f5-3f281c2aa9f4")
-		)
-		(pin "6"
-			(uuid "2c4b74ad-4feb-441b-b6b5-6f02ca88dd0c")
-		)
-		(instances
-			(project "simple_dish_manual_controller"
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "U3")
-					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "DishSymbols:CAP 22uF 0805")
-		(at 187.96 88.9 90)
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 115.57 81.28 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c0bb1324-76ec-446f-90f9-0139e40ec937")
-		(property "Reference" "C2"
-			(at 191.77 86.3599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "22uF"
-			(at 191.77 88.8999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "DishFootprints:CAP 22uF 0805"
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM219R61C226ME15-01.pdf"
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "22 µF ±20% 16V Ceramic Capacitor X5R 0805 (2012 Metric)"
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Murata"
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "805-2 Murata"
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.23"
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MPN" "GRM219R61C226ME15K"
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "Digikey"
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "490-GRM219R61C226ME15KCT-ND"
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15K/11618740?s=N4IgTCBcDaIOICUCyYCMBOBA2VBhMYWSAoqgKwDSIAugL5A"
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "81415541-2723-4c7d-b5c7-f71c77ea6204")
-		)
-		(pin "1"
-			(uuid "9950fe92-14fe-4038-91be-d5d38c163f0f")
-		)
-		(instances
-			(project "simple_dish_manual_controller"
-				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "DishSymbols:Screw_Terminal_01x02")
-		(at 74.93 78.74 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ce1b4de8-afa0-4f24-9c06-bc49d9c8346c")
-		(property "Reference" "J1"
-			(at 76.2 76.2 0)
+		(uuid "b3f4b36b-1ee4-4567-8323-339d1571255e")
+		(property "Reference" "J2"
+			(at 113.03 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8102,18 +6911,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 72.39 81.2799 0)
+		(property "Value" "Conn_01x02_Pin"
+			(at 106.68 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "DishFootprints:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
-			(at 74.93 78.74 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 115.57 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8121,8 +6929,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.phoenixcontact.com/product/pdf/api/v1/MTcyOTEyOA?_realm=us&_locale=en-US&blocks=commercial-data%2Ctechnical-data%2Cdrawings%2Capprovals%2Cclassifications%2Cenvironmental-compliance-data%2Call-accessories"
-			(at 74.93 78.74 0)
+		(property "Datasheet" "~"
+			(at 115.57 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8130,97 +6938,441 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 74.93 78.74 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 115.57 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "-"
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Phoenix Contact"
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "1729128"
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "Digikey"
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "277-1247-ND"
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/phoenix-contact/1729128/260615"
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.80"
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1 1)
 				)
 				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "c311ee21-d4c1-48e0-8911-73bebd4a2f5b")
+			(uuid "bc0f563b-ef3d-49a5-a759-04b54918d059")
 		)
 		(pin "1"
-			(uuid "85d525fb-63de-449f-888d-1daecee7de04")
+			(uuid "27de836a-8314-4180-bb85-154b2b9957ec")
 		)
 		(instances
 			(project ""
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "J1")
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 196.85 81.28 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7527717-21d4-4264-93b6-9b55a3b65266")
+		(property "Reference" "D1"
+			(at 198.4375 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 198.4375 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
+			(at 196.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 196.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 196.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2a4ff246-559f-4e90-a0e9-a671de4a9ac0")
+		)
+		(pin "1"
+			(uuid "9588cd83-5571-4066-a971-3c9eec919f9c")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:AMS1117-5.0")
+		(at 175.26 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d7604217-cbc7-4402-83d9-7b0584606c4a")
+		(property "Reference" "U1"
+			(at 175.26 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117-5.0"
+			(at 175.26 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 175.26 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 177.8 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223"
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3b26a09e-f696-40f4-9605-0244a2ae492b")
+		)
+		(pin "1"
+			(uuid "1e8e5ee5-5334-4fc6-b0b5-7b953c81dc92")
+		)
+		(pin "2"
+			(uuid "c7847f6a-d931-4971-a9fa-f535dcb80cac")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DishSymbols:Screw Terminal Ground Chassis Vertical")
+		(at 128.27 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e775bd52-d019-452f-a603-6b4be91b471e")
+		(property "Reference" "J3"
+			(at 127 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Screw Terminal To Chassis"
+			(at 115.57 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DishFootprints:TERM_SCREW_01x04_VERTICAL_KEYSTONE_7690"
+			(at 128.27 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p66.pdf"
+			(at 128.27 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Screw Terminal 4 pins to chassis"
+			(at 128.27 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "F"
+			(at 134.62 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Keystone Electronics"
+			(at 134.62 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "7.92 mm"
+			(at 134.62 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 134.62 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 128.27 137.16 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Keystone Electronics"
+			(at 128.27 137.16 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "7690"
+			(at 128.27 137.16 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "Digikey"
+			(at 128.27 137.16 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "36-7690-ND"
+			(at 128.27 137.16 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase_URL" "https://www.digikey.com/en/products/detail/keystone-electronics/7690/151547"
+			(at 128.27 137.16 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.53"
+			(at 128.27 137.16 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "For grounding to Chassis"
+			(at 128.27 137.16 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "FILES" "https://www.digikey.com/en/models/151547"
+			(at 134.62 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1_4"
+			(uuid "eccbea35-c91f-4376-92d9-932b7f6dc680")
+		)
+		(pin "1_2"
+			(uuid "6398e1ec-6b27-4340-81de-cb25f24809b6")
+		)
+		(pin "1_3"
+			(uuid "07287f7e-7638-430b-bf54-80a501a44b8e")
+		)
+		(pin "1_1"
+			(uuid "8c474fc5-503b-4c2a-bbf6-33bae759f5f4")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 54.61 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f623bc4f-daad-4752-8d5e-48f7a0c39752")
+		(property "Reference" "C3"
+			(at 58.42 134.6199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 58.42 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 55.5752 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 54.61 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fbf84fc-cbee-4dd3-88dc-214c110468c3")
+		)
+		(pin "2"
+			(uuid "d73bd9fb-948a-4dcd-aac6-303ee3c98bcd")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -8236,7 +7388,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7e2f8d5-e559-484b-b06f-9b6ac56e07a8")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR09"
 			(at 64.77 168.91 0)
 			(effects
 				(font
@@ -8286,8 +7438,114 @@
 		(instances
 			(project "simple_dish_manual_controller"
 				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
-					(reference "#PWR020")
+					(reference "#PWR09")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS08")
+		(at 64.77 149.86 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc77ea0d-234b-4eb1-be57-014131b25f81")
+		(property "Reference" "U3"
+			(at 62.23 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74LS08"
+			(at 71.12 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 64.77 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+			(at 64.77 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad And2"
+			(at 64.77 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "67a10e5f-9e99-4a63-b91c-9aaf604d0af7")
+		)
+		(pin "13"
+			(uuid "4590ec97-b3fe-48c8-b796-9c045b3e60ad")
+		)
+		(pin "5"
+			(uuid "01e6a961-a7f9-43df-97e1-114083b0e8f0")
+		)
+		(pin "2"
+			(uuid "51819fba-7a9c-4290-95e9-4cb7f989acc8")
+		)
+		(pin "3"
+			(uuid "c4c914e1-92a8-4088-af3f-c2771e08fe95")
+		)
+		(pin "1"
+			(uuid "ebc04183-14e7-4525-a113-0619ce2a3264")
+		)
+		(pin "4"
+			(uuid "ec47a732-5f0f-4ae5-a60b-9d0db9bf7fa8")
+		)
+		(pin "9"
+			(uuid "e7379def-1f6a-49fd-9c8e-07704159c5e0")
+		)
+		(pin "10"
+			(uuid "36385869-658e-4440-a030-9273d2a29890")
+		)
+		(pin "8"
+			(uuid "0a68c577-affd-4144-a839-dd0d10bf73c5")
+		)
+		(pin "12"
+			(uuid "70c54981-3dd7-4d51-940e-c578dbdfe58d")
+		)
+		(pin "11"
+			(uuid "cebbac19-2fa4-47ed-a592-829020fd779c")
+		)
+		(pin "14"
+			(uuid "56b10182-e45f-43a1-afad-1313e19356b1")
+		)
+		(pin "7"
+			(uuid "07dea4c8-7704-463c-b90b-4fcb6424e83e")
+		)
+		(instances
+			(project ""
+				(path "/8648ccd3-30ce-4b98-baff-aeab56a7c9f5"
+					(reference "U3")
+					(unit 5)
 				)
 			)
 		)
