@@ -36,4 +36,7 @@ fp-info-cache
 
 utils/venv/** 
 
+**/sym-lib-table
+**/fp-lib-table
+
 .fake
