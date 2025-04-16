@@ -1,3 +1,13 @@
+"""
+File: fix_kicad_symbols.py
+
+Author: Jon Richards
+Date: April 16, 2025
+
+Description: For each symbol in a library make sure it has the required properties.
+             This script will add the properties if they are missing.
+"""
+
 import os
 import shutil
 from pathlib import Path
