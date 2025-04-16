@@ -1253,7 +1253,7 @@
 			(uuid "1fec5685-c837-424f-ad17-663b72a59b02")
 		)
 		(embedded_fonts no)
-		(model "${KICAD_USER_PARTS}/supplier_parts/3d_models/L77HDE15SD1CH4FVGA.step"
+		(model "${DISH_3RD_PARTY}/3d_models/L77HDE15SD1CH4FVGA.step"
 			(offset
 				(xyz 0 -11 5.5)
 			)
@@ -1264,6 +1264,141 @@
 				(xyz -0 180 180)
 			)
 		)
+	)
+	(footprint "DishFootprints:Raspberry_Pi_HAT_Side_DE15_Outline"
+		(layer "F.Cu")
+		(uuid "1af63890-3590-4a11-862f-599e6a1edf93")
+		(at 170.5 47.4)
+		(descr "Raspberry Pi HAT standard outline with mounting holes")
+		(tags "Raspberry Pi HAT")
+		(property "Reference" "REF**"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6d00bc40-89dd-4d82-8798-0a182b84db9a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Raspberry_Pi_HAT_Side_DE15_Outline"
+			(at 0 -5 0)
+			(layer "F.Fab")
+			(uuid "b3fb73eb-9a8f-42a2-b5b9-fa5f7a990972")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75b60724-589f-46fc-82fb-243c5705e679")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Raspberry Pi HAT outline with holes"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "216445d2-f74e-4277-8b12-7e25d727af33")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "From a ChatGPT discussion"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "e86b7470-7c89-4832-918e-e1011dceae5b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_line
+			(start 0 0)
+			(end 65 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6a9bb4d0-79f5-4819-b406-ee9af17e7f88")
+		)
+		(fp_line
+			(start 0 75)
+			(end 0 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "a706b9a9-d216-49f9-8d82-c6bf6d8e15f6")
+		)
+		(fp_line
+			(start 65 0)
+			(end 65 75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "652fd824-9a20-4113-a86a-66d6c274d7fd")
+		)
+		(fp_line
+			(start 65 75)
+			(end 0 75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "0696cb97-d80e-4d95-9c90-6c888644eb9c")
+		)
+		(pad "" np_thru_hole circle
+			(at 2.5 2.5)
+			(size 2.75 2.75)
+			(drill 2.75)
+			(layers "*.Mask")
+			(uuid "6ee98bb7-2427-411e-92c6-7d48553967ed")
+		)
+		(pad "" np_thru_hole circle
+			(at 2.5 53.5)
+			(size 2.75 2.75)
+			(drill 2.75)
+			(layers "*.Mask")
+			(uuid "13a03f65-2403-49c1-820d-50f81315c47c")
+		)
+		(pad "" np_thru_hole circle
+			(at 62.5 2.5)
+			(size 2.75 2.75)
+			(drill 2.75)
+			(layers "*.Mask")
+			(uuid "0ab13178-214e-4beb-bf3c-a9f7d839f723")
+		)
+		(pad "" np_thru_hole circle
+			(at 62.5 53.5)
+			(size 2.75 2.75)
+			(drill 2.75)
+			(layers "*.Mask")
+			(uuid "935841f9-7763-4c5e-a640-3ee14fb57af0")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_1206_3216Metric"
 		(layer "F.Cu")
@@ -2340,7 +2475,7 @@
 			(uuid "2464dfdf-1f03-4bc8-80ec-20b87cbee0df")
 		)
 		(embedded_fonts no)
-		(model "${KICAD_USER_PARTS}/supplier_parts/3d_models/7690.step"
+		(model "${DISH_3RD_PARTY}/3d_models/7690.step"
 			(offset
 				(xyz -3 4 1.5)
 			)
@@ -7132,7 +7267,7 @@
 			(uuid "1d4b6683-9bd5-4fa1-a777-60fb8425099e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD_USER_PARTS}/supplier_parts/3d_models/L77HDE15SD1CH4FVGA.step"
+		(model "${DISH_3RD_PARTY}/3d_models/L77HDE15SD1CH4FVGA.step"
 			(offset
 				(xyz 0 -11 5.5)
 			)
