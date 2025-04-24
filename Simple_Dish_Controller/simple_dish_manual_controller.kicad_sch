@@ -5489,7 +5489,25 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADEJQAAAAAAAHw1NgwAAAAAqVElBQAAAADFJQAA"
+			"AAAAAO1gNwwAAAAAzREnBQAAAADGJQAAAAAAAPBgNwwAAAAA0REnBQAAAADHJQAAAAAAAA7eOAwA"
+			"AAAA744oBQAAAADIJQAAAAAAABLeOAwAAAAA8o4oBQAAAADJJQAAAAAAADaeOgwAAAAAY7opBQAA"
+			"AADKJQAAAAAAAEOeOgwAAAAAaropBQAAAADLJQAAAAAAADOQPAwAAAAAqogqBQAAAADMJQAAAAAA"
+			"ADiQPAwAAAAArIgqBQAAAADNJQAAAAAAADyQPAwAAAAArIgqBQAAAADOJQAAAAAAAD2QPAwAAAAA"
+			"rYgqBQAAAADPJQAAAAAAANygPgwAAAAA1PEqBQAAAADQJQAAAAAAAN+gPgwAAAAA1PEqBQAAAADR"
+			"JQAAAAAAAOO7QAwAAAAA1PEqBQAAAADSJQAAAAAAAIkfQgwAAAAAFasqBQAAAADTJQAAAAAAAIjM"
+			"QgwAAAAArIgqBQAAAADUJQAAAAAAAIO+RAwAAAAAZ7opBQAAAADVJQAAAAAAAK5+RgwAAAAA8o4o"
+			"BQAAAADWJQAAAAAAANL7RwwAAAAAzhEnBQAAAADXJQAAAAAAAEcnSQwAAAAAo1ElBQAAAADYJQAA"
+			"AAAAAIz1SQwAAAAAqF8jBQAAAADZJQAAAAAAAMEYSgwAAAAAqa4iBQAAAADaJQAAAAAAALReSgwA"
+			"AAAAA08hBQAAAADbJQAAAAAAALReSgwAAAAA/DMfBQAAAADcJQAAAAAAAI31SQwAAAAAXSMdBQAA"
+			"AADdJQAAAAAAAIz1SQwAAAAAXCMdBQAAAADeJQAAAAAAAIz1SQwAAAAAWCMdBQAAAADfJQAAAAAA"
+			"AI7XSQwAAAAA8NocBQAAAADgJQAAAAAAAEonSQwAAAAAYzEbBQAAAADhJQAAAAAAAEMnSQwAAAAA"
+			"VjEbBQAAAADiJQAAAAAAANL7RwwAAAAAMnEZBQAAAADjJQAAAAAAAM/7RwwAAAAALnEZBQAAAADk"
+			"JQAAAAAAALF+RgwAAAAAEPQXBQAAAADlJQAAAAAAAK1+RgwAAAAADfQXBQAAAADmJQAAAAAAAIm+"
+			"RAwAAAAAnMgWBQAAAADnJQAAAAAAAHy+RAwAAAAAlcgWBQAAAADoJQAAAAAAAIzMQgwAAAAAVfoV"
+			"BQAAAADpJQAAAAAAAILMQgwAAAAAUvoVBQAAAADqJQAAAAAAAOO7QAwAAAAALJEVBQAAAADrJQAA"
+			"AAAAAOG7QAwAAAAALJEVBQAAAADsJQAAAAAAAN+gPgwAAAAALJEVBQAAAADtJQAAAAAAAN2gPgwA"
+			"AAAALJEVBQAAAADuJQAAAAAAAD2QPAwAAAAAUg=="
 		)
 	)
 	(label "IN_5VDC_SWITCH"
@@ -5777,12 +5795,13 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C116812"
 			(at 175.26 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
@@ -5939,12 +5958,13 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C12891"
 			(at 162.56 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
@@ -6387,12 +6407,13 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C116812"
 			(at 86.36 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
@@ -6734,12 +6755,13 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C12891"
 			(at 187.96 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
@@ -7070,7 +7092,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 80.01 137.1599 0)
 			(effects
 				(font
@@ -7122,12 +7144,13 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C24497"
 			(at 76.2 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
@@ -7245,12 +7268,13 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C116812"
 			(at 175.26 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
@@ -7364,7 +7388,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 201.422 87.63 90)
 			(effects
 				(font
@@ -7407,12 +7431,13 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C4410"
 			(at 203.2 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
@@ -8048,12 +8073,13 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C5264252"
 			(at 196.85 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
@@ -8172,12 +8198,13 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C6187"
 			(at 175.26 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
@@ -8623,7 +8650,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 58.42 137.1599 0)
 			(effects
 				(font
@@ -8675,12 +8702,13 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C24497"
 			(at 54.61 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
@@ -8867,12 +8895,13 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C6802"
 			(at 64.77 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
