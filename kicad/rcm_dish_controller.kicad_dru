@@ -1,0 +1,20 @@
+(version 1)
+(rule isolation_boundary
+  (constraint clearance (min 3.8mm))
+  (condition "A.NetName == 'RS485_1_GND' && B.NetName == 'GND'")
+)
+
+(rule isolation_boundary
+  (constraint clearance (min 3.8mm))
+  (condition "A.NetName == 'RS485_2_GND' && B.NetName == 'GND'")
+)
+
+(rule isolation_boundary2
+  (constraint clearance (min 3.8mm))
+  (condition "A.NetName == 'RS485_1_GND' && B.NetName == '+3V3'")
+)
+
+(rule isolation_boundary2
+  (constraint clearance (min 3.8mm))
+  (condition "A.NetName == 'RS485_2_GND' && B.NetName == '+3V3'")
+)

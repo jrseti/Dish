@@ -1,0 +1,461 @@
+# Axis Controller - Modbus RTU Protocol Definition
+## Rev 1.2 — Dual Axis, STM32G474RET6
+
+**Breaking change from Rev 1.1:** `AZ_CMD_POS_HI/LO` and `EL_CMD_POS_HI/LO` change
+meaning from "target position in encoder counts (uint32)" to "target angle in
+degrees (float32)" — see §5.4/§5.8. Position is now derived from two-point
+calibration against the limit switches (§5.2/§5.6), not from gear ratio.
+
+---
+
+## 1. Physical Layer
+
+- **Port:** RS485_1 (USART1, isolated ISOW1432B transceiver)
+- **Baud rate:** 115200, 8N1, no parity
+- **Topology:** Multi-drop RS485 bus, up to 32 nodes
+- **Node address:** Set by ADDR0/ADDR1/ADDR2 DIP switches at boot (1–7)
+- **RS485_2** is reserved for servo motor controllers — not used for Modbus
+
+---
+
+## 2. Addressing
+
+| Address | Meaning |
+|---------|---------|
+| 0x01–0x07 | Board node address (set by ADDR0–ADDR2 DIP switches) |
+| 0xFF | Broadcast — all boards on bus ingest, none reply |
+
+The board reads ADDR0/ADDR1/ADDR2 GPIO pins at boot and stores the
+3-bit value as its node address (1–7). Address 0x00 is not used
+(reserved by Modbus standard for broadcast; we use 0xFF instead to
+avoid conflicts with standard Modbus tools).
+
+Incoming frames with an address that does not match the board's node
+address AND is not 0xFF are silently discarded.
+
+Broadcast frames (0xFF) are processed but the board does NOT transmit
+a response — this is required to prevent bus collisions.
+
+---
+
+## 3. Frame Format
+
+Standard Modbus RTU framing:
+
+```
+[ADDR 1B][FC 1B][DATA nB][CRC-16 2B]
+```
+
+- CRC-16 is standard Modbus CRC (polynomial 0x8005), LSB first
+- Inter-frame silence gap: 3.5 character times (~0.32ms at 115200 baud)
+
+---
+
+## 4. Function Codes
+
+| Code | Name                    | Direction          |
+|------|-------------------------|--------------------|
+| 0x03 | Read Holding Registers  | Host → Board       |
+| 0x06 | Write Single Register   | Host → Board       |
+| 0x10 | Write Multiple Regs     | Host → Board       |
+
+The protocol is strictly master/slave polling. The board never transmits
+unsolicited frames. The host polls each board in round-robin to read
+status and position. This avoids RS485 bus collisions when multiple
+boards are present.
+
+---
+
+## 5. Register Map
+
+All registers are 16-bit. 32-bit values occupy two consecutive
+registers (HI word at lower address, LO word at next address).
+Float32 values are IEEE 754, stored as two 16-bit registers.
+
+Axis 1 (connector 1) = Elevation (EL)
+Axis 2 (connector 2) = Azimuth (AZ)
+
+---
+
+### 5.1 System Configuration (Read/Write)
+
+| Address | Name              | Type    | Description                          | Default |
+|---------|-------------------|---------|--------------------------------------|---------|
+| 0x0000  | SYS_ADDR          | uint16  | Node address (read-only, from DIP)   | —       |
+| 0x0001  | SYS_FW_VER        | uint16  | Firmware version (e.g. 0x0100=v1.0) | —       |
+| 0x0002  | SYS_UPTIME_HI     | uint16  | System uptime HIGH word (ms)         | —       |
+| 0x0003  | SYS_UPTIME_LO     | uint16  | System uptime LOW word (ms)          | —       |
+| 0x0004  | SYS_RESET         | uint16  | Write 0xDEAD to soft-reset MCU       | —       |
+| 0x0005  | SYS_STATUS        | uint16  | Global status flags (see §7)         | —       |
+| 0x0006  | SYS_USER_SW       | uint16  | User switch states (read-only, see §7) | —     |
+| 0x0007  | SYS_FAN           | uint16  | Fan control: 0=off, 1=on             | 0       |
+
+---
+
+### 5.2 Axis 2 (AZ) — Encoder Configuration (Read/Write)
+
+| Address | Name                | Type    | Description                          | Default |
+|---------|---------------------|---------|--------------------------------------|---------|
+| 0x0010  | AZ_GEAR_RATIO_HI    | uint32 HI | Motor:output gear reduction ratio  | —       |
+| 0x0011  | AZ_GEAR_RATIO_LO    | uint32 LO |                                     | 20      |
+| 0x0012–0x0013 | —              | —       | Reserved                              | —       |
+| 0x0014  | AZ_LIM1_POS_HI      | int32 HI | Encoder count at LIMIT1 — always 0 by design (encoder is zeroed here during homing) | — |
+| 0x0015  | AZ_LIM1_POS_LO      | int32 LO |                                     | 0       |
+| 0x0016  | AZ_LIM2_POS_HI      | int32 HI | Encoder count at LIMIT2 — negative (LIMIT1 is the CW end; reaching LIMIT2 moves CCW, decreasing the count). Set by the calibration procedure. | — |
+| 0x0017  | AZ_LIM2_POS_LO      | int32 LO |                                     | 0       |
+
+**Note:** `GEAR_RATIO` is used only to convert a commanded output RPM into a stepper
+pulse frequency (§5.4) — it plays no part in position, which is derived from
+`LIM1_ANGLE`/`LIM2_ANGLE`/`LIM2_POS` calibration below via linear interpolation:
+```
+angle(counts) = LIM1_ANGLE + counts * (LIM2_ANGLE - LIM1_ANGLE) / LIM2_POS
+counts(angle) = (angle - LIM1_ANGLE) * LIM2_POS / (LIM2_ANGLE - LIM1_ANGLE)
+```
+
+### 5.2b Axis 2 (AZ) — Calibration / Velocity Config (Read/Write)
+
+Placed in the unused gap after the AZ Status block (0x004A-0x006F).
+
+| Address | Name              | Type      | Description                              | Default |
+|---------|-------------------|-----------|-------------------------------------------|---------|
+| 0x004A  | AZ_DRIVER_PPR     | uint16    | DM556Y pulses/rev DIP-switch setting — must match the physical driver | 400  |
+| 0x004B  | AZ_MAX_RPM_HI     | float32 HI| Max output-shaft RPM — also the operating slew speed for every position move (not just a ceiling) | — |
+| 0x004C  | AZ_MAX_RPM_LO     | float32 LO|                                             | 1.5     |
+| 0x004D  | AZ_LIM1_ANGLE_HI  | float32 HI| Measured angle at LIMIT1 (home), set by the calibration procedure via an external instrument | — |
+| 0x004E  | AZ_LIM1_ANGLE_LO  | float32 LO|                                             | 0.0     |
+| 0x004F  | AZ_LIM2_ANGLE_HI  | float32 HI| Measured angle at LIMIT2, set by the calibration procedure | — |
+| 0x0050  | AZ_LIM2_ANGLE_LO  | float32 LO|                                             | 0.0     |
+| 0x0051–0x006F | —           | —         | Reserved for future growth                 | —       |
+
+`LIM1_ANGLE`/`LIM2_ANGLE` both default to `0.0`, so the axis reads as
+uncalibrated (`AXIS_ERR_NOT_CALIBRATED`, §8) until the calibration procedure
+sets them to distinct values. **Calibration is volatile (RAM only)** — it does
+not survive a power cycle; re-run the calibration procedure after every reboot.
+
+**Acceleration ramp:** homing and position moves don't jump straight to their
+target pulse rate — a stepper can't reliably pull in from a stop at the rates
+this gear ratio implies. They start at a fixed 200 Hz and ramp up at
+2000 Hz/s (both compile-time constants in `pwm_test.c`, not registers, as of
+this writing). `AZ_RPM_HI/LO` reports the actual current pulse rate converted
+back to RPM, so it reads low during the ramp-up, not the final target.
+
+---
+
+### 5.3 Axis 2 (AZ) — PID Configuration (Read/Write)
+
+| Address | Name         | Type    | Description              | Default |
+|---------|--------------|---------|--------------------------|---------|
+| 0x0020  | AZ_PID_P_HI  | uint16  | Proportional gain HIGH   | 0       |
+| 0x0021  | AZ_PID_P_LO  | uint16  | Proportional gain LOW    | 0       |
+| 0x0022  | AZ_PID_I_HI  | uint16  | Integral gain HIGH       | 0       |
+| 0x0023  | AZ_PID_I_LO  | uint16  | Integral gain LOW        | 0       |
+| 0x0024  | AZ_PID_D_HI  | uint16  | Derivative gain HIGH     | 0       |
+| 0x0025  | AZ_PID_D_LO  | uint16  | Derivative gain LOW      | 0       |
+| 0x0026  | AZ_PID_MAX   | uint16  | PID output clamp (0–1000)| 1000    |
+
+PID gains are float32 stored as HI/LO uint16 pairs (IEEE 754).
+
+---
+
+### 5.4 Axis 2 (AZ) — Motion Command (Read/Write)
+
+| Address | Name              | Type    | Description                                      |
+|---------|-------------------|---------|--------------------------------------------------|
+| 0x0030  | AZ_CMD_ENABLE     | uint16  | Motor enable: 0=off, 1=on                        |
+| 0x0031  | AZ_CMD_MODE       | uint16  | 0=position, 1=constant RPM (constant-RPM mode not yet implemented) |
+| 0x0032  | AZ_CMD_POS_HI     | float32 HI | **Target angle in degrees** (was uint32 encoder counts in Rev 1.1 — breaking change) |
+| 0x0033  | AZ_CMD_POS_LO     | float32 LO |                                                |
+| 0x0034  | AZ_CMD_RPM_HI     | uint16  | Target RPM HIGH word (float32, shaft RPM) — not consulted for position moves, which always run at `AZ_MAX_RPM` |
+| 0x0035  | AZ_CMD_RPM_LO     | uint16  | Target RPM LOW word                              |
+| 0x0036  | AZ_CMD_HOME       | uint16  | Write 1 to start homing sequence (drives CW to LIMIT1, zeroes encoder) |
+| 0x0037  | AZ_CMD_STOP       | uint16  | Write 1 to abort any homing/move and disable the driver |
+
+A position move requires `AZ_CMD_MODE=0`, `AZ_CMD_ENABLE=1`, and a calibrated
+axis (§5.2). **Use FC 0x10 to write both `AZ_CMD_POS_HI` and `AZ_CMD_POS_LO`
+atomically** in one frame — this is the recommended, race-free way to launch a
+move. A lone FC 0x06 write to `AZ_CMD_POS_LO` also triggers a move as a
+convenience, but risks acting on a stale HI word if written separately.
+
+**`AZ_CMD_HOME` homes to LIMIT1 only** — it does not touch LIMIT2 or write any
+calibration registers (that's the separate calibration procedure, which also
+prompts for the measured angle at each limit and jogs to LIMIT2 manually).
+
+Homing is a 3-phase approach rather than a single fast hit, so the final
+trigger point is repeatable instead of dependent on overtravel/momentum: it
+seeks CW into LIMIT1 at normal homing speed, backs off CCW past the release
+point (an extra 300ms of travel beyond the switch releasing, so the back-off
+is a perceptible, deliberate motion rather than stopping the instant it
+clears), then creeps back in CW at a much slower speed — *that* second
+trigger is what actually gets zeroed. If already sitting at/into
+LIMIT1 when homing is commanded (e.g. re-homing without moving away first),
+the seek phase is skipped and it starts directly from the back-off step
+rather than driving further into an already-triggered switch.
+
+**Limit-switch interlock:** driving further into an already-triggered limit
+switch via a raw jog (writing `AZ_PWM_FREQ`/`AZ_PWM_DIR` directly at `0x00C3`/
+`0x00C5`, e.g. from the Motor Control or manual calibration jog) is
+automatically stopped and reported as `AXIS_ERR_LIMIT_FAULT` (§8) — motion in
+the *other* direction is unaffected. Homing and calibrated position moves stop
+themselves correctly on arrival and are not affected by this interlock.
+
+**Position moves use a unidirectional approach, like homing:** stopping as
+soon as the encoder count matches the target — regardless of which direction
+the move arrived from — leaves the real-world angle dependent on drivetrain
+backlash, since the two calibration endpoints are themselves each captured
+from one fixed approach direction (LIM1 via a final CW creep, LIM2 via a
+final CCW creep — see §5.2). A move first seeks at `AZ_MAX_RPM` to a point
+1° short of the target on the CCW side (overshooting past the target first if
+the move started from below it), then always creeps back in CW at the same
+slow speed homing's final approach uses. This cancels out backlash the same
+way on every move instead of leaving the last few degrees dependent on
+starting position. `AZ_STATUS`'s `MOVING`/`AT_TARGET` bits don't distinguish
+the two internal phases — only `AZ_ERROR`/completion are visible over Modbus.
+
+---
+
+### 5.5 Axis 2 (AZ) — Status (Read-Only)
+
+| Address | Name              | Type    | Description                          |
+|---------|-------------------|---------|--------------------------------------|
+| 0x0040  | AZ_STATUS         | uint16  | Axis status flags (see §7)           |
+| 0x0041  | AZ_POS_HI         | uint16  | Current encoder position HIGH word   |
+| 0x0042  | AZ_POS_LO         | uint16  | Current encoder position LOW word    |
+| 0x0043  | AZ_POS_DEG_HI     | uint16  | Current position degrees HIGH (f32)  |
+| 0x0044  | AZ_POS_DEG_LO     | uint16  | Current position degrees LOW (f32)   |
+| 0x0045  | AZ_RPM_HI         | uint16  | Commanded shaft RPM HIGH (float32) — open-loop/commanded, not measured from the encoder |
+| 0x0046  | AZ_RPM_LO         | uint16  | Commanded shaft RPM LOW (float32)    |
+| 0x0047  | AZ_PID_OUT_HI     | uint16  | PID output value HIGH (float32)      |
+| 0x0048  | AZ_PID_OUT_LO     | uint16  | PID output value LOW (float32)       |
+| 0x0049  | AZ_ERROR          | uint16  | Axis error code (see §8)             |
+
+---
+
+### 5.6 Axis 1 (EL) — Encoder Configuration (Read/Write)
+
+Same structure as Axis 2, offset by 0x0060:
+
+| Address | Name                | Type    | Description                          | Default |
+|---------|---------------------|---------|--------------------------------------|---------|
+| 0x0070  | EL_GEAR_RATIO_HI    | uint32 HI | Motor:output gear reduction ratio  | —       |
+| 0x0071  | EL_GEAR_RATIO_LO    | uint32 LO |                                     | 20      |
+| 0x0072–0x0073 | —              | —       | Reserved                              | —       |
+| 0x0074  | EL_LIM1_POS_HI      | int32 HI | Encoder count at LIMIT1 — always 0 by design (encoder is zeroed here during homing) | — |
+| 0x0075  | EL_LIM1_POS_LO      | int32 LO |                                     | 0       |
+| 0x0076  | EL_LIM2_POS_HI      | int32 HI | Encoder count at LIMIT2 — negative (LIMIT1 is the CW end; reaching LIMIT2 moves CCW, decreasing the count). Set by the calibration procedure. | — |
+| 0x0077  | EL_LIM2_POS_LO      | int32 LO |                                     | 0       |
+
+**Note:** same `GEAR_RATIO`-is-for-velocity-only / calibration-is-for-position
+split as §5.2 — see that section for the interpolation formula.
+
+### 5.6b Axis 1 (EL) — Calibration / Velocity Config (Read/Write)
+
+EL's mirrored gap (0x00AA-0x00AF) is only 6 registers — one short of the 7
+needed — so this block is appended after the map end instead (0x00CA-0x00D0).
+
+| Address | Name              | Type      | Description                              | Default |
+|---------|-------------------|-----------|-------------------------------------------|---------|
+| 0x00CA  | EL_DRIVER_PPR     | uint16    | DM556Y pulses/rev DIP-switch setting — must match the physical driver | 400  |
+| 0x00CB  | EL_MAX_RPM_HI     | float32 HI| Max output-shaft RPM — also the operating slew speed for every position move (not just a ceiling) | — |
+| 0x00CC  | EL_MAX_RPM_LO     | float32 LO|                                             | 1.5     |
+| 0x00CD  | EL_LIM1_ANGLE_HI  | float32 HI| Measured angle at LIMIT1 (home), set by the calibration procedure via an external instrument | — |
+| 0x00CE  | EL_LIM1_ANGLE_LO  | float32 LO|                                             | 0.0     |
+| 0x00CF  | EL_LIM2_ANGLE_HI  | float32 HI| Measured angle at LIMIT2, set by the calibration procedure | — |
+| 0x00D0  | EL_LIM2_ANGLE_LO  | float32 LO|                                             | 0.0     |
+
+Same defaults-mean-uncalibrated and volatile-only notes as §5.2b apply.
+
+---
+
+### 5.7 Axis 1 (EL) — PID Configuration (Read/Write)
+
+| Address | Name         | Type    | Description              | Default |
+|---------|--------------|---------|--------------------------|---------|
+| 0x0080  | EL_PID_P_HI  | uint16  | Proportional gain HIGH   | 0       |
+| 0x0081  | EL_PID_P_LO  | uint16  | Proportional gain LOW    | 0       |
+| 0x0082  | EL_PID_I_HI  | uint16  | Integral gain HIGH       | 0       |
+| 0x0083  | EL_PID_I_LO  | uint16  | Integral gain LOW        | 0       |
+| 0x0084  | EL_PID_D_HI  | uint16  | Derivative gain HIGH     | 0       |
+| 0x0085  | EL_PID_D_LO  | uint16  | Derivative gain LOW      | 0       |
+| 0x0086  | EL_PID_MAX   | uint16  | PID output clamp (0–1000)| 1000    |
+
+---
+
+### 5.8 Axis 1 (EL) — Motion Command (Read/Write)
+
+| Address | Name              | Type    | Description                                      |
+|---------|-------------------|---------|--------------------------------------------------|
+| 0x0090  | EL_CMD_ENABLE     | uint16  | Motor enable: 0=off, 1=on                        |
+| 0x0091  | EL_CMD_MODE       | uint16  | 0=position, 1=constant RPM (constant-RPM mode not yet implemented) |
+| 0x0092  | EL_CMD_POS_HI     | float32 HI | **Target angle in degrees** (was uint32 encoder counts in Rev 1.1 — breaking change) |
+| 0x0093  | EL_CMD_POS_LO     | float32 LO |                                                |
+| 0x0094  | EL_CMD_RPM_HI     | uint16  | Target RPM HIGH word (float32, shaft RPM) — not consulted for position moves, which always run at `EL_MAX_RPM` |
+| 0x0095  | EL_CMD_RPM_LO     | uint16  | Target RPM LOW word                              |
+| 0x0096  | EL_CMD_HOME       | uint16  | Write 1 to start homing sequence (drives CW to LIMIT1, zeroes encoder) |
+| 0x0097  | EL_CMD_STOP       | uint16  | Write 1 to abort any homing/move and disable the driver |
+
+Same FC 0x10 atomic-write recommendation, homing-to-LIMIT1-only behavior,
+limit-switch interlock, and unidirectional-approach (backlash compensation)
+notes as §5.4 apply.
+
+---
+
+### 5.9 Axis 1 (EL) — Status (Read-Only)
+
+| Address | Name              | Type    | Description                          |
+|---------|-------------------|---------|--------------------------------------|
+| 0x00A0  | EL_STATUS         | uint16  | Axis status flags (see §7)           |
+| 0x00A1  | EL_POS_HI         | uint16  | Current encoder position HIGH word   |
+| 0x00A2  | EL_POS_LO         | uint16  | Current encoder position LOW word    |
+| 0x00A3  | EL_POS_DEG_HI     | uint16  | Current position degrees HIGH (f32)  |
+| 0x00A4  | EL_POS_DEG_LO     | uint16  | Current position degrees LOW (f32)   |
+| 0x00A5  | EL_RPM_HI         | uint16  | Commanded shaft RPM HIGH (float32) — open-loop/commanded, not measured from the encoder |
+| 0x00A6  | EL_RPM_LO         | uint16  | Commanded shaft RPM LOW (float32)    |
+| 0x00A7  | EL_PID_OUT_HI     | uint16  | PID output value HIGH (float32)      |
+| 0x00A8  | EL_PID_OUT_LO     | uint16  | PID output value LOW (float32)       |
+| 0x00A9  | EL_ERROR          | uint16  | Axis error code (see §8)             |
+
+---
+
+### 5.10 GPS / Timing (Read-Only)
+
+| Address | Name              | Type    | Description                          |
+|---------|-------------------|---------|--------------------------------------|
+| 0x00B0  | GPS_STATUS        | uint16  | 0=no fix, 1=fix, 2=disciplined       |
+| 0x00B1  | GPS_UTC_HH_MM     | uint16  | UTC time: HH×100 + MM                |
+| 0x00B2  | GPS_UTC_SS        | uint16  | UTC seconds                          |
+| 0x00B3  | GPS_1PPS_COUNT_HI | uint16  | 1PPS timer capture count HIGH        |
+| 0x00B4  | GPS_1PPS_COUNT_LO | uint16  | 1PPS timer capture count LOW         |
+
+---
+
+## 6. Polling Strategy
+
+The host polls each board in a round-robin loop. A typical cycle for
+N boards on the bus:
+
+```
+for each board (addr 1..N):
+    FC 0x03 — read SYS registers (0x0000–0x0007): uptime, status, switches, fan
+    FC 0x03 — read AZ status (0x0040–0x0049): position, RPM, PID out, error
+    FC 0x03 — read EL status (0x00A0–0x00A9): position, RPM, PID out, error
+```
+
+At 115200 baud each FC 0x03 read of 10 registers takes ~3ms round trip.
+Three reads per board × 7 boards = ~63ms worst case, giving ~15Hz
+position update rate across a full 7-board bus. With fewer boards the
+rate is proportionally higher.
+
+Limit switch and error events are detected by inspecting AZ_STATUS,
+EL_STATUS, and AZ_ERROR/EL_ERROR bits on every poll cycle — no
+unsolicited frames are needed.
+
+---
+
+## 7. Status Flag Bits
+
+### SYS_STATUS (0x0005)
+```
+Bit 0 — AZ axis OK
+Bit 1 — EL axis OK
+Bit 2 — GPS fix
+Bit 3 — RS485_1 active
+Bit 4–15 — reserved
+```
+
+### SYS_USER_SW (0x0006) — Read-Only
+```
+Bit 0 — USER_SW_1 (0=open, 1=pressed)
+Bit 1 — USER_SW_2 (0=open, 1=pressed)
+Bit 2 — USER_SW_3 (0=open, 1=pressed)
+Bit 3 — USER_SW_4 (0=open, 1=pressed)
+Bit 4–15 — reserved
+```
+
+Switches are active-low inputs with internal pull-ups. The register
+reflects the logical state: 1=pressed (GPIO low), 0=open (GPIO high).
+
+### AZ_STATUS / EL_STATUS
+```
+Bit 0 — ENABLED
+Bit 1 — MOVING
+Bit 2 — AT_TARGET (within deadband)
+Bit 3 — HOMING
+Bit 4 — HOMED
+Bit 5 — LIMIT1_ACTIVE
+Bit 6 — LIMIT2_ACTIVE
+Bit 7 — ERROR (see AZ_ERROR / EL_ERROR)
+```
+
+---
+
+## 8. Error Codes (AZ_ERROR / EL_ERROR)
+
+| Code | Meaning                  |
+|------|--------------------------|
+| 0x00 | No error                 |
+| 0x01 | Encoder fault            |
+| 0x02 | Limit switch fault — a raw jog (Motor Control / manual calibration jog) attempted to drive further into an already-triggered limit switch and was automatically stopped. Homing and calibrated position moves are unaffected — they stop themselves correctly on arrival and never raise this code. |
+| 0x03 | Homing failed            |
+| 0x04 | PID output saturated     |
+| 0x05 | Position command out of range |
+| 0x06 | Not calibrated (LIM2_ANGLE==LIM1_ANGLE, or LIM2_POS==0) |
+
+---
+
+## 9. Standard Modbus Exception Responses
+
+| Exception Code | Meaning                  |
+|----------------|--------------------------|
+| 0x01           | Illegal Function         |
+| 0x02           | Illegal Register Address |
+| 0x03           | Illegal Data Value       |
+| 0x04           | Slave Device Failure     |
+
+Exception frame: `[ADDR][FC|0x80][EXCEPTION_CODE][CRC-16]`
+
+---
+
+## 10. Example Transactions
+
+### Read AZ encoder position (FC 0x03)
+```
+Request:  [01][03][00 41][00 02][xx xx]
+           addr fc  reg   qty    crc
+Response: [01][03][04][00 01][23 45][xx xx]
+           addr fc  bc  POS_HI     POS_LO  crc
+```
+
+### Enable AZ motor (FC 0x06)
+```
+Request:  [01][06][00 30][00 01][xx xx]
+           addr fc  reg   val    crc
+Response: Echo of request
+```
+
+### Set AZ PID gains (FC 0x10, write 6 registers)
+```
+Request:  [01][10][00 20][00 06][0C][...12 bytes of float32 P/I/D...][crc]
+Response: [01][10][00 20][00 06][crc]
+```
+
+### Broadcast stop all axes (FC 0x06, address 0xFF)
+```
+Request:  [FF][06][00 37][00 01][xx xx]   <- AZ stop
+          [FF][06][00 97][00 01][xx xx]   <- EL stop
+No response expected from any board.
+```
+
+### Read user switches and fan state (FC 0x03)
+```
+Request:  [01][03][00 06][00 02][xx xx]   <- read SYS_USER_SW + SYS_FAN
+Response: [01][03][04][00 05][00 01][xx xx]
+                       SW=0b0101  FAN=on
+SW bits: USER_SW_1 and USER_SW_3 pressed
+```
+
+### Turn fan on (FC 0x06)
+```
+Request:  [01][06][00 07][00 01][xx xx]
+           addr fc  reg   val=1  crc
+Response: Echo of request
+```
