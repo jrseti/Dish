@@ -70,6 +70,13 @@ venv/
 # ---------------------------------------------------------------------------
 # Editors
 # ---------------------------------------------------------------------------
-.vscode/
+# Keep the debug/build config, ignore the rest.
+# Two subtleties: the directory must be excluded as .vscode/* (not .vscode/)
+# or git cannot re-include children; and the **/ prefix is required because a
+# pattern containing a slash is anchored to this file's directory, which would
+# otherwise miss software/.vscode/.
+**/.vscode/*
+!**/.vscode/launch.json
+!**/.vscode/tasks.json
 .history/
 *.swp
