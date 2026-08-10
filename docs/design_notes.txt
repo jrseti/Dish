@@ -1,0 +1,30 @@
+Create a detailed list of MCU pin assignments and functionality.
+
+Attached is the STM32CubeMX IOC file for the previous design. Review the IOC file and the
+following PCB description. Reuse any existing pin locations in the original IOC where
+possible, but pins may need to change to implement this added functionality.
+
+Attached is a basic functional diagram of the PCB.
+
+This is a description of the functionality of the PCB to aid with the design.
+
+The circuit is a general purpose controller for a satellite dish movement. 
+The satellite dish will have 2 axis, the elevation and the azimuth. Each PCB services only 1 axis.
+The axis has a position encoder for position feedback to a PID loop.
+Instead of master/slave we will use the terms leader/follower.
+The PCB is controlled from Modbus commands from a host, which acts as the leader, connected over RS485.
+The PCB is a follower of the host.
+A second RS485 so the MCU can be a leader and control external RS485 devices. It is envisioned that RS485 servo controler could be used in the future instead of the DM556Y.
+An RS232 port. Used for any future deemed useful RS232 devices, such as GPS NMEA input.
+A 1 PPS pulse input from a GPS unit
+4MB memory using the W25Q32 on an SPI bus.
+2-Wire program/debug connector with SWO.
+MCU will control a 12V output on/off to support a small Fan.
+MCU is the STM32G474CET6, 48-pin LQFP48 package
+
+Speed and position connands are received from a host over RS485.
+Encoder is the E6B2-CWZ6C.
+Motor Controller: DM556Y. Future use may instead utilize a servo controller over RS485.
+I2C for reading I2C sensors on each axis
+2 Limit switches.
+
