@@ -5046,7 +5046,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 134.62 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -5068,7 +5068,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 134.62 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -7741,7 +7741,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 72.39 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -7763,7 +7763,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 72.39 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -8385,7 +8385,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 87.63 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -8407,7 +8407,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 87.63 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -8888,7 +8888,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 92.71 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -8910,7 +8910,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 92.71 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -9335,7 +9335,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 212.09 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -9357,7 +9357,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 212.09 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -10651,7 +10651,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 212.09 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -10673,7 +10673,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 212.09 62.23 0)
 			(hide yes)
 			(show_name no)

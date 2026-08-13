@@ -2962,7 +2962,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 128.27 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -2984,7 +2984,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 128.27 99.06 0)
 			(hide yes)
 			(show_name no)

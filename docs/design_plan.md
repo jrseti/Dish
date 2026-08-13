@@ -13,7 +13,7 @@ RS485 host that the board already supports.
 | RS485 leader port | **Kept, still isolated** (ISOW1432) |
 | Host link | CM4 **muxed onto USART1**, sharing the STM32 pins with the RS485 device transceiver |
 | GPS | MAX-M10S + 1PPS retained, still on LPUART1 |
-| CM4 variant | **CM4 with eMMC** — no SD slot, programmed via rpiboot |
+| CM4 variant | **CM4 with eMMC, no wireless** — no SD slot, programmed via rpiboot |
 | Ethernet | A70-112-331N126 magjack (same part CM4IO uses) |
 | USB | **USB 2.0 only.** USB2514B 4-port hub behind an FSUSB42MUX, 2× USB-A + micro-USB OTG |
 | CM4 I2C / SPI | Plain 3.3 V pin headers, series resistance + ESD |
@@ -77,9 +77,20 @@ doesn't mean a climb.
 **The CM4's USB interface is disabled by default** to save power — host mode needs
 `otg_mode=1` in `config.txt`, or the USB-A ports are dead with no hardware fault.
 
-**Use a PL011 UART, not the mini-UART.** The default `GPIO14/15` UART is the mini-UART,
-whose baud derives from the VPU core clock and drifts as that clock scales. Fine for a
-console, bad for Modbus RTU timing.
+**Use a PL011 UART, not the mini-UART — use UART0 on GPIO14/15.** BCM2711 has two kinds of
+UART: five PL011s (ARM PrimeCell, own baud clock, 16-byte FIFO) and one mini-UART, whose
+baud derives from the VPU core clock and drifts as that clock scales. Modbus RTU delimits
+frames by 3.5 character-times of silence, so drift causes intermittent framing failures
+under load rather than clean errors.
+
+On *wireless* CM4s, UART0 is taken by Bluetooth and the mini-UART lands on GPIO14/15 —
+the classic trap. **This design uses a non-wireless module, so UART0 is free** and is the
+default primary UART: `/dev/ttyAMA0`, with `/dev/serial0` pointing at it, no `dtoverlay`
+needed beyond `enable_uart=1`. GPIO14/15 therefore route to the USART1 mux.
+
+This leaves GPIO4/5 (UART3) and GPIO12/13 (UART5) free, and avoids GPIO2/3 (I2C1) and
+GPIO7–11 (SPI0). `BT_nDisable` (pin 91) is irrelevant on a non-wireless module — leave it
+floating.
 
 **Why not USB 3.0.** It needs a VL805 PCIe→USB3 controller (RPi's CM4IOUSB3, doc RP-008176),
 consuming the only PCIe lane and awkward to source at JLCPCB, to solve a bandwidth problem
@@ -210,7 +221,9 @@ receiver, and multiple isolated ground islands — with nothing removed to make 
   `RS485_2_GND`) preserved.
 - **Zone C (GPS):** MAX-M10S as far from CM4/Ethernet/USB and the switching 5 V rail as the
   outline allows, at a board edge, disciplined ground pour, consider a shield can. A GPS
-  front end beside a gigabit PHY is a genuine EMI risk, not a theoretical one.
+  front end beside a gigabit PHY is a genuine EMI risk, not a theoretical one. The
+  non-wireless CM4 helps here — no 2.4/5 GHz transmitter on the board and no antenna
+  keepout to design around.
 - **Controlled impedance:** Ethernet and USB 2.0 both need 90–100 Ω differential. Confirm a
   JLCPCB 4-layer impedance-controlled stackup and compute geometry from *that* stackup
   before routing.
@@ -244,7 +257,7 @@ routing copper. Phases 4 and 5 are yours; I support them with documentation and 
 ## Open items
 
 - Whether the generic 8-pin GPIO header is still wanted alongside the I2C and SPI headers.
-- Which CM4 I2C and SPI instances to use, and which PL011 for the STM32 link.
+- Which CM4 I2C and SPI instances to use. (The STM32 link is settled: UART0 on GPIO14/15.)
 - Enclosure/mounting constraints — drives the outline and connector edges.
 - Whether the RS485 leader port keeps its own isolated DC-DC or shares one.
 - Surge protection for the outdoor Ethernet run; the magjack magnetics isolate, but the

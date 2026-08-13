@@ -80,3 +80,5 @@ venv/
 !**/.vscode/tasks.json
 .history/
 *.swp
+
+ref_designs/

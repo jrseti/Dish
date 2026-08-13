@@ -823,7 +823,7 @@
         "uuid": "10d7c3e5-be4d-4306-a59e-500b86bd141f"
       }
     ],
-    "used_designators": "",
+    "used_designators": "TP13-14",
     "variants": []
   },
   "sheets": [
@@ -866,6 +866,18 @@
     [
       "7fa68ebc-abbe-49d0-8996-6dde5383e808",
       "User Switches"
+    ],
+    [
+      "a4b43769-68f4-4111-a02f-817ae260783a",
+      "RCM4"
+    ],
+    [
+      "28ecc382-76c0-468b-9943-cf450709a5af",
+      "Power_3V3"
+    ],
+    [
+      "2b73156f-617f-4ddb-9603-19922a26015d",
+      "Power_5V"
     ]
   ],
   "text_variables": {},

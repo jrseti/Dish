@@ -56,8 +56,9 @@ which would consume the board's only PCIe lane to solve a bandwidth problem this
 does not have. It would also be purely additive: rpiboot can never run through VL805
 ports, so the USB 2.0 mux and micro-USB path below are required either way.
 
-The module is a **CM4 with eMMC** (not Lite). There is no SD card slot — the eMMC is
-programmed over USB with `rpiboot`.
+The module is a **CM4 with eMMC and no wireless** (not Lite). There is no SD card slot —
+the eMMC is programmed over USB with `rpiboot`. Dropping the radio frees UART0 for the
+STM32 link and removes a 2.4/5 GHz transmitter from a board carrying a GPS receiver.
 
 ### eMMC programming
 
@@ -121,9 +122,13 @@ source, and it drives both the mux select and the CM4 input from one node.
 **The CM4's USB interface is disabled by default** to save power. Host mode needs
 `otg_mode=1` in `config.txt`, or the USB-A ports are simply dead with no hardware fault.
 
-**The CM4 must use a PL011 UART for the STM32 link, not the default mini-UART.** The
-mini-UART on GPIO14/15 derives its baud rate from the VPU core clock and drifts as that
-clock scales — unsuitable for Modbus RTU timing.
+**The STM32 link uses UART0 (PL011) on GPIO14/15 — not the mini-UART.** BCM2711 has five
+PL011s and one mini-UART; the mini-UART's baud derives from the VPU core clock and drifts
+as that clock scales. Modbus RTU delimits frames by 3.5 character-times of silence, so
+drift produces intermittent framing failures under load rather than clean errors. On
+wireless CM4s UART0 belongs to Bluetooth and the mini-UART lands on GPIO14/15 — but this
+design uses a **non-wireless** module, so UART0 is free and is the default primary UART
+(`/dev/ttyAMA0`). Only `enable_uart=1` is needed.
 
 ## Layout
 

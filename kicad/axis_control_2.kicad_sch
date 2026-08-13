@@ -8937,7 +8937,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 231.14 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -8959,7 +8959,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 231.14 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -9715,7 +9715,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 257.81 127 0)
 			(hide yes)
 			(show_name no)
@@ -9737,7 +9737,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 257.81 127 0)
 			(hide yes)
 			(show_name no)
@@ -10593,7 +10593,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 195.58 127 0)
 			(hide yes)
 			(show_name no)
@@ -10615,7 +10615,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 195.58 127 0)
 			(hide yes)
 			(show_name no)
@@ -11889,7 +11889,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 168.91 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -11911,7 +11911,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 168.91 137.16 0)
 			(hide yes)
 			(show_name no)

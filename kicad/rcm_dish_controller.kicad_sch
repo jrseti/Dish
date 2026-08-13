@@ -5111,8 +5111,8 @@
 		)
 	)
 	(rectangle
-		(start 74.93 148.59)
-		(end 111.76 177.8)
+		(start 73.66 147.32)
+		(end 116.84 177.8)
 		(stroke
 			(width 0)
 			(type dash)
@@ -5689,6 +5689,16 @@
 			(type default)
 		)
 		(uuid "1591ab23-66a1-49cf-8c6f-ceea0976aa72")
+	)
+	(wire
+		(pts
+			(xy 100.33 163.83) (xy 100.33 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18a1fc5d-3630-4a93-adfa-ec27e21babdf")
 	)
 	(wire
 		(pts
@@ -6642,7 +6652,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 163.83) (xy 81.28 171.45)
+			(xy 78.74 163.83) (xy 78.74 171.45)
 		)
 		(stroke
 			(width 0)
@@ -6692,7 +6702,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 163.83) (xy 92.71 171.45)
+			(xy 90.17 163.83) (xy 90.17 171.45)
 		)
 		(stroke
 			(width 0)
@@ -6702,7 +6712,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 163.83) (xy 104.14 171.45)
+			(xy 110.49 163.83) (xy 110.49 171.45)
 		)
 		(stroke
 			(width 0)
@@ -8612,7 +8622,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 104.14 163.83 90)
+		(at 110.49 163.83 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8622,7 +8632,7 @@
 		)
 		(uuid "0f8f0329-cc40-4152-acba-0f78437a1ebf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 104.14 156.9743 90)
+			(at 110.49 156.9743 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9044,7 +9054,7 @@
 	)
 	(global_label "12V"
 		(shape input)
-		(at 81.28 163.83 90)
+		(at 78.74 163.83 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9054,7 +9064,7 @@
 		)
 		(uuid "76783bd7-c5e9-46ec-9805-471252a981e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.28 157.3372 90)
+			(at 78.74 157.3372 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9236,7 +9246,7 @@
 	)
 	(global_label "3V3"
 		(shape input)
-		(at 92.71 163.83 90)
+		(at 90.17 163.83 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9246,7 +9256,7 @@
 		)
 		(uuid "947e3fc2-79f8-4cc5-9789-4bcee8fd36be")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.71 156.7324 90)
+			(at 90.17 156.7324 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9279,6 +9289,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "5V"
+		(shape input)
+		(at 100.33 163.83 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a14b4f2a-d202-4091-92f4-caa690efe403")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 158.5467 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -9825,7 +9859,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 40.64 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -9847,7 +9881,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 40.64 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -11104,7 +11138,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 104.14 171.45 180)
+		(at 110.49 171.45 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11114,7 +11148,7 @@
 		(dnp no)
 		(uuid "45fe41dc-f691-4cb7-a8fc-0bd5de949a24")
 		(property "Reference" "#FLG03"
-			(at 104.14 173.355 0)
+			(at 110.49 173.355 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11125,7 +11159,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 104.14 175.26 0)
+			(at 110.49 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11135,7 +11169,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 171.45 0)
+			(at 110.49 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11146,7 +11180,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 171.45 0)
+			(at 110.49 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11157,7 +11191,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 104.14 171.45 0)
+			(at 110.49 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11758,7 +11792,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 81.28 171.45 180)
+		(at 78.74 171.45 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11768,7 +11802,7 @@
 		(dnp no)
 		(uuid "6795291c-e134-4628-b3d4-65980871a96d")
 		(property "Reference" "#FLG01"
-			(at 81.28 173.355 0)
+			(at 78.74 173.355 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11779,7 +11813,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 81.28 175.26 0)
+			(at 78.74 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11789,7 +11823,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 171.45 0)
+			(at 78.74 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11800,7 +11834,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 171.45 0)
+			(at 78.74 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11811,7 +11845,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 81.28 171.45 0)
+			(at 78.74 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12510,7 +12544,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 92.71 171.45 180)
+		(at 90.17 171.45 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12520,7 +12554,7 @@
 		(dnp no)
 		(uuid "7cd27601-a247-44a0-af70-8489171083d9")
 		(property "Reference" "#FLG02"
-			(at 92.71 173.355 0)
+			(at 90.17 173.355 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12531,7 +12565,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 92.71 175.26 0)
+			(at 90.17 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12541,7 +12575,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 171.45 0)
+			(at 90.17 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12552,7 +12586,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 171.45 0)
+			(at 90.17 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12563,7 +12597,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 92.71 171.45 0)
+			(at 90.17 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13606,6 +13640,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 100.33 171.45 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a7b001ab-c2d6-460c-a80e-9d878f8119b1")
+		(property "Reference" "#FLG07"
+			(at 100.33 173.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 100.33 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 100.33 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "923c8eb4-d92d-4eff-aa27-14519917b190")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f"
+					(reference "#FLG07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,10kΩ")
 		(at 130.81 52.07 180)
 		(unit 1)
@@ -13647,7 +13758,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C173683.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 130.81 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -13669,7 +13780,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C173683"
+		(property "LCSC" "C25744"
 			(at 130.81 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -16181,6 +16292,52 @@
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 208.28 148.59)
+		(size 16.51 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a4b43769-68f4-4111-a02f-817ae260783a")
+		(property "Sheetname" "RCM4"
+			(at 208.28 147.8784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RCM4.kicad_sch"
+			(at 208.28 163.1446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f"
+					(page "11")
 				)
 			)
 		)

@@ -7542,7 +7542,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "CL05B104KO5NNNC"
 			(at 112.522 57.912 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7668,7 +7668,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "CL10A105KA8NNNC"
 			(at 258.318 58.166 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7794,7 +7794,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "C43Q1103K40C80F"
 			(at 119.634 135.3821 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8651,7 +8651,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "GRM21BR6YA106KE43L"
 			(at 32.258 52.324 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8776,7 +8776,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "GRM21BR6YA106KE43L"
 			(at 132.588 58.674 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8901,7 +8901,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "CL05B104KO5NNNC"
 			(at 50.292 51.562 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9231,7 +9231,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "CL10A105KA8NNNC"
 			(at 178.308 51.816 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9594,7 +9594,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "GRM21BR6YA106KE43L"
 			(at 168.148 52.324 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10035,7 +10035,7 @@
 				)
 			)
 		)
-		(property "Value" "Choke"
+		(property "Value" "SMW2012B371BTE"
 			(at 251.206 51.816 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10155,7 +10155,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "GRM21BR6YA106KE43L"
 			(at 180.848 72.644 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10623,7 +10623,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "GRM21BR6YA106KE43L"
 			(at 268.478 58.674 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10748,7 +10748,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "CL10A105KA8NNNC"
 			(at 42.418 51.816 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10873,7 +10873,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "CL10A105KA8NNNC"
 			(at 117.602 78.4859 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10999,7 +10999,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "C43Q1103K40C80F"
 			(at 143.51 135.8901 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11123,7 +11123,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "CL05B104KO5NNNC"
 			(at 186.182 51.562 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11618,7 +11618,7 @@
 				)
 			)
 		)
-		(property "Value" "Choke"
+		(property "Value" "SMW2012B371BTE"
 			(at 115.824 43.688 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11738,7 +11738,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "GRM21BR6YA106KE43L"
 			(at 262.128 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12578,7 +12578,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "CL10A105KA8NNNC"
 			(at 122.428 58.166 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13214,7 +13214,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "CL05B104KO5NNNC"
 			(at 248.412 57.912 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13340,7 +13340,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "CL10A105KA8NNNC"
 			(at 55.118 72.136 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13890,7 +13890,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "GRM21BR6YA106KE43L"
 			(at 44.958 72.644 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14015,7 +14015,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "CL10A105KA8NNNC"
 			(at 191.008 72.136 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14605,7 +14605,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "CL10A105KA8NNNC"
 			(at 253.492 78.4859 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14730,7 +14730,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "GRM21BR6YA106KE43L"
 			(at 126.238 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)

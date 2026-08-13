@@ -4602,6 +4602,17 @@
 		)
 		(uuid "5970efb3-8617-44d0-916a-8d283eda80b1")
 	)
+	(text "AI Note:\n\"Do not add series resistance greater than 0.2 Ω on the supply\nline to avoid voltage ripple due to the dynamic current conditions.\"\n\nYour L13 is a BLM18AG601SN1D, and ferrite beads have real DC \nresistance - that part is likely somewhere around 0.3-0.5 Ω, \nwhich would exceed u-blox's limit. Worth checking against the \nMurata datasheet.\n\nIf it does exceed it, the fix is a lower-DCR bead rather than \nremoving the filter. The concern u-blox raises isn't noise - \nit's that the receiver's current swings dynamically between \nacquisition and tracking, and series resistance turns those \nswings into supply droop right at the RF domain.\n\nThat's a pre-existing item in the inherited design, unrelated \nto the converter choice, but it's on the same supply line so \nit's worth resolving in the same pass."
+		(exclude_from_sim no)
+		(at 26.924 99.06 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left)
+		)
+		(uuid "85cf1627-8d88-453c-bf78-a72c66a0999e")
+	)
 	(text "GPS is input using a MAX-M10S-00B.\nNMEA sentences are used to get the UTC datetime and\nthe 1PPS is used to correct the MCU clock every second.\nSee https://www.mouser.com/pdfDocs/MAX-M10S_IntegrationManual_UBX-20053088.pdf"
 		(exclude_from_sim no)
 		(at 66.802 36.068 0)
