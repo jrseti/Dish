@@ -33,6 +33,17 @@
 		)
 		(uuid "5e94f6af-6242-483e-96b4-dd7da6174902")
 	)
+	(text "Read-only root plus f2fs on the data \npartition, and skip the hold-up entirely. \nIt costs nothing, it's the approach \ndeployed Pi products use, and it's more \nrobust than any capacitor bank - because \nit removes the failure mode instead of \nracing it.\n\nAdd power-fail detection later only if \nyou find you're losing recording data you \ncare about. That's a software-observable \nproblem, so you'll know."
+		(exclude_from_sim no)
+		(at 34.29 181.356 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5fbda5c0-4caa-4435-98ae-a9a89cc8c186")
+	)
 	(text "Changes for V1.1\n\n- Encoder RC values need changing for tighter timing - DONE\n- On/Off switch label reversed - DONE\n- Direct plugin for MAX-M10S GPS - DONE\n- Programming cable changed to 14 pins for STLINK-V3MINIE -DONE\n- Clearer Text on board - Done"
 		(exclude_from_sim no)
 		(at 28.194 155.194 0)

@@ -823,7 +823,7 @@
         "uuid": "10d7c3e5-be4d-4306-a59e-500b86bd141f"
       }
     ],
-    "used_designators": "TP13-14",
+    "used_designators": "TP6,CN6,CN10-11,CN15,USB1,X2,P1,H1,R20,R23,R83-92,USBC1,J2-3,J13,U4,U9-10,U13-16,C79-80,C84-94,C108-109,C118,D24,#PWR52,#PWR55-57,#PWR61-63,#PWR74,#PWR81,#PWR91-106,#PWR114,#PWR127,LED3-4",
     "variants": []
   },
   "sheets": [
@@ -878,6 +878,18 @@
     [
       "2b73156f-617f-4ddb-9603-19922a26015d",
       "Power_5V"
+    ],
+    [
+      "2c385700-431a-4a3a-8a9d-f3682fa19093",
+      "ethernet"
+    ],
+    [
+      "d3e40802-8c80-491e-9238-e962cd612968",
+      "usb"
+    ],
+    [
+      "ea625b3a-a58b-4ce4-9f3d-01a79f8438bc",
+      "CM4_Connectors"
     ]
   ],
   "text_variables": {},
