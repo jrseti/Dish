@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "I2C and I2C Flash")
-		(date "2026-07-11")
-		(rev "1.1")
+		(date "2026-08-18")
+		(rev "2.0")
 		(company "JRSeti")
 	)
 	(lib_symbols
@@ -4451,30 +4451,6 @@
 		)
 		(uuid "fe56f6bb-c36b-4714-8569-7e00d403b7f4")
 	)
-	(global_label "SPI2_SCK_MCU"
-		(shape input)
-		(at 119.38 125.73 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "063ef9a5-520c-48c5-bcab-38657a0ef7a5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 136.3956 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "3V3"
 		(shape input)
 		(at 134.62 110.49 90)
@@ -4499,78 +4475,6 @@
 			)
 		)
 	)
-	(global_label "FLASH_CS_MCU"
-		(shape input)
-		(at 91.44 120.65 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1d35c37d-5501-4e63-8aa6-4e0188ef4cfd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.2429 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SDA_MCU"
-		(shape input)
-		(at 223.52 120.65 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3797bb66-1f02-4156-af54-1a6a73f8a470")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 211.8521 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SDA_MCU"
-		(shape input)
-		(at 92.71 74.93 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4190c7ab-483a-4932-8231-79834b5da2da")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.0421 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "3V3"
 		(shape input)
 		(at 213.36 80.01 0)
@@ -4584,78 +4488,6 @@
 		(uuid "4979052f-dcf2-4c65-a4e5-2bdf4878064c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 220.4576 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "SCL_MCU"
-		(shape input)
-		(at 92.71 77.47 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5545f227-8533-47dc-9537-542b22c088b8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.1026 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SCL_MCU"
-		(shape input)
-		(at 207.01 76.2 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6934ac7e-59f8-4511-af46-c3b44efd489d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.6174 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "SPI2_MOSI_MCU"
-		(shape input)
-		(at 119.38 128.27 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "77e4b465-2374-44a3-ac81-46274960eeb7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.2423 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4704,30 +4536,6 @@
 		(uuid "8fa43cae-73a3-4594-a787-4be33160614b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 71.6424 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SCL_MCU"
-		(shape input)
-		(at 223.52 118.11 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "92c269f7-c24e-43d0-b307-7392ad5b2317")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 211.9126 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4800,54 +4608,6 @@
 		(uuid "c2f776b3-bbb5-4029-ba06-8682a8a23889")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 189.7524 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SDA_MCU"
-		(shape input)
-		(at 172.72 120.65 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c80765d9-31ab-48af-b9c9-8ad4472ef1e1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.0521 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SPI2_MISO_MCU"
-		(shape input)
-		(at 95.25 123.19 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d0d4779a-4b7a-48cf-a58f-0662af7f8eec")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.3877 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4955,10 +4715,119 @@
 			)
 		)
 	)
-	(global_label "SCL_MCU"
+	(hierarchical_label "SPI2_SCK_MCU"
 		(shape input)
+		(at 119.38 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "063ef9a5-520c-48c5-bcab-38657a0ef7a5")
+	)
+	(hierarchical_label "FLASH_CS_MCU"
+		(shape input)
+		(at 91.44 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1d35c37d-5501-4e63-8aa6-4e0188ef4cfd")
+	)
+	(hierarchical_label "SDA_MCU"
+		(shape bidirectional)
+		(at 223.52 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3797bb66-1f02-4156-af54-1a6a73f8a470")
+	)
+	(hierarchical_label "SDA_MCU"
+		(shape bidirectional)
+		(at 92.71 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4190c7ab-483a-4932-8231-79834b5da2da")
+	)
+	(hierarchical_label "SCL_MCU"
+		(shape bidirectional)
+		(at 92.71 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5545f227-8533-47dc-9537-542b22c088b8")
+	)
+	(hierarchical_label "SCL_MCU"
+		(shape bidirectional)
+		(at 207.01 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6934ac7e-59f8-4511-af46-c3b44efd489d")
+	)
+	(hierarchical_label "SPI2_MOSI_MCU"
+		(shape input)
+		(at 119.38 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "77e4b465-2374-44a3-ac81-46274960eeb7")
+	)
+	(hierarchical_label "SCL_MCU"
+		(shape bidirectional)
+		(at 223.52 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "92c269f7-c24e-43d0-b307-7392ad5b2317")
+	)
+	(hierarchical_label "SDA_MCU"
+		(shape bidirectional)
+		(at 172.72 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c80765d9-31ab-48af-b9c9-8ad4472ef1e1")
+	)
+	(hierarchical_label "SPI2_MISO_MCU"
+		(shape output)
+		(at 95.25 123.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d0d4779a-4b7a-48cf-a58f-0662af7f8eec")
+	)
+	(hierarchical_label "SCL_MCU"
+		(shape bidirectional)
 		(at 172.72 118.11 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4966,23 +4835,10 @@
 			(justify right)
 		)
 		(uuid "f988f5cf-8c01-4ce4-a4b6-5b16f7e05af7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.1126 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "SDA_MCU"
-		(shape input)
+	(hierarchical_label "SDA_MCU"
+		(shape bidirectional)
 		(at 207.01 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4990,18 +4846,6 @@
 			(justify left)
 		)
 		(uuid "ff7c1052-09b8-4f14-8060-2a082efa7e3d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.6779 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,10kΩ")

@@ -710,8 +710,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOC, DIR1_Pin|ENABLE1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, DIR2_Pin|ENABLE2_Pin|FLASH_CS_Pin|FAN_Pin
-                          |RS485_1_DE_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, DIR2_Pin|ENABLE2_Pin|FLASH_CS_Pin|FAN_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin, GPIO_PIN_RESET);
@@ -738,10 +737,10 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(ENC1_Z_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : LIMIT1_SW1_Pin LIMIT1_SW2_Pin LIMIT2_SW1_Pin LIMIT2_SW2_Pin
-                           CONFIG_SW_Pin ADDR2_Pin ADDR1_Pin ADDR0_Pin
+                           SW4_Pin SW3_Pin SW2_Pin SW1_Pin
                            USER_SW_4_Pin */
   GPIO_InitStruct.Pin = LIMIT1_SW1_Pin|LIMIT1_SW2_Pin|LIMIT2_SW1_Pin|LIMIT2_SW2_Pin
-                          |CONFIG_SW_Pin|ADDR2_Pin|ADDR1_Pin|ADDR0_Pin
+                          |SW4_Pin|SW3_Pin|SW2_Pin|SW1_Pin
                           |USER_SW_4_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
@@ -754,8 +753,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : DIR2_Pin ENABLE2_Pin FAN_Pin RS485_1_DE_Pin */
-  GPIO_InitStruct.Pin = DIR2_Pin|ENABLE2_Pin|FAN_Pin|RS485_1_DE_Pin;
+  /*Configure GPIO pins : DIR2_Pin ENABLE2_Pin FAN_Pin */
+  GPIO_InitStruct.Pin = DIR2_Pin|ENABLE2_Pin|FAN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

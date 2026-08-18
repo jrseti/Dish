@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "GPS 1PPS and RS232 ")
-		(date "2026-07-11")
-		(rev "1.1")
+		(date "2026-08-18")
+		(rev "2.0")
 	)
 	(lib_symbols
 		(symbol "MyParts:1206W4F100JT5E"
@@ -5720,10 +5720,9 @@
 			)
 		)
 	)
-	(global_label "RS232_RX_MCU"
-		(shape input)
+	(hierarchical_label "GPS_RX_MCU"
+		(shape output)
 		(at 100.33 68.58 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5731,23 +5730,10 @@
 			(justify right)
 		)
 		(uuid "b22148b7-cdee-4432-b2bd-baae37bc85ba")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.7702 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "1PPS_MCU"
-		(shape input)
+	(hierarchical_label "1PPS_MCU"
+		(shape output)
 		(at 86.36 73.66 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5755,23 +5741,10 @@
 			(justify right)
 		)
 		(uuid "dbdb1825-d2a0-419f-b4a2-95c78087f1ce")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 73.3963 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "RS232_TX_MCU"
+	(hierarchical_label "GPS_TX_MCU"
 		(shape input)
 		(at 100.33 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5779,18 +5752,6 @@
 			(justify right)
 		)
 		(uuid "fb1cfc50-2b9f-4c2e-90bb-5248f8264fe9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 83.0726 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(symbol
 		(lib_id "MyParts:XL-0805QBC")

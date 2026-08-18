@@ -3,9 +3,10 @@
  * Modbus RTU slave driver
  *
  * Handles FC 0x03 (read), 0x06 (write single), 0x10 (write multiple).
- * Supports node addressing via ADDR0/ADDR1/ADDR2 DIP switches.
+ * Node address is fixed at 1: the link is point-to-point to the CM4, so there
+ * is no bus to disambiguate. Kept as a variable for future use.
  * Broadcast address 0xFF is accepted; no response is sent to broadcasts.
- * Uses USART1 (RS485_1) with manual DE pin control.
+ * Uses USART1 — a full-duplex 3.3 V link to the CM4, no DE control.
  * ----------------------------------------------------------------------- */
 
 #include "modbus.h"
@@ -20,8 +21,6 @@
 /* Config                                                                   */
 /* ----------------------------------------------------------------------- */
 #define MB_UART                 huart1
-#define MB_DE_PORT              RS485_1_DE_GPIO_Port
-#define MB_DE_PIN               RS485_1_DE_Pin
 
 #define MB_RX_BUF_SIZE          128
 #define MB_TX_BUF_SIZE          128
@@ -76,28 +75,13 @@ static uint16_t CRC16(const uint8_t *buf, uint16_t len)
 }
 
 /* ----------------------------------------------------------------------- */
-/* Read node address from ADDR0/ADDR1/ADDR2 GPIO pins                     */
-/* Pins have pull-ups; DIP switch pulls to GND when closed.               */
-/* GPIO_PIN_RESET = switch closed = bit set                               */
-/* ----------------------------------------------------------------------- */
-static uint8_t ReadNodeAddress(void)
-{
-    uint8_t addr = 0;
-    if (HAL_GPIO_ReadPin(ADDR0_GPIO_Port, ADDR0_Pin) == GPIO_PIN_RESET) addr |= (1 << 0);
-    if (HAL_GPIO_ReadPin(ADDR1_GPIO_Port, ADDR1_Pin) == GPIO_PIN_RESET) addr |= (1 << 1);
-    if (HAL_GPIO_ReadPin(ADDR2_GPIO_Port, ADDR2_Pin) == GPIO_PIN_RESET) addr |= (1 << 2);
-    return (addr == 0) ? 1 : addr;  /* default to 1 if all switches open */
-}
-
-/* ----------------------------------------------------------------------- */
 /* Transmit response                                                        */
+/* Full duplex, no DE: there is no transceiver to turn around, so we do not */
+/* wait on TC before returning.                                             */
 /* ----------------------------------------------------------------------- */
 static void MB_Transmit(uint8_t *buf, uint16_t len)
 {
-    HAL_GPIO_WritePin(MB_DE_PORT, MB_DE_PIN, GPIO_PIN_SET);
     HAL_UART_Transmit(&MB_UART, buf, len, 100);
-    while (__HAL_UART_GET_FLAG(&MB_UART, UART_FLAG_TC) == RESET);
-    HAL_GPIO_WritePin(MB_DE_PORT, MB_DE_PIN, GPIO_PIN_RESET);
 }
 
 /* ----------------------------------------------------------------------- */
@@ -357,7 +341,7 @@ void Modbus_Init(void)
 {
     memset(regs, 0, sizeof(regs));
 
-    nodeAddr = ReadNodeAddress();
+    /* nodeAddr is fixed at 1 (see file header) — point-to-point link to the CM4 */
 
     /* Pre-populate read-only system registers */
     regs[REG_SYS_ADDR]   = nodeAddr;
@@ -386,9 +370,6 @@ void Modbus_Init(void)
     regs[REG_EL_PWM_FREQ] = 0;
     regs[REG_AZ_PWM_DIR]  = 0;
     regs[REG_EL_PWM_DIR]  = 0;
-
-    /* DE low = receive mode */
-    HAL_GPIO_WritePin(MB_DE_PORT, MB_DE_PIN, GPIO_PIN_RESET);
 
     /* Start receive */
     HAL_UART_Receive_IT(&MB_UART, &rxByte, 1);

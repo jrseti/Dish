@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Encoder/Motor/Limit Switch - Axis2")
-		(date "2026-07-11")
-		(rev "1.1")
+		(date "2026-08-18")
+		(rev "2.0")
 		(company "JRSeti")
 	)
 	(lib_symbols
@@ -48,7 +48,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C577598.pdf?spm=wm.sxq.inf.ggs&lcsc_vid=FFBaV1wHQFldUVICFgBfBVJTQVJWXgBfEQRYBAFQE1YxVlNRQFRcVVJfR1FdVTtW"
+			(property "Datasheet" "https://lcsc.com/product-detail/Pluggable-System-Terminal-Block_Cixi-Kefa-Elec-KF2EDGR-2-54-6P_C577598.html"
 				(at 0 -16.51 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -59,7 +59,7 @@
 					)
 				)
 			)
-			(property "Description" "6 Position Board Side/Socket - Closed 2.54mm Pitch Right-Angle Pin"
+			(property "Description" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -70,8 +70,41 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C577598"
+			(property "Manufacturer" "KEFA(科发)"
 				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "KF2EDGR-2.54-6P"
+				(at 0 -21.59 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C577598"
+				(at 0 -24.13 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Pluggable System Terminal Block"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -83,8 +116,8 @@
 			)
 			(symbol "KF2EDGR-2.54-6P_0_1"
 				(rectangle
-					(start -2.54 8.89)
-					(end 2.54 -8.89)
+					(start -1.27 8.89)
+					(end 3.81 -8.89)
 					(stroke
 						(width 0)
 						(type default)
@@ -94,7 +127,7 @@
 					)
 				)
 				(circle
-					(center -1.27 7.62)
+					(center 0 7.62)
 					(radius 0.38)
 					(stroke
 						(width 0)
@@ -105,7 +138,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 6.35 0)
+					(at -3.81 6.35 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -123,7 +156,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 3.81 0)
+					(at -3.81 3.81 0)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -141,7 +174,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 1.27 0)
+					(at -3.81 1.27 0)
 					(length 2.54)
 					(name "3"
 						(effects
@@ -159,7 +192,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -1.27 0)
+					(at -3.81 -1.27 0)
 					(length 2.54)
 					(name "4"
 						(effects
@@ -177,7 +210,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -3.81 0)
+					(at -3.81 -3.81 0)
 					(length 2.54)
 					(name "5"
 						(effects
@@ -195,7 +228,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -6.35 0)
+					(at -3.81 -6.35 0)
 					(length 2.54)
 					(name "6"
 						(effects
@@ -5563,30 +5596,6 @@
 			)
 		)
 	)
-	(global_label "DIR2_MCU"
-		(shape input)
-		(at 53.34 132.08 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0408c9d2-5f22-444b-91d3-44e1be47b709")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.981 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "3V3"
 		(shape input)
 		(at 85.09 129.54 180)
@@ -5683,102 +5692,6 @@
 			)
 		)
 	)
-	(global_label "ENABLE2_MCU"
-		(shape input)
-		(at 53.34 137.16 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5b9f1398-edce-4886-934d-8fceb0880f62")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.1106 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "PUL2_MCU"
-		(shape input)
-		(at 53.34 127 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7ba40ce4-3aa4-49e3-9787-edb976bc2739")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.4972 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "LIMIT2_SW1_MCU"
-		(shape input)
-		(at 196.85 132.08 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left)
-		)
-		(uuid "8f6c85c9-a26c-4198-81c3-e4214b092d54")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 208.076 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "ENC2_Z_MCU"
-		(shape input)
-		(at 121.92 64.77 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "909a44d1-7687-40a9-8aa9-2ffd5c757f6f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.0608 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "3V3"
 		(shape input)
 		(at 256.54 121.92 180)
@@ -5827,30 +5740,6 @@
 			)
 		)
 	)
-	(global_label "LIMIT2_SW2_MCU"
-		(shape input)
-		(at 259.08 132.08 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left)
-		)
-		(uuid "b215228b-fd0b-4a0d-ae12-6c659f78a579")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 270.306 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "12V"
 		(shape input)
 		(at 193.04 45.72 90)
@@ -5864,54 +5753,6 @@
 		(uuid "c8785396-75d7-4cea-aa49-a6aee2d6d030")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 193.04 39.2272 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "ENC2_B_MCU"
-		(shape input)
-		(at 86.36 64.77 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ec4dbf11-56f2-4f65-9d85-af6871ff1c68")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.5613 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "ENC2_A_MCU"
-		(shape input)
-		(at 50.8 64.77 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f2b62646-8d17-42bd-b58e-dafec1505a37")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 65.8199 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5946,6 +5787,94 @@
 				(justify right)
 			)
 		)
+	)
+	(hierarchical_label "DIR2_MCU"
+		(shape input)
+		(at 53.34 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0408c9d2-5f22-444b-91d3-44e1be47b709")
+	)
+	(hierarchical_label "ENABLE2_MCU"
+		(shape input)
+		(at 53.34 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5b9f1398-edce-4886-934d-8fceb0880f62")
+	)
+	(hierarchical_label "PUL2_MCU"
+		(shape input)
+		(at 53.34 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7ba40ce4-3aa4-49e3-9787-edb976bc2739")
+	)
+	(hierarchical_label "LIMIT2_SW1_MCU"
+		(shape output)
+		(at 196.85 132.08 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left)
+		)
+		(uuid "8f6c85c9-a26c-4198-81c3-e4214b092d54")
+	)
+	(hierarchical_label "ENC2_Z_MCU"
+		(shape output)
+		(at 121.92 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "909a44d1-7687-40a9-8aa9-2ffd5c757f6f")
+	)
+	(hierarchical_label "LIMIT2_SW2_MCU"
+		(shape output)
+		(at 259.08 132.08 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left)
+		)
+		(uuid "b215228b-fd0b-4a0d-ae12-6c659f78a579")
+	)
+	(hierarchical_label "ENC2_B_MCU"
+		(shape output)
+		(at 86.36 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ec4dbf11-56f2-4f65-9d85-af6871ff1c68")
+	)
+	(hierarchical_label "ENC2_A_MCU"
+		(shape output)
+		(at 50.8 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f2b62646-8d17-42bd-b58e-dafec1505a37")
 	)
 	(symbol
 		(lib_id "MyParts:TPESD0402G15V")
@@ -11108,7 +11037,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:KF2EDGR-2.54-6P")
-		(at 100.33 130.81 0)
+		(at 99.06 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11118,7 +11047,7 @@
 		(dnp no)
 		(uuid "9afeb486-1cf2-42e8-af41-3d71548522d7")
 		(property "Reference" "CN13"
-			(at 100.076 120.904 0)
+			(at 98.806 120.904 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11128,7 +11057,7 @@
 			)
 		)
 		(property "Value" "KF2EDGR-2.54-6P"
-			(at 99.314 141.478 0)
+			(at 98.044 141.478 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11138,7 +11067,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:CONN-TH_KF2EDGR-2.54-6P"
-			(at 100.33 144.78 0)
+			(at 99.06 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11148,8 +11077,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C577598.pdf?spm=wm.sxq.inf.ggs&lcsc_vid=FFBaV1wHQFldUVICFgBfBVJTQVJWXgBfEQRYBAFQE1YxVlNRQFRcVVJfR1FdVTtW"
-			(at 100.33 147.32 0)
+		(property "Datasheet" "https://lcsc.com/product-detail/Pluggable-System-Terminal-Block_Cixi-Kefa-Elec-KF2EDGR-2-54-6P_C577598.html"
+			(at 99.06 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11160,7 +11089,7 @@
 			)
 		)
 		(property "Description" "6 Position Board Side/Socket - Closed 2.54mm Pitch Right-Angle Pin"
-			(at 100.33 130.81 0)
+			(at 99.06 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11171,7 +11100,29 @@
 			)
 		)
 		(property "LCSC Part" "C577598"
-			(at 100.33 149.86 0)
+			(at 99.06 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEFA(科发)"
+			(at 99.06 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "KF2EDGR-2.54-6P"
+			(at 99.06 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

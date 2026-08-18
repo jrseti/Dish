@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Fan")
-		(date "2026-07-11")
-		(rev "1.1")
+		(date "2026-08-18")
+		(rev "2.0")
 		(company "JRSeti")
 	)
 	(lib_symbols
@@ -2312,30 +2312,6 @@
 		)
 		(uuid "f1a2a8da-b3a3-4bd4-bd97-a441a1848f01")
 	)
-	(global_label "FAN_MCU"
-		(shape input)
-		(at 127 93.98 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "81e38327-a509-4efe-be33-9c4df04ea712")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.4876 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "12V"
 		(shape input)
 		(at 138.43 68.58 180)
@@ -2359,6 +2335,17 @@
 				(justify right)
 			)
 		)
+	)
+	(hierarchical_label "FAN_MCU"
+		(shape input)
+		(at 127 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "81e38327-a509-4efe-be33-9c4df04ea712")
 	)
 	(symbol
 		(lib_id "MyParts:AO3400A")

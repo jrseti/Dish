@@ -5,7 +5,7 @@
 	(uuid "95aa4cf4-8918-4e59-a803-55681bcd9c33")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:CP"
+		(symbol "Device:C_Polarized"
 			(pin_numbers
 				(hide yes)
 			)
@@ -28,7 +28,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "CP"
+			(property "Value" "C_Polarized"
 				(at 0.635 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -94,7 +94,7 @@
 					)
 				)
 			)
-			(symbol "CP_0_1"
+			(symbol "C_Polarized_0_1"
 				(rectangle
 					(start -2.286 0.508)
 					(end 2.286 1.016)
@@ -142,7 +142,7 @@
 					)
 				)
 			)
-			(symbol "CP_1_1"
+			(symbol "C_Polarized_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -732,7 +732,7 @@
 						(type background)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -12.7 5.08 0)
 					(length 5.08)
 					(name "VCC"
@@ -750,7 +750,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -12.7 2.54 0)
 					(length 5.08)
 					(name "D-"
@@ -768,7 +768,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -12.7 0 0)
 					(length 5.08)
 					(name "D+"
@@ -786,7 +786,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -12.7 -2.54 0)
 					(length 5.08)
 					(name "GND"
@@ -804,7 +804,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 12.7 5.08 180)
 					(length 5.08)
 					(name "VCC"
@@ -822,7 +822,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 12.7 2.54 180)
 					(length 5.08)
 					(name "D-"
@@ -840,7 +840,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 12.7 0 180)
 					(length 5.08)
 					(name "D+"
@@ -858,7 +858,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 12.7 -2.54 180)
 					(length 5.08)
 					(name "GND"
@@ -876,7 +876,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 -7.62 90)
 					(length 2.54)
 					(name "9"
@@ -1001,7 +1001,7 @@
 						(type background)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -1019,7 +1019,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -1155,7 +1155,7 @@
 						(type background)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -12.7 5.08 0)
 					(length 5.08)
 					(name "VCC"
@@ -1173,7 +1173,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -12.7 2.54 0)
 					(length 5.08)
 					(name "Sel"
@@ -1191,7 +1191,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -12.7 0 0)
 					(length 5.08)
 					(name "D+"
@@ -1209,7 +1209,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -12.7 -2.54 0)
 					(length 5.08)
 					(name "D-"
@@ -1227,7 +1227,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -12.7 -5.08 0)
 					(length 5.08)
 					(name "GND"
@@ -1245,7 +1245,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 12.7 -5.08 180)
 					(length 5.08)
 					(name "HSD1-"
@@ -1263,7 +1263,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 12.7 -2.54 180)
 					(length 5.08)
 					(name "HSD1+"
@@ -1281,7 +1281,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 12.7 0 180)
 					(length 5.08)
 					(name "HSD2-"
@@ -1299,7 +1299,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 12.7 2.54 180)
 					(length 5.08)
 					(name "HSD2+"
@@ -1317,7 +1317,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 12.7 5.08 180)
 					(length 5.08)
 					(name "~{OE}"
@@ -2017,7 +2017,7 @@
 						(type background)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -12.7 -10.16 90)
 					(length 2.54)
 					(name "1"
@@ -2035,7 +2035,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -7.62 -10.16 90)
 					(length 2.54)
 					(name "2"
@@ -2053,7 +2053,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 -10.16 90)
 					(length 2.54)
 					(name "3"
@@ -2071,7 +2071,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 7.62 -10.16 90)
 					(length 2.54)
 					(name "4"
@@ -2089,7 +2089,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 12.7 -10.16 90)
 					(length 2.54)
 					(name "5"
@@ -2107,7 +2107,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 12.7 10.16 270)
 					(length 5.08)
 					(name "6"
@@ -2125,7 +2125,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 7.62 10.16 270)
 					(length 5.08)
 					(name "7"
@@ -2143,7 +2143,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 10.16 270)
 					(length 5.08)
 					(name "8"
@@ -2161,7 +2161,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -7.62 10.16 270)
 					(length 5.08)
 					(name "9"
@@ -2179,7 +2179,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -12.7 10.16 270)
 					(length 5.08)
 					(name "10"
@@ -3624,7 +3624,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -7.62 -2.54 0)
 					(length 2.54)
 					(name "OSC1"
@@ -3642,7 +3642,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 7.62 -2.54 180)
 					(length 2.54)
 					(name "GND"
@@ -3660,7 +3660,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 7.62 2.54 180)
 					(length 2.54)
 					(name "OSC2"
@@ -3678,7 +3678,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
 					(name "GND"
@@ -3699,7 +3699,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_JLCPCB-Capacitors:0402,22pF"
+		(symbol "PCM_JLCPCB-Capacitors:0402,15pF"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3722,7 +3722,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "22pF"
+			(property "Value" "15pF"
 				(at 2.032 -0.3782 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3744,7 +3744,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG220J500NT_C1555.pdf"
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG150J500NT_C1548.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3755,7 +3755,7 @@
 					)
 				)
 			)
-			(property "Description" "50V 22pF C0G ±5% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(property "Description" "50V 15pF C0G ±5% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3766,7 +3766,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C1555"
+			(property "LCSC" "C1548"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3777,7 +3777,7 @@
 					)
 				)
 			)
-			(property "Stock" "2333179"
+			(property "Stock" "959507"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3865,7 +3865,7 @@
 					)
 				)
 			)
-			(property "Part" "0402CG220J500NT"
+			(property "Part" "0402CG150J500NT"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3898,7 +3898,7 @@
 					)
 				)
 			)
-			(property "Capacitance" "22pF"
+			(property "Capacitance" "15pF"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3931,7 +3931,7 @@
 					)
 				)
 			)
-			(symbol "0402,22pF_0_1"
+			(symbol "0402,15pF_0_1"
 				(polyline
 					(pts
 						(xy -1.27 0.635) (xy 1.27 0.635)
@@ -3957,7 +3957,7 @@
 					)
 				)
 			)
-			(symbol "0402,22pF_1_1"
+			(symbol "0402,15pF_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 3.175)
@@ -5409,6 +5409,12 @@
 		(uuid "08931a9d-d9c0-42ed-a12a-4ab618588c71")
 	)
 	(junction
+		(at 101.6 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a05648f-70b6-4d9e-8617-f746271b7a3c")
+	)
+	(junction
 		(at 111.76 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5497,12 +5503,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8bb7ca97-7be5-413f-9b4d-39109675b24e")
-	)
-	(junction
-		(at 101.6 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9d1dc0e3-b0f4-4ff6-814b-5df86ef26b3b")
 	)
 	(junction
 		(at 100.33 50.8)
@@ -5613,7 +5613,7 @@
 		(uuid "f8da2101-b179-4bd8-9828-9585415fab73")
 	)
 	(no_connect
-		(at 71.12 35.56)
+		(at 43.18 35.56)
 		(uuid "00687829-7108-4d7d-9a00-18c888fde6ca")
 	)
 	(no_connect
@@ -5621,8 +5621,8 @@
 		(uuid "007ad4d4-a7e0-4fbd-aa92-a917f05d32e8")
 	)
 	(no_connect
-		(at 36.83 22.86)
-		(uuid "18768877-f9a0-4a39-83b6-b194f9d778f2")
+		(at 120.65 104.14)
+		(uuid "0d79e791-dc2b-4646-9876-6890758f2225")
 	)
 	(no_connect
 		(at 187.96 130.81)
@@ -5633,7 +5633,7 @@
 		(uuid "4b52c2cd-479c-4758-b97f-ca829111c990")
 	)
 	(no_connect
-		(at 71.12 40.64)
+		(at 43.18 40.64)
 		(uuid "626f081b-9866-48d8-9c9d-5604c722854b")
 	)
 	(no_connect
@@ -5641,11 +5641,11 @@
 		(uuid "66c048d2-2599-4896-bdc7-272d469a4467")
 	)
 	(no_connect
-		(at 50.8 40.64)
+		(at 22.86 40.64)
 		(uuid "6843ac98-5270-4147-8eaa-dbde237c86d8")
 	)
 	(no_connect
-		(at 50.8 35.56)
+		(at 22.86 35.56)
 		(uuid "7b68fc37-ad13-4d64-8dee-e6eff3690c46")
 	)
 	(no_connect
@@ -5653,7 +5653,7 @@
 		(uuid "9cb87bed-d595-42b6-bc97-9df5367185e0")
 	)
 	(no_connect
-		(at 50.8 55.88)
+		(at 22.86 55.88)
 		(uuid "b465786d-9065-4763-8a50-9a54aa42649b")
 	)
 	(no_connect
@@ -5661,7 +5661,7 @@
 		(uuid "c34de294-eacd-42ab-b664-17fcfbdbbfed")
 	)
 	(no_connect
-		(at 50.8 60.96)
+		(at 22.86 60.96)
 		(uuid "c807be08-2fbc-4810-af83-38da3f17e425")
 	)
 	(no_connect
@@ -6086,7 +6086,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 55.88) (xy 72.39 55.88)
+			(xy 43.18 55.88) (xy 44.45 55.88)
 		)
 		(stroke
 			(width 0)
@@ -6126,16 +6126,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 48.26) (xy 72.39 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4229b549-5b44-4ba1-a165-c10ccc87de1a")
-	)
-	(wire
-		(pts
 			(xy 146.05 83.82) (xy 148.59 83.82)
 		)
 		(stroke
@@ -6166,7 +6156,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 49.53) (xy 49.53 48.26)
+			(xy 21.59 49.53) (xy 21.59 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6286,7 +6276,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 60.96) (xy 72.39 60.96)
+			(xy 43.18 60.96) (xy 44.45 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6336,13 +6326,23 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 48.26) (xy 50.8 48.26)
+			(xy 21.59 48.26) (xy 22.86 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5ceab3e7-508b-45bf-810e-e696c9ef436d")
+	)
+	(wire
+		(pts
+			(xy 97.79 35.56) (xy 101.6 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d0b03ef-0c84-4b80-b80f-86d83d9ee842")
 	)
 	(wire
 		(pts
@@ -6656,6 +6656,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 35.56) (xy 90.17 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d4844d7-3d94-4a1d-9104-4a3818320d34")
+	)
+	(wire
+		(pts
 			(xy 99.06 48.26) (xy 99.06 43.18)
 		)
 		(stroke
@@ -6703,16 +6713,6 @@
 			(type default)
 		)
 		(uuid "93dc1517-158f-4c4f-8367-82b29b1b8696")
-	)
-	(wire
-		(pts
-			(xy 101.6 27.94) (xy 101.6 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "946be8d5-5882-4e69-ac4e-a3046350e814")
 	)
 	(wire
 		(pts
@@ -6986,16 +6986,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 48.26) (xy 72.39 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5bf8e2a-bd96-4b28-b179-80bc48641e71")
-	)
-	(wire
-		(pts
 			(xy 222.25 118.11) (xy 219.71 118.11)
 		)
 		(stroke
@@ -7006,6 +6996,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 48.26) (xy 44.45 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7963781-38b0-403c-9b7b-b240b53e03c2")
+	)
+	(wire
+		(pts
 			(xy 120.65 91.44) (xy 118.11 91.44)
 		)
 		(stroke
@@ -7013,6 +7013,16 @@
 			(type default)
 		)
 		(uuid "c9a4ab93-72a6-44b6-a252-3a9d0de20fb6")
+	)
+	(wire
+		(pts
+			(xy 44.45 48.26) (xy 44.45 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9da85aa-b98f-4d7e-9b30-c2960f3cc28d")
 	)
 	(wire
 		(pts
@@ -7076,7 +7086,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 104.14) (xy 120.65 104.14)
+			(xy 114.3 101.6) (xy 120.65 101.6)
 		)
 		(stroke
 			(width 0)
@@ -7335,7 +7345,7 @@
 		(uuid "35e4dbae-ff6b-4e1d-b6e4-a5cbe48667d0")
 	)
 	(label "HSD2+"
-		(at 72.39 60.96 0)
+		(at 44.45 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7345,7 +7355,7 @@
 		(uuid "37b3ea93-6c6d-41ff-87c6-6646ad91cd0f")
 	)
 	(label "HSD2-"
-		(at 72.39 55.88 0)
+		(at 44.45 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7455,16 +7465,6 @@
 		(uuid "a646d346-7606-47e2-a7f0-da05ef3f60ff")
 	)
 	(label "VBUS"
-		(at 101.6 27.94 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ad25d66d-fc85-491a-8bb9-e8c0eeb44aa7")
-	)
-	(label "VBUS"
 		(at 250.19 110.49 0)
 		(effects
 			(font
@@ -7525,12 +7525,12 @@
 		(uuid "d84f20c3-f072-4859-9ae4-95e1d47886b6")
 	)
 	(label "nOCS1"
-		(at 190.5 49.53 0)
+		(at 196.85 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "dd205a82-f25d-4c12-bd36-7c06b39d54c3")
 	)
@@ -7563,54 +7563,6 @@
 			(justify left bottom)
 		)
 		(uuid "fd6f1d5d-2125-4728-bc35-e3e8b4781d3e")
-	)
-	(global_label "USB2_N"
-		(shape input)
-		(at 57.15 96.52 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1582b92b-05a3-42e5-8825-e0169733025a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.8472 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "USB_OTG_ID"
-		(shape input)
-		(at 40.64 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1b6143df-d364-452f-8abb-5124bc393412")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.4667 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(global_label "3V3_CM4"
 		(shape input)
@@ -7684,10 +7636,42 @@
 			)
 		)
 	)
-	(global_label "USB2_P"
-		(shape input)
+	(hierarchical_label "USB2_N"
+		(shape bidirectional)
+		(at 57.15 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1582b92b-05a3-42e5-8825-e0169733025a")
+	)
+	(hierarchical_label "USB_OTG_ID"
+		(shape output)
+		(at 40.64 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1b6143df-d364-452f-8abb-5124bc393412")
+	)
+	(hierarchical_label "USB_OTG_ID"
+		(shape output)
+		(at 87.63 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1b84fbb4-8797-4468-8507-8fabe892bdbc")
+	)
+	(hierarchical_label "USB2_P"
+		(shape bidirectional)
 		(at 57.15 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7695,23 +7679,10 @@
 			(justify right)
 		)
 		(uuid "88644375-89b2-4983-bc1c-f2811b831ead")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.9077 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "nEXTRST"
+	(hierarchical_label "nEXTRST"
 		(shape input)
-		(at 114.3 104.14 180)
-		(fields_autoplaced yes)
+		(at 114.3 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7719,18 +7690,6 @@
 			(justify right)
 		)
 		(uuid "b36b055e-1503-4354-8ede-a963ff235248")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.3926 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8860,8 +8819,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 110.49 109.22 0)
-			(hide yes)
+			(at 110.49 107.188 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8969,6 +8927,272 @@
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0402,2.2kΩ")
+		(at 93.98 35.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "371cd032-c911-4d05-a7c3-34d270eb96e6")
+		(property "Reference" "R94"
+			(at 93.98 33.528 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2kΩ"
+			(at 93.98 35.56 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:R0402"
+			(at 93.98 37.338 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF2201TCE_C25879.pdf"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 2.2kΩ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25879"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "1767502"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0402WGF2201TCE"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "2.2kΩ"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 93.98 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06c742b1-e65a-4fac-8d63-710fb08474c7")
+		)
+		(pin "2"
+			(uuid "fa5373ee-0094-4408-b7f5-6a6f84ccd3ae")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "R94")
 					(unit 1)
 				)
 			)
@@ -9694,7 +9918,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 72.39 49.53 0)
+		(at 44.45 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9703,9 +9927,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "59550bbb-d5a0-47a5-80b7-eb2ff538cb88")
-		(property "Reference" "#PWR096"
-			(at 72.39 55.88 0)
+		(uuid "56535bad-e0ff-4456-9f7c-f579a2aced74")
+		(property "Reference" "#PWR0105"
+			(at 44.45 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9716,7 +9940,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 72.39 54.61 0)
+			(at 44.45 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9727,7 +9951,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 49.53 0)
+			(at 44.45 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9738,7 +9962,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 49.53 0)
+			(at 44.45 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9749,7 +9973,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 72.39 49.53 0)
+			(at 44.45 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9760,20 +9984,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "fc61a6b3-8763-434d-99af-89eddf026e27")
+			(uuid "aab82704-790a-4ac3-b34d-661c238206a4")
 		)
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "#PWR096")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0402,22pF")
-		(at 41.91 138.43 0)
+		(lib_id "power:GND")
+		(at 105.41 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9781,9 +10005,88 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5d187495-634e-4eaa-beb4-6e1609ae4f08")
-		(property "Reference" "C85"
-			(at 37.338 136.1439 0)
+		(fields_autoplaced yes)
+		(uuid "7d73ebd7-c002-42ba-b641-9283b3ae097d")
+		(property "Reference" "#PWR093"
+			(at 105.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99447520-2c92-4573-a6ad-5397e1352d2e")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Capacitors:0402,15pF")
+		(at 63.5 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8a00aa37-1551-4469-b618-3ed373bb4232")
+		(property "Reference" "C86"
+			(at 65.532 131.0639 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9793,8 +10096,243 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22pF"
-			(at 37.338 138.684 0)
+		(property "Value" "15pF"
+			(at 65.532 133.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_0402"
+			(at 61.722 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG150J500NT_C1548.pdf"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "50V 15pF C0G ±5% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1548"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "959507"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FH(Guangdong Fenghua Advanced Tech)"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0402CG150J500NT"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rated" "50V"
+			(at 65.532 136.144 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "±5%"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Capacitance" "15pF"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "C0G"
+			(at 63.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c0ad4985-5ce5-460d-9b1f-d0ab3b183507")
+		)
+		(pin "1"
+			(uuid "ace21b3e-87f3-4ab5-981b-628cc3055168")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "C86")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Capacitors:0402,15pF")
+		(at 41.91 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8befd233-a072-43ae-bfd6-f47bc7466ea1")
+		(property "Reference" "C85"
+			(at 37.338 135.6359 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "15pF"
+			(at 37.338 138.176 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9815,7 +10353,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG220J500NT_C1555.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG150J500NT_C1548.pdf"
 			(at 41.91 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -9826,7 +10364,7 @@
 				)
 			)
 		)
-		(property "Description" "50V 22pF C0G ±5% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "50V 15pF C0G ±5% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 41.91 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -9837,7 +10375,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1555"
+		(property "LCSC" "C1548"
 			(at 41.91 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -9848,7 +10386,7 @@
 				)
 			)
 		)
-		(property "Stock" "2333179"
+		(property "Stock" "959507"
 			(at 41.91 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -9936,7 +10474,7 @@
 				)
 			)
 		)
-		(property "Part" "0402CG220J500NT"
+		(property "Part" "0402CG150J500NT"
 			(at 41.91 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -9948,7 +10486,7 @@
 			)
 		)
 		(property "Voltage Rated" "50V"
-			(at 37.338 141.224 0)
+			(at 37.338 140.716 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9969,7 +10507,7 @@
 				)
 			)
 		)
-		(property "Capacitance" "22pF"
+		(property "Capacitance" "15pF"
 			(at 41.91 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -9991,208 +10529,16 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "0879b90c-8ff7-4d35-a637-12199c60f161")
-		)
 		(pin "2"
-			(uuid "8b7033a4-439e-4660-b8ff-5e318196cced")
+			(uuid "8b248ee8-75df-412b-a356-873844b879de")
+		)
+		(pin "1"
+			(uuid "5fe1f222-ff06-4716-81e5-40986c968338")
 		)
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "C85")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:CP")
-		(at 209.55 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6282e539-e551-43b5-9962-676ddaadcfdc")
-		(property "Reference" "C80"
-			(at 212.5472 49.657 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF"
-			(at 212.5472 51.943 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D"
-			(at 210.5152 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 209.55 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 209.55 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field4" "Mouser"
-			(at 209.55 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field5" "667-EEF-CX0J101R"
-			(at 209.55 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part Description" "Capacitor, SP-Cap, 100u, 6.3V, 15mR ESR"
-			(at 209.55 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1ae198db-88fc-41e5-a591-16eb996434c7")
-		)
-		(pin "2"
-			(uuid "e15c22c7-c98a-4db5-817e-c0c4dea1883c")
-		)
-		(instances
-			(project "rcm_dish_controller"
-				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C80")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 105.41 109.22 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7d73ebd7-c002-42ba-b641-9283b3ae097d")
-		(property "Reference" "#PWR093"
-			(at 105.41 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 105.41 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.41 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 105.41 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "99447520-2c92-4573-a6ad-5397e1352d2e")
-		)
-		(instances
-			(project "rcm_dish_controller"
-				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -11806,7 +12152,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:TPD4EUSB30DQAR-N")
-		(at 60.96 48.26 90)
+		(at 33.02 48.26 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11817,7 +12163,7 @@
 		(fields_autoplaced yes)
 		(uuid "ddea6a62-976e-4a1b-ae86-5cb4e6be39f7")
 		(property "Reference" "U10"
-			(at 60.96 27.94 90)
+			(at 33.02 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11827,7 +12173,7 @@
 			)
 		)
 		(property "Value" "TPD4EUSB30DQAR-N"
-			(at 60.96 30.48 90)
+			(at 33.02 30.48 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11837,7 +12183,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:DFN-10_L2.5-W1.0-P0.50-BL-A"
-			(at 78.74 48.26 0)
+			(at 50.8 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11848,7 +12194,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C5148477.pdf"
-			(at 81.28 48.26 0)
+			(at 53.34 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11859,7 +12205,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 60.96 48.26 0)
+			(at 33.02 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11870,7 +12216,7 @@
 			)
 		)
 		(property "Manufacturer" "BORN(伯恩半导体)"
-			(at 83.82 48.26 0)
+			(at 55.88 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11881,7 +12227,7 @@
 			)
 		)
 		(property "MPN" "TPD4EUSB30DQAR-N"
-			(at 86.36 48.26 0)
+			(at 58.42 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11892,7 +12238,7 @@
 			)
 		)
 		(property "LCSC Part" "C5148477"
-			(at 88.9 48.26 0)
+			(at 60.96 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12061,6 +12407,120 @@
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 209.55 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e78227c5-94a6-4e05-839e-409a4665bffc")
+		(property "Reference" "C80"
+			(at 211.836 50.1649 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF 6.3V"
+			(at 211.836 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D"
+			(at 217.17 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C189619.pdf"
+			(at 219.71 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 222.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "PANASONIC"
+			(at 224.79 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "EEFCX0J101R"
+			(at 227.33 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C189619"
+			(at 229.87 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "801c7b6a-b477-4576-a5bd-86d99c96f63f")
+		)
+		(pin "2"
+			(uuid "6983daf8-985b-4ef8-9890-bc1614dad099")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "C80")
 					(unit 1)
 				)
 			)
@@ -12448,7 +12908,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 49.53 49.53 0)
+		(at 21.59 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12459,7 +12919,7 @@
 		(fields_autoplaced yes)
 		(uuid "f7d4ecd7-c705-4e68-8306-388992a15ded")
 		(property "Reference" "#PWR097"
-			(at 49.53 55.88 0)
+			(at 21.59 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12470,7 +12930,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 49.53 54.61 0)
+			(at 21.59 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12481,7 +12941,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 49.53 0)
+			(at 21.59 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12492,7 +12952,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 49.53 0)
+			(at 21.59 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12503,7 +12963,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 49.53 49.53 0)
+			(at 21.59 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12632,241 +13092,6 @@
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "R84")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0402,22pF")
-		(at 63.5 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ffbfa859-1bba-4a20-9312-b3df220eb3c1")
-		(property "Reference" "C86"
-			(at 65.532 130.8099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22pF"
-			(at 65.532 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:C_0402"
-			(at 61.722 133.35 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG220J500NT_C1555.pdf"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "50V 22pF C0G ±5% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C1555"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Stock" "2333179"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" "0.004USD"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "FH(Guangdong Fenghua Advanced Tech)"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "0402CG220J500NT"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage Rated" "50V"
-			(at 65.532 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(justify left)
-			)
-		)
-		(property "Tolerance" "±5%"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Capacitance" "22pF"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "C0G"
-			(at 63.5 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f80a278a-948a-4afe-a08d-124ae8e98464")
-		)
-		(pin "2"
-			(uuid "b57d2aa6-04aa-40bd-9264-1b67d7832be5")
-		)
-		(instances
-			(project "rcm_dish_controller"
-				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C86")
 					(unit 1)
 				)
 			)

@@ -823,7 +823,7 @@
         "uuid": "10d7c3e5-be4d-4306-a59e-500b86bd141f"
       }
     ],
-    "used_designators": "TP6,CN6,CN10-11,CN15,USB1,X2,P1,H1,R20,R23,R83-92,USBC1,J2-3,J13,U4,U9-10,U13-16,C79-80,C84-94,C108-109,C118,D24,#PWR52,#PWR55-57,#PWR61-63,#PWR74,#PWR81,#PWR91-106,#PWR114,#PWR127,LED3-4",
+    "used_designators": "C20,C86",
     "variants": []
   },
   "sheets": [
