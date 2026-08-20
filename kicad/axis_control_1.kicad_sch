@@ -6247,7 +6247,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b99571c-65e0-4ce6-9823-f7de460f216d")
-		(property "Reference" "D18"
+		(property "Reference" "D8"
 			(at 68.834 143.764 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6322,7 +6322,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "D18")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -6453,7 +6453,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1d7e2b1c-4e02-4659-8f59-303d7aa733dd")
-		(property "Reference" "R15"
+		(property "Reference" "R12"
 			(at 96.266 125.222 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6702,7 +6702,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "R15")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -6719,7 +6719,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "25dbac08-0b4b-470f-b3cb-90a445b880c7")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR016"
 			(at 88.9 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -6780,7 +6780,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "#PWR017")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -6912,7 +6912,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2dd95f34-8bc9-41c1-90fe-c32a4d2fb888")
-		(property "Reference" "R76"
+		(property "Reference" "R14"
 			(at 255.27 128.2699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7173,7 +7173,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "R76")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -7456,7 +7456,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3142e7ef-865e-4701-9218-91569cae61c1")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR015"
 			(at 53.34 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -7517,7 +7517,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "#PWR016")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -7647,7 +7647,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "44587048-b1b9-4a02-9c9f-b8097c97136c")
-		(property "Reference" "R59"
+		(property "Reference" "R17"
 			(at 61.976 132.334 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7907,7 +7907,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "R59")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -7925,7 +7925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44b3f96d-d584-4fdd-94f1-369233f1d68f")
-		(property "Reference" "Q5"
+		(property "Reference" "Q1"
 			(at 187.96 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8006,7 +8006,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "Q5")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -8024,7 +8024,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "456e35af-d0d4-48dd-a313-30d783113d98")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR021"
 			(at 232.41 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -8085,7 +8085,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "#PWR078")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -8103,7 +8103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47b5062a-9a58-4892-9c90-0943961b148e")
-		(property "Reference" "Q6"
+		(property "Reference" "Q2"
 			(at 250.19 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8184,7 +8184,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "Q6")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -8201,7 +8201,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "51993d32-a171-45cc-aed8-87e322c0266d")
-		(property "Reference" "R58"
+		(property "Reference" "R15"
 			(at 62.23 127.254 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8461,7 +8461,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "R58")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -8603,7 +8603,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59088c11-c87c-4d52-bd52-3d85dc23eb28")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR018"
 			(at 187.96 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -8664,7 +8664,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "#PWR019")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -8682,7 +8682,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5cd883bd-b32f-4fe7-baa2-32ae25f39076")
-		(property "Reference" "R73"
+		(property "Reference" "R13"
 			(at 193.04 128.2699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8943,7 +8943,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "R73")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -9052,7 +9052,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "69ba40b1-efd9-47c6-b9c7-740e0dd2ca6c")
-		(property "Reference" "R74"
+		(property "Reference" "R21"
 			(at 230.378 141.986 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9313,7 +9313,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "R74")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -9330,7 +9330,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6b6e5aa9-7d05-452f-93f9-5741d4c2b2d4")
-		(property "Reference" "R57"
+		(property "Reference" "R11"
 			(at 61.976 122.174 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9590,7 +9590,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "R57")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -9607,7 +9607,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "73775b24-5d3c-49a1-b1d8-998ce26fdb98")
-		(property "Reference" "D19"
+		(property "Reference" "D9"
 			(at 74.93 143.764 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9682,7 +9682,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "D19")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -9699,7 +9699,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "779162aa-3a4b-4262-b6dc-f2862bc8c0fe")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR019"
 			(at 73.66 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -9760,7 +9760,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "#PWR071")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -9777,7 +9777,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c3dfb1c-f834-4b5b-a354-a8029ad6dd89")
-		(property "Reference" "R71"
+		(property "Reference" "R20"
 			(at 168.148 141.986 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10038,7 +10038,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "R71")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -10332,7 +10332,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "85f30443-845e-4e8e-87c3-940a31c05ef6")
-		(property "Reference" "D31"
+		(property "Reference" "D6"
 			(at 195.326 77.978 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10429,7 +10429,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "D31")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -10446,7 +10446,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8d41924a-3b64-490e-9d6e-b52f4a52b018")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR017"
 			(at 124.46 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -10507,7 +10507,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "#PWR018")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -11671,7 +11671,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cefd04c4-d9c5-480e-9c92-a9459c5e1fe0")
-		(property "Reference" "C66"
+		(property "Reference" "C18"
 			(at 175.768 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11889,7 +11889,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "C66")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -11906,7 +11906,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf160892-2a3e-4a14-90ee-1873b84c7df9")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR014"
 			(at 205.74 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -11968,7 +11968,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "#PWR013")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -11986,7 +11986,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0c9cb5b-35c6-4913-a249-ae1991275aa0")
-		(property "Reference" "F4"
+		(property "Reference" "F1"
 			(at 214.63 39.3699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12083,7 +12083,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "F4")
+					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -12100,7 +12100,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d4d8d6bb-7ad3-4bef-a6bc-91e55347999e")
-		(property "Reference" "R72"
+		(property "Reference" "R18"
 			(at 163.83 132.334 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12358,7 +12358,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "R72")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -12375,7 +12375,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d6e73fc1-415d-44ba-a9fc-155193be48df")
-		(property "Reference" "C70"
+		(property "Reference" "C19"
 			(at 237.998 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12593,7 +12593,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "C70")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -12610,7 +12610,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d87290fd-2e78-4dd4-b6b1-83894bf8ec2b")
-		(property "Reference" "D20"
+		(property "Reference" "D10"
 			(at 82.296 143.764 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12685,7 +12685,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "D20")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -12969,7 +12969,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ed3dd6cc-5cb1-4403-a3e7-591a4b97832f")
-		(property "Reference" "D32"
+		(property "Reference" "D7"
 			(at 201.676 80.518 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13066,7 +13066,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "D32")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -13083,7 +13083,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "edca2d0a-db8f-4e5c-9890-65f5efc5cf14")
-		(property "Reference" "R14"
+		(property "Reference" "R10"
 			(at 96.266 119.634 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13332,7 +13332,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "R14")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -13819,7 +13819,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fb9ae389-bb5a-4ccb-988c-e8a6625e51a6")
-		(property "Reference" "R75"
+		(property "Reference" "R19"
 			(at 226.06 132.334 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14077,7 +14077,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "R75")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -14095,7 +14095,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc511175-22dc-4052-921f-e8b413630af1")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR020"
 			(at 170.18 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -14156,7 +14156,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
-					(reference "#PWR077")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)

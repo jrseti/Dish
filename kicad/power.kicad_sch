@@ -2392,7 +2392,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "224d75e6-908f-4c6d-9237-d66a6fc230c7")
-		(property "Reference" "R21"
+		(property "Reference" "R24"
 			(at 156.21 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2642,7 +2642,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/f4424325-c15a-4f12-b98c-68501db44bed"
-					(reference "R21")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -2660,7 +2660,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22e09742-4a64-4e3e-b543-95c5933d2190")
-		(property "Reference" "Q11"
+		(property "Reference" "Q3"
 			(at 176.53 27.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2766,7 +2766,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/f4424325-c15a-4f12-b98c-68501db44bed"
-					(reference "Q11")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -2861,7 +2861,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "548cd951-5d86-4c34-b125-d4bde3d27d8a")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR027"
 			(at 161.29 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -2922,7 +2922,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/f4424325-c15a-4f12-b98c-68501db44bed"
-					(reference "#PWR053")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -2940,7 +2940,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c3e5adb-598a-428d-b750-8a0a959f064d")
-		(property "Reference" "TP2"
+		(property "Reference" "TP4"
 			(at 177.8 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3035,7 +3035,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/f4424325-c15a-4f12-b98c-68501db44bed"
-					(reference "TP2")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -3053,7 +3053,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8c383192-3168-4cc7-8e0d-ae2316069d27")
-		(property "Reference" "SW4"
+		(property "Reference" "SW2"
 			(at 153.67 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3136,7 +3136,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/f4424325-c15a-4f12-b98c-68501db44bed"
-					(reference "SW4")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -3154,7 +3154,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b59f65ed-bd1f-4a99-8bec-c0e46a090869")
-		(property "Reference" "Q12"
+		(property "Reference" "Q4"
 			(at 176.53 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3260,7 +3260,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/f4424325-c15a-4f12-b98c-68501db44bed"
-					(reference "Q12")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -3278,7 +3278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7cbd8eb-2cc4-4528-bb39-966e0ec7961d")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR028"
 			(at 92.71 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -3339,7 +3339,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/f4424325-c15a-4f12-b98c-68501db44bed"
-					(reference "#PWR030")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -3357,7 +3357,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6c4c7df-74d1-4022-a3fa-48b8fead16f3")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR029"
 			(at 158.75 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3418,7 +3418,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/f4424325-c15a-4f12-b98c-68501db44bed"
-					(reference "#PWR054")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -3436,7 +3436,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f094d31e-4ea2-4d6a-93f3-1523e8d40c5d")
-		(property "Reference" "TP1"
+		(property "Reference" "TP3"
 			(at 95.25 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3531,7 +3531,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/f4424325-c15a-4f12-b98c-68501db44bed"
-					(reference "TP1")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
