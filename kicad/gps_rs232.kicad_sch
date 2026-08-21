@@ -1401,6 +1401,185 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:PESD0402-140"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PESD0402-140"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyParts:D0402-BI"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/TVS_TE-Connectivity_PESD0402-140_PESD0402-140_C10662.html"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Littelfuse(美国力特)"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "PESD0402-140"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C10662"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TVS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PESD0402-140_0_1"
+				(polyline
+					(pts
+						(xy -2.54 1.52) (xy 0 0) (xy -2.54 -1.52) (xy -2.54 1.52)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.02 2.29) (xy 0 1.27) (xy 0 -1.27) (xy 1.02 -2.29)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.52) (xy 0 0) (xy 2.54 1.52) (xy 2.54 -1.52)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -6.35 0 0)
+					(length 3.81)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 0 180)
+					(length 3.81)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:RH-5016"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4613,6 +4792,17 @@
 		)
 		(uuid "85cf1627-8d88-453c-bf78-a72c66a0999e")
 	)
+	(text "D43 (0.25pF) is the antenna ESD clamp - keep it\nright at CN7. Not lightning protection: an outdoor\nrun still needs a coaxial arrestor at the bulkhead."
+		(exclude_from_sim no)
+		(at 179.07 137.668 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "8adf3eaa-88ef-4f92-9d55-19d02543a5df")
+	)
 	(text "GPS is input using a MAX-M10S-00B.\nNMEA sentences are used to get the UTC datetime and\nthe 1PPS is used to correct the MCU clock every second.\nSee https://www.mouser.com/pdfDocs/MAX-M10S_IntegrationManual_UBX-20053088.pdf"
 		(exclude_from_sim no)
 		(at 66.802 36.068 0)
@@ -4626,7 +4816,7 @@
 	)
 	(text "SMA Female"
 		(exclude_from_sim no)
-		(at 202.692 129.286 0)
+		(at 203.962 126.746 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -4636,8 +4826,8 @@
 	)
 	(text_box "RF SMA Connector"
 		(exclude_from_sim no)
-		(at 171.45 105.41 0)
-		(size 46.99 30.48)
+		(at 165.1 102.87 0)
+		(size 55.88 40.64)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4715,6 +4905,12 @@
 		(uuid "eb2a1c71-c83e-4b56-b4bf-70751ea6109d")
 	)
 	(junction
+		(at 176.53 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "027b2511-a998-4803-8eb5-1abac76493a2")
+	)
+	(junction
 		(at 191.77 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4787,13 +4983,13 @@
 		(uuid "acc429ce-1134-4577-9bc5-94fbb82a355c")
 	)
 	(junction
-		(at 189.23 111.76)
+		(at 190.5 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b64089d3-c62b-4527-8e12-94d2369546d3")
 	)
 	(junction
-		(at 186.69 129.54)
+		(at 187.96 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c18b5b13-b02b-4fb7-9308-3061badc0396")
@@ -4834,16 +5030,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 120.65) (xy 179.07 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "040684d1-0ee0-4e04-b782-f16f000b189e")
-	)
-	(wire
-		(pts
 			(xy 99.06 92.71) (xy 99.06 95.25)
 		)
 		(stroke
@@ -4854,7 +5040,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 111.76) (xy 189.23 113.03)
+			(xy 190.5 109.22) (xy 190.5 110.49)
 		)
 		(stroke
 			(width 0)
@@ -4864,7 +5050,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 129.54) (xy 186.69 129.54)
+			(xy 190.5 127) (xy 187.96 127)
 		)
 		(stroke
 			(width 0)
@@ -5024,6 +5210,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 118.11) (xy 176.53 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ddbf038-6b5d-4f3b-a147-432549cce5ab")
+	)
+	(wire
+		(pts
 			(xy 195.58 76.2) (xy 198.12 76.2)
 		)
 		(stroke
@@ -5074,7 +5270,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 111.76) (xy 189.23 111.76)
+			(xy 185.42 109.22) (xy 190.5 109.22)
 		)
 		(stroke
 			(width 0)
@@ -5104,6 +5300,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 118.11) (xy 180.34 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "400d6ab6-156c-4d12-8f4c-ae4a2165ade4")
+	)
+	(wire
+		(pts
 			(xy 88.9 113.03) (xy 87.63 113.03)
 		)
 		(stroke
@@ -5114,7 +5320,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 111.76) (xy 212.09 113.03)
+			(xy 213.36 109.22) (xy 213.36 110.49)
 		)
 		(stroke
 			(width 0)
@@ -5184,7 +5390,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 128.27) (xy 189.23 129.54)
+			(xy 190.5 125.73) (xy 190.5 127)
 		)
 		(stroke
 			(width 0)
@@ -5254,7 +5460,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 128.27) (xy 184.15 129.54)
+			(xy 185.42 125.73) (xy 185.42 127)
 		)
 		(stroke
 			(width 0)
@@ -5324,7 +5530,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 111.76) (xy 212.09 111.76)
+			(xy 190.5 109.22) (xy 213.36 109.22)
 		)
 		(stroke
 			(width 0)
@@ -5344,7 +5550,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 113.03) (xy 184.15 111.76)
+			(xy 185.42 110.49) (xy 185.42 109.22)
 		)
 		(stroke
 			(width 0)
@@ -5494,7 +5700,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 129.54) (xy 186.69 129.54)
+			(xy 185.42 127) (xy 187.96 127)
 		)
 		(stroke
 			(width 0)
@@ -5521,6 +5727,16 @@
 			(type default)
 		)
 		(uuid "e5115321-f524-4320-9aa4-c9c36100264e")
+	)
+	(wire
+		(pts
+			(xy 176.53 134.62) (xy 176.53 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e959c503-ca5d-4c36-84a3-e6d8cf4a731a")
 	)
 	(wire
 		(pts
@@ -5643,6 +5859,16 @@
 		(uuid "ca8f1049-778a-469c-8562-42225c948d44")
 	)
 	(label "RF_IN"
+		(at 171.45 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e256ba2f-dae9-4206-9723-9a26e7abd88b")
+	)
+	(label "RF_IN"
 		(at 137.16 110.49 0)
 		(effects
 			(font
@@ -5651,16 +5877,6 @@
 			(justify left bottom)
 		)
 		(uuid "f1a48e99-c35b-49b7-845a-2c327353d12f")
-	)
-	(label "RF_IN"
-		(at 177.8 120.65 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f4bb8511-402d-403b-a2f5-6160259f2f96")
 	)
 	(label "TIMEPULSE"
 		(at 95.25 77.47 180)
@@ -5752,6 +5968,85 @@
 			(justify right)
 		)
 		(uuid "fb1cfc50-2b9f-4c2e-90bb-5248f8264fe9")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 176.53 135.89 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "089bb3ad-e720-4941-a10b-22d79db8509c")
+		(property "Reference" "#PWR0105"
+			(at 176.53 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.53 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cab2d0ac-efd5-4fd9-ae3f-5699080b5b09")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/005a8950-9739-403f-9896-26bcf992d086"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "MyParts:XL-0805QBC")
@@ -6723,6 +7018,125 @@
 		)
 	)
 	(symbol
+		(lib_id "MyParts:PESD0402-140")
+		(at 176.53 128.27 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "43dbe328-1c0b-4509-b6f3-d9089313a762")
+		(property "Reference" "D43"
+			(at 179.07 128.27 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PESD0402-140"
+			(at 179.07 130.81 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:D0402-BI"
+			(at 176.53 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/TVS_TE-Connectivity_PESD0402-140_PESD0402-140_C10662.html"
+			(at 176.53 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 176.53 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Littelfuse(美国力特)"
+			(at 176.53 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "PESD0402-140"
+			(at 176.53 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part" "C10662"
+			(at 176.53 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "d5ac4309-471b-4f82-862b-734b06b95ddd")
+		)
+		(pin "2"
+			(uuid "64823e96-53cb-4eef-a74e-16aef4222b5e")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/005a8950-9739-403f-9896-26bcf992d086"
+					(reference "D43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 99.06 95.25 0)
 		(mirror y)
@@ -6803,7 +7217,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:SMA-KWE_C7498154")
-		(at 190.5 120.65 0)
+		(at 191.77 118.11 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -6814,7 +7228,7 @@
 		(dnp no)
 		(uuid "4dd28efb-fcc3-40ab-96b1-7102a80b60cc")
 		(property "Reference" "CN7"
-			(at 203.2 119.3799 0)
+			(at 204.47 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6825,7 +7239,7 @@
 			)
 		)
 		(property "Value" "SMA-KWE_C7498154"
-			(at 193.294 125.476 0)
+			(at 194.564 122.936 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6836,7 +7250,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:SMA-TH_SMA-KWE_C7498154"
-			(at 190.5 135.89 0)
+			(at 191.77 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6847,7 +7261,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C7498154.pdf"
-			(at 190.5 138.43 0)
+			(at 191.77 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6858,7 +7272,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 190.5 120.65 0)
+			(at 191.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6869,7 +7283,7 @@
 			)
 		)
 		(property "Manufacturer" "LX(连欣科技)"
-			(at 190.5 140.97 0)
+			(at 191.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6880,7 +7294,7 @@
 			)
 		)
 		(property "MPN" "SMA-KWE"
-			(at 190.5 143.51 0)
+			(at 191.77 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6891,7 +7305,7 @@
 			)
 		)
 		(property "LCSC Part" "C7498154"
-			(at 190.5 146.05 0)
+			(at 191.77 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8496,7 +8910,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 212.09 113.03 0)
+		(at 213.36 110.49 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -8507,7 +8921,7 @@
 		(dnp no)
 		(uuid "afdfd5f3-c349-4d81-b6ea-9ccd95850c1c")
 		(property "Reference" "#PWR047"
-			(at 212.09 119.38 0)
+			(at 213.36 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8518,7 +8932,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 212.09 118.11 0)
+			(at 213.36 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8529,7 +8943,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 212.09 113.03 0)
+			(at 213.36 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8540,7 +8954,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 212.09 113.03 0)
+			(at 213.36 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8551,7 +8965,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 212.09 113.03 0)
+			(at 213.36 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10260,7 +10674,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 186.69 129.54 0)
+		(at 187.96 127 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -10271,7 +10685,7 @@
 		(dnp no)
 		(uuid "fbe2ce7e-419d-4bc9-84da-1b0a5403e5d6")
 		(property "Reference" "#PWR048"
-			(at 186.69 135.89 0)
+			(at 187.96 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10282,7 +10696,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 186.69 134.62 0)
+			(at 187.96 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10293,7 +10707,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 129.54 0)
+			(at 187.96 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10304,7 +10718,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 129.54 0)
+			(at 187.96 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10315,7 +10729,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 129.54 0)
+			(at 187.96 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

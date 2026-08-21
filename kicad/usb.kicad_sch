@@ -3997,6 +3997,260 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PCM_JLCPCB-Diodes:TVS-Uni,SMF6.0A"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 2.032 0.834 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SMF6.0A"
+				(at 2.032 -1.2122 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:D_SOD-123FL"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312011957_hongjiacheng-SMF6-0A_C19077499.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "19.4A 10.3V 200W 6.67V Unidirectional 6V SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C19077499"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Stock" "42202"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" "0.029USD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Minimum Qty" "15"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Attrition Qty" "4"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Class" "Preferred Component"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Category" "Circuit Protection,ESD And Surge Protection (TVS/ESD)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "hongjiacheng"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "SMF6.0A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TVS-Uni,SMF6.0A_0_1"
+				(polyline
+					(pts
+						(xy -1.905 -1.905) (xy -1.27 -1.27) (xy 1.27 -1.27) (xy 1.905 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TVS-Uni,SMF6.0A_1_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PCM_JLCPCB-Resistors:0402,12kΩ"
 			(pin_numbers
 				(hide yes)
@@ -5402,6 +5656,17 @@
 		)
 		(uuid "acec4ca8-37e9-4317-93c3-2bc067d6be59")
 	)
+	(text "U21 protects both USB-A ports (4 lines).\nD36 clamps VBUS. Place both at USB1."
+		(exclude_from_sim no)
+		(at 216.408 175.26 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "f27fe2c1-9931-4e71-9e28-e1f9a4969941")
+	)
 	(junction
 		(at 125.73 60.96)
 		(diameter 0)
@@ -5625,6 +5890,10 @@
 		(uuid "0d79e791-dc2b-4646-9876-6890758f2225")
 	)
 	(no_connect
+		(at 224.79 154.94)
+		(uuid "2a2cdb74-2f2a-436a-a78f-2fa2236e8b56")
+	)
+	(no_connect
 		(at 187.96 130.81)
 		(uuid "40d2305f-c116-4626-b2b9-5a078d0659b6")
 	)
@@ -5649,12 +5918,24 @@
 		(uuid "7b68fc37-ad13-4d64-8dee-e6eff3690c46")
 	)
 	(no_connect
+		(at 224.79 134.62)
+		(uuid "8f705487-3c7f-4170-b30b-53f69bda311a")
+	)
+	(no_connect
+		(at 224.79 139.7)
+		(uuid "93a8b28c-9c22-4c8a-b84d-3cc87dc5743d")
+	)
+	(no_connect
 		(at 187.96 128.27)
 		(uuid "9cb87bed-d595-42b6-bc97-9df5367185e0")
 	)
 	(no_connect
 		(at 22.86 55.88)
 		(uuid "b465786d-9065-4763-8a50-9a54aa42649b")
+	)
+	(no_connect
+		(at 224.79 160.02)
+		(uuid "b7dbe8c7-e54a-4363-ba22-41fbd3e989ad")
 	)
 	(no_connect
 		(at 187.96 119.38)
@@ -6206,6 +6487,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 147.32) (xy 220.98 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b06a6c3-2b66-4221-b1f1-5dbce4d0026a")
+	)
+	(wire
+		(pts
 			(xy 120.65 133.35) (xy 111.76 133.35)
 		)
 		(stroke
@@ -6253,6 +6544,16 @@
 			(type solid)
 		)
 		(uuid "544ab49c-f113-46e3-9a28-ae5394b41700")
+	)
+	(wire
+		(pts
+			(xy 245.11 147.32) (xy 250.19 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55a46255-6c66-4f92-9ecd-4c1d427c1d46")
 	)
 	(wire
 		(pts
@@ -6643,6 +6944,16 @@
 			(type default)
 		)
 		(uuid "893d977a-d3b0-4228-96f0-f668254ed78b")
+	)
+	(wire
+		(pts
+			(xy 266.7 143.51) (xy 266.7 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89994d00-0c7a-4ed2-878d-3ca4d4d233cc")
 	)
 	(wire
 		(pts
@@ -7266,6 +7577,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 151.13) (xy 266.7 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7470024-0372-460d-a938-ee8b1bb3067f")
+	)
+	(wire
+		(pts
 			(xy 209.55 57.15) (xy 223.52 57.15)
 		)
 		(stroke
@@ -7323,6 +7644,46 @@
 			(type default)
 		)
 		(uuid "ff9067f9-6278-4383-ba77-b9dba407a106")
+	)
+	(label "HD1_N"
+		(at 245.11 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0181bf6e-30c5-458f-b36f-1e624c23ad50")
+	)
+	(label "HD2_P"
+		(at 245.11 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1fe4fd1d-8d93-4ab7-81e1-49863439fe12")
+	)
+	(label "VBUS"
+		(at 266.7 139.7 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "23676476-f6d2-49bd-a572-ac54c91ab88f")
+	)
+	(label "HD2_N"
+		(at 245.11 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "27fca51f-2ca1-4945-9a46-d4e0bede0898")
 	)
 	(label "HSD2+"
 		(at 88.9 91.44 0)
@@ -7383,6 +7744,16 @@
 			(justify right bottom)
 		)
 		(uuid "44794e6c-ae53-4a3a-b7b3-8e1d5c025b6c")
+	)
+	(label "HD1_P"
+		(at 245.11 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4d6ff19b-6a07-4cba-bd0f-6b5a90ae1533")
 	)
 	(label "HD1_P"
 		(at 247.65 115.57 0)
@@ -7961,7 +8332,7 @@
 			)
 		)
 		(property "MPN" "CL21B106KPQNNNE"
-			(at 259.08 50.8 0)
+			(at 266.7 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9700,6 +10071,80 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 250.19 147.32 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "464868c2-4723-4ceb-981c-8bc79572dc29")
+		(property "Reference" "#PWR0213"
+			(at 250.19 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 250.19 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "78ef38fa-f865-4cfa-8f98-c469da1a05b6")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "#PWR0213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MyParts:USB2514B-I_M2")
 		(at 154.94 113.03 0)
 		(unit 1)
@@ -10069,6 +10514,162 @@
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:TPD4EUSB30DQAR-N")
+		(at 234.95 147.32 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8629ff58-8fd3-4fc1-90a0-476c2fc3c775")
+		(property "Reference" "U21"
+			(at 224.79 165.1 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPD4EUSB30DQAR-N"
+			(at 224.79 167.64 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:DFN-10_L2.5-W1.0-P0.50-BL-A"
+			(at 234.95 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C5148477.pdf"
+			(at 234.95 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 234.95 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "BORN(伯恩半导体)"
+			(at 234.95 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "TPD4EUSB30DQAR-N"
+			(at 234.95 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part" "C5148477"
+			(at 234.95 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "TVS"
+			(at 234.95 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "2da850ac-daee-4f48-ab29-31b686f4e2a2")
+		)
+		(pin "2"
+			(uuid "912c796a-c285-4749-ad98-2a46722fa97f")
+		)
+		(pin "3"
+			(uuid "c2ed32bb-0f66-4887-97e1-7492ba8a5576")
+		)
+		(pin "4"
+			(uuid "aa627da8-47b3-4d94-a86b-08c4f7c74589")
+		)
+		(pin "5"
+			(uuid "0a076d6b-3c96-4012-9a27-9c82f2faa4b2")
+		)
+		(pin "6"
+			(uuid "0ee31d4b-5d1b-4655-9e22-7004eb27c176")
+		)
+		(pin "7"
+			(uuid "759c2f4d-5b30-4972-ada4-3e876e9b4c4e")
+		)
+		(pin "8"
+			(uuid "78bda618-953e-40de-8086-d260c78ef712")
+		)
+		(pin "9"
+			(uuid "63a53ad9-56f4-4772-a03f-1ba46c5bd7f3")
+		)
+		(pin "10"
+			(uuid "298b6de1-aec2-4219-a866-12bd56cbc8ea")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "U21")
 					(unit 1)
 				)
 			)
@@ -10539,6 +11140,80 @@
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "C88")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220.98 147.32 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8d21d9c0-f425-45cd-b072-0e1c726fbef4")
+		(property "Reference" "#PWR0214"
+			(at 220.98 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 220.98 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 220.98 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1e82cac6-514e-4010-b44d-0913dfb31c81")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "#PWR0214")
 					(unit 1)
 				)
 			)
@@ -12413,6 +13088,234 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:TVS-Uni,SMF6.0A")
+		(at 266.7 147.32 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e77956e1-03d6-4dc1-99ee-4bf396257ba1")
+		(property "Reference" "D36"
+			(at 264.16 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMF6.0A"
+			(at 264.16 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_SOD-123FL"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312011957_hongjiacheng-SMF6-0A_C19077499.pdf"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "19.4A 10.3V 200W 6.67V Unidirectional 6V SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C19077499"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Stock" "42202"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Price" "0.029USD"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Process" "SMT"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Minimum Qty" "15"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Attrition Qty" "4"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Category" "Circuit Protection,ESD And Surge Protection (TVS/ESD)"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "hongjiacheng"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part" "SMF6.0A"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" ""
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_fp_filters" "D_*"
+			(at 266.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "b06edb10-d7bd-4249-a7f9-c282d90025e8")
+		)
+		(pin "1"
+			(uuid "41bd7cc2-7dc2-4fd1-ad78-ae341ae4520b")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "D36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 209.55 50.8 0)
 		(unit 1)
@@ -12633,6 +13536,80 @@
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "R90")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 266.7 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f5b1608b-1fc1-4a96-a6fe-995793527315")
+		(property "Reference" "#PWR0215"
+			(at 266.7 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.7 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 266.7 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a158b5e9-644d-4a28-98b6-7083f826e06e")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "#PWR0215")
 					(unit 1)
 				)
 			)

@@ -35,7 +35,7 @@
 	)
 	(text "CM4 power-fail strategy: read-only root\nplus f2fs on the data partition, and no\nhold-up capacitor bank. It costs nothing,\nit is the approach deployed Pi products\nuse, and it removes the failure mode\ninstead of racing it.\n\nAdd power-fail detection later only if\nrecording data is actually being lost.\nThat is a software-observable problem,\nso it will be obvious."
 		(exclude_from_sim no)
-		(at 34.29 181.356 0)
+		(at 33.782 173.482 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -46,7 +46,7 @@
 	)
 	(text "Changes for V2.0\n\n- Add Raspberry Pi CM4 carrier (2x DF40C-100DS-0.4V)\n- Gigabit Ethernet, 2x USB 2.0 via USB2514B hub\n- micro-USB OTG for rpiboot eMMC programming\n- Remove RS485 device port, USART1 now goes to the CM4\n- ADDR0-2 / CONFIG_SW repurposed as SW1-SW4\n- 12V to 5V buck (AP64501) for CM4 and both USB ports"
 		(exclude_from_sim no)
-		(at 28.194 155.194 0)
+		(at 23.622 142.748 0)
 		(effects
 			(font
 				(size 2.032 2.032)

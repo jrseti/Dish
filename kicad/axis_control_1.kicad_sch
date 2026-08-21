@@ -3674,7 +3674,7 @@
 	)
 	(rectangle
 		(start 39.37 100.33)
-		(end 130.81 162.56)
+		(end 138.43 162.56)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3773,7 +3773,7 @@
 	)
 	(text "ENABLE1+"
 		(exclude_from_sim no)
-		(at 109.474 132.588 0)
+		(at 128.524 132.588 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3838,7 +3838,7 @@
 	)
 	(text "PUL1-"
 		(exclude_from_sim no)
-		(at 109.474 124.714 0)
+		(at 128.524 124.714 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3871,7 +3871,7 @@
 	)
 	(text "DIR1+"
 		(exclude_from_sim no)
-		(at 109.474 127 0)
+		(at 128.524 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3892,7 +3892,7 @@
 	)
 	(text "DIR1-"
 		(exclude_from_sim no)
-		(at 109.474 129.794 0)
+		(at 128.524 129.794 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3968,7 +3968,7 @@
 	)
 	(text "PUL1+"
 		(exclude_from_sim no)
-		(at 109.474 122.174 0)
+		(at 128.524 122.174 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3979,7 +3979,7 @@
 	)
 	(text "The motor controller will be\ntargeted for the the DM556Y which\nhas opto isolated inputs."
 		(exclude_from_sim no)
-		(at 70.612 109.982 0)
+		(at 70.612 104.902 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3990,7 +3990,7 @@
 	)
 	(text "ENABLE1-"
 		(exclude_from_sim no)
-		(at 109.474 135.128 0)
+		(at 128.524 135.128 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3998,6 +3998,17 @@
 			(justify left)
 		)
 		(uuid "a995e69b-3e06-43f3-976b-9fe0f2be162b")
+	)
+	(text "CN2 pins 1/3/5 are the 3V3 common-anode feed to the driver\noptos - TVS at the connector, matching pins 2/4/6."
+		(exclude_from_sim no)
+		(at 95.25 92.71 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "b4e0c362-66c9-408a-a4de-e22abadb4ad2")
 	)
 	(text "Limit Switch 2 Out"
 		(exclude_from_sim no)
@@ -4164,10 +4175,28 @@
 		(uuid "8e18d5d6-d7be-4611-9944-2a702b079dd2")
 	)
 	(junction
+		(at 109.22 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "926e40a1-8be9-4751-8437-a49d9549aee0")
+	)
+	(junction
+		(at 102.87 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98d9711c-ead3-46f2-933a-fe596c6a186b")
+	)
+	(junction
 		(at 190.5 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ab580cb-c464-4f80-9eb5-54587c0109ca")
+	)
+	(junction
+		(at 115.57 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5962d62-ae28-4918-8c58-76985d385f06")
 	)
 	(junction
 		(at 232.41 148.59)
@@ -4186,6 +4215,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b8345c16-b1f7-4046-acf5-09401611beb5")
+	)
+	(junction
+		(at 109.22 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b938d129-5ed1-4abb-b274-f564b2739c13")
 	)
 	(junction
 		(at 88.9 52.07)
@@ -4295,6 +4330,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 127) (xy 109.22 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04f3c252-3484-45ca-9842-5c8ae12c1f83")
+	)
+	(wire
+		(pts
 			(xy 232.41 148.59) (xy 236.22 148.59)
 		)
 		(stroke
@@ -4302,6 +4347,16 @@
 			(type default)
 		)
 		(uuid "05c8a597-c10e-4be4-920c-67ecd18d15db")
+	)
+	(wire
+		(pts
+			(xy 109.22 106.68) (xy 109.22 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07e241ea-1371-40da-9548-730128260264")
 	)
 	(wire
 		(pts
@@ -4535,7 +4590,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 124.46) (xy 101.6 124.46)
+			(xy 67.31 124.46) (xy 120.65 124.46)
 		)
 		(stroke
 			(width 0)
@@ -4675,7 +4730,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 129.54) (xy 101.6 129.54)
+			(xy 73.66 129.54) (xy 120.65 129.54)
 		)
 		(stroke
 			(width 0)
@@ -4885,6 +4940,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 106.68) (xy 115.57 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "928d4c24-fae9-46c4-ba01-146dd1754a29")
+	)
+	(wire
+		(pts
 			(xy 252.73 132.08) (xy 252.73 133.35)
 		)
 		(stroke
@@ -4942,6 +5007,16 @@
 			(type default)
 		)
 		(uuid "9a043202-98f6-4575-aa1b-911d2039ffde")
+	)
+	(wire
+		(pts
+			(xy 102.87 132.08) (xy 102.87 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d3cbb85-2c36-4f3a-89f5-fb72bed2a81b")
 	)
 	(wire
 		(pts
@@ -5095,7 +5170,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 121.92) (xy 101.6 121.92)
+			(xy 100.33 121.92) (xy 120.65 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5135,7 +5210,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 127) (xy 101.6 127)
+			(xy 100.33 127) (xy 120.65 127)
 		)
 		(stroke
 			(width 0)
@@ -5212,6 +5287,16 @@
 			(type default)
 		)
 		(uuid "c9fffab1-27b5-414e-8c91-0b3f2cc446df")
+	)
+	(wire
+		(pts
+			(xy 115.57 121.92) (xy 115.57 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdc78834-5c2b-4500-8b38-6049f2b381a1")
 	)
 	(wire
 		(pts
@@ -5375,7 +5460,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 134.62) (xy 101.6 134.62)
+			(xy 80.01 134.62) (xy 120.65 134.62)
 		)
 		(stroke
 			(width 0)
@@ -5385,7 +5470,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 132.08) (xy 101.6 132.08)
+			(xy 100.33 132.08) (xy 120.65 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6703,6 +6788,103 @@
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:TPESD0402G05V")
+		(at 102.87 111.76 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "202552df-1208-428f-b168-7954c65702aa")
+		(property "Reference" "D39"
+			(at 102.87 108.458 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPESD0402G05V"
+			(at 102.87 105.918 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:D0402-BI"
+			(at 102.87 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C558615.pdf?spm=wm.sxq.inf.ggs___wm.ssy.bg.0.xh&lcsc_vid=FFBaV1wHQFldUVICFgBfBVJTQVJWXgBfEQRYBAFQE1YxVlNRQFVXU1JRQVReUTsOAxUeFF5JWBYZEEoKFBINSQcJGk4eFQsCAgIaSgADAwAHC0slRldcU1ZUWQkaCgg%3D"
+			(at 102.87 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "5VWM 40VC 0402"
+			(at 102.87 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part" "C558615"
+			(at 102.87 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "85c75ec7-45cb-44d0-9726-fc656d8c9180")
+		)
+		(pin "1"
+			(uuid "8eb87234-b485-4e12-b3a7-53c37904bb9b")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
+					(reference "D39")
 					(unit 1)
 				)
 			)
@@ -8469,7 +8651,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:KF2EDGR-2.54-6P")
-		(at 105.41 128.27 0)
+		(at 124.46 128.27 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8479,7 +8661,7 @@
 		(dnp no)
 		(uuid "559ca21e-88f8-4573-8a6f-6a5ee1868aed")
 		(property "Reference" "CN2"
-			(at 105.156 118.364 0)
+			(at 124.206 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8489,7 +8671,7 @@
 			)
 		)
 		(property "Value" "KF2EDGR-2.54-6P"
-			(at 104.394 138.938 0)
+			(at 123.444 138.938 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8499,7 +8681,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:CONN-TH_KF2EDGR-2.54-6P"
-			(at 105.41 142.24 0)
+			(at 124.46 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8510,7 +8692,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Pluggable-System-Terminal-Block_Cixi-Kefa-Elec-KF2EDGR-2-54-6P_C577598.html"
-			(at 105.41 144.78 0)
+			(at 124.46 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8521,7 +8703,7 @@
 			)
 		)
 		(property "Description" "6 Position Board Side/Socket - Closed 2.54mm Pitch Right-Angle Pin"
-			(at 105.41 128.27 0)
+			(at 124.46 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8532,7 +8714,7 @@
 			)
 		)
 		(property "LCSC Part" "C577598"
-			(at 105.41 147.32 0)
+			(at 124.46 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8543,7 +8725,7 @@
 			)
 		)
 		(property "Manufacturer" "KEFA(科发)"
-			(at 105.41 147.32 0)
+			(at 124.46 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8554,7 +8736,7 @@
 			)
 		)
 		(property "MPN" "KF2EDGR-2.54-6P"
-			(at 105.41 149.86 0)
+			(at 124.46 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9597,6 +9779,80 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 109.22 104.14 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "712768ae-95f9-4575-86b4-e239b5e6cec6")
+		(property "Reference" "#PWR0216"
+			(at 109.22 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.03 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "155b18b0-6bfb-46b2-9c7b-2f32248671ee")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
+					(reference "#PWR0216")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MyParts:TPESD0402G05V")
 		(at 73.66 142.24 270)
 		(unit 1)
@@ -10039,6 +10295,103 @@
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
 					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:TPESD0402G05V")
+		(at 109.22 111.76 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8224a5c9-1dfb-4b20-bfc2-e02b92dc9946")
+		(property "Reference" "D38"
+			(at 109.22 108.458 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPESD0402G05V"
+			(at 109.22 105.918 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:D0402-BI"
+			(at 109.22 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C558615.pdf?spm=wm.sxq.inf.ggs___wm.ssy.bg.0.xh&lcsc_vid=FFBaV1wHQFldUVICFgBfBVJTQVJWXgBfEQRYBAFQE1YxVlNRQFVXU1JRQVReUTsOAxUeFF5JWBYZEEoKFBINSQcJGk4eFQsCAgIaSgADAwAHC0slRldcU1ZUWQkaCgg%3D"
+			(at 109.22 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "5VWM 40VC 0402"
+			(at 109.22 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part" "C558615"
+			(at 109.22 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "a539ec57-514e-4ff9-adc5-f8a40d04732f")
+		)
+		(pin "1"
+			(uuid "5e4ac15a-4b27-4185-b558-4762acc3fc23")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
+					(reference "D38")
 					(unit 1)
 				)
 			)
@@ -11655,6 +12008,103 @@
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:TPESD0402G05V")
+		(at 115.57 111.76 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cc16899d-84b0-40c4-b842-051c300645a9")
+		(property "Reference" "D37"
+			(at 115.57 108.458 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPESD0402G05V"
+			(at 115.57 105.918 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:D0402-BI"
+			(at 115.57 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C558615.pdf?spm=wm.sxq.inf.ggs___wm.ssy.bg.0.xh&lcsc_vid=FFBaV1wHQFldUVICFgBfBVJTQVJWXgBfEQRYBAFQE1YxVlNRQFVXU1JRQVReUTsOAxUeFF5JWBYZEEoKFBINSQcJGk4eFQsCAgIaSgADAwAHC0slRldcU1ZUWQkaCgg%3D"
+			(at 115.57 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "5VWM 40VC 0402"
+			(at 115.57 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part" "C558615"
+			(at 115.57 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "d0c43ae8-efb6-4e4f-8f83-04258ebab2d1")
+		)
+		(pin "1"
+			(uuid "5b23a5e1-6c61-4cbe-990a-b5a5c2709571")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/9493fd2e-7ff6-4d8c-93a5-d9e42c2785c7"
+					(reference "D37")
 					(unit 1)
 				)
 			)
