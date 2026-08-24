@@ -3827,7 +3827,7 @@
 	)
 	(text "Twist the signal pairs"
 		(exclude_from_sim no)
-		(at 83.566 115.316 0)
+		(at 78.486 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3979,7 +3979,7 @@
 	)
 	(text "The motor controller will be\ntargeted for the the DM556Y which\nhas opto isolated inputs."
 		(exclude_from_sim no)
-		(at 70.612 104.902 0)
+		(at 59.944 110.744 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9832,6 +9832,7 @@
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 109.22 104.14 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
