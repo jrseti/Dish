@@ -3762,13 +3762,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MyParts:XL-0805QBC"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
+		(symbol "MyParts:E6C0805UR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3784,7 +3778,7 @@
 					)
 				)
 			)
-			(property "Value" "XL-0805QBC"
+			(property "Value" "E6C0805UR"
 				(at 0 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3805,7 +3799,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Blue-light_C2293.html"
+			(property "Datasheet" "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Red-LED-0805-Highlighted_C2295.html"
 				(at 0 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3816,8 +3810,8 @@
 					)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Description" "0805"
+				(at 0 -24.13 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3838,7 +3832,7 @@
 					)
 				)
 			)
-			(property "MPN" "KT-0805B"
+			(property "MPN" "KT-0805R"
 				(at 0 -16.51 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3849,7 +3843,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C2293"
+			(property "LCSC Part" "C2295"
 				(at 0 -19.05 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3871,10 +3865,10 @@
 					)
 				)
 			)
-			(symbol "XL-0805QBC_0_1"
+			(symbol "E6C0805UR_0_1"
 				(polyline
 					(pts
-						(xy -3.81 2.03) (xy -2.79 1.52) (xy -3.3 1.02) (xy -3.81 2.03)
+						(xy -3.81 2.29) (xy -2.79 1.78) (xy -3.3 1.27) (xy -3.81 2.29)
 					)
 					(stroke
 						(width 0)
@@ -3886,7 +3880,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.79 3.05) (xy -1.78 2.54) (xy -2.29 2.03) (xy -2.79 3.05)
+						(xy -2.79 3.3) (xy -1.78 2.79) (xy -2.29 2.29) (xy -2.79 3.3)
 					)
 					(stroke
 						(width 0)
@@ -3898,7 +3892,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.03 0.25) (xy -3.81 2.03)
+						(xy -2.03 0.51) (xy -3.81 2.29)
 					)
 					(stroke
 						(width 0)
@@ -3910,7 +3904,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 0.76) (xy -1.27 -3.3)
+						(xy -1.27 1.02) (xy -1.27 -3.05)
 					)
 					(stroke
 						(width 0)
@@ -3922,7 +3916,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.02 1.27) (xy -2.79 3.05)
+						(xy -1.02 1.52) (xy -2.79 3.3)
 					)
 					(stroke
 						(width 0)
@@ -3934,7 +3928,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -2.79) (xy -1.27 -1.27) (xy 1.27 0.51) (xy 1.27 -2.79)
+						(xy 1.27 -2.54) (xy -1.27 -1.02) (xy 1.27 0.76) (xy 1.27 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -8665,6 +8659,122 @@
 		)
 	)
 	(symbol
+		(lib_id "MyParts:E6C0805UR")
+		(at 134.62 38.1 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2851c9fc-704d-4783-846b-fc0cba3b5da1")
+		(property "Reference" "LED3"
+			(at 136.906 37.338 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RED"
+			(at 136.906 39.116 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:LED0805-R-RD"
+			(at 125.73 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Red-LED-0805-Highlighted_C2295.html"
+			(at 123.19 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0805"
+			(at 110.49 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KENTO"
+			(at 120.65 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "KT-0805R"
+			(at 141.986 39.116 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2295"
+			(at 115.57 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "60958cf4-6af6-4bd5-bf12-5c8246776e86")
+		)
+		(pin "2"
+			(uuid "f4e1249e-1676-432d-ac2f-2a55f8c2648b")
+		)
+		(instances
+			(project "rcm_dish_controller"
+				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a"
+					(reference "LED3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 220.98 157.48 0)
 		(unit 1)
@@ -11011,122 +11121,6 @@
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a"
 					(reference "Module1")
 					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MyParts:XL-0805QBC")
-		(at 134.62 38.1 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ab01ebfa-87b2-40c5-bbc8-62507e8ca91e")
-		(property "Reference" "LED3"
-			(at 138.43 38.0999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "XL-0805QBC"
-			(at 138.43 40.6399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MyParts:LED0805-R-RD"
-			(at 125.73 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Blue-light_C2293.html"
-			(at 123.19 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "KENTO"
-			(at 120.65 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "KT-0805B"
-			(at 118.11 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C2293"
-			(at 115.57 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ca1c5a83-4d82-4242-9115-06cb8675adbb")
-		)
-		(pin "2"
-			(uuid "3e3a19c0-052b-4909-b549-0f9f29680801")
-		)
-		(instances
-			(project "rcm_dish_controller"
-				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a"
-					(reference "LED3")
-					(unit 1)
 				)
 			)
 		)

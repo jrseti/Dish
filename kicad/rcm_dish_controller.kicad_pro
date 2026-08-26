@@ -823,7 +823,7 @@
         "uuid": "10d7c3e5-be4d-4306-a59e-500b86bd141f"
       }
     ],
-    "used_designators": "C21-28,C97-99,#PWR22,#PWR107",
+    "used_designators": "TP1-8,RJ1,Q1-7,Module1,LED1-4,X1-2,USB1,L1-7,J1-5,USBC1,R1-97,BT1,H1-4,CN1-10,SW1-2,U1-18,C1-93,D1-40,#PWR1-117,DC1,#FLG1-8,F1-4",
     "variants": []
   },
   "sheets": [

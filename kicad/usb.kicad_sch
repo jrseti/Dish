@@ -11,6 +11,7 @@
 			)
 			(pin_names
 				(offset 0.254)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -579,7 +580,6 @@
 				(hide yes)
 			)
 			(pin_names
-				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -597,13 +597,13 @@
 					)
 				)
 			)
-			(property "Value" "10uF 10V"
+			(property "Value" "CL21B106KPQNNNE"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 0.762 0.762)
+						(size 1.27 1.27)
 					)
 				)
 			)
@@ -733,7 +733,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
 					(name "1"
@@ -751,7 +751,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "2"
@@ -12536,7 +12536,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 93.98 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12916,7 +12916,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 104.14 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13443,7 +13443,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 129.54 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14129,7 +14129,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 115.57 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14511,7 +14511,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 83.82 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
