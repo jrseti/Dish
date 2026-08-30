@@ -4358,7 +4358,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "35e7255f-828d-4f1b-bd0f-46ce9648fb87")
-		(property "Reference" "U17"
+		(property "Reference" "J5"
 			(at 173.99 108.966 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4519,7 +4519,7 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "U17")
+					(reference "J5")
 					(unit 1)
 				)
 			)

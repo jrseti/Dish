@@ -823,7 +823,7 @@
         "uuid": "10d7c3e5-be4d-4306-a59e-500b86bd141f"
       }
     ],
-    "used_designators": "R98,C94,#PWR119-120,RJ2",
+    "used_designators": "R98,C94,#PWR119-120,RJ2-3",
     "variants": []
   },
   "sheets": [
