@@ -6,6 +6,12 @@
 	(paper "A4")
 	(lib_symbols
 		(symbol "MyParts:0805G"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
