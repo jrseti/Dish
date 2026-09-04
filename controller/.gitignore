@@ -1,0 +1,84 @@
+# ---------------------------------------------------------------------------
+# KiCad
+# ---------------------------------------------------------------------------
+
+# Auto-generated backups and autosaves
+*-backups/
+_autosave-*
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl-bak
+*-bak
+*.bak
+.$*.bkp
+
+# Per-user local state: window layout, open sheets, last zoom.
+# Not design data - causes noisy diffs and merge conflicts.
+*.kicad_prl
+
+# Netlists are regenerated from the schematic on demand
+*.net
+
+# ERC / DRC scratch reports
+*.rpt
+_saved_*.kicad_pcb
+
+# Editor lock files
+*.lck
+~*.lck
+
+# Simulation output
+*.raw
+
+# ---------------------------------------------------------------------------
+# Fabrication archives
+# ---------------------------------------------------------------------------
+# Stray fab zips beside the KiCad project. Deliberate releases belong in
+# production/ or jlcpcb/ (both tracked), or better, as tagged commits /
+# GitHub releases.
+/*.zip
+/kicad/*.zip
+
+# ---------------------------------------------------------------------------
+# Firmware build output (software/)
+# ---------------------------------------------------------------------------
+build/
+*.o
+*.d
+*.elf
+*.map
+*.su
+*.lst
+
+# ---------------------------------------------------------------------------
+# Python host tooling (software/)
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# ---------------------------------------------------------------------------
+# macOS
+# ---------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ---------------------------------------------------------------------------
+# Editors
+# ---------------------------------------------------------------------------
+# Keep the debug/build config, ignore the rest.
+# Two subtleties: the directory must be excluded as .vscode/* (not .vscode/)
+# or git cannot re-include children; and the **/ prefix is required because a
+# pattern containing a slash is anchored to this file's directory, which would
+# otherwise miss software/.vscode/.
+**/.vscode/*
+!**/.vscode/launch.json
+!**/.vscode/tasks.json
+.history/
+*.swp
+
+ref_designs/
