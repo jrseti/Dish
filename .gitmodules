@@ -1,1 +1,4 @@
 
+[submodule "parts"]
+	path = parts
+	url = https://github.com/jrseti/parts
