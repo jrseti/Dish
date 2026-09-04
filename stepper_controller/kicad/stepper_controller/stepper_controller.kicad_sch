@@ -1,0 +1,19 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "da7653fb-e786-45d0-af6a-7a9cbf9183ce")
+	(paper "A4")
+	(title_block
+		(title "Stepper Motor Controller")
+		(date "2026-09-04")
+		(rev "1.0")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

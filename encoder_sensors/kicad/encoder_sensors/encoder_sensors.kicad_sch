@@ -1,0 +1,20 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "d1c14ac9-8a51-44d1-85f0-9ee832d91781")
+	(paper "A4")
+	(title_block
+		(title "Encoder Sensors PCB")
+		(date "2026-09-04")
+		(rev "1.0")
+		(company "JRSeti")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
