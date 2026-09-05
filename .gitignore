@@ -39,3 +39,8 @@ venv/**
 temp.txt
 
 .fake
+# KiCad Local History (auto-backup git repo created by KiCad)
+.history/
+
+# macOS
+.DS_Store
