@@ -31,6 +31,7 @@
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5995,8 +5996,8 @@
 		)
 		(uuid "f7f75004-5967-4d3c-935e-6bd8a266d088")
 	)
-	(global_label "3V3_CM4"
-		(shape bidirectional)
+	(hierarchical_label "3V3_CM4"
+		(shape input)
 		(at 86.36 48.26 90)
 		(effects
 			(font
@@ -6005,20 +6006,9 @@
 			(justify left)
 		)
 		(uuid "2f59fcbe-dc8f-4eaa-be2f-72382cbbd878")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.36 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 	)
-	(global_label "3V3_CM4"
-		(shape bidirectional)
+	(hierarchical_label "3V3_CM4"
+		(shape input)
 		(at 78.74 48.26 90)
 		(effects
 			(font
@@ -6027,17 +6017,6 @@
 			(justify left)
 		)
 		(uuid "af4b1d17-4f00-493f-9c36-99564c1926f2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.74 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 	)
 	(hierarchical_label "EP1+"
 		(shape bidirectional)

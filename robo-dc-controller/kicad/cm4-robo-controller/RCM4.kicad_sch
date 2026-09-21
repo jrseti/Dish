@@ -5096,12 +5096,6 @@
 		(uuid "1ce78f44-8fb6-4a22-8e16-c639b851211f")
 	)
 	(junction
-		(at 115.57 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1f1d3cf2-08e3-4d25-8545-28ab4dfae9bd")
-	)
-	(junction
 		(at 220.98 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5208,6 +5202,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7ea7e734-1cdb-48a5-a8d2-dcfb08657c40")
+	)
+	(junction
+		(at 115.57 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80d486ce-555f-460f-995c-9aa00cc9840e")
 	)
 	(junction
 		(at 48.26 53.34)
@@ -5564,10 +5564,6 @@
 		(uuid "6b30c196-8a22-446c-a48e-967b9dd63c35")
 	)
 	(no_connect
-		(at 111.76 83.82)
-		(uuid "6cac7d46-8e55-47b6-a3bb-59b5720a02a4")
-	)
-	(no_connect
 		(at 157.48 124.46)
 		(uuid "708edb54-5a16-4db3-a052-6944b8d5b90a")
 	)
@@ -5841,16 +5837,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 124.46) (xy 115.57 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07afe378-7e67-4977-bba8-8f7e617f63fc")
-	)
-	(wire
-		(pts
 			(xy 48.26 91.44) (xy 48.26 101.6)
 		)
 		(stroke
@@ -6008,6 +5994,16 @@
 			(type default)
 		)
 		(uuid "23194a33-e0c7-48c9-8224-938955091260")
+	)
+	(wire
+		(pts
+			(xy 111.76 124.46) (xy 115.57 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2323f44f-1279-4bc5-86a9-a22315310233")
 	)
 	(wire
 		(pts
@@ -6178,6 +6174,16 @@
 			(type default)
 		)
 		(uuid "3773dcf8-c814-4f62-a73c-0d3abf4ecde3")
+	)
+	(wire
+		(pts
+			(xy 48.26 172.72) (xy 50.8 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a33936d-6019-4a21-a519-0317b83a113e")
 	)
 	(wire
 		(pts
@@ -6411,6 +6417,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 144.78) (xy 247.65 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55cb634e-074e-4de3-aaa5-ef4097b0e058")
+	)
+	(wire
+		(pts
 			(xy 220.98 58.42) (xy 220.98 66.04)
 		)
 		(stroke
@@ -6598,6 +6614,16 @@
 			(type default)
 		)
 		(uuid "67bbdbab-c9ae-4884-9ff0-6c763539bd25")
+	)
+	(wire
+		(pts
+			(xy 48.26 177.8) (xy 50.8 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ab9d443-427c-4476-a5ec-b32152013a7b")
 	)
 	(wire
 		(pts
@@ -6991,6 +7017,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 147.32) (xy 247.65 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cf7b91b-693a-4222-b772-4e2b89404407")
+	)
+	(wire
+		(pts
 			(xy 220.98 50.8) (xy 220.98 58.42)
 		)
 		(stroke
@@ -7211,6 +7247,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 142.24) (xy 247.65 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc8a5fec-af4d-4a08-9520-39da7a3a54a4")
+	)
+	(wire
+		(pts
 			(xy 114.3 27.94) (xy 114.3 35.56)
 		)
 		(stroke
@@ -7258,6 +7304,16 @@
 			(type default)
 		)
 		(uuid "c4e075ae-ffe9-4181-ac2b-52409f7c99db")
+	)
+	(wire
+		(pts
+			(xy 111.76 83.82) (xy 115.57 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5c2afbc-82be-4d78-9f95-baabb666b9b3")
 	)
 	(wire
 		(pts
@@ -7418,6 +7474,16 @@
 			(type default)
 		)
 		(uuid "d4386f96-69b2-44bf-9964-463f4a681c5f")
+	)
+	(wire
+		(pts
+			(xy 48.26 175.26) (xy 50.8 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d43e6397-acef-478a-99f2-7201e560d957")
 	)
 	(wire
 		(pts
@@ -7789,6 +7855,16 @@
 		)
 		(uuid "fcf0e710-94ef-4728-8301-0cbdf38cb316")
 	)
+	(label "GPS_TX_MCU"
+		(at 36.83 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0204fbf1-27ba-46e4-a55f-cdd4f5ce1070")
+	)
 	(label "EP3-"
 		(at 247.65 66.04 180)
 		(effects
@@ -7798,6 +7874,16 @@
 			(justify right)
 		)
 		(uuid "053783ed-daa7-43e9-8fa0-996fc684df8e")
+	)
+	(label "GPS_RX_MCU"
+		(at 247.65 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "095b4d3c-9d1a-450a-91d1-900ccf2854f7")
 	)
 	(label "EP1+"
 		(at 247.65 53.34 180)
@@ -7819,6 +7905,16 @@
 		)
 		(uuid "0d7347b1-4aaf-4a1e-9432-25e5b8d926fc")
 	)
+	(label "PGOOD_12V"
+		(at 48.26 175.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1440aaca-83bb-4215-a30e-378e56684c82")
+	)
 	(label "I2C1_SCL"
 		(at 247.65 101.6 180)
 		(effects
@@ -7828,6 +7924,16 @@
 			(justify right)
 		)
 		(uuid "23bd51d8-1090-4bca-a13b-2b4c98b285b7")
+	)
+	(label "~{FLT}"
+		(at 115.57 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "28516c05-fd4d-46b6-a571-d820b59eed51")
 	)
 	(label "EP3+"
 		(at 247.65 63.5 180)
@@ -7889,6 +7995,16 @@
 		)
 		(uuid "2dcb0d88-1501-4198-bb33-3f9be81bde73")
 	)
+	(label "PGOOD_12V"
+		(at 115.57 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e2d5851-cb5c-4b5e-97d1-b6ab2036c7c4")
+	)
 	(label "AIN1"
 		(at 46.99 144.78 180)
 		(effects
@@ -7939,6 +8055,16 @@
 		)
 		(uuid "402dd765-84ce-45b2-867b-e94b8eb8bb56")
 	)
+	(label "1PPS_MCU"
+		(at 116.84 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "44d0bf10-4232-4003-8f50-c5f364702a0a")
+	)
 	(label "nRPIBOOT"
 		(at 116.84 144.78 0)
 		(effects
@@ -7948,6 +8074,16 @@
 			(justify left bottom)
 		)
 		(uuid "46958171-e510-4963-ae75-bca34877ab34")
+	)
+	(label "GPS_TX_MCU"
+		(at 247.65 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "47767a47-1b1b-4d7d-8f0f-06f7d96af046")
 	)
 	(label "ETH_LEDY"
 		(at 118.11 45.72 0)
@@ -7968,6 +8104,16 @@
 			(justify right)
 		)
 		(uuid "4d3874a5-1dbc-4668-b9c4-af5d608af8ba")
+	)
+	(label "~{FLT}"
+		(at 48.26 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5a2b4cd9-f9c6-4213-8fca-4b69430bf36b")
 	)
 	(label "USB_OTG_ID"
 		(at 223.52 27.94 0)
@@ -8178,6 +8324,16 @@
 			(justify right)
 		)
 		(uuid "995bd475-730c-4634-bd71-8b993cd65e4b")
+	)
+	(label "GPS_RX_MCU"
+		(at 36.83 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9d9a2952-289a-4a4e-a633-43cb99cfca4d")
 	)
 	(label "GPIO22"
 		(at 45.72 83.82 180)
@@ -8419,6 +8575,16 @@
 		)
 		(uuid "f96558a2-d7ec-48fe-8811-8c471b58a3eb")
 	)
+	(label "1PPS_MCU"
+		(at 247.65 147.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fa1a9340-75c2-4138-b185-f38e7d382607")
+	)
 	(label "nPWR_LED"
 		(at 116.84 147.32 0)
 		(effects
@@ -8473,29 +8639,15 @@
 			)
 		)
 	)
-	(global_label "PGOOD_12V"
-		(shape input)
-		(at 115.57 78.74 0)
-		(fields_autoplaced yes)
+	(label "3V3_CM4"
+		(at 48.26 172.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "237b1e16-b124-4d0e-b63b-5fb00d96ec3e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.57 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+		(uuid "4d198ab5-5942-482d-9ce5-084a23f8c9ad")
 	)
 	(global_label "5V"
 		(shape input)
@@ -8521,8 +8673,7 @@
 			)
 		)
 	)
-	(global_label "3V3_CM4"
-		(shape input)
+	(label "3V3_CM4"
 		(at 30.48 49.53 90)
 		(effects
 			(font
@@ -8531,61 +8682,16 @@
 			(justify left)
 		)
 		(uuid "e557f860-3bec-490c-86dd-19974f471b3b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 30.48 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 	)
-	(global_label "3V3_CM4"
-		(shape bidirectional)
+	(label "3V3_CM4"
 		(at 44.45 124.46 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f6056c59-3dc0-4d1b-bb84-2b07b316093e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.45 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(hierarchical_label "CM4_RX"
-		(shape output)
-		(at 36.83 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "0204fbf1-27ba-46e4-a55f-cdd4f5ce1070")
-	)
-	(hierarchical_label "1PPS_MCU"
-		(shape input)
-		(at 116.84 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "44d0bf10-4232-4003-8f50-c5f364702a0a")
+		(uuid "f6056c59-3dc0-4d1b-bb84-2b07b316093e")
 	)
 	(hierarchical_label "MCU_nIRQ"
 		(shape input)
@@ -8597,17 +8703,6 @@
 			(justify right)
 		)
 		(uuid "9ce0a637-88a5-4909-8c68-0a61278daba8")
-	)
-	(hierarchical_label "CM4_TX"
-		(shape input)
-		(at 36.83 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9d9a2952-289a-4a4e-a633-43cb99cfca4d")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -11842,7 +11937,7 @@
 	)
 	(sheet
 		(at 252.73 45.72)
-		(size 25.4 27.94)
+		(size 25.4 30.48)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -11868,7 +11963,7 @@
 			)
 		)
 		(property "Sheetfile" "ethernet.kicad_sch"
-			(at 252.73 74.3716 0)
+			(at 252.73 76.9116 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11995,6 +12090,102 @@
 				)
 			)
 		)
+			(pin "3V3_CM4" input
+			(at 252.73 73.66 180)
+			(uuid "17efc99b-8641-4a61-ac34-c4188c869aeb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(sheet
+		(at 252.73 138.43)
+		(size 25.4 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "59179e28-57e7-4020-bfeb-9df0a9a28165")
+		(property "Sheetname" "GPS"
+			(at 252.73 137.7184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gps_rs232.kicad_sch"
+			(at 252.73 159.3346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPS_RX_MCU" output
+			(at 252.73 142.24 180)
+			(uuid "f7eb9285-ac6b-4dc2-9fbe-887903f59d2f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPS_TX_MCU" input
+			(at 252.73 144.78 180)
+			(uuid "bac055ae-ab62-4017-9c02-e36518a475f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1PPS_MCU" output
+			(at 252.73 147.32 180)
+			(uuid "e4b2c349-720e-45fe-b34f-1c4b5905da36")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb"
+					(page "7")
+				)
+			)
+		)
+			(pin "3V3_CM4" input
+			(at 252.73 149.86 180)
+			(uuid "7e82db14-6192-43c0-840a-8fa8ee10d825")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(sheet
 		(at 50.8 167.64)
@@ -12034,6 +12225,36 @@
 				(justify left top)
 			)
 		)
+		(pin "3V3_CM4" input
+			(at 50.8 172.72 180)
+			(uuid "9715f04c-e37c-45e6-a38f-99d5b59cd62b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PGOOD_12V" output
+			(at 50.8 175.26 180)
+			(uuid "83b1d098-bd87-428c-8888-5728ddeca928")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{FLT}" output
+			(at 50.8 177.8 180)
+			(uuid "ba586a64-5d36-4352-9c92-e37a39e29f78")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb"
@@ -12044,7 +12265,7 @@
 	)
 	(sheet
 		(at 252.73 25.4)
-		(size 25.4 12.7)
+		(size 25.4 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -12070,7 +12291,7 @@
 			)
 		)
 		(property "Sheetfile" "usb.kicad_sch"
-			(at 252.73 38.8116 0)
+			(at 252.73 41.3516 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12137,10 +12358,20 @@
 				)
 			)
 		)
+			(pin "3V3_CM4" input
+			(at 252.73 38.1 180)
+			(uuid "e70693ac-c7bf-4c9b-886d-a1bed8aa17fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(sheet
 		(at 252.73 81.28)
-		(size 25.4 50.8)
+		(size 25.4 53.34)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -12166,7 +12397,7 @@
 			)
 		)
 		(property "Sheetfile" "cm4_connectors.kicad_sch"
-			(at 252.73 132.7916 0)
+			(at 252.73 135.3316 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12384,5 +12615,95 @@
 				)
 			)
 		)
+			(pin "3V3_CM4" input
+			(at 252.73 132.08 180)
+			(uuid "14db9993-56a6-406e-8443-a3a562c38f00")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 252.73 38.1) (xy 247.65 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3273fbc9-38cb-4d07-89e2-0db1e11503a7")
+	)
+	(label "3V3_CM4"
+		(at 247.65 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c554033f-7f7c-459d-946c-8d2891235722")
+	)
+	(wire
+		(pts
+			(xy 252.73 73.66) (xy 247.65 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f557e92-a29b-44d9-9f73-af818b464e4d")
+	)
+	(label "3V3_CM4"
+		(at 247.65 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ce6dbda1-8742-4972-bda3-e9c34d86eb7b")
+	)
+	(wire
+		(pts
+			(xy 252.73 132.08) (xy 247.65 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d85913c1-c75d-45ce-83f5-aebbf8b9f618")
+	)
+	(label "3V3_CM4"
+		(at 247.65 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9acd6e5c-2a94-42f9-a0fb-27e759bc528a")
+	)
+	(wire
+		(pts
+			(xy 252.73 149.86) (xy 247.65 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b59affc-b528-4f5c-bce7-8e3db4737658")
+	)
+	(label "3V3_CM4"
+		(at 247.65 149.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "26d5e2c0-9715-47ff-9c78-797206a761f9")
 	)
 )
