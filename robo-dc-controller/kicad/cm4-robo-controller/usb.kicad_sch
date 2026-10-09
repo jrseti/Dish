@@ -7314,16 +7314,6 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 121.92) (xy 251.46 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29a15f46-ca9c-42e4-bb42-278250108f3e")
-	)
-	(wire
-		(pts
 			(xy 57.15 67.31) (xy 114.3 67.31)
 		)
 		(stroke
@@ -9502,28 +9492,6 @@
 		)
 		(uuid "fd6f1d5d-2125-4728-bc35-e3e8b4781d3e")
 	)
-	(hierarchical_label "3V3_CM4"
-		(shape input)
-		(at 50.8 40.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2d137d4f-5f1c-4e4a-9af3-3af0ccef8dc1")
-	)
-	(hierarchical_label "3V3_CM4"
-		(shape input)
-		(at 109.22 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4f8d01d8-dee5-4b03-863e-8788683a8099")
-	)
 	(global_label "5V"
 		(shape input)
 		(at 177.8 133.35 180)
@@ -9547,17 +9515,6 @@
 				(justify right)
 			)
 		)
-	)
-	(hierarchical_label "3V3_CM4"
-		(shape input)
-		(at 31.75 177.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "adc7668d-25e9-4ea9-a10e-c8eb21ef0d72")
 	)
 	(hierarchical_label "USB2_N"
 		(shape bidirectional)
@@ -9592,6 +9549,28 @@
 		)
 		(uuid "1b84fbb4-8797-4468-8507-8fabe892bdbc")
 	)
+	(hierarchical_label "3V3_CM4"
+		(shape input)
+		(at 50.8 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2d137d4f-5f1c-4e4a-9af3-3af0ccef8dc1")
+	)
+	(hierarchical_label "3V3_CM4"
+		(shape input)
+		(at 109.22 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4f8d01d8-dee5-4b03-863e-8788683a8099")
+	)
 	(hierarchical_label "USB2_P"
 		(shape bidirectional)
 		(at 50.8 45.72 180)
@@ -9602,6 +9581,17 @@
 			(justify right)
 		)
 		(uuid "88644375-89b2-4983-bc1c-f2811b831ead")
+	)
+	(hierarchical_label "3V3_CM4"
+		(shape input)
+		(at 31.75 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "adc7668d-25e9-4ea9-a10e-c8eb21ef0d72")
 	)
 	(hierarchical_label "nEXTRST"
 		(shape input)
@@ -11983,6 +11973,7 @@
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 165.1 187.96 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16016,6 +16007,7 @@
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 138.43 186.69 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

@@ -632,7 +632,7 @@
         "uuid": "c1285fbe-5f56-49a8-9041-410713cbe619"
       }
     ],
-    "used_designators": "BT1,R18-23,C21-26,D4-5,U12-13,TP1,TP11,L2-3,LED2,CN1",
+    "used_designators": "Module2,H1,R18-23,BT1,#PWR3,D4-5,C21-26,U12-13,TP1,TP11,L2-3,LED2,CN1",
     "variants": []
   },
   "sheets": [
