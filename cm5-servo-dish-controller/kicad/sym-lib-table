@@ -1,0 +1,6 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "MyParts") (type "KiCad") (uri "${KIPRJMOD}/../../parts/myparts.kicad_sym") (options "") (descr ""))
+	(lib (name "CM4Parts") (type "KiCad") (uri "${KIPRJMOD}/../../parts/CM4IO.kicad_sym") (options "") (descr ""))
+	(lib (name "Mean-Well") (type "KiCad") (uri "${KIPRJMOD}/../../parts/MeanWell_DDR-60.kicad_sym") (options "") (descr ""))
+)
