@@ -3727,6 +3727,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:Header-Male-2.54_1x3"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Header-Male-2.54_1x3"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyParts:PinHeader_1x03_P2.54mm_Vertical"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/2.54-1_3PPin.pdf"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "2.54mm 1*3P"
+				(at 0 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "BOOMELE"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "2.54-1*3PPin"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C49257"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "THT Pin header 1x3 P2.54"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Pin Headers"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Header-Male-2.54_1x3_0_1"
+				(rectangle
+					(start -0.51 5.08)
+					(end 4.57 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:RH-5016"
 			(pin_numbers
 				(hide yes)
@@ -6263,11 +6446,28 @@
 		)
 		(uuid "e3bfc762-158a-422b-9fcb-e8382aaf3d34")
 	)
+	(text "J14: USART1 for an external 3.3 V serial\nadapter while the CM5 is off or not fitted.\nPins as J4: 1 = MCU_RX, 2 = MCU_TX, 3 = GND.\nWith the CM5 on, U16 also drives MCU_RX\nthrough R32, so only listen then."
+		(exclude_from_sim no)
+		(at 355.6 51.4 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "f4f9be37-fdd0-4288-85d6-acb41f74d25b")
+	)
 	(junction
 		(at 124.46 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0c31ab01-5b1f-420f-8e85-1ffc98dfc828")
+	)
+	(junction
+		(at 38.1 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "158b4248-b89d-4386-b491-6caf4c343675")
 	)
 	(junction
 		(at 309.88 73.66)
@@ -6352,12 +6552,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5e79ccf1-9e94-47a7-b699-bce64787da00")
-	)
-	(junction
-		(at 38.1 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6304db14-ee25-48c2-bc75-c0bf928f34d1")
 	)
 	(junction
 		(at 194.31 144.78)
@@ -6867,6 +7061,16 @@
 	)
 	(wire
 		(pts
+			(xy 368.3 66.04) (xy 363.22 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e5efd3d-27bb-4e5b-97ec-cd046662b4e3")
+	)
+	(wire
+		(pts
 			(xy 63.5 132.08) (xy 60.96 132.08)
 		)
 		(stroke
@@ -7197,6 +7401,16 @@
 	)
 	(wire
 		(pts
+			(xy 365.76 71.12) (xy 365.76 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "693a46dc-b4e7-45c0-8ffb-379f746c17ec")
+	)
+	(wire
+		(pts
 			(xy 302.26 40.64) (xy 309.88 40.64)
 		)
 		(stroke
@@ -7447,6 +7661,16 @@
 	)
 	(wire
 		(pts
+			(xy 368.3 71.12) (xy 365.76 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ec57df-c669-466f-a7b4-b1755946ae69")
+	)
+	(wire
+		(pts
 			(xy 43.18 177.8) (xy 50.8 177.8)
 		)
 		(stroke
@@ -7464,16 +7688,6 @@
 			(type default)
 		)
 		(uuid "9914e88a-1258-4d36-b55a-4c6a36261a13")
-	)
-	(wire
-		(pts
-			(xy 33.02 91.44) (xy 38.1 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b0f1fea-9fc4-472f-8a11-48b25fe9dc35")
 	)
 	(wire
 		(pts
@@ -7727,6 +7941,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 91.44) (xy 38.1 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d669f31a-7001-428c-a709-b67ecb78a65b")
+	)
+	(wire
+		(pts
 			(xy 259.08 185.42) (xy 264.16 185.42)
 		)
 		(stroke
@@ -7864,6 +8088,16 @@
 			(type default)
 		)
 		(uuid "f143aa90-8ec7-418f-8729-36a9fee3f20b")
+	)
+	(wire
+		(pts
+			(xy 368.3 68.58) (xy 363.22 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f193e22d-8059-42fc-b156-14cb8aa2571b")
 	)
 	(wire
 		(pts
@@ -11369,6 +11603,16 @@
 		)
 		(uuid "4132a797-87af-4870-9875-c97094b505de")
 	)
+	(label "MCU_RX"
+		(at 363.22 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "461f1b81-9b83-4f7b-acda-4e57990d290e")
+	)
 	(label "3V3_MCU"
 		(at 342.9 78.74 90)
 		(effects
@@ -11509,6 +11753,16 @@
 		)
 		(uuid "95877602-9b24-4c2f-be18-db03fa4f0bd4")
 	)
+	(label "MCU_TX"
+		(at 363.22 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "99474bd9-a1d3-47aa-b46c-5218cc54745f")
+	)
 	(label "VDDA"
 		(at 212.09 44.45 0)
 		(effects
@@ -11540,7 +11794,7 @@
 		(uuid "a0d9a8b8-3f1c-4940-9b59-440ff58cf8f3")
 	)
 	(label "3V3_MCU"
-		(at 33.02 91.44 180)
+		(at 36.83 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14521,6 +14775,212 @@
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
 					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:Header-Male-2.54_1x3")
+		(at 370.84 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78569b3c-9074-49f9-b2af-5abf3f58cbfe")
+		(property "Reference" "J14"
+			(at 370.33 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Header-Male-2.54_1x3"
+			(at 370.33 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:PinHeader_1x03_P2.54mm_Vertical"
+			(at 370.84 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/2.54-1_3PPin.pdf"
+			(at 370.84 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.54mm 1*3P"
+			(at 370.84 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "BOOMELE"
+			(at 370.84 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "2.54-1*3PPin"
+			(at 370.84 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C49257"
+			(at 370.84 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "THT Pin header 1x3 P2.54"
+			(at 370.84 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "b399552e-e985-47ef-8349-1eab0b7296a4")
+		)
+		(pin "2"
+			(uuid "51a9fb37-59ea-4ddf-ad41-a26f34ab4eab")
+		)
+		(pin "1"
+			(uuid "ee42f37e-30db-4da3-8109-954eef4a63ff")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 365.76 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7860d486-cb78-45e1-813d-4b2994c2cf6a")
+		(property "Reference" "#PWR151"
+			(at 365.76 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 365.76 79.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.76 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 365.76 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 365.76 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "db76253f-22b5-49eb-ad37-7e71a88f0f09")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
+					(reference "#PWR151")
 					(unit 1)
 				)
 			)

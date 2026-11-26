@@ -1898,6 +1898,202 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:0603WAF1003T5E"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 1.778 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100kΩ"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Footprint" "MyParts:RESC1608X55N"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/0603WAF1003T5E.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55℃~+155℃ 100kΩ 100mW 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "UNI-ROYAL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0603WAF1003T5E"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage Rating" "75V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C25803"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0603WAF1003T5E_0_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "0603WAF1003T5E_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:0603WAF2493T5E"
 			(pin_numbers
 				(hide yes)
@@ -9745,7 +9941,7 @@
 		)
 		(uuid "cbd11ed3-b8bb-54b3-b84e-9526a96535a9")
 	)
-	(text "J13: 24 V from the external isolated Mean Well 48 V to 24 V converter. Its -V output stays floating: no bond to PE or to board GND.\nD12 SMBJ28CA (28 V stand-off, 45 V clamp) is bidirectional, so a reversed supply is blocked by U21 and not shorted by the TVS.\nU21 TPS26600 eFuse: current limit 12 / R58 = 0.5 A with auto-retry (MODE to RTN). Under-voltage lock-out 8.6 V rising / 8.0 V falling,\nover-voltage cut-off 34.4 V rising / 31.8 V falling (R55, R56, R57). C59 ramps CAN_V+ in about 42 ms: about 60 mA inrush into C60 + C61.\nEFUSE_RTN is the eFuse control reference (R57, R58, C59, MODE, pad). Do not join it to GND_ISO: that defeats the reverse-polarity protection.\nSHDN: R59 / R60 divide the 5 V isolator output to 3.3 V (pin limit 4 V); low = off. With U22 unpowered R60 holds the eFuse off.\nFLT: open drain, R61 pull-up. R62 limits the current into U22 if J13 is reversed (FLT can then follow RTN negative). IMON not used.\nC60 / C61: bulk capacitance on CAN_V+. Every part on the 24 V nets is rated for the 45 V clamp (100 V capacitors, 60 V eFuse).\nLED7 + R40: CAN_V+ on (2 mA)."
+	(text "J13: 24 V from the external isolated Mean Well 48 V to 24 V converter. Its -V output stays floating: no bond to PE or to board GND.\nD12 SMBJ28CA (28 V stand-off, 45 V clamp) is bidirectional, so a reversed supply is blocked by U21 and not shorted by the TVS.\nU21 TPS26600 eFuse: current limit 12 / R58 = 0.5 A with auto-retry (MODE to RTN). Under-voltage lock-out 8.6 V rising / 8.0 V falling,\nover-voltage cut-off 34.4 V rising / 31.8 V falling (R55, R56, R57). C59 ramps CAN_V+ in about 42 ms: about 60 mA inrush into C60 + C61.\nEFUSE_RTN is the eFuse control reference (R57, R58, C59, MODE, pad). Do not join it to GND_ISO: that defeats the reverse-polarity protection.\nSHDN: R59 / R60 divide the 5 V isolator output to 3.3 V (pin limit 4 V); low = off. With U22 unpowered R60 holds the eFuse off.\nFLT: open drain, R61 pull-up. R62 limits the current into U22 if J13 is reversed (FLT can then follow RTN negative). IMON not used.\nC60 / C61: bulk capacitance on CAN_V+. Every part on the 24 V nets is rated for the 45 V clamp (100 V capacitors, 60 V eFuse).\nLED7 + R40: CAN_V+ on (2 mA). Test points for a fixture: TP38 drives the LED anode, TP39 pulls UVLO low to hold U21 off."
 		(exclude_from_sim no)
 		(at 22.86 217.17 0)
 		(effects
@@ -9756,7 +9952,7 @@
 		)
 		(uuid "d07c9e34-6070-5357-a550-dccc4836d982")
 	)
-	(text "U18 ISO1042 (DW, SOIC-16 wide): isolated CAN FD transceiver, 5 Mbit/s, 5 kVrms, +/-70 V bus fault protection.\nLogic side on 3V3_MCU / GND: C44 100 nF + C54 1 uF at VCC1. Bus side on 5V_ISO / GND_ISO: this package has two VCC2 pins,\neach with its own 100 nF (C47 at pin 16, C68 at pin 11), plus C55 1 uF.\nTXD from PA12 (FDCAN1_TX) through R48, RXD to PA11 (FDCAN1_RX). The bus runs classic CAN at 500 kbit/s (DSY-C default,\nP10.09 = 0); CAN FD capability is headroom only.\nL2: common-mode choke in the transceiver stub. R49 / R50 (0 ohm, not fitted) bypass it if it causes trouble.\nLayout: stub from the through-path (CAN_H / CAN_L in the bus section) to U18 no longer than 30 mm.\nC47 and C68 on the top layer, each right at its VCC2 pin, connected without vias."
+	(text "U18 ISO1042 (DW, SOIC-16 wide): isolated CAN FD transceiver, 5 Mbit/s, 5 kVrms, +/-70 V bus fault protection.\nLogic side on 3V3_MCU / GND: C44 100 nF + C54 1 uF at VCC1. Bus side on 5V_ISO / GND_ISO: this package has two VCC2 pins,\neach with its own 100 nF (C47 at pin 16, C68 at pin 11), plus C55 1 uF.\nTXD from PA12 (FDCAN1_TX) through R48, RXD to PA11 (FDCAN1_RX). The bus runs classic CAN at 500 kbit/s (DSY-C default,\nP10.09 = 0); CAN FD capability is headroom only.\nR66: TXD pull-up to 3V3_MCU. The bus stays recessive while PA12 floats during reset and boot.\nL2: common-mode choke in the transceiver stub. R49 / R50 (0 ohm, not fitted) bypass it if it causes trouble.\nLayout: stub from the through-path (CAN_H / CAN_L in the bus section) to U18 no longer than 30 mm.\nC47 and C68 on the top layer, each right at its VCC2 pin, connected without vias."
 		(exclude_from_sim no)
 		(at 22.86 78.74 0)
 		(effects
@@ -9789,7 +9985,7 @@
 		)
 		(uuid "e0ab9370-6b95-5f52-9848-716836911247")
 	)
-	(text "U23 LMR51606X: 65 V, 0.6 A synchronous buck, 400 kHz. Output 0.8 V x (1 + R63 / R64) = 5.07 V.\nLoad: U18 up to about 75 mA while it drives the bus dominant, U22 about 2 mA.\nD14 feeds it from the input side of the eFuse: U18 keeps talking to the drives while CAN_V+ is\nswitched off. D14 also blocks a reversed supply.\nL3 33 uH (1.65 A saturation, above the 1.4 A maximum switch limit) and C67 22 uF are the datasheet\nvalues for 5 V at 400 kHz. C64 / C65: 100 V input capacitors. EN tied to VIN.\nLayout: keep the switch node (U23 pin 6, L3, C66) away from the CAN pair and the isolation barrier."
+	(text "U23 LMR51606X: 65 V, 0.6 A synchronous buck, 400 kHz. Output 0.8 V x (1 + R63 / R64) = 5.07 V.\nLoad: U18 up to about 75 mA while it drives the bus dominant, U22 about 2 mA.\nD14 feeds it from the input side of the eFuse: U18 keeps talking to the drives while CAN_V+ is\nswitched off. D14 also blocks a reversed supply.\nL3 33 uH (1.65 A saturation, above the 1.4 A maximum switch limit) and C67 22 uF are the datasheet\nvalues for 5 V at 400 kHz. C64 / C65: 100 V input capacitors.\nEN: R65 pulls it up to VIN; a test fixture can hold U23 off at TP40.\nLayout: keep the switch node (U23 pin 6, L3, C66) away from the CAN pair and the isolation barrier."
 		(exclude_from_sim no)
 		(at 252.73 210.82 0)
 		(effects
@@ -9805,6 +10001,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "001e754d-cf22-5068-b55c-0d4c76da8670")
+	)
+	(junction
+		(at 306.07 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04d72a51-f606-48d9-ac13-64fae88d0114")
 	)
 	(junction
 		(at 144.78 212.09)
@@ -9865,6 +10067,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2aade159-45e9-5861-8749-fc61b4638484")
+	)
+	(junction
+		(at 330.2 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2bf277d4-f802-49e4-8480-b6b6995ef8a6")
 	)
 	(junction
 		(at 162.56 179.07)
@@ -9939,10 +10147,22 @@
 		(uuid "4d45f390-60bb-5124-972e-7e300b2ce26d")
 	)
 	(junction
+		(at 59.69 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f969ab8-7be8-4eb4-8933-cd9cdf79e018")
+	)
+	(junction
 		(at 186.69 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5184558b-f555-5888-a7c4-bd6a63bc236a")
+	)
+	(junction
+		(at 129.54 212.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52531ea5-d04b-4193-99a8-7f043e89f7cd")
 	)
 	(junction
 		(at 62.23 64.77)
@@ -10095,6 +10315,18 @@
 		(uuid "a691ed87-a63d-562e-8048-a50adeba18d1")
 	)
 	(junction
+		(at 129.54 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b20d1028-8f94-434b-a9ae-cc2a3f5d5a9e")
+	)
+	(junction
+		(at 215.9 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2e524ec-ee82-46c4-8ff8-e3f6a9c911c1")
+	)
+	(junction
 		(at 92.71 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10131,12 +10363,6 @@
 		(uuid "c9ffa08f-53c3-5c73-98d4-8996e44b7e04")
 	)
 	(junction
-		(at 129.54 212.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cd5f8e38-0a2a-5696-8cc3-f5f0dcbdd81e")
-	)
-	(junction
 		(at 92.71 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10167,6 +10393,18 @@
 		(uuid "dd6f4b40-ae4f-5700-a1bf-5a26a6f1cbfd")
 	)
 	(junction
+		(at 59.69 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ddaebb70-a571-47db-8838-ceb6a1235c97")
+	)
+	(junction
+		(at 116.84 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dded706a-28fe-4c70-bd07-fd71ca866a94")
+	)
+	(junction
 		(at 78.74 193.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10195,6 +10433,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8775362-f5c8-5130-b9e0-2ac795a0a3c0")
+	)
+	(junction
+		(at 300.99 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8942bfe-f4c2-49cf-9552-9fcf13dea28d")
 	)
 	(junction
 		(at 379.73 181.61)
@@ -10298,7 +10542,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 184.15) (xy 332.74 184.15)
+			(xy 327.66 184.15) (xy 330.2 184.15)
 		)
 		(stroke
 			(width 0)
@@ -10335,6 +10579,26 @@
 			(type default)
 		)
 		(uuid "0a14c8ab-fbbb-52d4-8905-8e45ffa0b73d")
+	)
+	(wire
+		(pts
+			(xy 104.14 186.69) (xy 116.84 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b91c82e-8991-4605-9667-7286b629ea8f")
+	)
+	(wire
+		(pts
+			(xy 59.69 50.8) (xy 59.69 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c2469d2-7421-4f17-b61e-cb50e5befc47")
 	)
 	(wire
 		(pts
@@ -10488,16 +10752,6 @@
 	)
 	(wire
 		(pts
-			(xy 307.34 181.61) (xy 304.8 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d56d416-9eae-519f-90cf-0cdca003bf29")
-	)
-	(wire
-		(pts
 			(xy 201.93 62.23) (xy 213.36 62.23)
 		)
 		(stroke
@@ -10538,7 +10792,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 212.09) (xy 139.7 212.09)
+			(xy 104.14 212.09) (xy 129.54 212.09)
 		)
 		(stroke
 			(width 0)
@@ -10575,6 +10829,16 @@
 			(type default)
 		)
 		(uuid "26c1f142-a4ed-5698-b673-2df6c3cc63a7")
+	)
+	(wire
+		(pts
+			(xy 304.8 189.23) (xy 306.07 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27654895-a298-4d80-b16b-256981d0caf6")
 	)
 	(wire
 		(pts
@@ -10698,6 +10962,16 @@
 	)
 	(wire
 		(pts
+			(xy 306.07 189.23) (xy 307.34 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37d05e8b-15e0-461d-aca9-c2b8ae195eb6")
+	)
+	(wire
+		(pts
 			(xy 99.06 106.68) (xy 110.49 106.68)
 		)
 		(stroke
@@ -10715,16 +10989,6 @@
 			(type default)
 		)
 		(uuid "3987b211-d877-51f0-bacd-8cdef3dd5e39")
-	)
-	(wire
-		(pts
-			(xy 304.8 181.61) (xy 304.8 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39c1ee44-9bb9-503d-885b-25db3f218c85")
 	)
 	(wire
 		(pts
@@ -10758,6 +11022,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 176.53) (xy 220.98 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c0d13eb-bbf1-4d1d-b021-48aadb1842fd")
+	)
+	(wire
+		(pts
 			(xy 160.02 179.07) (xy 162.56 179.07)
 		)
 		(stroke
@@ -10775,16 +11049,6 @@
 			(type default)
 		)
 		(uuid "3eeac3d9-590f-5874-a6e2-c5f9790aacde")
-	)
-	(wire
-		(pts
-			(xy 45.72 39.37) (xy 62.23 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f088b92-240f-532f-9a29-626b0810a498")
 	)
 	(wire
 		(pts
@@ -10845,6 +11109,16 @@
 			(type default)
 		)
 		(uuid "45ec1ea3-cfa0-5e1c-85f7-a46d3ac32c38")
+	)
+	(wire
+		(pts
+			(xy 307.34 189.23) (xy 307.34 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46311017-2fbf-40b1-994c-a5844554ef60")
 	)
 	(wire
 		(pts
@@ -10998,6 +11272,16 @@
 	)
 	(wire
 		(pts
+			(xy 300.99 179.07) (xy 304.8 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b63397b-888c-4d31-9aaf-4e3bfa758798")
+	)
+	(wire
+		(pts
 			(xy 218.44 72.39) (xy 218.44 64.77)
 		)
 		(stroke
@@ -11015,6 +11299,16 @@
 			(type default)
 		)
 		(uuid "5c39517a-1d28-53ce-9375-88c4c6216ec4")
+	)
+	(wire
+		(pts
+			(xy 129.54 212.09) (xy 139.7 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ef457bc-4ebf-4bfe-92bb-0660d0191058")
 	)
 	(wire
 		(pts
@@ -11048,13 +11342,13 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 209.55) (xy 129.54 212.09)
+			(xy 330.2 184.15) (xy 330.2 186.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6353baee-7484-5127-9c50-5f3f0330fdce")
+		(uuid "64b341cf-e192-4d7c-8f8c-ba297eb7f4bb")
 	)
 	(wire
 		(pts
@@ -11115,6 +11409,16 @@
 			(type default)
 		)
 		(uuid "6d2f1d9e-b35b-526d-acac-0c1cf821958a")
+	)
+	(wire
+		(pts
+			(xy 116.84 186.69) (xy 124.46 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70f95249-1d84-426b-a5bb-53b5fe862e55")
 	)
 	(wire
 		(pts
@@ -11198,7 +11502,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 179.07) (xy 304.8 179.07)
+			(xy 297.18 179.07) (xy 300.99 179.07)
 		)
 		(stroke
 			(width 0)
@@ -11298,6 +11602,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 186.69) (xy 304.8 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a6e51d1-1f19-4cad-91a0-147d86e1816f")
+	)
+	(wire
+		(pts
 			(xy 276.86 179.07) (xy 280.67 179.07)
 		)
 		(stroke
@@ -11348,6 +11662,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 43.18) (xy 59.69 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91a96d39-65e8-4576-a7db-7a1ee9fefb19")
+	)
+	(wire
+		(pts
 			(xy 106.68 39.37) (xy 114.3 39.37)
 		)
 		(stroke
@@ -11365,6 +11689,16 @@
 			(type default)
 		)
 		(uuid "9345621d-2987-484b-ae37-284fe74ad31d")
+	)
+	(wire
+		(pts
+			(xy 129.54 203.2) (xy 129.54 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94620a6c-6f14-4223-a47a-d0d010eec9c4")
 	)
 	(wire
 		(pts
@@ -11435,6 +11769,16 @@
 			(type default)
 		)
 		(uuid "9e3ce16d-5493-51ad-aaec-50e082d3c6b3")
+	)
+	(wire
+		(pts
+			(xy 129.54 203.2) (xy 129.54 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fad9f92-c9ee-4576-bbdb-21d4472c56e1")
 	)
 	(wire
 		(pts
@@ -11528,6 +11872,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 203.2) (xy 129.54 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7aad589-3eaf-4bde-8937-45e8e523c47b")
+	)
+	(wire
+		(pts
 			(xy 38.1 39.37) (xy 45.72 39.37)
 		)
 		(stroke
@@ -11578,16 +11932,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 212.09) (xy 129.54 212.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad23e17e-452f-5252-8304-c6e26bc612e8")
-	)
-	(wire
-		(pts
 			(xy 374.65 77.47) (xy 370.84 77.47)
 		)
 		(stroke
@@ -11618,13 +11962,13 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 186.69) (xy 124.46 186.69)
+			(xy 330.2 184.15) (xy 332.74 184.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af532390-e1e8-5619-b7a1-355da5cbed89")
+		(uuid "aebbdc00-e9db-4353-a01a-c3bf7db81beb")
 	)
 	(wire
 		(pts
@@ -11768,6 +12112,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 39.37) (xy 59.69 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2b506a0-b139-4972-9cbb-94e8877af551")
+	)
+	(wire
+		(pts
 			(xy 114.3 189.23) (xy 124.46 189.23)
 		)
 		(stroke
@@ -11795,6 +12149,16 @@
 			(type default)
 		)
 		(uuid "c57e92a0-da7c-46c5-8aea-d4c91af290e2")
+	)
+	(wire
+		(pts
+			(xy 59.69 39.37) (xy 62.23 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8ebb109-3927-4b7e-a0ff-96f343dc815d")
 	)
 	(wire
 		(pts
@@ -11855,6 +12219,16 @@
 			(type default)
 		)
 		(uuid "ce9aa23d-a3b7-5ab3-afb0-f70fd65b99f5")
+	)
+	(wire
+		(pts
+			(xy 300.99 176.53) (xy 300.99 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cee14540-68ec-4d62-9ef7-2dd2167041b0")
 	)
 	(wire
 		(pts
@@ -16196,6 +16570,240 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
+		(at 220.98 176.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0c33477b-f805-48fe-b759-c33bf3b9698e")
+		(property "Reference" "TP38"
+			(at 222.25 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 220.98 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:TestPoint_Pad_D0.8mm"
+			(at 220.98 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 220.98 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "145aa5f5-3449-4061-b27c-6fcef80c6415")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10/5d3a9b1e-7f24-4e86-a0c3-91b6d2f4c7a8"
+					(reference "TP38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 330.2 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0de5f25d-4479-4923-bc29-a5265224a863")
+		(property "Reference" "TP42"
+			(at 328.168 188.468 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 330.2 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:TestPoint_Pad_D0.8mm"
+			(at 330.2 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 330.2 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89d274f0-ee0c-4bf2-b6a2-9b45e26e69a1")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10/5d3a9b1e-7f24-4e86-a0c3-91b6d2f4c7a8"
+					(reference "TP42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 116.84 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0f8c25e2-e4b4-43e9-9e00-a3a5d894a9c8")
+		(property "Reference" "TP39"
+			(at 114.99 184.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 116.84 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:TestPoint_Pad_D0.8mm"
+			(at 116.84 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 116.84 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3ee97e7d-0ae8-48a0-89d9-1ea88c84f3f1")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10/5d3a9b1e-7f24-4e86-a0c3-91b6d2f4c7a8"
+					(reference "TP39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
 		(at 236.22 49.53 0)
 		(unit 1)
 		(body_style 1)
@@ -17154,6 +17762,84 @@
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10/5d3a9b1e-7f24-4e86-a0c3-91b6d2f4c7a8"
 					(reference "C55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 300.99 176.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2119f4b0-bd7b-4d98-a9cc-bc51bfa86510")
+		(property "Reference" "TP41"
+			(at 298.958 174.752 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 300.99 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:TestPoint_Pad_D0.8mm"
+			(at 300.99 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 300.99 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 300.99 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "40554583-a64d-490b-8ba2-78bf12908c0d")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10/5d3a9b1e-7f24-4e86-a0c3-91b6d2f4c7a8"
+					(reference "TP41")
 					(unit 1)
 				)
 			)
@@ -18954,7 +19640,7 @@
 			)
 		)
 		(property "Value" "33Ω"
-			(at 55.88 57.126 90)
+			(at 56.134 56.388 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19537,25 +20223,25 @@
 		(dnp no)
 		(uuid "4c66f49b-ceb2-5fd7-8022-f5b9e54cd244")
 		(property "Reference" "C65"
-			(at 299.05 181.88 0)
+			(at 295.31 181.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "100nF"
-			(at 299.05 183.88 0)
+			(at 295.31 183.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "MyParts:CAPC1608X95N"
@@ -19891,6 +20577,153 @@
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10/5d3a9b1e-7f24-4e86-a0c3-91b6d2f4c7a8"
 					(reference "#PWR0148")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:0603WAF1003T5E")
+		(at 304.8 182.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "524b1ecf-0242-4545-b726-cfcaf875442c")
+		(property "Reference" "R65"
+			(at 303.184 181.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 303.184 183.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MyParts:RESC1608X55N"
+			(at 304.8 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0603WAF1003T5E.pdf"
+			(at 304.8 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+155℃ 100kΩ 100mW 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+			(at 304.8 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 304.8 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 304.8 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 304.8 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "75V"
+			(at 304.8 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C25803"
+			(at 304.8 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
+			(at 304.8 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ce91bc83-c5a7-498b-bac6-ab4af6701bca")
+		)
+		(pin "2"
+			(uuid "004be37a-207e-454f-91a3-ee745d7628a5")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10/5d3a9b1e-7f24-4e86-a0c3-91b6d2f4c7a8"
+					(reference "R65")
 					(unit 1)
 				)
 			)
@@ -20269,6 +21102,153 @@
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10/5d3a9b1e-7f24-4e86-a0c3-91b6d2f4c7a8"
 					(reference "#PWR0145")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:0402WGF1002TCE")
+		(at 59.69 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6655125f-d071-41e2-bf25-ab36c5d2a4ad")
+		(property "Reference" "R66"
+			(at 58.074 45.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 58.074 47.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MyParts:RESC1005X40N"
+			(at 59.69 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1002TCE.pdf"
+			(at 59.69 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+155℃ 10kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 59.69 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 59.69 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 59.69 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402WGF1002TCE"
+			(at 59.69 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 59.69 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C25744"
+			(at 59.69 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 59.69 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8ce278a7-7a08-4d64-9c2f-aac43493b03d")
+		)
+		(pin "2"
+			(uuid "92a470f4-4231-45e8-9a63-ea3a7927da7d")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10/5d3a9b1e-7f24-4e86-a0c3-91b6d2f4c7a8"
+					(reference "R66")
 					(unit 1)
 				)
 			)
@@ -22562,6 +23542,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 306.07 189.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "92257d13-1cc6-4763-a7fe-e4b9cd4164ff")
+		(property "Reference" "TP40"
+			(at 304.22 191.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 306.07 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:TestPoint_Pad_D0.8mm"
+			(at 306.07 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 306.07 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 306.07 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e7af3999-5db8-4e56-b3f8-87a00b708054")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10/5d3a9b1e-7f24-4e86-a0c3-91b6d2f4c7a8"
+					(reference "TP40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDPWR")
 		(at 215.9 186.69 0)
 		(unit 1)
@@ -24678,7 +25736,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:0402WGF2402TCE")
-		(at 129.54 205.74 0)
+		(at 129.54 208.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24688,7 +25746,7 @@
 		(dnp no)
 		(uuid "b7bcf6a5-70a1-55f3-8b96-b7bc9e2888ce")
 		(property "Reference" "R58"
-			(at 127.924 204.74 0)
+			(at 127.924 207.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24699,7 +25757,7 @@
 			)
 		)
 		(property "Value" "24kΩ"
-			(at 127.924 206.74 0)
+			(at 127.924 209.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24710,7 +25768,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:RESC1005X40N"
-			(at 129.54 205.74 0)
+			(at 129.54 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24721,7 +25779,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF2402TCE.pdf"
-			(at 129.54 205.74 0)
+			(at 129.54 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24732,7 +25790,7 @@
 			)
 		)
 		(property "Description" "-55℃~+155℃ 24kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
-			(at 129.54 205.74 0)
+			(at 129.54 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24743,7 +25801,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 129.54 205.74 0)
+			(at 129.54 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24754,7 +25812,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 129.54 205.74 0)
+			(at 129.54 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24765,7 +25823,7 @@
 			)
 		)
 		(property "MPN" "0402WGF2402TCE"
-			(at 129.54 205.74 0)
+			(at 129.54 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24776,7 +25834,7 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 129.54 205.74 0)
+			(at 129.54 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24787,7 +25845,7 @@
 			)
 		)
 		(property "LCSC Part" "C25769"
-			(at 129.54 205.74 0)
+			(at 129.54 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24798,7 +25856,7 @@
 			)
 		)
 		(property "Pkg Type" "SMD 0402"
-			(at 129.54 205.74 0)
+			(at 129.54 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26346,6 +27404,84 @@
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10/5d3a9b1e-7f24-4e86-a0c3-91b6d2f4c7a8"
 					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 127 203.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e193c459-ec78-4257-952d-a50786ab52c6")
+		(property "Reference" "TP43"
+			(at 121.412 202.946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 127 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:TestPoint_Pad_D0.8mm"
+			(at 127 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 127 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d085ffc8-1e46-4a70-9b6b-589a9c8745e7")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10/5d3a9b1e-7f24-4e86-a0c3-91b6d2f4c7a8"
+					(reference "TP43")
 					(unit 1)
 				)
 			)

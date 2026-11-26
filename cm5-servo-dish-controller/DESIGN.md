@@ -121,13 +121,17 @@ Each sheet carries notes explaining its part values.
 - **Firmware update from the CM5:** CM5 GPIO23 resets the STM32 and GPIO24 selects its
   system bootloader, which listens on the same USART1. No SWD probe is needed.
 - **Debug:** STDC14 connector (STLINK-V3) with SWD, SWO and a virtual COM port.
+- **Serial header:** J14 (1×3, 2.54 mm) brings out USART1 for a 3.3 V serial adapter
+  when the CM5 is off or not fitted. Same pin order as J4: 1 `MCU_RX` (into the
+  STM32), 2 `MCU_TX`, 3 `GND`. With the CM5 on, U16 also drives `MCU_RX` through
+  R32, so the header is listen-only then.
 
 STM32 pin use:
 
 | Pin | Function | Connects to |
 |---|---|---|
-| PA9 / PA10 | USART1 TX / RX | CM5 GPIO13 / GPIO12 |
-| PA12 / PA11 | FDCAN1 TX / RX | ISO1042 (U18) |
+| PA9 / PA10 | USART1 TX / RX | CM5 GPIO13 / GPIO12, J14 |
+| PA12 / PA11 | FDCAN1 TX / RX | ISO1042 (U18). R66 pulls TXD up to `3V3_MCU` |
 | PC8 / PC9 | `CAN_VBUS_EN` (output) / `CAN_VBUS_FLT` (input, EXTI) | ISO7721 (U22), to the `CAN_V+` eFuse |
 | PA13 / PA14 / PB3 | SWDIO / SWCLK / SWO | STDC14 |
 | PA2 / PA3 | USART2 (or LPUART1) TX / RX | STDC14 virtual COM port |
@@ -196,9 +200,21 @@ Check these before layout or ordering:
     18–75 V or wider, 15–30 W, 24 V out, output left floating.
 11. **DSY-C pins 4–8** (brief OPEN-3). Check with a continuity test whether the
     drive passes them through between CN1 and CN2.
-12. **Isolation barrier** (brief OPEN-5). Lay out a continuous gap under U18 and
-    U22, 4 mm or more on every layer, with a separate `GND_ISO` pour. Decide on a
-    slot once the placement is known.
+12. **Isolation barrier** (brief OPEN-5). A 7.1 mm gap with no copper pour on any
+    of the four layers, widened from 6.0 mm on 2026-11-26. It runs along
+    x 130.75–137.85 mm, left of the CAN section, and y 82.70–89.80 mm, below it,
+    under U18, U22 and C57.
+    On the CAN side of the gap, `GND_ISO` has its own pour on all four layers. On
+    the other side, F.Cu, In1.Cu and B.Cu are `GND`. In2.Cu is `5V`, except for a
+    `3V3_MCU` island in the lower right: east of x 168 mm, and east of x 162 mm
+    above y 105 mm, so that it reaches the logic side of U22. A 0.5 mm split
+    separates the two and passes between U13's input and output pins. The top-right corner (H2
+    and the J12 shield links) is left out of the `GND_ISO` pour for the PE entry.
+    The gap is centred under the isolators and ends flush with their lands, which
+    are 7.1 mm apart. The package allows 8 mm; reaching that needs TI's isolation
+    land pattern on U18 and U22. Only the zone outlines set the gap: no
+    keep-out area or design rule stops a track or via from entering it. No slot
+    is drawn.
 13. **48 V input stage** (brief OPEN-6) is outside this board: main fuse, reverse
     polarity, brake resistors sized for AC operation. The brief's 48 V bus-voltage
     sensing is not implemented: no 48 V comes onto this board.
@@ -286,6 +302,8 @@ This design added these symbols to `parts/myparts.kicad_sym`, with footprints an
 | `1206W4F604JT5E` / `1206W4F0000T5E` | 60.4 Ω 0.25 W / 0 Ω resistor, 1206 | C57572 / C17888 |
 | `0603WAF2493T5E` / `0603WAF0000T5E` | 249 kΩ / 0 Ω resistor, 0603 | C22918 / C21189 |
 | `0402WGF330JTCE`, `0402WGF2402TCE`, `0402WGF3002TCE`, `0402WGF1183TCE` | 33 Ω, 24 kΩ, 30 kΩ, 118 kΩ resistors, 0402 | C25105, C25769, C25776, C25748 |
+| `0402WGF220JTCE` | 22 Ω resistor, 0402 (I2C series resistors R45, R46) | C25092 |
+| `CL05A475MP5NRNC_ALT` / `CL10A106KP8NNNC_ALT` | 4.7 µF 10 V capacitor, 0402 / 10 µF 10 V capacitor, 0603 (C52, C51) | C23733 / C19702 |
 
 It also renamed the footprint `SW-SMD_DSHP02TSGER` to `SOP127P835X250-4N` in
 `parts/myparts.pretty` (used by the `DSHP02TSGER` symbol). Other projects that
