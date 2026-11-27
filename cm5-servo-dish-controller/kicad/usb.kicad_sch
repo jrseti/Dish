@@ -3024,6 +3024,17 @@
 		)
 		(uuid "c1b95595-1cb5-41de-8707-95f6ce106ae9")
 	)
+	(text "C69: return path between the 5 V and ground planes for the USB3_1\npairs. Place it at the vias where they change layer (near U3)."
+		(exclude_from_sim no)
+		(at 143.74 155.2 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "d4a64625-9543-4293-8501-6a9ccf37c226")
+	)
 	(text "USB 3.0 SuperSpeed ESD"
 		(exclude_from_sim no)
 		(at 21.82 26.9 0)
@@ -3048,7 +3059,7 @@
 	)
 	(text "U4: USB 2.0 pairs of the two USB-A ports.\nU5: CM5 USB 2.0 port (pins 103/105) to the\nUSB-C rpiboot connector on the usb2 sheet."
 		(exclude_from_sim no)
-		(at 88.9 127 0)
+		(at 88.138 130.302 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -3091,6 +3102,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2151c7dc-49cb-4c7e-a0e0-060c065ad543")
+	)
+	(junction
+		(at 167.64 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e17b485-9664-43b4-9235-4be092c55837")
 	)
 	(junction
 		(at 227.33 132.08)
@@ -3157,6 +3174,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dad62e96-0576-4349-b152-a5a2778bd901")
+	)
+	(junction
+		(at 175.26 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db89cb6c-6ccd-407f-82fd-824a141731fa")
 	)
 	(junction
 		(at 242.57 124.46)
@@ -3274,7 +3297,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 124.46) (xy 182.88 124.46)
+			(xy 167.64 124.46) (xy 175.26 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3804,6 +3827,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 124.46) (xy 182.88 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab1c1978-dddc-475e-9256-1177a49063e7")
+	)
+	(wire
+		(pts
 			(xy 219.71 132.08) (xy 227.33 132.08)
 		)
 		(stroke
@@ -3911,6 +3944,16 @@
 			(type default)
 		)
 		(uuid "c564948e-cfca-485f-a710-efcc947b61ae")
+	)
+	(wire
+		(pts
+			(xy 167.64 132.08) (xy 175.26 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c568bbf7-7bf8-4d07-9214-5b1394afdf68")
 	)
 	(wire
 		(pts
@@ -8403,6 +8446,151 @@
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:CL05B104KO5NNNC_ALT")
+		(at 175.26 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f41bffdb-5cce-498d-85a1-bb9bbd8da1ae")
+		(property "Reference" "C69"
+			(at 175.26 121.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 175.26 122.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:CAPC1005X55N"
+			(at 175.26 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/CL05B104KO5NNNC.pdf"
+			(at 175.26 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 175.26 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SAMSUNG"
+			(at 175.26 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 175.26 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 175.26 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "16V"
+			(at 175.26 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C1525"
+			(at 175.26 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 175.26 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "53ea40fa-6d57-4d6f-9e15-3ca2398f0a8b")
+		)
+		(pin "2"
+			(uuid "65ed741e-76d4-481d-a58b-4614bbb22fcf")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "C69")
 					(unit 1)
 				)
 			)

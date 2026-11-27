@@ -1217,6 +1217,17 @@
 		)
 		(uuid "76d87bea-069f-4001-817c-9adf6256149a")
 	)
+	(text "C70: second HF bond (2 kV, as\nC1), at the USB connectors. The\nboard is open inside the metal\nbox, so the USB shells have no\npanel bond."
+		(exclude_from_sim no)
+		(at 127 186.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8773e0a7-2a26-4c08-82de-204e1c0c01a3")
+	)
 	(text "R1/C1: CHASSIS-GND static bleed (R1) and HF\nbond (C1, keep 2 kV). Connector shields (RJ45,\nUSB, CAN) and the Ethernet termination (P10)\ngo to CHASSIS. Installed, GND is also bonded\nto the box at the J8 antenna arrestor, so R1\nis bypassed at DC."
 		(exclude_from_sim no)
 		(at 76.2 186.69 0)
@@ -1463,6 +1474,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 163.83) (xy 101.6 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8600566a-2aca-4ed9-89d1-7546f976b484")
+	)
+	(wire
+		(pts
 			(xy 165.1 101.6) (xy 198.12 101.6)
 		)
 		(stroke
@@ -1590,6 +1611,16 @@
 			(type default)
 		)
 		(uuid "fbfd03bc-7d2c-41b1-b844-f31dfc4a321e")
+	)
+	(wire
+		(pts
+			(xy 111.76 163.83) (xy 111.76 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe0b627e-ce82-4203-a9d6-992ded1eb271")
 	)
 	(wire
 		(pts
@@ -2188,6 +2219,151 @@
 		)
 	)
 	(symbol
+		(lib_id "MyParts:1206B472K202NT")
+		(at 106.68 163.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "41a5a3f3-da29-4b15-a25e-3da2fc636252")
+		(property "Reference" "C70"
+			(at 106.68 160.782 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7nF"
+			(at 106.68 166.878 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:CAPC3216X180N"
+			(at 106.68 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-1206B472K202NT_C41017.pdf"
+			(at 106.68 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2kV 4.7nF X7R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 106.68 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FH"
+			(at 106.68 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1206B472K202NT"
+			(at 106.68 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C41017"
+			(at 106.68 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 106.68 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "2kV"
+			(at 106.68 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 1206"
+			(at 106.68 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3c6bb6e6-55be-40ea-84df-16a4040caaaf")
+		)
+		(pin "2"
+			(uuid "d57fe9db-1741-4888-b435-de9c9a346a1e")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
+					(reference "C70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MyParts:1206W4F1004T5E")
 		(at 91.44 153.67 0)
 		(unit 1)
@@ -2490,6 +2666,83 @@
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
 					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 111.76 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "98d066bc-4699-4ce9-849b-2566c1b05169")
+		(property "Reference" "#PWR0152"
+			(at 111.76 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CHASSIS"
+			(at 111.76 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 111.76 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "95acfc57-b0ed-4514-8c17-97338486703d")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
+					(reference "#PWR0152")
 					(unit 1)
 				)
 			)
