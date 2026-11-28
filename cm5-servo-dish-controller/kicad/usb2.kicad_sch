@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "USB-C rpiboot port")
-		(date "2026-11-16")
-		(rev "0.1")
+		(date "2026-11-28")
+		(rev "1.1")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint_Small"

@@ -59,7 +59,8 @@ Each sheet carries notes explaining its part values.
   takes the 48 V battery (18–75 V input) and gives 5 V at up to 12 A, isolated to
   4 kVdc. Its +Vo terminals (3, 4) go to J6 pin 1 and its −Vo terminals (1, 2) to
   J6 pin 2. The board's load budget is 5 A.
-- **Input:** J6 screw terminal, F2 (5×20 mm fuse, T6.3A), Q1 and Q2, then the `5V`
+- **Input:** J6 pluggable terminal block (KF2EDGR-5.08-2P header, same as J11; mating
+  plug KF2EDGK-5.08-2P), F2 (5×20 mm fuse, T6.3A), Q1 and Q2, then the `5V`
   rail with D2 (SMCJ6.0A surge clamp), C15–C20 (224 µF bulk) and LED3.
   - Q1 (SI7137DP P-channel MOSFET, 2.5 mΩ) is the reverse-polarity protection. A
     reversed supply leaves it off: nothing reaches the board and F2 does not blow.
@@ -250,7 +251,7 @@ Check these before layout or ordering:
     maximum height is 1.12 mm, not the 1.20 mm in the name.
   - Parts with no IPC-7351 package family (connectors, headers, modules, switches,
     the CAN choke, the battery, the RH-5016 test points) are named manufacturer_part,
-    e.g. `Molex_48406-0003`, `HanRun_HR911130A`, `KEFA_KF2EDGR-5.08-2P` (J11),
+    e.g. `Molex_48406-0003`, `HanRun_HR911130A`, `KEFA_KF2EDGR-5.08-2P` (J6, J11),
     `PinHeader_2x12_P2.54mm_Vertical`.
   - D2 uses the reference project's SMC pattern `DIOM7959X262N`
     (2.7 × 3.3 mm pads instead of 3.03 × 3.82 mm).

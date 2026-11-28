@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "GPS 1PPS and RS232 ")
-		(date "2026-08-18")
-		(rev "2.0")
+		(date "2026-11-28")
+		(rev "1.1")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint_Small"

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "5 V input")
-		(date "2026-11-16")
-		(rev "0.1")
+		(date "2026-11-28")
+		(rev "1.1")
 		(company "JRSeti")
 	)
 	(lib_symbols
@@ -988,7 +988,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MyParts:KF7620-7.62-2P"
+		(symbol "MyParts:KF2EDGR-5.08-2P"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1004,7 +1004,7 @@
 					)
 				)
 			)
-			(property "Value" "KF7620-7.62-2P"
+			(property "Value" "KF2EDGR-5.08-2P"
 				(at 0 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1014,7 +1014,7 @@
 					)
 				)
 			)
-			(property "Footprint" "MyParts:KEFA_KF7620-7.62-2P"
+			(property "Footprint" "MyParts:KEFA_KF2EDGR-5.08-2P"
 				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1025,7 +1025,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "${MYPARTS_DATASHEETS}/KF7620-7.62-2P.pdf"
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/KF2EDGR-5.08-2P.pdf"
 				(at 0 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1036,7 +1036,7 @@
 					)
 				)
 			)
-			(property "Description" "-40℃~+105℃ 1 10~22 1x2P 2 2P 32A 4 450V 7.62mm Green Through Hole Plugin,P=7.62mm Screw Terminal Blocks ROHS"
+			(property "Description" "-40℃~+105℃ 1x2P 300V 5.08mm Green pluggable terminal block header, right angle, open ends. Mating plug KF2EDGK-5.08-2P"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1058,7 +1058,7 @@
 					)
 				)
 			)
-			(property "MPN" "KF7620-7.62-2P"
+			(property "MPN" "KF2EDGR-5.08-2P"
 				(at 0 -16.51 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1069,7 +1069,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C475104"
+			(property "LCSC Part" "C441204"
 				(at 0 -19.05 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1080,7 +1080,7 @@
 					)
 				)
 			)
-			(property "Pkg Type" "THT Terminal block 1x2 P7.62"
+			(property "Pkg Type" "THT Pluggable terminal block 1x2 P5.08"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1102,7 +1102,7 @@
 					)
 				)
 			)
-			(symbol "KF7620-7.62-2P_0_1"
+			(symbol "KF2EDGR-5.08-2P_0_1"
 				(rectangle
 					(start -1.27 3.81)
 					(end 3.81 -3.81)
@@ -3761,7 +3761,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:KF7620-7.62-2P")
+		(lib_id "MyParts:KF2EDGR-5.08-2P")
 		(at 73.66 60.96 0)
 		(mirror y)
 		(unit 1)
@@ -3782,7 +3782,7 @@
 				)
 			)
 		)
-		(property "Value" "KF7620-7.62-2P"
+		(property "Value" "KF2EDGR-5.08-2P"
 			(at 69.86 67.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3792,7 +3792,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:KEFA_KF7620-7.62-2P"
+		(property "Footprint" "MyParts:KEFA_KF2EDGR-5.08-2P"
 			(at 73.66 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3803,7 +3803,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/KF7620-7.62-2P.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/KF2EDGR-5.08-2P.pdf"
 			(at 73.66 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3814,7 +3814,7 @@
 				)
 			)
 		)
-		(property "Description" "-40℃~+105℃ 1 10~22 1x2P 2 2P 32A 4 450V 7.62mm Green Through Hole Plugin,P=7.62mm Screw Terminal Blocks ROHS"
+		(property "Description" "-40℃~+105℃ 1x2P 300V 5.08mm Green pluggable terminal block header, right angle, open ends. Mating plug KF2EDGK-5.08-2P"
 			(at 73.66 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3836,7 +3836,7 @@
 				)
 			)
 		)
-		(property "MPN" "KF7620-7.62-2P"
+		(property "MPN" "KF2EDGR-5.08-2P"
 			(at 73.66 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3847,7 +3847,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C475104"
+		(property "LCSC Part" "C441204"
 			(at 73.66 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3858,7 +3858,7 @@
 				)
 			)
 		)
-		(property "Pkg Type" "THT Terminal block 1x2 P7.62"
+		(property "Pkg Type" "THT Pluggable terminal block 1x2 P5.08"
 			(at 73.66 60.96 0)
 			(hide yes)
 			(show_name no)

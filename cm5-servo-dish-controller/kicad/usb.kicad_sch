@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "USB 3.0 ports")
-		(date "2026-11-16")
-		(rev "0.1")
+		(date "2026-11-28")
+		(rev "1.1")
 		(company "JRSeti")
 	)
 	(lib_symbols
