@@ -5352,7 +5352,7 @@
 		)
 		(uuid "6076ef26-d6e5-4ff2-8345-c542e78da637")
 	)
-	(text "HR911130A, shielded, integrated magnetics and LEDs, 100/1000Base-T (LCSC C54408).\nEP0-EP3 come straight from the CM5 - the PHY is on the module, no external PHY.\nChip-side center taps (P1) bypassed to GND by C11 100nF.\nBob Smith termination (4x75R + 1000pF/2kV) is built into the jack;\nP10 is that node, tied to CHASSIS. Shield pins are also on CHASSIS\n(bled to GND by R1/C1 on the top sheet)."
+	(text "HR911130A, shielded, integrated magnetics and LEDs, 100/1000Base-T (LCSC C54408).\nEP0-EP3 come straight from the CM5 - the PHY is on the module, no external PHY.\nChip-side center taps (P1) bypassed to GND by C13 100nF.\nBob Smith termination (4x75R + 1000pF/2kV) is built into the jack;\nP10 is that node, tied to CHASSIS. Shield pins are also on CHASSIS\n(bled to GND by R1/C1 on the top sheet)."
 		(exclude_from_sim no)
 		(at 43.688 142.24 0)
 		(effects
@@ -5395,7 +5395,7 @@
 		)
 		(uuid "a418a2b2-bb89-42f8-bb6c-6cd946be2a67")
 	)
-	(text "CM5 Ethernet_nLED pins are active-low 3.3V sinks, IOL 8mA @ VOL 0.4V.\nETH_LEDG = activity (green, RJ1 pin 11 anode / 12 cathode).\nETH_LEDY = link speed (yellow, pin 14 anode / 13 cathode).\nR10/R19 220R gives ~4.5mA through the LED. That is below the 8mA limit.\n"
+	(text "CM5 Ethernet_nLED pins are active-low 3.3V sinks, IOL 8mA @ VOL 0.4V.\nETH_LEDG = activity (green, RJ1 pin 11 anode / 12 cathode).\nETH_LEDY = link speed (yellow, pin 14 anode / 13 cathode).\nR10/R11 220R gives ~4.5mA through the LED. That is below the 8mA limit.\n"
 		(exclude_from_sim no)
 		(at 43.942 154.94 0)
 		(effects
@@ -7092,7 +7092,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9b02ac57-89ed-4a91-a300-8c220ace1554")
-		(property "Reference" "C11"
+		(property "Reference" "C13"
 			(at 45.212 113.7919 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7222,7 +7222,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/2c385700-431a-4a3a-8a9d-f3682fa19093"
-					(reference "C11")
+					(reference "C13")
 					(unit 1)
 				)
 			)

@@ -6281,7 +6281,7 @@
 		)
 		(uuid "0b424232-adbc-4a23-9b57-22bcb5f312d4")
 	)
-	(text "C28/C30/C32/C33 one at each VDD pin (16, 32, 48, 64), C34 bulk. VBAT is on VDD.   C38/C120 at VDDA (29), C40/C122 at VREF+ (28)."
+	(text "C30/C32/C34/C35 one at each VDD pin (16, 32, 48, 64), C36 bulk. VBAT is on VDD.   C40/C41 at VDDA (29), C42/C43 at VREF+ (28)."
 		(exclude_from_sim no)
 		(at 27.94 106.2 0)
 		(effects
@@ -6303,7 +6303,7 @@
 		)
 		(uuid "14473577-58b8-4f36-a05c-ed4591e8b802")
 	)
-	(text "X1 24 MHz, 12 pF load, +/-10 ppm:\nCANopen bit timing needs a crystal.\nC31/C113 15 pF (same crystal and\ncaps as the USB hub of the CM4 board)."
+	(text "X1 24 MHz, 12 pF load, +/-10 ppm:\nCANopen bit timing needs a crystal.\nC33/C39 15 pF (same crystal and\ncaps as the USB hub of the CM4 board)."
 		(exclude_from_sim no)
 		(at 99 139 0)
 		(effects
@@ -6325,7 +6325,7 @@
 		)
 		(uuid "23036523-1a6c-4872-bdd1-c92447f3608d")
 	)
-	(text "Role: the STM32 is the CANopen master. It runs the position / velocity loop: it commands the velocity of the servo drives over CAN and reads their\nposition back over CAN. The CM5 sends it pointing commands over the UART, as it did to the RoboClaw.\n\nPin use:\n- PA9 = USART1_TX to CM5 GPIO13, PA10 = USART1_RX from CM5 GPIO12. USART1 is also a system-bootloader UART.\n- PA12 = FDCAN1_TX, PA11 = FDCAN1_RX (AF9).\n- PC8 = CAN_VBUS_EN (output: high = dish-side CAN_V+ on; the eFuse is also on while PC8 is not driven). PC9 = CAN_VBUS_FLT (input with EXTI: low = eFuse fault). Both go through isolator U22 on the CAN sheet.\n- PA13 = SWDIO, PA14 = SWCLK, PB3 = SWO. PA2 / PA3 = debug UART on the STDC14 virtual COM port.\n- PC6 = LED_RUN (green), PC7 = LED_ERR (red): CANopen indicator LEDs (CiA 303-3), active high.\n- PF0 / PF1 = 24 MHz HSE, PG10 = NRST, PB8 = BOOT0.\nAll other pins are unused and left open (no-connect flags). Set them to analog mode in firmware.\nThere is no encoder or limit-switch interface on this board: those are separate CANopen nodes on the same bus (future boards)."
+	(text "Role: the STM32 is the CANopen master. It runs the position / velocity loop: it commands the velocity of the servo drives over CAN and reads their\nposition back over CAN. The CM5 sends it pointing commands over the UART, as it did to the RoboClaw.\n\nPin use:\n- PA9 = USART1_TX to CM5 GPIO13, PA10 = USART1_RX from CM5 GPIO12. USART1 is also a system-bootloader UART.\n- PA12 = FDCAN1_TX, PA11 = FDCAN1_RX (AF9).\n- PC8 = CAN_VBUS_EN (output: high = dish-side CAN_V+ on; the eFuse is also on while PC8 is not driven). PC9 = CAN_VBUS_FLT (input with EXTI: low = eFuse fault). Both go through isolator U18 on the CAN sheet.\n- PA13 = SWDIO, PA14 = SWCLK, PB3 = SWO. PA2 / PA3 = debug UART on the STDC14 virtual COM port.\n- PC6 = LED_RUN (green), PC7 = LED_ERR (red): CANopen indicator LEDs (CiA 303-3), active high.\n- PF0 / PF1 = 24 MHz HSE, PG10 = NRST, PB8 = BOOT0.\nAll other pins are unused and left open (no-connect flags). Set them to analog mode in firmware.\nThere is no encoder or limit-switch interface on this board: those are separate CANopen nodes on the same bus (future boards)."
 		(exclude_from_sim no)
 		(at 25.4 226.06 0)
 		(effects
@@ -6446,7 +6446,7 @@
 		)
 		(uuid "e3bfc762-158a-422b-9fcb-e8382aaf3d34")
 	)
-	(text "J14: USART1 for an external 3.3 V serial\nadapter while the CM5 is off or not fitted.\nPins as J4: 1 = MCU_RX, 2 = MCU_TX, 3 = GND.\nWith the CM5 on, U16 also drives MCU_RX\nthrough R32, so only listen then."
+	(text "J10: USART1 for an external 3.3 V serial\nadapter while the CM5 is off or not fitted.\nPins as J4: 1 = MCU_RX, 2 = MCU_TX, 3 = GND.\nWith the CM5 on, U16 also drives MCU_RX\nthrough R32, so only listen then."
 		(exclude_from_sim no)
 		(at 355.6 51.4 0)
 		(effects
@@ -12408,7 +12408,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "16aa6084-198b-4582-a567-38437eb9173a")
-		(property "Reference" "C42"
+		(property "Reference" "C44"
 			(at 321.91 43.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12538,7 +12538,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C42")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -12633,7 +12633,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1fa9cc40-06c2-416a-ac75-e7f606c164e2")
-		(property "Reference" "C32"
+		(property "Reference" "C34"
 			(at 57.75 94.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12763,7 +12763,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C32")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -12936,7 +12936,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "26659ba4-acd5-46d8-bd98-7701d5602c8f")
-		(property "Reference" "C34"
+		(property "Reference" "C36"
 			(at 75.53 94.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13066,7 +13066,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C34")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -13601,7 +13601,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4b150791-9a51-4535-857d-e73346a296eb")
-		(property "Reference" "C29"
+		(property "Reference" "C31"
 			(at 45.05 51.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13731,7 +13731,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C29")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -14194,7 +14194,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "580ef988-debd-46e0-8bc3-e23e500bb4c0")
-		(property "Reference" "C41"
+		(property "Reference" "C43"
 			(at 126.33 94.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14324,7 +14324,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C41")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -14341,7 +14341,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66ce30cb-ea21-4bc7-a7a1-7f56bce916c1")
-		(property "Reference" "C37"
+		(property "Reference" "C39"
 			(at 90.77 134.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14471,7 +14471,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C37")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -14791,7 +14791,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "78569b3c-9074-49f9-b2af-5abf3f58cbfe")
-		(property "Reference" "J14"
+		(property "Reference" "J10"
 			(at 370.33 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14902,7 +14902,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "J14")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -15276,7 +15276,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "85677680-fc04-47b6-b480-7a31959f4f43")
-		(property "Reference" "C38"
+		(property "Reference" "C40"
 			(at 99.66 94.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15406,7 +15406,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C38")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -15423,7 +15423,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8cc12de9-c60d-490d-91ca-64508034fe6b")
-		(property "Reference" "C40"
+		(property "Reference" "C42"
 			(at 117.44 94.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15553,7 +15553,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C40")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -15873,7 +15873,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8f4ee44b-6c8b-4b9a-b08d-5118e22afbe8")
-		(property "Reference" "C31"
+		(property "Reference" "C33"
 			(at 51.9 139.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16003,7 +16003,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C31")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -16354,7 +16354,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "97780a74-df3d-43ae-bbee-b77eab28b131")
-		(property "Reference" "C30"
+		(property "Reference" "C32"
 			(at 48.86 94.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16484,7 +16484,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C30")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -17025,7 +17025,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a6acb742-2b47-416a-bfa6-80d3ee613805")
-		(property "Reference" "C28"
+		(property "Reference" "C30"
 			(at 39.97 94.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17155,7 +17155,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C28")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -17955,7 +17955,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf2d6fbe-4241-47c4-90d0-2976672fce7a")
-		(property "Reference" "C35"
+		(property "Reference" "C37"
 			(at 83.15 170.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18085,7 +18085,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C35")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -18275,7 +18275,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c3c16c6a-3040-4271-90c6-33a158df2de5")
-		(property "Reference" "C39"
+		(property "Reference" "C41"
 			(at 108.55 94.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18405,7 +18405,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C39")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -18801,7 +18801,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d041387d-aa11-4b72-b365-cacee68bade1")
-		(property "Reference" "C36"
+		(property "Reference" "C38"
 			(at 85.69 51.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18931,7 +18931,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C36")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -18948,7 +18948,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d3ded81f-3c49-4f00-a82f-b00bbcf8e726")
-		(property "Reference" "C33"
+		(property "Reference" "C35"
 			(at 66.64 94.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19078,7 +19078,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C33")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -19406,7 +19406,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e53bce7f-f94c-42f9-aad6-10e77d2e3b61")
-		(property "Reference" "J10"
+		(property "Reference" "J9"
 			(at 289.56 118.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19671,7 +19671,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "J10")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -20147,7 +20147,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fed22357-ae9c-4b55-ad59-56f5eea4877f")
-		(property "Reference" "C43"
+		(property "Reference" "C45"
 			(at 321.91 76.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20277,7 +20277,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/8f0e5a52-6c1b-4c0e-9d57-2b7c1e4a9d10"
-					(reference "C43")
+					(reference "C45")
 					(unit 1)
 				)
 			)

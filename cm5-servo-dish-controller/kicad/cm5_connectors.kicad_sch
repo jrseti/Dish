@@ -2118,18 +2118,6 @@
 		(uuid "ab01379b-3514-4604-bdb4-e0019524dd2c")
 	)
 	(rectangle
-		(start 184.15 130.81)
-		(end 212.09 154.94)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "ad3123ec-cd81-4f54-ae5c-4f48bf86b2a5")
-	)
-	(rectangle
 		(start 118.745 156.845)
 		(end 170.18 193.04)
 		(stroke
@@ -2217,7 +2205,7 @@
 		)
 		(uuid "342137f9-6d01-4fc1-9444-f251dee01ff6")
 	)
-	(text "H6: optional I2C1 pull-ups R12/R21, normally OPEN.\nCM5 already pulls GPIO2/3 up with 1.8k (CM5 datasheet Table 4).\nFit H6 only for a long, high-capacitance bus\nat 400 kHz: ~1k total, ~2.9 mA sink at 0.4 V\n(I2C spec min 3 mA, so compliant devices are OK)."
+	(text "H6: optional I2C1 pull-ups R12/R13, normally OPEN.\nCM5 already pulls GPIO2/3 up with 1.8k (CM5 datasheet Table 4).\nFit H6 only for a long, high-capacitance bus\nat 400 kHz: ~1k total, ~2.9 mA sink at 0.4 V\n(I2C spec min 3 mA, so compliant devices are OK)."
 		(exclude_from_sim no)
 		(at 120.65 187.452 0)
 		(effects
@@ -2228,7 +2216,7 @@
 		)
 		(uuid "372d484b-1e6c-47c1-8198-246722d57e13")
 	)
-	(text "I2C PULL-UPS\nI2C1: GPIO2 = I2C1_SDA (J3-24), GPIO3 = I2C1_SCL (J3-22)\nPulled up to 3.3 V (GPIO_VREF) by 1.8 kΩ inside the CM5\n(CM5 datasheet Table 4, pins 56/58). No board pull-ups\nare needed. R12/R21 (2.2k, fitted via H6/H6) are optional."
+	(text "I2C PULL-UPS\nI2C1: GPIO2 = I2C1_SDA (J3-24), GPIO3 = I2C1_SCL (J3-22)\nPulled up to 3.3 V (GPIO_VREF) by 1.8 kΩ inside the CM5\n(CM5 datasheet Table 4, pins 56/58). No board pull-ups\nare needed. R12/R13 (2.2k, fitted via H6) are optional."
 		(exclude_from_sim no)
 		(at 220.98 129.54 0)
 		(effects
@@ -2271,7 +2259,7 @@
 		)
 		(uuid "59b5c7cd-9338-40a3-9b53-036619d169b0")
 	)
-	(text "J3 pins 2 and 4 are not connected.\nOn the CM4 board they were the AIN0/AIN1 ADC inputs.\nThe CM5 has no ADC pins (module pins 94/96 are now\nCC1/CC2), so the inputs and their clamps are removed."
+	(text "J3 pins 2 and 4 are GND.\nOn the CM4 board they were the AIN0/AIN1 ADC inputs.\nThe CM5 has no ADC pins (module pins 94/96 are now\nCC1/CC2), so the inputs and their clamps are removed."
 		(exclude_from_sim no)
 		(at 60.452 110.744 0)
 		(effects
@@ -2312,17 +2300,6 @@
 			)
 		)
 		(uuid "6ec3306c-521f-4d39-ad26-a2d96b79dda3")
-	)
-	(text "Gnd Pins"
-		(exclude_from_sim no)
-		(at 185.42 133.096 0)
-		(effects
-			(font
-				(size 2.032 2.032)
-			)
-			(justify left)
-		)
-		(uuid "7106209b-5812-42ab-8707-b7051e42729d")
 	)
 	(text "Boot/EEPROM_EN/PMIC_EN"
 		(exclude_from_sim no)
@@ -2376,7 +2353,7 @@
 		)
 		(uuid "f277ca29-2390-40bd-b66c-1021ef592967")
 	)
-	(text "F1 (100 mA PTC, SMD0603-010-24V) fuses the 3.3 V on J3 pin 5: a short on a\nplug-in board trips F1, not the CM5 rail. HAT budget 100 mA; CN1 has F8."
+	(text "F1 (100 mA PTC, SMD0603-010-24V) fuses the 3.3 V on J3 pin 5: a short on a\nplug-in board trips F1, not the CM5 rail. HAT budget 100 mA; CN1 has F3."
 		(exclude_from_sim no)
 		(at 52.324 92.71 0)
 		(effects
@@ -2408,18 +2385,6 @@
 		(uuid "fedb5cd6-7fa5-497c-8436-b2b67761e2e4")
 	)
 	(junction
-		(at 187.96 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0dba6c24-d94a-4864-968c-db10333a7bf9")
-	)
-	(junction
-		(at 205.74 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "468e9558-1347-4e18-ba5f-eb5e0085cffb")
-	)
-	(junction
 		(at 76.2 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2430,18 +2395,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e9a01ff-1456-489d-b486-3a220dad18d6")
-	)
-	(junction
-		(at 187.96 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7584f825-5728-4c40-a078-18b9525ad808")
-	)
-	(junction
-		(at 205.74 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8851d9c6-35f9-4bbf-911a-062e7a0d8ce3")
 	)
 	(junction
 		(at 147.32 168.91)
@@ -2456,16 +2409,8 @@
 		(uuid "d46bcbb7-457d-40f2-95cc-50303f88dcc0")
 	)
 	(no_connect
-		(at 92.71 60.96)
-		(uuid "10f17ef8-660f-4f94-9f53-cac44759a899")
-	)
-	(no_connect
 		(at 144.78 62.23)
 		(uuid "1210b5b3-b0c9-4f66-b7cb-8f108f9e132f")
-	)
-	(no_connect
-		(at 92.71 58.42)
-		(uuid "ac18ca93-a8c4-4e99-8288-f555337e57a0")
 	)
 	(wire
 		(pts
@@ -2599,16 +2544,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 143.51) (xy 205.74 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30d06930-c3a5-48d9-bbe5-296b8c124f46")
-	)
-	(wire
-		(pts
 			(xy 180.34 64.77) (xy 182.88 64.77)
 		)
 		(stroke
@@ -2626,16 +2561,6 @@
 			(type default)
 		)
 		(uuid "320f3071-2650-43ec-a420-79d23b6b13ae")
-	)
-	(wire
-		(pts
-			(xy 204.47 140.97) (xy 205.74 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32514079-9704-4606-ac67-3a2a8af57c46")
 	)
 	(wire
 		(pts
@@ -2689,26 +2614,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 147.32) (xy 187.96 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57a1a6a3-cfc3-43c5-aefe-b46ced6935e4")
-	)
-	(wire
-		(pts
-			(xy 205.74 146.05) (xy 205.74 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b65db69-3fb6-412c-8f60-651b8746855f")
-	)
-	(wire
-		(pts
 			(xy 77.47 73.66) (xy 76.2 73.66)
 		)
 		(stroke
@@ -2716,16 +2621,6 @@
 			(type default)
 		)
 		(uuid "5b8d6b50-aabb-4737-b521-658b3f3b348e")
-	)
-	(wire
-		(pts
-			(xy 187.96 143.51) (xy 189.23 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b9130f9-3a8c-4ab9-b038-0d3020ced27a")
 	)
 	(wire
 		(pts
@@ -2766,6 +2661,16 @@
 			(type default)
 		)
 		(uuid "64ed2624-ecc8-49e8-a80e-8090161dbc34")
+	)
+	(wire
+		(pts
+			(xy 92.71 58.42) (xy 93.98 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67e31229-d725-4955-84d7-fccf428d3056")
 	)
 	(wire
 		(pts
@@ -2846,26 +2751,6 @@
 			(type default)
 		)
 		(uuid "9fbbc089-fbea-4392-bfb9-196cd8e6d805")
-	)
-	(wire
-		(pts
-			(xy 204.47 146.05) (xy 205.74 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a82c30bb-e8bc-43be-973d-acae59e80a87")
-	)
-	(wire
-		(pts
-			(xy 187.96 146.05) (xy 189.23 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac672f20-e200-4de3-8aba-ee360ca29ca4")
 	)
 	(wire
 		(pts
@@ -2979,16 +2864,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 140.97) (xy 205.74 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbd8eac0-3ddc-42e4-95a4-65be0354c957")
-	)
-	(wire
-		(pts
 			(xy 92.71 71.12) (xy 93.98 71.12)
 		)
 		(stroke
@@ -3059,26 +2934,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 143.51) (xy 205.74 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e788e1d7-4e1c-4657-86ff-2c3055266a8b")
-	)
-	(wire
-		(pts
-			(xy 187.96 146.05) (xy 187.96 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9ead8d5-b082-4750-8ddf-678898a11453")
-	)
-	(wire
-		(pts
 			(xy 92.71 68.58) (xy 93.98 68.58)
 		)
 		(stroke
@@ -3086,16 +2941,6 @@
 			(type default)
 		)
 		(uuid "f1599b34-0f1f-48ad-965d-1fc9b39d9253")
-	)
-	(wire
-		(pts
-			(xy 187.96 140.97) (xy 189.23 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2235add-45c6-4b6a-beeb-92441bc5e382")
 	)
 	(wire
 		(pts
@@ -3109,13 +2954,13 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 143.51) (xy 187.96 140.97)
+			(xy 92.71 60.96) (xy 93.98 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f9774541-7098-41a0-b510-8f7f2efda9e7")
+		(uuid "fb805d5a-52ff-4db5-a9f4-95e22ad9bf7c")
 	)
 	(label "I2C1_PU"
 		(at 138.43 168.91 0)
@@ -3915,85 +3760,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 205.74 147.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4768befe-ca86-4baa-9034-f174ec652183")
-		(property "Reference" "#PWR048"
-			(at 205.74 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 205.74 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 205.74 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b91ad1e3-b6d4-472e-a2c4-184455393baf")
-		)
-		(instances
-			(project "cm5-servo-dish-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MyParts:SMD0603-010-24V")
 		(at 72.39 63.5 0)
 		(unit 1)
@@ -4263,7 +4029,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9477c6e4-b5cb-4643-8aae-5dbb7800efcd")
-		(property "Reference" "C12"
+		(property "Reference" "C14"
 			(at 177.8 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4393,7 +4159,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "C12")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -4795,6 +4561,164 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 93.98 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a80e38b0-3177-4118-908b-dcefae8f9142")
+		(property "Reference" "#PWR154"
+			(at 100.33 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.79 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 93.98 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b2ba1699-3b07-4090-bf5c-fc3de449dd1b")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
+					(reference "#PWR154")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 93.98 58.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab5b15b8-f799-442b-b935-8088e7e8a35e")
+		(property "Reference" "#PWR153"
+			(at 100.33 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.79 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 93.98 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83609298-9897-466c-a50c-6cf541168a30")
+		)
+		(instances
+			(project "cm5-servo-dish-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
+					(reference "#PWR153")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 63.5 59.69 0)
 		(unit 1)
 		(body_style 1)
@@ -4946,141 +4870,6 @@
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
 					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MyParts:Header-Male-2.54_2x3")
-		(at 196.85 143.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c7114443-3bfb-4f1c-a389-3edd6c41524d")
-		(property "Reference" "J6"
-			(at 196.596 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Header-Male-2.54_2x3"
-			(at 197.612 152.908 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MyParts:PinHeader_2x03_P2.54mm_Vertical"
-			(at 196.85 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/2.54-2_3PPin.pdf"
-			(at 196.85 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "2.54mm 2*3P"
-			(at 196.85 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "BOOMELE"
-			(at 196.85 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "2.54-2*3PPin"
-			(at 196.85 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C65114"
-			(at 196.85 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pkg Type" "THT Pin header 2x3 P2.54"
-			(at 196.85 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "13e9d7f6-4d04-43e9-ba4f-d8ae91982d46")
-		)
-		(pin "3"
-			(uuid "7a386525-13da-498c-a65f-c81f75ecf80d")
-		)
-		(pin "5"
-			(uuid "4a619174-d4d7-4e0d-8df0-1e26a681eac8")
-		)
-		(pin "6"
-			(uuid "42d616c8-9603-4be8-9dfd-6f3028c6572e")
-		)
-		(pin "2"
-			(uuid "d45e39b3-698c-4cc9-bdac-633c4fc01eda")
-		)
-		(pin "4"
-			(uuid "f9f49e85-3558-4b15-a1c4-6e33c940153c")
-		)
-		(instances
-			(project "cm5-servo-dish-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -5371,85 +5160,6 @@
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
 					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 187.96 147.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f29fb8c2-fecd-4a8c-bc76-d567b2c89682")
-		(property "Reference" "#PWR047"
-			(at 187.96 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 187.96 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 187.96 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a45a6f62-d5be-4ce4-8a33-161bd3db795c")
-		)
-		(instances
-			(project "cm5-servo-dish-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "#PWR047")
 					(unit 1)
 				)
 			)

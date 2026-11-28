@@ -6552,7 +6552,7 @@
 		)
 		(uuid "5c0c786e-6f1d-4446-bc36-a9846abf5a3e")
 	)
-	(text "1PPS from FEI FE-5680A rubidium clock, 3-5V logic pulse.\nU12 Schmitt buffer (5V-tolerant input, VT+ <= 2.0V at 3V) shifts\nit to the 3.3V V_IO level; EXTINT abs max is V_IO+0.3V (3.6V).\nR25 holds the input low when nothing is connected.\nEdges on EXTINT are timestamped in UBX-TIM-TM2 (time mark).\n\nJ9 grounding (1PPS from FE-5680A):\nJ9 shell stays on GND. Power the FE-5680A from an isolated DC-DC\nconverter, 16 V out, 40 W, fed from a battery (FE-5680A needs\n15-18 V, 2 A during warm-up, 0.8 A steady). Its ground then reaches\nthe board only through the J9 coax shield, so no rubidium supply\ncurrent flows in the shield or across board GND. Mount the FE-5680A\ncase isolated from the plate: insulating thermal pad, nylon screws.\nDo not use a non-isolated converter: its return would parallel the\nJ9 shield and put rubidium supply current on board GND.\nGND is bonded to the box at the J8 arrestor. Battery negative must\nhave no other connection to the box or plate. See\ndocs/grounding-gps-sma.md.\n\nIMPORTANT: The rubidium 1PPS clock input is optional and will be used in\nfuture experimentation. The unit will be placed inside the metal utility\nbox along with the board, so no bulkhead connector.\nThe FE-5680A runs off of 15-18V so will need a separate battery and \nDC-DC isolation."
+	(text "1PPS from FEI FE-5680A rubidium clock, 3-5V logic pulse.\nU12 Schmitt buffer (5V-tolerant input, VT+ <= 2.0V at 3V) shifts\nit to the 3.3V V_IO level; EXTINT abs max is V_IO+0.3V (3.6V).\nR25 holds the input low when nothing is connected.\nEdges on EXTINT are timestamped in UBX-TIM-TM2 (time mark).\n\nJ8 grounding (1PPS from FE-5680A):\nJ8 shell stays on GND. Power the FE-5680A from an isolated DC-DC\nconverter, 16 V out, 40 W, fed from a battery (FE-5680A needs\n15-18 V, 2 A during warm-up, 0.8 A steady). Its ground then reaches\nthe board only through the J8 coax shield, so no rubidium supply\ncurrent flows in the shield or across board GND. Mount the FE-5680A\ncase isolated from the plate: insulating thermal pad, nylon screws.\nDo not use a non-isolated converter: its return would parallel the\nJ8 shield and put rubidium supply current on board GND.\nGND is bonded to the box at the J7 arrestor. Battery negative must\nhave no other connection to the box or plate. See\ndocs/grounding-gps-sma.md.\n\nIMPORTANT: The rubidium 1PPS clock input is optional and will be used in\nfuture experimentation. The unit will be placed inside the metal utility\nbox along with the board, so no bulkhead connector.\nThe FE-5680A runs off of 15-18V so will need a separate battery and \nDC-DC isolation."
 		(exclude_from_sim no)
 		(at 210.82 102.87 0)
 		(effects
@@ -6563,7 +6563,7 @@
 		)
 		(uuid "7081c02f-1dcb-41cd-924d-d8c96b790b6a")
 	)
-	(text "Antenna bias from 5V, not VCC_RF: the Waveshare GNSS antenna\n(L1/L2/L5 bands) needs 3.0-18 V at <=45 mA over 5 m RG174;\nVCC_RF (VCC-0.1 V, 50 mA max) cannot hold 3.0 V through any\nshort-circuit resistor. R20 33R 1W limits a short to ~155 mA\n(inductor L1 is rated 350 mA). C25 filters supply ripple.\nD3 4.7 V keeps RF_IN < 5.5 V DC abs max (antenna unplugged).\nWorst-case antenna voltage ~3.3 V at 45 mA."
+	(text "Antenna bias from 5V, not VCC_RF: the Waveshare GNSS antenna\n(L1/L2/L5 bands) needs 3.0-18 V at <=45 mA over 5 m RG174;\nVCC_RF (VCC-0.1 V, 50 mA max) cannot hold 3.0 V through any\nshort-circuit resistor. R20 33R 1W limits a short to ~155 mA\n(inductor L1 is rated 350 mA). C27 filters supply ripple.\nD3 4.7 V keeps RF_IN < 5.5 V DC abs max (antenna unplugged).\nWorst-case antenna voltage ~3.3 V at 45 mA."
 		(exclude_from_sim no)
 		(at 144.78 153.67 0)
 		(effects
@@ -6585,7 +6585,7 @@
 		)
 		(uuid "85cf1627-8d88-453c-bf78-a72c66a0999e")
 	)
-	(text "D4: Si TVS, 0.25 pF, 9.2 V clamp, K to RF_IN.\nJ8 shell stays on GND. The antenna cable enters\nthe utility box through a DC-pass coax arrestor\nbolted to bare metal on the box wall near the\nJ8 corner, with a short coax jumper to J2.\nDC-pass is required: the antenna bias (5 V via\nR20/L1) must reach the antenna. The arrestor is\nthe only GND-to-box bond. Earth the box there."
+	(text "D4: Si TVS, 0.25 pF, 9.2 V clamp, K to RF_IN.\nJ7 shell stays on GND. The antenna cable enters\nthe utility box through a DC-pass coax arrestor\nbolted to bare metal on the box wall near the\nJ7 corner, with a short coax jumper to J7.\nDC-pass is required: the antenna bias (5 V via\nR20/L1) must reach the antenna. The arrestor is\nthe only GND-to-box bond. Earth the box there."
 		(exclude_from_sim no)
 		(at 156.21 136.398 0)
 		(effects
@@ -6617,7 +6617,7 @@
 		)
 		(uuid "c33f0249-65da-4512-b74f-688b8505ffc2")
 	)
-	(text "BT1 ML414H, reflowable.\nNo LCSC stock: buy from\nDigi-Key/Mouser, consign.\n1.0 mAh: ~1.5 d at 28 uA.\nCharged via R23/R93, D5,\nR22 10k (SII: R>=3k).\nCell <= 3.02 V (max 3.1).\nCell temp -20 to +60 C."
+	(text "BT1 ML414H, reflowable.\nNo LCSC stock: buy from\nDigi-Key/Mouser, consign.\n1.0 mAh: ~1.5 d at 28 uA.\nCharged via R23/R21, D5,\nR22 10k (SII: R>=3k).\nCell <= 3.02 V (max 3.1).\nCell temp -20 to +60 C."
 		(exclude_from_sim no)
 		(at 177.8 80.645 0)
 		(effects
@@ -8671,7 +8671,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1899c9ef-bcb0-4f38-99c4-42b9ae24cc60")
-		(property "Reference" "C20"
+		(property "Reference" "C22"
 			(at 70.612 85.3439 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8801,7 +8801,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "C20")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -9422,7 +9422,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "37163bfb-06d0-445b-a297-9b6ba61ae044")
-		(property "Reference" "C19"
+		(property "Reference" "C21"
 			(at 64.262 85.344 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9552,7 +9552,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "C19")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -10103,7 +10103,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4dd28efb-fcc3-40ab-96b1-7102a80b60cc")
-		(property "Reference" "J8"
+		(property "Reference" "J7"
 			(at 174.752 117.094 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10220,7 +10220,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "J8")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -10657,7 +10657,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6258b3d0-b826-4c00-8ebe-e0c7877eca92")
-		(property "Reference" "J9"
+		(property "Reference" "J8"
 			(at 217.424 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10774,7 +10774,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "J9")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -11830,7 +11830,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "85b6745c-0629-4328-8af1-898f6a9817ea")
-		(property "Reference" "C27"
+		(property "Reference" "C29"
 			(at 247.65 62.865 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11960,7 +11960,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "C27")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -12747,7 +12747,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab183067-e855-437e-a95e-9bb68aaabf67")
-		(property "Reference" "C26"
+		(property "Reference" "C28"
 			(at 171.45 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12877,7 +12877,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "C26")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -13264,7 +13264,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "be81f410-1e74-4923-a7cb-913d411a45ce")
-		(property "Reference" "C21"
+		(property "Reference" "C23"
 			(at 78.74 85.3439 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13394,7 +13394,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "C21")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -13841,7 +13841,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d67cbb2a-6370-43e8-8d61-d519b90eded3")
-		(property "Reference" "C22"
+		(property "Reference" "C24"
 			(at 102.87 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13971,7 +13971,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "C22")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -14145,7 +14145,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "df3d7873-3739-4455-8770-8be2eb7f8a62")
-		(property "Reference" "C24"
+		(property "Reference" "C26"
 			(at 110.49 160.655 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14275,7 +14275,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "C24")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -14427,7 +14427,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5ee51cb-4264-4888-9baf-18c8d7e06a04")
-		(property "Reference" "C23"
+		(property "Reference" "C25"
 			(at 110.49 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14557,7 +14557,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "C23")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -14574,7 +14574,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ea15c85a-c10d-4fbf-93ff-9f1d2653908f")
-		(property "Reference" "C25"
+		(property "Reference" "C27"
 			(at 117.856 136.525 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14704,7 +14704,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "C25")
+					(reference "C27")
 					(unit 1)
 				)
 			)

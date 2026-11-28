@@ -1162,7 +1162,7 @@
 		)
 		(uuid "089f0626-adc3-4f83-960b-f289f3b7d1ce")
 	)
-	(text "GND: single board ground. J7 pin 2 (5 V\nreturn) is GND. The DDR-60L-5 isolates it\nfrom the 48 V battery. No motor current\nflows on this board, so there is no\nseparate power ground. The CAN bus side has its\nown isolated ground (GND_ISO, CAN sheet), fed\nfrom a separate isolated 24 V converter.\nGND_ISO never joins GND or CHASSIS."
+	(text "GND: single board ground. J6 pin 2 (5 V\nreturn) is GND. The DDR-60L-5 isolates it\nfrom the 48 V battery. No motor current\nflows on this board, so there is no\nseparate power ground. The CAN bus side has its\nown isolated ground (GND_ISO, CAN sheet), fed\nfrom a separate isolated 24 V converter.\nGND_ISO never joins GND or CHASSIS."
 		(exclude_from_sim no)
 		(at 33.02 150 0)
 		(effects
@@ -1217,7 +1217,7 @@
 		)
 		(uuid "76d87bea-069f-4001-817c-9adf6256149a")
 	)
-	(text "C70: second HF bond (2 kV, as\nC1), at the USB connectors. The\nboard is open inside the metal\nbox, so the USB shells have no\npanel bond."
+	(text "C2: second HF bond (2 kV, as\nC1), at the USB connectors. The\nboard is open inside the metal\nbox, so the USB shells have no\npanel bond."
 		(exclude_from_sim no)
 		(at 127 186.69 0)
 		(effects
@@ -1228,7 +1228,7 @@
 		)
 		(uuid "8773e0a7-2a26-4c08-82de-204e1c0c01a3")
 	)
-	(text "R1/C1: CHASSIS-GND static bleed (R1) and HF\nbond (C1, keep 2 kV). Connector shields (RJ45,\nUSB, CAN) and the Ethernet termination (P10)\ngo to CHASSIS. Installed, GND is also bonded\nto the box at the J8 antenna arrestor, so R1\nis bypassed at DC."
+	(text "R1/C1: CHASSIS-GND static bleed (R1) and HF\nbond (C1, keep 2 kV). Connector shields (RJ45,\nUSB, CAN) and the Ethernet termination (P10)\ngo to CHASSIS. Installed, GND is also bonded\nto the box at the J7 antenna arrestor, so R1\nis bypassed at DC."
 		(exclude_from_sim no)
 		(at 76.2 186.69 0)
 		(effects
@@ -1239,7 +1239,7 @@
 		)
 		(uuid "a71bddb7-cf07-4ee3-a983-2b6d5d94dbea")
 	)
-	(text "48 V battery -> Mean Well DDR-60L-5 (external,\nisolated DIN-rail converter) -> 5 V -> J7\n48 V -> isolated 48 V to 24 V converter (external)\n-> 24 V -> J13 on the CAN sheet (isolated bus side)"
+	(text "48 V battery -> Mean Well DDR-60L-5 (external,\nisolated DIN-rail converter) -> 5 V -> J6\n48 V -> isolated 48 V to 24 V converter (external)\n-> 24 V -> J11 on the CAN sheet (isolated bus side)"
 		(exclude_from_sim no)
 		(at 60.96 73.97 0)
 		(effects
@@ -2229,7 +2229,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "41a5a3f3-da29-4b15-a25e-3da2fc636252")
-		(property "Reference" "C70"
+		(property "Reference" "C2"
 			(at 106.68 160.782 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2357,7 +2357,7 @@
 		(instances
 			(project "cm5-servo-dish-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "C70")
+					(reference "C2")
 					(unit 1)
 				)
 			)
